@@ -1,18 +1,14 @@
 import React from 'react';
-import { CenterLayout } from '../../components';
+import { Layout, ProjectGridLayout } from '../../components';
 import * as Colors from '../../components/constants/Colors';
 
 function ProjectPage({ html }) {
   return (
-    <CenterLayout>
-      <div style={{ color: Colors.WHITE }} dangerouslySetInnerHTML={{ __html: html }}/>
-    </CenterLayout>
+    <Layout>
+      <ProjectGridLayout/>
+    </Layout>
   );
 }
-
-ProjectPage.propTypes = {
-  html: React.PropTypes.string.isRequired,
-};
 
 export default {
 
