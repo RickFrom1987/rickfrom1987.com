@@ -1,35 +1,34 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- *
- * Copyright © 2015-2016 Konstantin Tarkus (@koistya)
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import React from 'react';
+import View from 'react-flexbox';
 import Navigation from './Navigation';
 
+import * as App from '../constants/App';
+import * as Colors from '../constants/Colors';
+
 class Header extends React.Component {
-
-  componentDidMount() {
-    window.componentHandler.upgradeElement(this.refs.root);
-  }
-
-  componentWillUnmount() {
-    window.componentHandler.downgradeElements(this.refs.root);
-  }
-
   render() {
+    const logoStyle = {
+      color: Colors.WHITE,
+    };
+    const headerStyle = {
+      textTransform: 'uppercase',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      zIndex: 1040,
+      width: '100%',
+      height: App.HEADER_HEIGHT,
+      color: Colors.WHITE,
+      backgroundColor: 'rgba(0,0,0, 0.25)',
+      padding: '0 24px',
+    };
     return (
-      <header className="mdl-layout__header" ref="root">
-        <div className="mdl-layout__header-row">
-          <span className="mdl-layout-title">React Static Boilerplate</span>
-          <div className="mdl-layout-spacer"></div>
-          <Navigation />
-        </div>
-      </header>
+      <View row style={headerStyle}>
+        <a href="/" style={logoStyle}>RickFrom1987</a>
+        <Navigation/>
+      </View>
     );
   }
 

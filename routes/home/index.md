@@ -1,10 +1,4 @@
----
-title: React Static Boilerplate
----
+# Hello!
 
-## Welcome!
-
-This is a single-page application powered by React and Material Design Lite (MDL).
-
-https://github.com/koistya/react-static-boilerplate
+I am RickFrom1987. I do stuff.
 
