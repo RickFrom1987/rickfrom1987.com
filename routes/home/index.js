@@ -1,12 +1,22 @@
 import React from 'react';
+import View from 'react-flexbox';
 import { CenterLayout } from '../../components';
 
 import * as Colors from '../../components/constants/Colors';
 
 function HomePage({ html }) {
+  const linkStyle = {
+    fontSize: 24,
+    padding: 12,
+  };
   return (
-    <CenterLayout>
-      <div style={{ color: Colors.WHITE }} dangerouslySetInnerHTML={{ __html: html }}/>
+    <CenterLayout style={{ color: Colors.WHITE }}>
+      <div column dangerouslySetInnerHTML={{ __html: html }}/>
+      <p>
+        <a href="//www.facebook.com/rickfrom1987" style={linkStyle}><i className="fa fa-facebook"></i></a>
+        <a href="//www.facebook.com/rickfrom1987" style={linkStyle}><i className="fa fa-linkedin"></i></a>
+        <a href="//github.com/rickfrom1987" style={linkStyle}><i className="fa fa-github"></i></a>
+      </p>
     </CenterLayout>
   );
 }

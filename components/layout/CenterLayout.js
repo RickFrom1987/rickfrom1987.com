@@ -6,8 +6,13 @@ import Header from './Header';
 import * as Colors from '../constants/Colors';
 
 class CenterLayout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
-    const centerLayoutStyle = {
+    const { style, ...props } = this.props;
+    const baseStyle = {
       justifyContent: 'center',
       alignItems: 'center',
       position: 'absolute',
@@ -19,13 +24,20 @@ class CenterLayout extends React.Component {
       backgroundColor: Colors.BLUE,
       backgroundImage: Colors.GRADIENT_BG,
     };
+    const centerLayoutStyle = Object.assign({}, baseStyle, style);
     return (
       <div>
         <Header />
-        <View column style={centerLayoutStyle} {...this.props}/>
+        <View column style={centerLayoutStyle}>
+          { this.props.children }
+        </View>
       </div>
     );
   }
 }
+
+CenterLayout.propTypes = {
+  style: React.PropTypes.object,
+};
 
 export default CenterLayout;

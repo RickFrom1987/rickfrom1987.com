@@ -20,24 +20,24 @@ function generateLayout() {
 class GridLayout extends React.Component {
 
   static propTypes = {
-    onLayoutChange: React.PropTypes.func.isRequired
+    onLayoutChange: React.PropTypes.func.isRequired,
+    items: React.PropTypes.object
   };
 
   static defaultProps = {
-    className: "layout",
+    className: 'layout',
     rowHeight: 30,
     cols: {lg: 12, md: 10, sm: 6, xs: 4, xxs: 2},
     initialLayout: generateLayout()
   };
-
-  state = {
-    currentBreakpoint: 'lg',
-    mounted: false,
-    layouts: {lg: this.props.initialLayout},
-  };
-
-  componentDidMount() {
-    this.setState({mounted: true});
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentBreakpoint: 'lg',
+      mounted: true,
+      layouts: {lg: this.props.initialLayout},
+    };
   }
 
   generateDOM() {
@@ -46,7 +46,7 @@ class GridLayout extends React.Component {
         <div key={i} className={l.static ? 'static' : ''}>
           {l.static ?
             <span className="text" title="This item is static and cannot be removed or resized.">Static - {i}</span>
-            : <span className="text">{i}</span>
+            : <span className="text">{i} Test</span>
           }
         </div>);
     });
@@ -71,9 +71,6 @@ class GridLayout extends React.Component {
   render() {
     return (
       <div>
-        <div>Current Breakpoint: {this.state.currentBreakpoint} ({this.props.cols[this.state.currentBreakpoint]} columns)
-        </div>
-        <button onClick={this.onNewLayout}>Generate New Layout</button>
         <ResponsiveReactGridLayout
           {...this.props}
           layouts={this.state.layouts}
@@ -88,4 +85,4 @@ class GridLayout extends React.Component {
   }
 }
 
-module.exports = GridLayout;
+export default GridLayout;

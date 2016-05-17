@@ -1,11 +1,12 @@
 import React from 'react';
 import { Layout, ProjectGridLayout } from '../../components';
+import Projects from './projects';
 import * as Colors from '../../components/constants/Colors';
 
-function ProjectPage({ html }) {
+function ProjectPage({ html, projects }) {
   return (
-    <Layout>
-      <ProjectGridLayout/>
+    <Layout style={{ paddingTop: 24 }}>
+      <ProjectGridLayout projects={Projects}/>
     </Layout>
   );
 }
