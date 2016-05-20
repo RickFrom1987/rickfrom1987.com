@@ -9,13 +9,40 @@ class ProjectGridLayout extends React.Component {
       layout: []
     };
   }
+  
+  trueOrFalse = () => {
+    return (Math.random() < 0.5);
+  }
+
+  renderInitialLayout = () => {
+    const projects = this.props.projects;
+    const work = projects.work || null;
+    return work.map((item, i) => {
+      console.log('item', item, i);
+      const COLS = 3;
+      const HEIGHT = 8;
+      return {
+        i: i.toString(),
+        x: (i % 3 === 0) ? 0 : i * 2,
+        y: 0,
+        w: 2,
+        h: HEIGHT
+      };
+    });
+    console.log("projects", projects);
+  }
+
   onLayoutChange = (layout) => {
     this.setState({layout: layout});
-  };
+  }
+
   render(){
-    console.log("PORJETCS", this.props.projects);
+    const initialLayout = this.renderInitialLayout();
+    console.log("initialLayout", initialLayout);
     return (
-      <GridLayout onLayoutChange={this.onLayoutChange} items={this.props.projects}/>
+      <GridLayout
+        initialLayout={initialLayout}
+        onLayoutChange={this.onLayoutChange}/>
     );
   }
 }

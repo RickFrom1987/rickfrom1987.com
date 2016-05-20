@@ -1,4 +1,3 @@
-import './Layout.css';
 import React from 'react';
 import Header from './Header';
 
@@ -12,6 +11,7 @@ class Layout extends React.Component {
   render() {
     const {style, ...props} = this.props;
     const baseStyle = {
+      height: '100%',
       backgroundColor: Colors.BLUE,
       backgroundImage: Colors.GRADIENT_BG,
     };

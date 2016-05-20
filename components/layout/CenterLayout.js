@@ -1,4 +1,3 @@
-import './Layout.css';
 import React from 'react';
 import View from 'react-flexbox';
 import Header from './Header';

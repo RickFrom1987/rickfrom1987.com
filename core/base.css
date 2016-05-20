@@ -37,8 +37,7 @@ p {
   padding: 0;
   text-shadow: 0px 0px 1px #7FDBFF;
 }
-/* links.css - v0.0.1 - "Smarter defaults for links" License MIT
-*/
+
 a {
   text-decoration: none;
   -webkit-transition: all .4s;

@@ -1,4 +1,4 @@
-
+import './base.css';
 import 'babel-polyfill';
 import { createApp } from 'react-app';
 import store from './store';

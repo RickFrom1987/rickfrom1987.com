@@ -41,9 +41,12 @@ class GridLayout extends React.Component {
   }
 
   generateDOM() {
+    const gridItemStyle = {
+      backgroundColor: 'pink',
+    };
     return _.map(this.state.layouts.lg, function (l, i) {
       return (
-        <div key={i} className={l.static ? 'static' : ''}>
+        <div key={i} style={gridItemStyle} className={l.static ? 'static' : ''}>
           {l.static ?
             <span className="text" title="This item is static and cannot be removed or resized.">Static - {i}</span>
             : <span className="text">{i} Test</span>
