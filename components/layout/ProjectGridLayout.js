@@ -1,4 +1,5 @@
 import React from 'react';
+import View from 'react-flexbox';
 import ReactDOM from 'react-dom';
 import GridLayout from './GridLayout';
 
@@ -6,43 +7,107 @@ class ProjectGridLayout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      layout: []
+      layouts: this.renderLayouts()
     };
   }
-  
-  trueOrFalse = () => {
-    return (Math.random() < 0.5);
+
+  renderLayouts = () => {
+    const layouts = {
+      lg: this.renderLargeLayout(),
+      md: this.renderMediumLayout(),
+      sm: this.renderSmallLayout(),
+      xs: this.renderSmallLayout(),
+      xxs: this.renderSmallLayout()
+    };
+    return layouts;
   }
 
-  renderInitialLayout = () => {
-    const projects = this.props.projects;
-    const work = projects.work || null;
+  renderLargeLayout = () => {
+    const work = this.props.projects.work || null;
     return work.map((item, i) => {
-      console.log('item', item, i);
-      const COLS = 3;
-      const HEIGHT = 8;
+      const y = Math.ceil(Math.random() * 4) + 6;
       return {
-        i: i.toString(),
-        x: (i % 3 === 0) ? 0 : i * 2,
-        y: 0,
-        w: 2,
-        h: HEIGHT
+        x: i * 3 % 12,
+        y: Math.floor(i / 6) * y,
+        w: 3,
+        h: y,
+        i: i.toString()
       };
     });
-    console.log("projects", projects);
+  }
+
+  renderMediumLayout = () => {
+    const work = this.props.projects.work || null;
+    return work.map((item, i) => {
+      const y = Math.ceil(Math.random() * 4) + 8;
+      return {
+        x: i * 5 % 10,
+        y: Math.floor(i / 6) * y,
+        w: 5,
+        h: y,
+        i: i.toString()
+      };
+    });
+  }
+
+  renderSmallLayout = () => {
+    const work = this.props.projects.work || null;
+    return work.map((item, i) => {
+      const y = Math.ceil(Math.random() * 4) + 6;
+      return {
+        x: i * 2 % 6,
+        y: Math.floor(i / 6) * y,
+        w: 2,
+        h: y,
+        i: i.toString()
+      };
+    });
   }
 
   onLayoutChange = (layout) => {
     this.setState({layout: layout});
   }
 
+  renderItems() {
+    const projects = this.props.projects;
+    const work = projects.work || null;
+    const gridItemStyle = {
+      backgroundColor: 'pink',
+      padding: 12
+    };
+    const previewStyle = {
+      backgroundColor: 'green',
+      height: '60%'
+    };
+    const detailsStyle = {
+      height: '40%',
+    };
+    console.log('Work', work);
+    return work.map((item, i) => {
+      return (
+        <View column key={i} style={gridItemStyle}>
+          <View style={previewStyle}>
+            {item.thumbnail}
+          </View>
+          <View style={detailsStyle}>
+            {item.company}
+            {item.position}
+            {item.website}
+          </View>
+        </View>
+      );
+    });
+  }
+
   render(){
-    const initialLayout = this.renderInitialLayout();
-    console.log("initialLayout", initialLayout);
+    const { ...props } = this.props;
     return (
       <GridLayout
-        initialLayout={initialLayout}
-        onLayoutChange={this.onLayoutChange}/>
+        { ...props }
+        layouts={this.state.layouts}
+        onLayoutChange={this.onLayoutChange}>
+        {this.renderItems()}
+      </GridLayout>
     );
   }
 }

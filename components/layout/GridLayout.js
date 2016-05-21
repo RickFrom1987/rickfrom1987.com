@@ -28,7 +28,6 @@ class GridLayout extends React.Component {
     className: 'layout',
     rowHeight: 30,
     cols: {lg: 12, md: 10, sm: 6, xs: 4, xxs: 2},
-    initialLayout: generateLayout()
   };
   
   constructor(props) {
@@ -36,23 +35,7 @@ class GridLayout extends React.Component {
     this.state = {
       currentBreakpoint: 'lg',
       mounted: true,
-      layouts: {lg: this.props.initialLayout},
     };
-  }
-
-  generateDOM() {
-    const gridItemStyle = {
-      backgroundColor: 'pink',
-    };
-    return _.map(this.state.layouts.lg, function (l, i) {
-      return (
-        <div key={i} style={gridItemStyle} className={l.static ? 'static' : ''}>
-          {l.static ?
-            <span className="text" title="This item is static and cannot be removed or resized.">Static - {i}</span>
-            : <span className="text">{i} Test</span>
-          }
-        </div>);
-    });
   }
 
   onBreakpointChange = (breakpoint) => {
@@ -65,27 +48,22 @@ class GridLayout extends React.Component {
     this.props.onLayoutChange(layout, layouts);
   };
 
-  onNewLayout = () => {
-    this.setState({
-      layouts: {lg: generateLayout()}
-    });
-  };
-
   render() {
     return (
-      <div>
-        <ResponsiveReactGridLayout
-          {...this.props}
-          layouts={this.state.layouts}
-          onBreakpointChange={this.onBreakpointChange}
-          onLayoutChange={this.onLayoutChange}
-          measureBeforeMount={false}
-          useCSSTransforms={this.state.mounted}>
-          {this.generateDOM()}
-        </ResponsiveReactGridLayout>
-      </div>
+      <ResponsiveReactGridLayout
+        {...this.props}
+        layouts={this.props.layouts}
+        onBreakpointChange={this.onBreakpointChange}
+        onLayoutChange={this.onLayoutChange}
+        useCSSTransforms={this.state.mounted}>
+        {this.props.children}
+      </ResponsiveReactGridLayout>
     );
   }
 }
+
+GridLayout.propTypes = {
+  children: React.PropTypes.node,
+};
 
 export default GridLayout;
