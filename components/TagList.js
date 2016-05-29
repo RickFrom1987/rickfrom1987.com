@@ -25,6 +25,7 @@ class TagList extends React.Component {
     };
     const tagStyle = {
       display: 'inline-block',
+      marginBottom: 6,
       marginRight: 6,
       padding: 6,
       cursor: 'pointer',
