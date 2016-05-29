@@ -95,7 +95,7 @@
     "clean": "node tools/clean",
     "build": "node tools/build --release",
     "build:debug": "node tools/build",
-    "deploy": "node tools/deploy.gh --release",
+    "deploy": "node tools/deploy.s3.js --release",
     "start": "node tools/start"
   }
 }
