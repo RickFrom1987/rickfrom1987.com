@@ -4,16 +4,9 @@ import about from './about';
 import projects from './projects';
 import error from './error';
 
-const routes = {
-
-  path: '/',
-
-  children: [
-    home,
-    projects,
-    error,
-  ],
-
-};
+const routes = [
+  home,
+  projects,
+];
 
 export default routes;
