@@ -14,7 +14,9 @@ class Navigation extends React.Component {
     }
     return (
       <nav style={navStyle}>
-        <Link to="/projects" style={linkStyle}>Projects</Link>
+        <Link to="/projects" style={linkStyle}>
+          <i className="fa fa-desktop"></i>
+        </Link>
       </nav>
     );
   }

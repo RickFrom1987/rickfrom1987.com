@@ -3,23 +3,21 @@ import View from 'react-flexbox';
 import ReactDOM from 'react-dom';
 import GridLayout from './GridLayout';
 
+import BrowserMock from '../BrowserMock';
+import TagList from '../TagList';
+
 class ProjectGridLayout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      layouts: this.renderLayouts()
+      layouts:{ 
+        lg: this.renderLargeLayout(),
+        md: this.renderMediumLayout(),
+        sm: this.renderSmallLayout(),
+        xs: this.renderSmallLayout(),
+        xxs: this.renderSmallLayout()
+      }
     };
-  }
-
-  renderLayouts = () => {
-    const layouts = {
-      lg: this.renderLargeLayout(),
-      md: this.renderMediumLayout(),
-      sm: this.renderSmallLayout(),
-      xs: this.renderSmallLayout(),
-      xxs: this.renderSmallLayout()
-    };
-    return layouts;
   }
 
   renderLargeLayout = () => {
@@ -71,29 +69,36 @@ class ProjectGridLayout extends React.Component {
   renderItems() {
     const projects = this.props.projects;
     const work = projects.work || null;
-    const gridItemStyle = {
-      backgroundColor: 'pink',
-      padding: 12
+    const itemStyle = {
+      color: 'white',
     };
-    const previewStyle = {
-      backgroundColor: 'green',
-      height: '60%'
+    const itemHeaderStyle = {
+      flex: 0,
+      justifyContent: 'center',
     };
-    const detailsStyle = {
-      height: '40%',
-    };
-    console.log('Work', work);
+    // const details = (
+    //   <View column>
+    //     { 
+    //       item.highlights.map((h, i) => {
+    //         return (
+    //           <p style={{ marginBottom: 6 }} key={i}>
+    //             <i className="fa fa-chevron-right" style={{ marginRight: 6 }}></i>{h}
+    //           </p>
+    //         )
+    //       })
+    //     }
+    //   </View>
+    // );
     return work.map((item, i) => {
       return (
-        <View column key={i} style={gridItemStyle}>
-          <View style={previewStyle}>
-            {item.thumbnail}
-          </View>
-          <View style={detailsStyle}>
-            {item.company}
-            {item.position}
-            {item.website}
-          </View>
+        <View column key={i} style={itemStyle}>
+          <BrowserMock>
+            <View column style={itemHeaderStyle}>
+              <h2>{item.company}</h2>
+              <h3>{item.position}</h3>
+              <TagList tags={item.tags}/>
+            </View>
+          </BrowserMock>
         </View>
       );
     });
@@ -104,8 +109,7 @@ class ProjectGridLayout extends React.Component {
     return (
       <GridLayout
         { ...props }
-        layouts={this.state.layouts}
-        onLayoutChange={this.onLayoutChange}>
+        layouts={this.state.layouts}>
         {this.renderItems()}
       </GridLayout>
     );

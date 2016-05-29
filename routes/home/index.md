@@ -1,4 +1,6 @@
 # Hello!
 
-I am RickFrom1987. I do stuff.
+I am RickFrom1987.
+I write code.
+I make nice looking things.
 

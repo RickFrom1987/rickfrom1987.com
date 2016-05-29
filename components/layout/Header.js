@@ -21,7 +21,7 @@ class Header extends React.Component {
       width: '100%',
       height: App.HEADER_HEIGHT,
       color: Colors.WHITE,
-      backgroundColor: 'rgba(0,0,0, 0.25)',
+      backgroundColor: 'rgba(0,0,0, 0.5)',
       padding: '0 24px',
     };
     return (

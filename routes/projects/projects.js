@@ -26,79 +26,86 @@ export default {
   },
   "work": [
   {
-    "company": "Datablade (TechStars 2015)",
-    "position": "Contract Frontend Engineer / RickFrom1987",
+    "company": "datablade.io",
+    "thumbnail": "/datablade.jpg",
+    "position": "RickFrom1987",
     "website": "http://datablade.io",
-    "summary": "Helped out an amazing TechStars team with getting out an MVP",
+    "tags": ["alt.js", "react", "coreOS", "aws"],
     "highlights": [
-      "Experienced going through TechStars program",
+      "TechStars 2015",
       "Iterate very quickly in a fast paced environment",
-      "Build and deploy fixes and features quickly for client requests",
       "Used alt.js and React to build components"
     ]
   }, {
-    "company": "Brandly (2015)",
-    "position": "Contract Frontend Engineer / RickFrom1987",
+    "company": "brandly.com",
+    "thumbnail": "/brandly.jpg",
+    "position": "RickFrom1987",
     "website": "http://brandly.com",
-    "summary": "Brandly needed some help getting their app ready for alpha and needed a UI love",
+    "tags": ["angular", "jQuery", "django"],
     "highlights": [
       "Facelift an existing angularJS app",
-      "Refactored older SCSS and HTML templates into smaller more manageable and testable chunks",
+      "Refactored older SCSS",
       "Unit tests in Jasmine",
-      "Learned legacy code and made small defensive changes to make progress, but also not break anything"
+      "django templates",
+      "Small defensive changes to make progress"
     ]
   },  {
-    "company": "Energysaavy (2015)",
-    "position": "Contract Frontend Engineer / RickFrom1987",
+    "company": "energysaavy.com",
+    "thumbnail": "/energysaavy.jpg",
+    "position": "RickFrom1987",
     "website": "https://energysavvy.com",
-    "summary": "Developed UI prototypes with React",
+    "tags": ["react", "aws"],
     "highlights": [
-      "First real world React.js experience",
-      "Learned about React flow and flux pattern, the hard way",
-      "Wrapped complex financial and solar calculations around unit tests",
-      "http://energysavvy.s3-website-us-east-1.amazonaws.com/react-solar-calculator/dist/index.html"
+      "First react app",
+      "mocha + sinon",
+      "Financial calculations test coverage",
+      "Solar calculations test coverage"
     ]
   }, {
-    "company": "Buuteeq (2015 - 2016)",
-    "position": "Contract Frontend Engineer / RickFrom1987",
+    "company": "booking.com",
+    "position": "RickFrom1987",
     "website": "http://suite.booking.com",
-    "summary": "Lead Developer for JS customization system.",
+    "tags": ["javascript", "Google App Engine", "gulp"],
     "highlights": [
-      "Developed custom javascript system to play nicely with internal CMS",
-      "Setup development environment, version control and infrastructure",
-      "Got to work with node.js, CoffeeScript, Gulp and Google App Engine"
+      "Architected js management system",
+      "Deployment system for js across thousands of sites",
+      "Worked with legacy CMS",
     ]
   }, {
-    "company": "Moment Lens (2015 - 2016)",
-    "position": "Contract Web Developer / RickFrom1987",
+    "company": "momentlens.co",
+    "position": "RickFrom1987",
     "website": "https://momentlens.co",
-    "summary": "Managed all Moment Lens web products, including website, e-commerce store and infrastructure.",
+    "tags": ["javascript", "python", "wordpress"],
     "highlights": [
-      "Setup version control for web properties for client",
-      "Setup monitoring and helped with project management",
-      "Python scripts to help with accounting and reporting",
+      "Version control for web properties",
+      "Monitoring and project management",
+      "Python scripts for order processing",
       "Wordpress theme/plugin management and development",
       "Helped launch Moment Case",
-      "https://www.kickstarter.com/projects/584288471/moment-case-worlds-best-iphone-case-for-mobile-pho"
     ]
   }, {
-    "company": "Haiku Deck (2013 - 2015)",
+    "company": "haikudeck.com",
     "position": "Front End Engineer",
     "website": "https://haikudeck.com",
-    "summary": "First front end engineer at an early stage startup",
+    "tags": ["node.js", "knockout.js", "backbone"],
     "highlights": [
-      "Started gaining experience with writing more modular code with unit tests with Mocha",
-      "Website and webapp development with node.js, knockout.js, jQuery"
+      "First startup job!",
+      "Website and webapp development",
+      "Knockout.js and Backbone frontend",
+      "Worked with Parse",
+      "Unit tests with Jasmine",
+      "Lots of learning",
     ]
   }, {
-    "company": "Yahoo! (2010 - 2012)",
+    "company": "Yahoo!",
     "position": "Front End Engineer",
     "website": "https://yahoo.com",
-    "summary": "First software gig!",
+    "tags": ["javascript", "php", "YUI"],
     "highlights": [
-      "Worked on bugs and code that was deployed to millions of users",
-      "Contributed to internal node projects when node.js was at 0.1",
-      "Worked with YUI3 and YUI Grids"
+      "First engineering job!",
+      "Yahoo! Local",
+      "Fixed bugs",
+      "Feature development",
     ]
   }],
   "education": [{

@@ -10,12 +10,12 @@ class Layout extends React.Component {
   }
   render() {
     const {style, ...props} = this.props;
-    const baseStyle = {
-      height: '100%',
-      backgroundColor: Colors.BLUE,
-      backgroundImage: Colors.GRADIENT_BG,
-    };
-    const layoutStyle = Object.assign({}, baseStyle, style);
+    let layoutStyle;
+    if (this.props.hasHeader) {
+      layoutStyle = {
+        paddingTop: 48,
+      }
+    }
     return (
       <div style={layoutStyle}>
         <Header />

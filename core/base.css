@@ -14,10 +14,17 @@ html {
 
 html,
 body {
-  font-family: 'Montserrat', sans-serif;
   position: relative;
   height: 100%;
   width: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-attachment: fixed;
+  background-image: linear-gradient(-150deg, rgb(0, 193, 182) 0%, rgb(19, 110, 181) 97%);
+  background-color: rgb(41, 134, 190);
+  overflow-y: scroll;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,12 +35,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 p {
   font-family: 'Noto Serif', serif;
-  margin: 12px;
+  font-size: 12px;
+  margin: 0;
   padding: 0;
   text-shadow: 0px 0px 1px #7FDBFF;
 }
@@ -44,7 +60,7 @@ a {
   transition: all .4s;
   color: #3aa3e3;
   font-size: 1rem;
-  text-shadow: 0px 0px 12px #7FDBFF;
+  text-shadow: 0px 0px 4px #7FDBFF;
 }
 
 a:link, a:visited { color: #7FDBFF; }
