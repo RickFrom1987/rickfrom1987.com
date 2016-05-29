@@ -10,7 +10,6 @@ const routes = {
 
   children: [
     home,
-    about,
     projects,
     error,
   ],

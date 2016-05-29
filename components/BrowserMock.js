@@ -1,8 +1,6 @@
 import React from 'react';
 import View from 'react-flexbox';
 
-import * as Colors from './constants/Colors';
-
 const PADDING = 12;
 
 class BrowserMock extends React.Component {
@@ -12,18 +10,18 @@ class BrowserMock extends React.Component {
       hover: false,
     };
   }
-  _onMouseOver = () => {
+  onMouseOver = () => {
     this.setState({
       hover: true,
     });
   }
-  _onMouseLeave = () => {
+  onMouseLeave = () => {
     this.setState({
       hover: false,
     });
   }
   render() {
-    const { style, ...props } = this.props;
+    const { ...props } = this.props;
     const browserMockStyle = {
       cursor: 'pointer',
       alignItems: 'center',
@@ -61,11 +59,12 @@ class BrowserMock extends React.Component {
       browserMockStyle.backgroundColor = 'rgba(0,0,0,0.25)';
     }
     return (
-      <View {...props} 
+      <View 
+        {...props}
         column
         style={browserMockStyle}
-        onMouseOver={this._onMouseOver}
-        onMouseLeave={this._onMouseLeave}>
+        onMouseOver={this.onMouseOver}
+        onMouseLeave={this.onMouseLeave}>
         <div style={browserDotsStyle}></div>
         <View column style={browserBodyStyle}>
           {this.props.children}
