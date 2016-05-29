@@ -3,6 +3,8 @@ import View from 'react-flexbox';
 
 import * as Colors from './constants/Colors';
 
+const PADDING = 12;
+
 class BrowserMock extends React.Component {
   constructor(props) {
     super(props);
@@ -31,7 +33,7 @@ class BrowserMock extends React.Component {
       boxShadow: '0 0.1em 1em 0 rgba(0, 0, 0, 0.4)',
       position: 'relative',
       borderRadius: '3px 3px 0 0',
-      padding: 12,
+      padding: PADDING,
       transition: 'all 0.4s ease-out',
     };
     const browserDotsStyle = {
@@ -48,10 +50,12 @@ class BrowserMock extends React.Component {
     };
     const browserBodyStyle = {
       height: '100%',
+      minWidth: 200,
       overflowY: 'hidden',
       justifyContent: 'center',
+      alignSelf: 'center',
       alignItems: 'flex-start',
-      minWidth: 200,
+      padding: PADDING,
     };
     if (this.state.hover) {
       browserMockStyle.backgroundColor = 'rgba(0,0,0,0.25)';

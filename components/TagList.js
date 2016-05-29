@@ -44,9 +44,9 @@ class TagList extends React.Component {
       });
     }
     return (
-      <View {...props} row style={tagListStyle}>
+      <div {...props} row style={tagListStyle}>
         {tagListHtml}
-      </View>
+      </div>
     );
   }
 }

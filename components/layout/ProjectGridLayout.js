@@ -53,6 +53,8 @@ class ProjectGridLayout extends React.Component {
     return work.map((item, i) => {
       const y = Math.ceil(Math.random() * 4) + 6;
       return {
+        isDraggable: false,
+        isResizable: false,
         x: i * 2 % 6,
         y: Math.floor(i / 6) * y,
         w: 2,
@@ -72,10 +74,6 @@ class ProjectGridLayout extends React.Component {
     const itemStyle = {
       color: 'white',
     };
-    const itemHeaderStyle = {
-      flex: 0,
-      justifyContent: 'center',
-    };
     // const details = (
     //   <View column>
     //     { 
@@ -93,11 +91,9 @@ class ProjectGridLayout extends React.Component {
       return (
         <View column key={i} style={itemStyle}>
           <BrowserMock>
-            <View column style={itemHeaderStyle}>
-              <h2>{item.company}</h2>
-              <h3>{item.position}</h3>
-              <TagList tags={item.tags}/>
-            </View>
+            <h2>{item.company}</h2>
+            <h3>{item.position}</h3>
+            <TagList tags={item.tags}/>
           </BrowserMock>
         </View>
       );
