@@ -1,5 +1,6 @@
 import React from 'react';
 import View from 'react-flexbox';
+
 import ReactDOM from 'react-dom';
 import GridLayout from './GridLayout';
 
@@ -74,19 +75,6 @@ class ProjectGridLayout extends React.Component {
     const itemStyle = {
       color: 'white',
     };
-    // const details = (
-    //   <View column>
-    //     { 
-    //       item.highlights.map((h, i) => {
-    //         return (
-    //           <p style={{ marginBottom: 6 }} key={i}>
-    //             <i className="fa fa-chevron-right" style={{ marginRight: 6 }}></i>{h}
-    //           </p>
-    //         )
-    //       })
-    //     }
-    //   </View>
-    // );
     return work.map((item, i) => {
       return (
         <View column key={i} style={itemStyle}>

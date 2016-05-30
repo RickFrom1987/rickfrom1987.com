@@ -27,6 +27,7 @@ export default {
   "work": [
   {
     "company": "datablade.io",
+    "name": "datablade",
     "thumbnail": "/datablade.jpg",
     "position": "RickFrom1987",
     "website": "http://datablade.io",

@@ -1,12 +1,11 @@
 import React from 'react';
-import Layout from '../layout/Layout.js';
+import ArticleLayout from '../layout/ArticleLayout.js';
 
 function Content({ title, html }) {
   return (
-    <Layout>
-      <h1>{title}</h1>
+    <ArticleLayout title={title}>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-    </Layout>
+    </ArticleLayout>
   );
 }
 
