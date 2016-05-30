@@ -8,10 +8,17 @@ const routes = [
   home,
   projects,
   { 
-    path: '/0/*', 
+    path: '*', 
     action({ history }) {
       return new Promise((resolve, reject) => {
-        window.location = window.location.href.replace('/0','');
+        const pathname = window.location.pathname;
+        const isRedirect = (pathname.indexOf('/0/') === 0);
+        if (!isRedirect) {
+          return history.push('/');
+        } else {
+          const redirectPath = pathname.replace('0/', '');
+          return history.push(redirectPath);
+        }
       });
     } 
   }
