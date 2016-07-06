@@ -1,4 +1,3 @@
-import './base.css';
 import 'babel-polyfill';
 import 'whatwg-fetch';
 import { createApp } from 'react-app';

@@ -38,7 +38,7 @@ class ArticleLayout extends React.Component {
       <View column style={articleLayoutStyle}>
         <Header />
         <View row style={headerStyle}>
-          { this.props.title }
+          <h1>{ this.props.title }</h1>
         </View>
         <View row style={bodyStyle}>
           <div style={contentStyle}>
