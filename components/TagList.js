@@ -17,6 +17,7 @@ class TagList extends React.Component {
   render() {
     const { style, tags, ...props } = this.props;
     const tagListStyle = {
+      fontFamily: 'Montserrat',
       fontSize: 12,
       width: '100%',
       justifyContent: 'flex-start',

@@ -1,4 +1,3 @@
-
 import { Content } from '../../components';
 
 export default {
@@ -12,6 +11,7 @@ export default {
           const content = require('./index.md');
           resolve({
             title: content.title,
+            subtitle: content.subtitle,
             component: Content,
             props: content,
           });

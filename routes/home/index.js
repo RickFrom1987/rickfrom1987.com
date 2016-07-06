@@ -12,11 +12,11 @@ function HomePage({ html }) {
   return (
     <CenterLayout style={{ color: Colors.WHITE }}>
       <div column dangerouslySetInnerHTML={{ __html: html }}/>
-      <p style={{ padding: 12 }}>
+      <div>
         <a href="//www.facebook.com/rickfrom1987" style={linkStyle}><i className="fa fa-facebook"></i></a>
         <a href="//www.linkedin.com/in/rickfrom1987" style={linkStyle}><i className="fa fa-linkedin"></i></a>
         <a href="//github.com/rickfrom1987" style={linkStyle}><i className="fa fa-github"></i></a>
-      </p>
+      </div>
     </CenterLayout>
   );
 }

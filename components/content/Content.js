@@ -1,9 +1,12 @@
 import React from 'react';
 import ArticleLayout from '../layout/ArticleLayout.js';
 
-function Content({ title, html }) {
+function Content({ title, subtitle, url, html }) {
   return (
-    <ArticleLayout title={title}>
+    <ArticleLayout 
+      title={title}
+      subtitle={subtitle}
+      url={url}>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </ArticleLayout>
   );
@@ -11,6 +14,8 @@ function Content({ title, html }) {
 
 Content.propTypes = {
   title: React.PropTypes.string.isRequired,
+  subtitle: React.PropTypes.string,
+  url: React.PropTypes.string,
   html: React.PropTypes.string.isRequired,
 };
 

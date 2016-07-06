@@ -9,9 +9,8 @@ class ArticleLayout extends React.Component {
     this.state = {};
   }
   render() {
-    const { style, ...props } = this.props;
+    const { title, subtitle, url, style, ...props } = this.props;
     const baseStyle = {
-      border: '1px solid pink',
       height: '100%',
     };
     const headerStyle = {
@@ -37,8 +36,9 @@ class ArticleLayout extends React.Component {
     return (
       <View column style={articleLayoutStyle}>
         <Header />
-        <View row style={headerStyle}>
-          <h1>{ this.props.title }</h1>
+        <View column style={headerStyle}>
+          <h1>{ title }</h1>
+          <h2><a href={url}>{url}</a> / { subtitle } </h2>
         </View>
         <View row style={bodyStyle}>
           <div style={contentStyle}>
@@ -53,6 +53,8 @@ class ArticleLayout extends React.Component {
 ArticleLayout.propTypes = {
   style: React.PropTypes.object,
   title: React.PropTypes.node,
+  subtitle: React.PropTypes.node,
+  url: React.PropTypes.node,
 };
 
 export default ArticleLayout;

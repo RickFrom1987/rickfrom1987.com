@@ -11,6 +11,7 @@ class Header extends React.Component {
       color: Colors.WHITE,
     };
     const headerStyle = {
+      fontFamily: 'Montserrat',
       textTransform: 'uppercase',
       justifyContent: 'space-between',
       alignItems: 'center',
