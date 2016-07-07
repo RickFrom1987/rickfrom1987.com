@@ -14,7 +14,7 @@ function Content({ title, subtitle, url, html }) {
 
 Content.propTypes = {
   title: React.PropTypes.string.isRequired,
-  subtitle: React.PropTypes.string,
+  subtitle: React.PropTypes.any,
   url: React.PropTypes.string,
   html: React.PropTypes.string.isRequired,
 };

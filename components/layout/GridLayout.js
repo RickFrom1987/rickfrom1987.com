@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import {Responsive, WidthProvider} from 'react-grid-layout';
+import { Responsive, WidthProvider } from 'react-grid-layout';
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
 
 class GridLayout extends React.Component {
@@ -12,6 +12,7 @@ class GridLayout extends React.Component {
 
   static defaultProps = {
     className: 'layout',
+    isDraggable: false,
     rowHeight: 30,
     cols: {lg: 12, md: 10, sm: 6, xs: 4, xxs: 2},
   };
