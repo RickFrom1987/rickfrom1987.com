@@ -2,7 +2,7 @@ import { Content } from '../../components';
 
 export default {
 
-  path: '/datablade',
+  path: '/haikudeck',
 
   async action() {
     return new Promise((resolve, reject) => {

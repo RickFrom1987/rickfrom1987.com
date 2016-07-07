@@ -1,17 +1,30 @@
 import home from './home';
 import about from './about';
 import projects from './projects';
-import datablade from './datablade';
-import brandly from './brandly';
-import ms from './motion-social';
 import error from './error';
+
+import booking from './booking';
+import brandly from './brandly';
+import datablade from './datablade';
+import energysaavy from './energysaavy';
+import haikudeck from './haikudeck';
+import momentlens from './momentlens';
+import ms from './motion-social';
+import yahoo from './yahoo';
 
 const routes = [
   home,
+  about,
   projects,
-  datablade,
+  error,
+  booking,
   brandly,
+  datablade,
+  energysaavy,
+  haikudeck,
+  momentlens,
   ms,
+  yahoo,
 ];
 
 export default routes;

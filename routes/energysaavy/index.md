@@ -1,13 +1,11 @@
 ---
-title: Brandly.com
+title: EnergySaavy
 subtitle: 2015
-url: brandly.com
+url: energysaavy.com
 ---
 
-Brandly is a small startup in Seattle that wants to make ordering business cards easier. They needed some frontend love to bring an existing app up to date. I was brought in to help give the angular app a facelift and make the user experience better. I enjoyed working with Doug, Reed, Saaj and Tony. The team was passionate about what they were doing and it really make a huge difference when you go in everyday.
+The engineers at EnergySaavy are really good. Thats it for this paragraph.
 
-In this job the first challenge I faced was making small unbreaking chagnings to a complex frontend. The orignal author had since moved on and there was not much documentation or solid patterns to follow. I wanted to show the business progress, by making a ton of changes quickly, but I had to control myself and mensure the app still worked as expected with small controlled changes and testing before moving on.
+I spent some time working on some prototypes in React most notably a [Solar Calculator](http://energysavvy.s3-website-us-east-1.amazonaws.com/react-solar-calculator/dist/index.html). The goal solar alculator was to help my clients users to calculate thier energy and financial savings when using electric. The most difficult part of this project was working with thier math guys and wrapping some unit tests around complex financial and energy calculations. This was quite painful, but we got through it. This was my first React project so there was some not so polished code and wtf is this, but it was great learning experience and I am much more fluent and comfortable doing things the React way now. Working with Kalpana, Gabe and Graham was awesome, all around great company and smart guys and girls!
 
-There was alsoa requirement to build a loading screen in pure js with out any deps, so I did that for them. You can see a standalone version [here](http://brandly-loader.s3-website-us-east-1.amazonaws.com/).
-
-At the end I was sad to go, but they are on the path forward and I hope to work with the boys again.
+Another story of sad to leave, hopefully we will cross paths again in the future!

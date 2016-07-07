@@ -1,8 +1,11 @@
 ---
-title: Datablade.io
+title: Moment Lens
 subtitle: 2015
-url: datablade.io
+url: momentlens.co
 ---
+
+Moment Lens 
+
 
 Datablade is a small startup trying to make data anlayst lives easier. The platform allows data scientists to access, analyze and automate thier data processing. I was brought onboard to help with the web app and design some of the look and feel of some of thier components. The team was technically very deep and lead by my very talented and good friend Allen, an excellent programmer who has been there for me and encouraged me throught out my painful learning process. I didn't want to let him down.
 

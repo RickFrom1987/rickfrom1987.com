@@ -2,7 +2,7 @@ import { Content } from '../../components';
 
 export default {
 
-  path: '/datablade',
+  path: '/yahoo',
 
   async action() {
     return new Promise((resolve, reject) => {

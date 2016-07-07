@@ -2,7 +2,7 @@ import { Content } from '../../components';
 
 export default {
 
-  path: '/brandly',
+  path: '/energysaavy',
 
   async action() {
     return new Promise((resolve, reject) => {
