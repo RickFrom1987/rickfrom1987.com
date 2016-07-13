@@ -31,6 +31,7 @@ export default {
     "thumbnail": "/datablade.jpg",
     "position": "RickFrom1987",
     "website": "http://datablade.io",
+    "url": "/datablade",
     "tags": ["alt.js", "react", "coreOS", "aws"],
     "highlights": [
       "TechStars 2015",
@@ -42,6 +43,7 @@ export default {
     "thumbnail": "/brandly.jpg",
     "position": "RickFrom1987",
     "website": "http://brandly.com",
+    "url": "/brandly",
     "tags": ["angular", "jQuery", "django"],
     "highlights": [
       "Facelift an existing angularJS app",
@@ -51,10 +53,11 @@ export default {
       "Small defensive changes to make progress"
     ]
   },  {
-    "company": "energysaavy.com",
-    "thumbnail": "/energysaavy.jpg",
+    "company": "energysavvy.com",
+    "thumbnail": "/energysavvy.jpg",
     "position": "RickFrom1987",
     "website": "https://energysavvy.com",
+    "url": "/energysavvy",
     "tags": ["react", "aws"],
     "highlights": [
       "First react app",
@@ -66,6 +69,7 @@ export default {
     "company": "booking.com",
     "position": "RickFrom1987",
     "website": "http://suite.booking.com",
+    "url": "/booking",
     "tags": ["javascript", "Google App Engine", "gulp"],
     "highlights": [
       "Architected js management system",
@@ -76,6 +80,7 @@ export default {
     "company": "momentlens.co",
     "position": "RickFrom1987",
     "website": "https://momentlens.co",
+    "url": "/momentlens",
     "tags": ["javascript", "python", "wordpress"],
     "highlights": [
       "Version control for web properties",
@@ -88,6 +93,7 @@ export default {
     "company": "haikudeck.com",
     "position": "Front End Engineer",
     "website": "https://haikudeck.com",
+    "url": "/haikudeck",
     "tags": ["node.js", "knockout.js", "backbone"],
     "highlights": [
       "First startup job!",
@@ -101,6 +107,7 @@ export default {
     "company": "Yahoo!",
     "position": "Front End Engineer",
     "website": "https://yahoo.com",
+    "url": "/yahoo",
     "tags": ["javascript", "php", "YUI"],
     "highlights": [
       "First engineering job!",

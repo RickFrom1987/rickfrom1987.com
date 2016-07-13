@@ -33,13 +33,16 @@ class ArticleLayout extends React.Component {
       minWidth: 320,
       padding: '48px 0',
     };
+    const linkStyle = {
+      fontSize: 24,
+    };
     const articleLayoutStyle = Object.assign({}, baseStyle, style);
     return (
       <View column style={articleLayoutStyle}>
         <Header/>
         <View column style={headerStyle}>
-          <h1>{ title }</h1>
-          <h2><a href={url}>{url}</a> / { subtitle } </h2>
+          <h1><a href={url}>{title}</a></h1>
+          <h2>{subtitle}</h2>
         </View>
         <View row className="article" style={bodyStyle}>
           <div style={contentStyle}>

@@ -75,12 +75,20 @@ class ProjectGridLayout extends React.Component {
     const itemStyle = {
       color: 'white',
     };
+    const linkStyle = {
+      position: 'absolute',
+      top: 0,
+      right: 0,
+      fontSize: 24,
+      margin: 12,
+    };
     return work.map((item, i) => {
       return (
         <View column key={i} style={itemStyle}>
           <BrowserMock>
             <h2>{item.company}</h2>
             <h3>{item.position}</h3>
+            <a style={linkStyle} href={item.url}><span className="fa fa-link"/></a>
             <TagList tags={item.tags}/>
           </BrowserMock>
         </View>

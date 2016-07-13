@@ -6,7 +6,7 @@ import error from './error';
 import booking from './booking';
 import brandly from './brandly';
 import datablade from './datablade';
-import energysaavy from './energysaavy';
+import energysavvy from './energysavvy';
 import haikudeck from './haikudeck';
 import momentlens from './momentlens';
 import ms from './motion-social';
@@ -20,7 +20,7 @@ const routes = [
   booking,
   brandly,
   datablade,
-  energysaavy,
+  energysavvy,
   haikudeck,
   momentlens,
   ms,

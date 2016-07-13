@@ -23,7 +23,6 @@ class BrowserMock extends React.Component {
   render() {
     const { ...props } = this.props;
     const browserMockStyle = {
-      cursor: 'pointer',
       alignItems: 'center',
       justifyContent: 'center',
       height: '100%',
