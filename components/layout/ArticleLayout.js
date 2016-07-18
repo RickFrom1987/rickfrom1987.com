@@ -21,6 +21,7 @@ class ArticleLayout extends React.Component {
       minHeight: 320,
       maxHeight: 580,
       color: Colors.WHITE,
+      fontSize: 16,
     };
     const bodyStyle = {
       alignItems: 'center',
@@ -30,7 +31,7 @@ class ArticleLayout extends React.Component {
     const contentStyle = {
       width: '66%',
       maxWidth: 1024,
-      minWidth: 320,
+      minWidth: 248,
       padding: '48px 0',
     };
     const linkStyle = {
