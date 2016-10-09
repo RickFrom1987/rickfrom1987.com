@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import s from './Layout.css';
 
 import * as Colors from '../Constants/Colors';
 
@@ -10,12 +11,9 @@ class HeaderLayout extends React.Component {
   }
   render() {
     const {style, ...props} = this.props;
-    let layoutStyle;
-    if (this.props.hasHeader) {
-      layoutStyle = {
-        paddingTop: 48,
-      }
-    }
+    const layoutStyle = {
+      paddingTop: 48
+    };
     return (
       <div style={layoutStyle}>
         <Header />

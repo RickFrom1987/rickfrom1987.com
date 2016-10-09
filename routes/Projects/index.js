@@ -14,9 +14,8 @@ class ProjectsPage extends React.Component {
   }
 
   render() {
-    console.log("projhects", projects);
     return (
-      <HeaderLayout hasHeader>
+      <HeaderLayout>
         <ProjectGridLayout projects={projects}/>
       </HeaderLayout>
     );
