@@ -13288,15 +13288,6 @@
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
   var routes = __webpack_require__(227); // Loaded with utils/routes-loader.js
-  /**
-   * React App SDK (https://github.com/kriasoft/react-app)
-   *
-   * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
   var container = document.getElementById('root');
   
   function renderComponent(component) {
@@ -27482,4 +27473,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=main.js.map?2db5a64b0291a46efffb
+//# sourceMappingURL=main.js.map?a46ca0016dde5a515f5c
