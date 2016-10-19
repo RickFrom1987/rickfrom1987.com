@@ -8,11 +8,8 @@ function Navigation() {
   const linkClass = href => `${s.link}${path === href ? ` ${s.active}` : ''}`;
   return (
     <nav className={s.nav}>
-      <Link className={linkClass('/')} to="/">
-        Home
-      </Link>
       <Link className={linkClass('/projects')} to="/projects">
-        Projects
+        <i className="fa fa-desktop"></i>
       </Link>
     </nav>
   );

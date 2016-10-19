@@ -8,6 +8,34 @@
     "component": "./routes/Projects"
   },
   {
+    "path": "/booking",
+    "component": "./routes/Booking"
+  },
+  {
+    "path": "/brandly",
+    "component": "./routes/Brandly"
+  },
+  {
+    "path": "/datablade",
+    "component": "./routes/datablade"
+  },
+  {
+    "path": "/energysavvy",
+    "component": "./routes/energysavvy"
+  },
+  {
+    "path": "/haikudeck",
+    "component": "./routes/haikudeck"
+  },
+  {
+    "path": "/moment",
+    "component": "./routes/moment"
+  },
+  {
+    "path": "/yahoo",
+    "component": "./routes/yahoo"
+  },
+  {
     "path": "/tasks/:status(pending|completed)?",
     "component": "./routes/Home"
   }

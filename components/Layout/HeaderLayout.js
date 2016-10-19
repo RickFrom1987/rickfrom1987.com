@@ -1,4 +1,5 @@
 import React from 'react';
+import View from 'react-flexbox';
 import Header from './Header';
 import s from './Layout.css';
 
@@ -9,22 +10,33 @@ class HeaderLayout extends React.Component {
     super(props);
     this.state = {};
   }
+  static propTypes = {
+    centered: React.PropTypes.bool
+  };
+
   render() {
-    const {style, ...props} = this.props;
+    const { style, centered, ...props } = this.props;
     const layoutStyle = {
       paddingTop: 48
     };
+
+    let centerStyle;
+    if (centered) {
+      centerStyle = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%,-50%)'
+      };
+    }
+
     return (
-      <div style={layoutStyle}>
+      <View column style={layoutStyle}>
         <Header />
-        <main {...this.props}/>
-      </div>
+        <View column {...props} style={centerStyle}/>
+      </View>
     );
   }
 }
-
-HeaderLayout.propTypes = {
-  style: React.PropTypes.object,
-};
 
 export default HeaderLayout;

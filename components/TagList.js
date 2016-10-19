@@ -1,6 +1,4 @@
 import React from 'react';
-import View from 'react-flexbox';
-
 import * as Colors from './Constants/Colors';
 
 class TagList extends React.Component {
@@ -9,6 +7,11 @@ class TagList extends React.Component {
     this.state = {};
   }
   
+  static propTypes = {
+    style: React.PropTypes.object,
+    tags: React.PropTypes.array,
+  }
+
   _randomColor = () => {
     const COLORS = ['#3B1B6'];
     return COLORS[Math.floor(Math.random() * COLORS.length)];
@@ -46,16 +49,11 @@ class TagList extends React.Component {
       });
     }
     return (
-      <div {...props} row style={tagListStyle}>
+      <div {...props} style={tagListStyle}>
         {tagListHtml}
       </div>
     );
   }
 }
-
-TagList.propTypes = {
-  style: React.PropTypes.object,
-  tags: React.PropTypes.array,
-};
 
 export default TagList;

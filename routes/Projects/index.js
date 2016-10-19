@@ -5,7 +5,7 @@ import Link from '../../components/Link';
 import s from './Projects.css';
 import projects from './projects.json';
 
-const title = 'Project Title';
+const title = 'RickFrom1987 - Projects';
 
 class ProjectsPage extends React.Component {
 

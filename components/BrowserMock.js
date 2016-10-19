@@ -1,5 +1,6 @@
 import React from 'react';
 import View from 'react-flexbox';
+import history from '../core/history';
 
 const PADDING = 12;
 
@@ -10,6 +11,13 @@ class BrowserMock extends React.Component {
       hover: false,
     };
   }
+
+  static propTypes = {
+    style: React.PropTypes.object,
+    pathname: React.PropTypes.string,
+    children: React.PropTypes.node
+  };
+
   onMouseOver = () => {
     this.setState({
       hover: true,
@@ -20,8 +28,14 @@ class BrowserMock extends React.Component {
       hover: false,
     });
   }
+  onMouseDown = () => {
+    const pathname = this.props.pathname;
+    history.push({
+      pathname: pathname
+    });
+  }
   render() {
-    const { ...props } = this.props;
+    const { pathname, ...props } = this.props;
     const browserMockStyle = {
       alignItems: 'center',
       justifyContent: 'center',
@@ -56,6 +70,7 @@ class BrowserMock extends React.Component {
     };
     if (this.state.hover) {
       browserMockStyle.backgroundColor = 'rgba(0,0,0,0.25)';
+      browserMockStyle.cursor = 'pointer';
     }
     return (
       <View 
@@ -63,7 +78,8 @@ class BrowserMock extends React.Component {
         column
         style={browserMockStyle}
         onMouseOver={this.onMouseOver}
-        onMouseLeave={this.onMouseLeave}>
+        onMouseLeave={this.onMouseLeave}
+        onMouseDown={this.onMouseDown}>
         <div style={browserDotsStyle}></div>
         <View column style={browserBodyStyle}>
           {this.props.children}
@@ -72,10 +88,5 @@ class BrowserMock extends React.Component {
     );
   }
 }
-
-BrowserMock.propTypes = {
-  style: React.PropTypes.object,
-  children: React.PropTypes.node,
-};
 
 export default BrowserMock;

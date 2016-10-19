@@ -13,6 +13,7 @@
     "react-grid-layout": "^0.13.7",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
+    "s3": "^4.4.0",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
@@ -35,6 +36,7 @@
   "scripts": {
     "lint": "eslint actions components core routes test utils main.js",
     "build": "react-app build",
-    "start": "react-app run"
+    "start": "react-app run",
+    "deploy": "node tools/deploy.s3.js --release"
   }
 }
