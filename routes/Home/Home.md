@@ -1,4 +1,4 @@
 ---
 title: Hello!
-desc: I am RickFrom1987. I do wonderful stuff.
+desc: I make wonderful things.
 ---
