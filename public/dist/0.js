@@ -1435,9 +1435,9 @@ webpackJsonp([0],{
 /***/ 398:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"Hello!","desc":"I am RickFrom1987. I do wonderful stuff.","html":""};
+  module.exports = {"title":"Hello!","desc":"I make wonderful things.","html":""};
 
 /***/ }
 
 });
-//# sourceMappingURL=0.js.map?ebee0e03fa8254b6e639
+//# sourceMappingURL=0.js.map?4b045b23ab5ea99da68a

@@ -2,6 +2,8 @@ import React from 'react';
 import View from 'react-flexbox';
 import history from '../core/history';
 
+import s from './BrowserMock.css';
+
 const PADDING = 12;
 
 class BrowserMock extends React.Component {
@@ -17,7 +19,6 @@ class BrowserMock extends React.Component {
     pathname: React.PropTypes.string,
     children: React.PropTypes.node
   };
-
   onMouseOver = () => {
     this.setState({
       hover: true,
@@ -29,10 +30,12 @@ class BrowserMock extends React.Component {
     });
   }
   onMouseDown = () => {
-    const pathname = this.props.pathname;
-    history.push({
-      pathname: pathname
-    });
+    window.setTimeout(() => {
+      const pathname = this.props.pathname;
+      history.push({
+        pathname: pathname
+      });
+    }, 750);
   }
   render() {
     const { pathname, ...props } = this.props;
@@ -44,7 +47,7 @@ class BrowserMock extends React.Component {
       boxShadow: '0 0.1em 1em 0 rgba(0, 0, 0, 0.4)',
       position: 'relative',
       borderRadius: '3px 3px 0 0',
-      padding: PADDING,
+  
       transition: 'all 0.4s ease-out',
     };
     const browserDotsStyle = {
@@ -65,8 +68,9 @@ class BrowserMock extends React.Component {
       overflowY: 'hidden',
       justifyContent: 'center',
       alignSelf: 'center',
-      alignItems: 'flex-start',
-      padding: PADDING,
+      alignItems: 'center',
+      textAlign: 'center',
+      width: '100%',
     };
     if (this.state.hover) {
       browserMockStyle.backgroundColor = 'rgba(0,0,0,0.25)';
@@ -80,9 +84,9 @@ class BrowserMock extends React.Component {
         onMouseOver={this.onMouseOver}
         onMouseLeave={this.onMouseLeave}
         onMouseDown={this.onMouseDown}
-        onTouchStart={this.onMouseDown}>
+        onTouchEnd={this.onMouseDown}>
         <div style={browserDotsStyle}></div>
-        <View column style={browserBodyStyle}>
+        <View column style={browserBodyStyle} className={s.ripple}>
           {this.props.children}
         </View>
       </View>
