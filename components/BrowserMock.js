@@ -84,7 +84,7 @@ class BrowserMock extends React.Component {
         onMouseOver={this.onMouseOver}
         onMouseLeave={this.onMouseLeave}
         onMouseDown={this.onMouseDown}
-        onTouchEnd={this.onMouseDown}>
+        onClick={this.onMouseDown}>
         <div style={browserDotsStyle}></div>
         <View column style={browserBodyStyle} className={s.ripple}>
           {this.props.children}
