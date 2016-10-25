@@ -6050,7 +6050,7 @@ webpackJsonp([2],{
             onMouseOver: this.onMouseOver,
             onMouseLeave: this.onMouseLeave,
             onMouseDown: this.onMouseDown,
-            onTouchEnd: this.onMouseDown }),
+            onClick: this.onMouseDown }),
           _react2.default.createElement('div', { style: browserDotsStyle }),
           _react2.default.createElement(
             _reactFlexbox2.default,
@@ -24672,4 +24672,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?b3522643706d778fc62d
+//# sourceMappingURL=2.js.map?8d1fb5643ca78923072f
