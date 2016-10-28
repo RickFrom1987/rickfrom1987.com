@@ -6048,7 +6048,9 @@ webpackJsonp([2],{
             column: true,
             style: browserMockStyle,
             onMouseOver: this.onMouseOver,
-            onMouseLeave: this.onMouseLeave }),
+            onMouseLeave: this.onMouseLeave,
+            onMouseDown: this.onMouseDown,
+            onClick: this.onMouseDown }),
           _react2.default.createElement('div', { style: browserDotsStyle }),
           _react2.default.createElement(
             _reactFlexbox2.default,
@@ -24670,4 +24672,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?55baaa793411ef3e7103
+//# sourceMappingURL=2.js.map?f065d053ee661b0b35d0
