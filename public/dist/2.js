@@ -5984,12 +5984,12 @@ webpackJsonp([2],{
       };
   
       _this.onMouseDown = function () {
-        window.setTimeout(function () {
-          var pathname = _this.props.pathname;
-          _history2.default.push({
-            pathname: pathname
-          });
-        }, 750);
+        // window.setTimeout(() => {
+        //   const pathname = this.props.pathname;
+        //   history.push({
+        //     pathname: pathname
+        //   });
+        // }, 0);
       };
   
       _this.state = {
@@ -6495,7 +6495,7 @@ webpackJsonp([2],{
   
   
   // module
-  exports.push([module.id, ".BrowserMock_ripple_1Kt {\n  position: relative;\n  overflow: hidden;\n}\n.BrowserMock_ripple_1Kt:after {\n  content: \"\";\n  background: rgba(255, 255, 255, 0.3);\n  display: block;\n  position: absolute;\n  border-radius: 50%;\n  padding-top: 200%;\n  padding-left: 200%;\n  margin-top: -100%;\n  margin-left: -100%;\n  opacity: 0;\n  -webkit-transition: all 1.5s;\n  transition: all 1.5s\n}\n.BrowserMock_ripple_1Kt:active:after {\n  padding-top: 0;\n  padding-left: 0;\n  margin-top: 0;\n  margin-left: 0;\n  opacity: 1;\n  -webkit-transition: 0s;\n  transition: 0s\n}", "", {"version":3,"sources":["/./components/BrowserMock.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,iBAAiB;CAClB;AACD;EACE,YAAY;EACZ,qCAAqC;EACrC,eAAe;EACf,mBAAmB;EACnB,mBAAmB;EACnB,kBAAkB;EAClB,mBAAmB;EACnB,kBAAkB;EAClB,mBAAmB;EACnB,WAAW;EACX,6BAAoB;EAApB,oBAAoB;CACrB;AACD;EACE,eAAe;EACf,gBAAgB;EAChB,cAAc;EACd,eAAe;EACf,WAAW;EACX,uBAAc;EAAd,cAAc;CACf","file":"BrowserMock.css","sourcesContent":[".ripple {\n  position: relative;\n  overflow: hidden;\n}\n.ripple:after {\n  content: \"\";\n  background: rgba(255, 255, 255, 0.3);\n  display: block;\n  position: absolute;\n  border-radius: 50%;\n  padding-top: 200%;\n  padding-left: 200%;\n  margin-top: -100%;\n  margin-left: -100%;\n  opacity: 0;\n  transition: all 1.5s\n}\n.ripple:active:after {\n  padding-top: 0;\n  padding-left: 0;\n  margin-top: 0;\n  margin-left: 0;\n  opacity: 1;\n  transition: 0s\n}"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".BrowserMock_ripple_1Kt {\n  position: relative;\n  overflow: hidden;\n}\n.BrowserMock_ripple_1Kt:after {\n  content: \"\";\n  background: rgba(255, 255, 255, 0.3);\n  display: block;\n  position: absolute;\n  top: -50%;\n  left: -50%;\n  border-radius: 50%;\n  padding-top: 200%;\n  padding-left: 200%;\n  opacity: 0;\n  -webkit-transition: all 1.5s;\n  transition: all 1.5s\n}\n.BrowserMock_ripple_1Kt:active:after {\n  padding-top: 0;\n  padding-left: 0;\n  opacity: 1;\n  -webkit-transition: 0s;\n  transition: 0s\n}", "", {"version":3,"sources":["/./components/BrowserMock.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,iBAAiB;CAClB;AACD;EACE,YAAY;EACZ,qCAAqC;EACrC,eAAe;EACf,mBAAmB;EACnB,UAAU;EACV,WAAW;EACX,mBAAmB;EACnB,kBAAkB;EAClB,mBAAmB;EACnB,WAAW;EACX,6BAAoB;EAApB,oBAAoB;CACrB;AACD;EACE,eAAe;EACf,gBAAgB;EAChB,WAAW;EACX,uBAAc;EAAd,cAAc;CACf","file":"BrowserMock.css","sourcesContent":[".ripple {\n  position: relative;\n  overflow: hidden;\n}\n.ripple:after {\n  content: \"\";\n  background: rgba(255, 255, 255, 0.3);\n  display: block;\n  position: absolute;\n  top: -50%;\n  left: -50%;\n  border-radius: 50%;\n  padding-top: 200%;\n  padding-left: 200%;\n  opacity: 0;\n  transition: all 1.5s\n}\n.ripple:active:after {\n  padding-top: 0;\n  padding-left: 0;\n  opacity: 1;\n  transition: 0s\n}"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -24672,4 +24672,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?f065d053ee661b0b35d0
+//# sourceMappingURL=2.js.map?3d445f3be863f2ffd881

@@ -30,12 +30,12 @@ class BrowserMock extends React.Component {
     });
   }
   onMouseDown = () => {
-    // window.setTimeout(() => {
-    //   const pathname = this.props.pathname;
-    //   history.push({
-    //     pathname: pathname
-    //   });
-    // }, 0);
+    window.setTimeout(() => {
+      const pathname = this.props.pathname;
+      history.push({
+        pathname: pathname
+      });
+    }, 100);
   }
   render() {
     const { pathname, ...props } = this.props;
