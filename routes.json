@@ -4,6 +4,10 @@
     "component": "./routes/Home"
   },
   {
+    "path": "/contact",
+    "component": "./routes/Contact"
+  },
+  {
     "path": "/projects",
     "component": "./routes/Projects"
   },

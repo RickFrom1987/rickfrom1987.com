@@ -29,7 +29,7 @@ webpackJsonp([4],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(52);
+  var _defineProperty = __webpack_require__(49);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -66,11 +66,11 @@ webpackJsonp([4],{
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(51);
+  var _create = __webpack_require__(48);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(20);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([4],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(20);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -174,7 +174,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 10:
+/***/ 8:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -428,27 +428,6 @@ webpackJsonp([4],{
 /***/ },
 
 /***/ 13:
-/***/ function(module, exports) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
-  exports.default = function (obj, keys) {
-    var target = {};
-  
-    for (var i in obj) {
-      if (keys.indexOf(i) >= 0) continue;
-      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-      target[i] = obj[i];
-    }
-  
-    return target;
-  };
-
-/***/ },
-
-/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -572,7 +551,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 15:
+/***/ 14:
 /***/ function(module, exports) {
 
   'use strict';
@@ -587,7 +566,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 16:
+/***/ 15:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -611,6 +590,27 @@ webpackJsonp([4],{
                                      * This source code is licensed under the MIT license found in the
                                      * LICENSE.txt file in the root directory of this source tree.
                                      */
+
+/***/ },
+
+/***/ 16:
+/***/ function(module, exports) {
+
+  "use strict";
+  
+  exports.__esModule = true;
+  
+  exports.default = function (obj, keys) {
+    var target = {};
+  
+    for (var i in obj) {
+      if (keys.indexOf(i) >= 0) continue;
+      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+      target[i] = obj[i];
+    }
+  
+    return target;
+  };
 
 /***/ },
 
@@ -659,7 +659,7 @@ webpackJsonp([4],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(14);
+  var _reactFlexbox = __webpack_require__(13);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -667,11 +667,11 @@ webpackJsonp([4],{
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(16);
+  var _Link = __webpack_require__(15);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Header = __webpack_require__(38);
+  var _Header = __webpack_require__(35);
   
   var _Header2 = _interopRequireDefault(_Header);
   
@@ -679,7 +679,7 @@ webpackJsonp([4],{
   
   var App = _interopRequireWildcard(_App);
   
-  var _Colors = __webpack_require__(15);
+  var _Colors = __webpack_require__(14);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -752,11 +752,11 @@ webpackJsonp([4],{
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(16);
+  var _Link = __webpack_require__(15);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(40);
+  var _Navigation = __webpack_require__(37);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -770,6 +770,11 @@ webpackJsonp([4],{
     return _react2.default.createElement(
       'nav',
       { className: _Navigation2.default.nav },
+      _react2.default.createElement(
+        _Link2.default,
+        { className: linkClass('/contact'), to: '/contact' },
+        _react2.default.createElement('i', { className: 'fa fa-phone' })
+      ),
       _react2.default.createElement(
         _Link2.default,
         { className: linkClass('/projects'), to: '/projects' },
@@ -791,11 +796,11 @@ webpackJsonp([4],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(21);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(13);
+  var _objectWithoutProperties2 = __webpack_require__(16);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -913,26 +918,26 @@ webpackJsonp([4],{
 /***/ 27:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(32);
-  module.exports = __webpack_require__(12).Object.getPrototypeOf;
+  __webpack_require__(30);
+  module.exports = __webpack_require__(11).Object.getPrototypeOf;
 
 /***/ },
 
 /***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(33);
-  module.exports = __webpack_require__(12).Object.setPrototypeOf;
+  __webpack_require__(31);
+  module.exports = __webpack_require__(11).Object.setPrototypeOf;
 
 /***/ },
 
-/***/ 31:
+/***/ 29:
 /***/ function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
   var isObject = __webpack_require__(42)
-    , anObject = __webpack_require__(29);
+    , anObject = __webpack_require__(38);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -941,7 +946,7 @@ webpackJsonp([4],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(41)(Function.call, __webpack_require__(53).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(41)(Function.call, __webpack_require__(50).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -957,14 +962,14 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 32:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(44)
-    , $getPrototypeOf = __webpack_require__(54);
+  var toObject        = __webpack_require__(43)
+    , $getPrototypeOf = __webpack_require__(51);
   
-  __webpack_require__(55)('getPrototypeOf', function(){
+  __webpack_require__(52)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -972,16 +977,16 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 33:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(30);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(31).set});
+  var $export = __webpack_require__(39);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(29).set});
 
 /***/ },
 
-/***/ 34:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1000,7 +1005,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 35:
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1017,7 +1022,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 36:
+/***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1025,7 +1030,7 @@ webpackJsonp([4],{
   
   
   // module
-  exports.push([module.id, "/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n.Navigation_nav_3_J {\n\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;AAEH;;CAEC;;AAED;EACE,sBAAsB;CACvB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":["/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n.nav {\n\n}\n\n.link {\n  display: inline-block;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".Navigation_nav_3_J {\n\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n  margin-left: 24px;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;EACE,sBAAsB;EACtB,kBAAkB;CACnB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":[".nav {\n\n}\n\n.link {\n  display: inline-block;\n  margin-left: 24px;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -1036,16 +1041,16 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 38:
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(34);
+  var content = __webpack_require__(32);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1063,16 +1068,16 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 39:
+/***/ 36:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(35);
+  var content = __webpack_require__(33);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1090,16 +1095,16 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 40:
+/***/ 37:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(36);
+  var content = __webpack_require__(34);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1117,7 +1122,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 43:
+/***/ 44:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1130,7 +1135,7 @@ webpackJsonp([4],{
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _objectWithoutProperties2 = __webpack_require__(13);
+  var _objectWithoutProperties2 = __webpack_require__(16);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -1158,7 +1163,7 @@ webpackJsonp([4],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(14);
+  var _reactFlexbox = __webpack_require__(13);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1166,11 +1171,11 @@ webpackJsonp([4],{
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Layout = __webpack_require__(39);
+  var _Layout = __webpack_require__(36);
   
   var _Layout2 = _interopRequireDefault(_Layout);
   
-  var _Colors = __webpack_require__(15);
+  var _Colors = __webpack_require__(14);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -1271,7 +1276,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 150:
+/***/ 152:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1281,17 +1286,17 @@ webpackJsonp([4],{
   });
   exports.default = undefined;
   
-  var _Moment = __webpack_require__(225);
+  var _Yahoo = __webpack_require__(228);
   
-  var _Moment2 = _interopRequireDefault(_Moment);
+  var _Yahoo2 = _interopRequireDefault(_Yahoo);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Moment2.default;
+  exports.default = _Yahoo2.default;
 
 /***/ },
 
-/***/ 225:
+/***/ 228:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1324,50 +1329,50 @@ webpackJsonp([4],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(43);
+  var _ArticleLayout = __webpack_require__(44);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Moment = __webpack_require__(404);
+  var _Yahoo = __webpack_require__(410);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var MomentPage = function (_React$Component) {
-    (0, _inherits3.default)(MomentPage, _React$Component);
+  var YahooPage = function (_React$Component) {
+    (0, _inherits3.default)(YahooPage, _React$Component);
   
-    function MomentPage() {
-      (0, _classCallCheck3.default)(this, MomentPage);
-      return (0, _possibleConstructorReturn3.default)(this, (MomentPage.__proto__ || (0, _getPrototypeOf2.default)(MomentPage)).apply(this, arguments));
+    function YahooPage() {
+      (0, _classCallCheck3.default)(this, YahooPage);
+      return (0, _possibleConstructorReturn3.default)(this, (YahooPage.__proto__ || (0, _getPrototypeOf2.default)(YahooPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(MomentPage, [{
+    (0, _createClass3.default)(YahooPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Moment.title;
+        document.title = _Yahoo.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Moment.title },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Moment.html } })
+          { title: _Yahoo.title },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Yahoo.html } })
         );
       }
     }]);
-    return MomentPage;
+    return YahooPage;
   }(_react2.default.Component);
   
-  exports.default = MomentPage;
+  exports.default = YahooPage;
 
 /***/ },
 
-/***/ 404:
+/***/ 410:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"MomentLens","subtitle":2015,"url":"https://momentlens.co","html":"<p>Working with friends @ moment lens was a once in a lifetime opportunity. It was the first hardware startup I have worked for and it was so insanely fun and exciting! I was able to learn a ton from Marc, Erik and Wes (the man behind the hardware of Moment Case!) about so many aspects of business, design and hardware. I was lucky enough to be onboard during which our team was able to raise money on <a href=\"https://www.kickstarter.com/projects/584288471/moment-case-worlds-best-iphone-case-for-mobile-pho\">Kickstarter for the Moment Case</a>. I was brought in to work on whatever needed to be worked on:</p>\n<ul>\n<li>\n<p>Basic Infrastructure. Their online shop and website was standing up and operating fairly well, but they wanted features, design changes and stability with little infrastructure to support it. I started by moving them onto version control and getting everything into Github asap, before editing a single line of code. I also setup some basic tests and pingdom monitoring so we could make small steps forward. Lessons here is to think about removing code before adding more!</p>\n</li>\n<li>\n<p>Wordpress Plugin Hell. They didn’t have a full time dev on the site prior to my arrival so they were able to get what they needed by adding a ton of Wordpress and Woocommerce plugins. The problem here is that they are constantly needing updates and can cause issues when doing theme or feature development. Also it is hell on page load time (this affected the site on mobile heavily). Before writing any more code I sat down with the team and went through every plugin to decide whether we actually needed them or not and defensively patched and removed plugins that we didn’t need to help make our codebase smaller and less of a headache.</p>\n</li>\n<li>\n<p>Streamlining Monotonous Tasks. My first major contribution was to help streamline their ordering process within WooCommerce. They had a manual process that took our customer support gal hours to complete. I hacked together a Woocommerce plugin that took away this task. The code is not ideal as I have zero experience writing Woocommerce plugins, but it worked and we moved forward.</p>\n</li>\n<li>\n<p>Data and Analytics. Turns out it is really important to understand your users and their buying behaviors. The learning in this area has been immense for me. I have always just setup Google analytics and that was the end of that. I am now using Google analytics a bit more carefully now. Working here has taught me that thinking carefully about where and when to hook into google analytics actions and events can make a world of difference in understanding a user base!</p>\n</li>\n</ul>\n<p>I faced many challenges during my time at moment, most notably dealing with heavy woocommerce/wordpress site to make it easier for any developer following and dealing with credit card payments and forms, what a fun time. I helped streamline the project management on the business side. I was able to work on slimming down code on the bloated wordpress site and woocommerce store. When I arrived the site/shop had many dependencies I also was able to train and help the tech intern Eli! Who is now on his way to working on great things, really proud of my time with him and helping him along. I helped the team get thier web properties into proper repos as well as write scripts to help automate business processes. I think I wrote my first ever Python scripts here!</p>\n"};
+  module.exports = {"title":"Yahoo!","subtitle":2009,"url":"https://yahoo.com","html":"<p>My first job ever was at Yahoo! It feels like forever ago. I met great people and lifelong friends here. Yahoo! was one of the best places I have ever worked. Lots of perks and working with really fun and smart people. My main goal was to learn from others and do the best that I could as I didn't know much about life or programming. I just kind of dove head first into anything they would let me work on. Met some great engineers / friends like Naveen, Rohith, Nat and Steven Ramkumar. I got to work with a great team. Special thanks to everyone on Yahoo! Local who helped me grow as a developer and person, I will never have enough good things to say about my time there.</p>\n"};
 
 /***/ }
 
 });
-//# sourceMappingURL=4.js.map?373d9803f7870e51eac0
+//# sourceMappingURL=4.js.map?4d1bcc0c4604eeecd840

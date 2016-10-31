@@ -47,7 +47,6 @@ class BrowserMock extends React.Component {
       boxShadow: '0 0.1em 1em 0 rgba(0, 0, 0, 0.4)',
       position: 'relative',
       borderRadius: '3px 3px 0 0',
-  
       transition: 'all 0.4s ease-out',
     };
     const browserDotsStyle = {

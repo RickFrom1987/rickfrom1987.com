@@ -29,7 +29,7 @@ webpackJsonp([2],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(52);
+  var _defineProperty = __webpack_require__(49);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -66,11 +66,11 @@ webpackJsonp([2],{
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(51);
+  var _create = __webpack_require__(48);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(20);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([2],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(20);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -174,7 +174,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 10:
+/***/ 8:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -428,27 +428,6 @@ webpackJsonp([2],{
 /***/ },
 
 /***/ 13:
-/***/ function(module, exports) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
-  exports.default = function (obj, keys) {
-    var target = {};
-  
-    for (var i in obj) {
-      if (keys.indexOf(i) >= 0) continue;
-      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-      target[i] = obj[i];
-    }
-  
-    return target;
-  };
-
-/***/ },
-
-/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -572,7 +551,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 15:
+/***/ 14:
 /***/ function(module, exports) {
 
   'use strict';
@@ -587,7 +566,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 16:
+/***/ 15:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -611,6 +590,27 @@ webpackJsonp([2],{
                                      * This source code is licensed under the MIT license found in the
                                      * LICENSE.txt file in the root directory of this source tree.
                                      */
+
+/***/ },
+
+/***/ 16:
+/***/ function(module, exports) {
+
+  "use strict";
+  
+  exports.__esModule = true;
+  
+  exports.default = function (obj, keys) {
+    var target = {};
+  
+    for (var i in obj) {
+      if (keys.indexOf(i) >= 0) continue;
+      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+      target[i] = obj[i];
+    }
+  
+    return target;
+  };
 
 /***/ },
 
@@ -659,7 +659,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(14);
+  var _reactFlexbox = __webpack_require__(13);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -667,11 +667,11 @@ webpackJsonp([2],{
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(16);
+  var _Link = __webpack_require__(15);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Header = __webpack_require__(38);
+  var _Header = __webpack_require__(35);
   
   var _Header2 = _interopRequireDefault(_Header);
   
@@ -679,7 +679,7 @@ webpackJsonp([2],{
   
   var App = _interopRequireWildcard(_App);
   
-  var _Colors = __webpack_require__(15);
+  var _Colors = __webpack_require__(14);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -752,11 +752,11 @@ webpackJsonp([2],{
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(16);
+  var _Link = __webpack_require__(15);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(40);
+  var _Navigation = __webpack_require__(37);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -770,6 +770,11 @@ webpackJsonp([2],{
     return _react2.default.createElement(
       'nav',
       { className: _Navigation2.default.nav },
+      _react2.default.createElement(
+        _Link2.default,
+        { className: linkClass('/contact'), to: '/contact' },
+        _react2.default.createElement('i', { className: 'fa fa-phone' })
+      ),
       _react2.default.createElement(
         _Link2.default,
         { className: linkClass('/projects'), to: '/projects' },
@@ -791,11 +796,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(21);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(13);
+  var _objectWithoutProperties2 = __webpack_require__(16);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -913,26 +918,26 @@ webpackJsonp([2],{
 /***/ 27:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(32);
-  module.exports = __webpack_require__(12).Object.getPrototypeOf;
+  __webpack_require__(30);
+  module.exports = __webpack_require__(11).Object.getPrototypeOf;
 
 /***/ },
 
 /***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(33);
-  module.exports = __webpack_require__(12).Object.setPrototypeOf;
+  __webpack_require__(31);
+  module.exports = __webpack_require__(11).Object.setPrototypeOf;
 
 /***/ },
 
-/***/ 31:
+/***/ 29:
 /***/ function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
   var isObject = __webpack_require__(42)
-    , anObject = __webpack_require__(29);
+    , anObject = __webpack_require__(38);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -941,7 +946,7 @@ webpackJsonp([2],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(41)(Function.call, __webpack_require__(53).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(41)(Function.call, __webpack_require__(50).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -957,14 +962,14 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 32:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(44)
-    , $getPrototypeOf = __webpack_require__(54);
+  var toObject        = __webpack_require__(43)
+    , $getPrototypeOf = __webpack_require__(51);
   
-  __webpack_require__(55)('getPrototypeOf', function(){
+  __webpack_require__(52)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -972,16 +977,16 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 33:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(30);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(31).set});
+  var $export = __webpack_require__(39);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(29).set});
 
 /***/ },
 
-/***/ 34:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1000,7 +1005,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 35:
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1017,7 +1022,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 36:
+/***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1025,7 +1030,7 @@ webpackJsonp([2],{
   
   
   // module
-  exports.push([module.id, "/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n.Navigation_nav_3_J {\n\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;AAEH;;CAEC;;AAED;EACE,sBAAsB;CACvB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":["/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n.nav {\n\n}\n\n.link {\n  display: inline-block;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".Navigation_nav_3_J {\n\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n  margin-left: 24px;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;EACE,sBAAsB;EACtB,kBAAkB;CACnB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":[".nav {\n\n}\n\n.link {\n  display: inline-block;\n  margin-left: 24px;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -1036,16 +1041,16 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 38:
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(34);
+  var content = __webpack_require__(32);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1063,16 +1068,16 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 39:
+/***/ 36:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(35);
+  var content = __webpack_require__(33);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1090,16 +1095,16 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 40:
+/***/ 37:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(36);
+  var content = __webpack_require__(34);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1117,7 +1122,120 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 78:
+/***/ 73:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _extends2 = __webpack_require__(20);
+  
+  var _extends3 = _interopRequireDefault(_extends2);
+  
+  var _objectWithoutProperties2 = __webpack_require__(16);
+  
+  var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+  
+  var _getPrototypeOf = __webpack_require__(2);
+  
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  
+  var _classCallCheck2 = __webpack_require__(3);
+  
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  
+  var _createClass2 = __webpack_require__(4);
+  
+  var _createClass3 = _interopRequireDefault(_createClass2);
+  
+  var _possibleConstructorReturn2 = __webpack_require__(6);
+  
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+  
+  var _inherits2 = __webpack_require__(5);
+  
+  var _inherits3 = _interopRequireDefault(_inherits2);
+  
+  var _react = __webpack_require__(1);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _reactFlexbox = __webpack_require__(13);
+  
+  var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
+  
+  var _Header = __webpack_require__(23);
+  
+  var _Header2 = _interopRequireDefault(_Header);
+  
+  var _Layout = __webpack_require__(36);
+  
+  var _Layout2 = _interopRequireDefault(_Layout);
+  
+  var _Colors = __webpack_require__(14);
+  
+  var Colors = _interopRequireWildcard(_Colors);
+  
+  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  var HeaderLayout = function (_React$Component) {
+    (0, _inherits3.default)(HeaderLayout, _React$Component);
+  
+    function HeaderLayout(props) {
+      (0, _classCallCheck3.default)(this, HeaderLayout);
+  
+      var _this = (0, _possibleConstructorReturn3.default)(this, (HeaderLayout.__proto__ || (0, _getPrototypeOf2.default)(HeaderLayout)).call(this, props));
+  
+      _this.state = {};
+      return _this;
+    }
+  
+    (0, _createClass3.default)(HeaderLayout, [{
+      key: 'render',
+      value: function render() {
+        var _props = this.props;
+        var style = _props.style;
+        var centered = _props.centered;
+        var props = (0, _objectWithoutProperties3.default)(_props, ['style', 'centered']);
+  
+        var layoutStyle = {
+          paddingTop: 48
+        };
+  
+        var centerStyle = void 0;
+        if (centered) {
+          centerStyle = {
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%,-50%)'
+          };
+        }
+  
+        return _react2.default.createElement(
+          _reactFlexbox2.default,
+          { column: true, style: layoutStyle },
+          _react2.default.createElement(_Header2.default, null),
+          _react2.default.createElement(_reactFlexbox2.default, (0, _extends3.default)({ column: true }, props, { style: centerStyle }))
+        );
+      }
+    }]);
+    return HeaderLayout;
+  }(_react2.default.Component);
+  
+  HeaderLayout.propTypes = {
+    centered: _react2.default.PropTypes.bool
+  };
+  exports.default = HeaderLayout;
+
+/***/ },
+
+/***/ 79:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1579,119 +1697,6 @@ webpackJsonp([2],{
       return el[key] = el[key].bind(el);
     });
   }
-
-/***/ },
-
-/***/ 101:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _extends2 = __webpack_require__(21);
-  
-  var _extends3 = _interopRequireDefault(_extends2);
-  
-  var _objectWithoutProperties2 = __webpack_require__(13);
-  
-  var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
-  
-  var _getPrototypeOf = __webpack_require__(2);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(3);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(4);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(6);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(5);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _reactFlexbox = __webpack_require__(14);
-  
-  var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
-  
-  var _Header = __webpack_require__(23);
-  
-  var _Header2 = _interopRequireDefault(_Header);
-  
-  var _Layout = __webpack_require__(39);
-  
-  var _Layout2 = _interopRequireDefault(_Layout);
-  
-  var _Colors = __webpack_require__(15);
-  
-  var Colors = _interopRequireWildcard(_Colors);
-  
-  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var HeaderLayout = function (_React$Component) {
-    (0, _inherits3.default)(HeaderLayout, _React$Component);
-  
-    function HeaderLayout(props) {
-      (0, _classCallCheck3.default)(this, HeaderLayout);
-  
-      var _this = (0, _possibleConstructorReturn3.default)(this, (HeaderLayout.__proto__ || (0, _getPrototypeOf2.default)(HeaderLayout)).call(this, props));
-  
-      _this.state = {};
-      return _this;
-    }
-  
-    (0, _createClass3.default)(HeaderLayout, [{
-      key: 'render',
-      value: function render() {
-        var _props = this.props;
-        var style = _props.style;
-        var centered = _props.centered;
-        var props = (0, _objectWithoutProperties3.default)(_props, ['style', 'centered']);
-  
-        var layoutStyle = {
-          paddingTop: 48
-        };
-  
-        var centerStyle = void 0;
-        if (centered) {
-          centerStyle = {
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%,-50%)'
-          };
-        }
-  
-        return _react2.default.createElement(
-          _reactFlexbox2.default,
-          { column: true, style: layoutStyle },
-          _react2.default.createElement(_Header2.default, null),
-          _react2.default.createElement(_reactFlexbox2.default, (0, _extends3.default)({ column: true }, props, { style: centerStyle }))
-        );
-      }
-    }]);
-    return HeaderLayout;
-  }(_react2.default.Component);
-  
-  HeaderLayout.propTypes = {
-    centered: _react2.default.PropTypes.bool
-  };
-  exports.default = HeaderLayout;
 
 /***/ },
 
@@ -3348,11 +3353,11 @@ webpackJsonp([2],{
   
   module.exports = isEqual;
   
-  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(211)(module)))
+  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(212)(module)))
 
 /***/ },
 
-/***/ 146:
+/***/ 147:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3385,23 +3390,23 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _HeaderLayout = __webpack_require__(101);
+  var _HeaderLayout = __webpack_require__(73);
   
   var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
   
-  var _ProjectGridLayout = __webpack_require__(214);
+  var _ProjectGridLayout = __webpack_require__(215);
   
   var _ProjectGridLayout2 = _interopRequireDefault(_ProjectGridLayout);
   
-  var _Link = __webpack_require__(16);
+  var _Link = __webpack_require__(15);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Projects = __webpack_require__(393);
+  var _Projects = __webpack_require__(397);
   
   var _Projects2 = _interopRequireDefault(_Projects);
   
-  var _projects = __webpack_require__(300);
+  var _projects = __webpack_require__(303);
   
   var _projects2 = _interopRequireDefault(_projects);
   
@@ -3439,12 +3444,12 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 175:
+/***/ 176:
 /***/ function(module, exports, __webpack_require__) {
 
   (function webpackUniversalModuleDefinition(root, factory) {
   	if(true)
-  		module.exports = factory(__webpack_require__(1), __webpack_require__(92));
+  		module.exports = factory(__webpack_require__(1), __webpack_require__(93));
   	else if(typeof define === 'function' && define.amd)
   		define(["react", "react-dom"], factory);
   	else if(typeof exports === 'object')
@@ -4992,7 +4997,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 176:
+/***/ 177:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5009,9 +5014,9 @@ webpackJsonp([2],{
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _utils = __webpack_require__(78);
+  var _utils = __webpack_require__(79);
   
-  var _GridItem = __webpack_require__(306);
+  var _GridItem = __webpack_require__(309);
   
   var _GridItem2 = _interopRequireDefault(_GridItem);
   
@@ -5534,7 +5539,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 177:
+/***/ 178:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5545,7 +5550,7 @@ webpackJsonp([2],{
   exports.findOrGenerateResponsiveLayout = findOrGenerateResponsiveLayout;
   exports.sortBreakpoints = sortBreakpoints;
   
-  var _utils = __webpack_require__(78);
+  var _utils = __webpack_require__(79);
   
   /**
    * Given a width, find the highest breakpoint that matches is valid for it (width > breakpoint).
@@ -5627,7 +5632,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 180:
+/***/ 181:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5640,9 +5645,9 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDraggable = __webpack_require__(175);
+  var _reactDraggable = __webpack_require__(176);
   
-  var _cloneElement = __webpack_require__(316);
+  var _cloneElement = __webpack_require__(319);
   
   var _cloneElement2 = _interopRequireDefault(_cloneElement);
   
@@ -5889,7 +5894,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 211:
+/***/ 212:
 /***/ function(module, exports) {
 
   module.exports = function(module) {
@@ -5906,7 +5911,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 212:
+/***/ 213:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5915,11 +5920,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(21);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(13);
+  var _objectWithoutProperties2 = __webpack_require__(16);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -5947,7 +5952,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(14);
+  var _reactFlexbox = __webpack_require__(13);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -5955,7 +5960,7 @@ webpackJsonp([2],{
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _BrowserMock = __webpack_require__(391);
+  var _BrowserMock = __webpack_require__(394);
   
   var _BrowserMock2 = _interopRequireDefault(_BrowserMock);
   
@@ -5984,12 +5989,12 @@ webpackJsonp([2],{
       };
   
       _this.onMouseDown = function () {
-        // window.setTimeout(() => {
-        //   const pathname = this.props.pathname;
-        //   history.push({
-        //     pathname: pathname
-        //   });
-        // }, 0);
+        window.setTimeout(function () {
+          var pathname = _this.props.pathname;
+          _history2.default.push({
+            pathname: pathname
+          });
+        }, 100);
       };
   
       _this.state = {
@@ -6013,7 +6018,6 @@ webpackJsonp([2],{
           boxShadow: '0 0.1em 1em 0 rgba(0, 0, 0, 0.4)',
           position: 'relative',
           borderRadius: '3px 3px 0 0',
-  
           transition: 'all 0.4s ease-out'
         };
         var browserDotsStyle = {
@@ -6072,7 +6076,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 213:
+/***/ 214:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6081,7 +6085,7 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(21);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -6109,11 +6113,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _lodash = __webpack_require__(304);
+  var _lodash = __webpack_require__(307);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _reactGridLayout = __webpack_require__(309);
+  var _reactGridLayout = __webpack_require__(312);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -6175,7 +6179,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 214:
+/***/ 215:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6184,11 +6188,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(21);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(13);
+  var _objectWithoutProperties2 = __webpack_require__(16);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -6216,23 +6220,23 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(14);
+  var _reactFlexbox = __webpack_require__(13);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _reactDom = __webpack_require__(92);
+  var _reactDom = __webpack_require__(93);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
-  var _GridLayout = __webpack_require__(213);
+  var _GridLayout = __webpack_require__(214);
   
   var _GridLayout2 = _interopRequireDefault(_GridLayout);
   
-  var _BrowserMock = __webpack_require__(212);
+  var _BrowserMock = __webpack_require__(213);
   
   var _BrowserMock2 = _interopRequireDefault(_BrowserMock);
   
-  var _TagList = __webpack_require__(215);
+  var _TagList = __webpack_require__(216);
   
   var _TagList2 = _interopRequireDefault(_TagList);
   
@@ -6366,7 +6370,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 215:
+/***/ 216:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6375,11 +6379,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(21);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(13);
+  var _objectWithoutProperties2 = __webpack_require__(16);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -6407,7 +6411,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Colors = __webpack_require__(15);
+  var _Colors = __webpack_require__(14);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -6487,7 +6491,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 276:
+/***/ 278:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -6504,7 +6508,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 278:
+/***/ 281:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -6519,7 +6523,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 300:
+/***/ 303:
 /***/ function(module, exports) {
 
   module.exports = [
@@ -6652,7 +6656,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 304:
+/***/ 307:
 /***/ function(module, exports, __webpack_require__) {
 
   var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -23638,11 +23642,11 @@ webpackJsonp([2],{
     }
   }.call(this));
   
-  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(211)(module)))
+  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(212)(module)))
 
 /***/ },
 
-/***/ 306:
+/***/ 309:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -23655,11 +23659,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDraggable = __webpack_require__(175);
+  var _reactDraggable = __webpack_require__(176);
   
-  var _reactResizable = __webpack_require__(317);
+  var _reactResizable = __webpack_require__(320);
   
-  var _utils = __webpack_require__(78);
+  var _utils = __webpack_require__(79);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -24135,7 +24139,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 307:
+/***/ 310:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24152,11 +24156,11 @@ webpackJsonp([2],{
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _utils = __webpack_require__(78);
+  var _utils = __webpack_require__(79);
   
-  var _responsiveUtils = __webpack_require__(177);
+  var _responsiveUtils = __webpack_require__(178);
   
-  var _ReactGridLayout = __webpack_require__(176);
+  var _ReactGridLayout = __webpack_require__(177);
   
   var _ReactGridLayout2 = _interopRequireDefault(_ReactGridLayout);
   
@@ -24364,7 +24368,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 308:
+/***/ 311:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24377,7 +24381,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDom = __webpack_require__(92);
+  var _reactDom = __webpack_require__(93);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
@@ -24453,19 +24457,19 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 309:
+/***/ 312:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__(176).default;
-  module.exports.utils = __webpack_require__(78);
-  module.exports.Responsive = __webpack_require__(307).default;
-  module.exports.Responsive.utils = __webpack_require__(177);
-  module.exports.WidthProvider = __webpack_require__(308).default;
+  module.exports = __webpack_require__(177).default;
+  module.exports.utils = __webpack_require__(79);
+  module.exports.Responsive = __webpack_require__(310).default;
+  module.exports.Responsive.utils = __webpack_require__(178);
+  module.exports.WidthProvider = __webpack_require__(311).default;
 
 
 /***/ },
 
-/***/ 315:
+/***/ 318:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24478,7 +24482,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Resizable = __webpack_require__(180);
+  var _Resizable = __webpack_require__(181);
   
   var _Resizable2 = _interopRequireDefault(_Resizable);
   
@@ -24577,7 +24581,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 316:
+/***/ 319:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24603,7 +24607,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 317:
+/***/ 320:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24611,22 +24615,22 @@ webpackJsonp([2],{
     throw new Error("Don't instantiate Resizable directly! Use require('react-resizable').Resizable");
   };
   
-  module.exports.Resizable = __webpack_require__(180).default;
-  module.exports.ResizableBox = __webpack_require__(315).default;
+  module.exports.Resizable = __webpack_require__(181).default;
+  module.exports.ResizableBox = __webpack_require__(318).default;
 
 
 /***/ },
 
-/***/ 391:
+/***/ 394:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(276);
+  var content = __webpack_require__(278);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -24644,16 +24648,16 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 393:
+/***/ 397:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(278);
+  var content = __webpack_require__(281);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -24672,4 +24676,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?3d445f3be863f2ffd881
+//# sourceMappingURL=2.js.map?7dcf0b048c81eadc1fef

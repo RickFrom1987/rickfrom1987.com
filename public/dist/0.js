@@ -29,7 +29,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(52);
+  var _defineProperty = __webpack_require__(49);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -66,11 +66,11 @@ webpackJsonp([0],{
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(51);
+  var _create = __webpack_require__(48);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(20);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(20);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -174,7 +174,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 10:
+/***/ 8:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -428,27 +428,6 @@ webpackJsonp([0],{
 /***/ },
 
 /***/ 13:
-/***/ function(module, exports) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
-  exports.default = function (obj, keys) {
-    var target = {};
-  
-    for (var i in obj) {
-      if (keys.indexOf(i) >= 0) continue;
-      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-      target[i] = obj[i];
-    }
-  
-    return target;
-  };
-
-/***/ },
-
-/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -572,7 +551,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 15:
+/***/ 14:
 /***/ function(module, exports) {
 
   'use strict';
@@ -587,7 +566,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 16:
+/***/ 15:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -611,6 +590,27 @@ webpackJsonp([0],{
                                      * This source code is licensed under the MIT license found in the
                                      * LICENSE.txt file in the root directory of this source tree.
                                      */
+
+/***/ },
+
+/***/ 16:
+/***/ function(module, exports) {
+
+  "use strict";
+  
+  exports.__esModule = true;
+  
+  exports.default = function (obj, keys) {
+    var target = {};
+  
+    for (var i in obj) {
+      if (keys.indexOf(i) >= 0) continue;
+      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+      target[i] = obj[i];
+    }
+  
+    return target;
+  };
 
 /***/ },
 
@@ -659,7 +659,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(14);
+  var _reactFlexbox = __webpack_require__(13);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -667,11 +667,11 @@ webpackJsonp([0],{
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(16);
+  var _Link = __webpack_require__(15);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Header = __webpack_require__(38);
+  var _Header = __webpack_require__(35);
   
   var _Header2 = _interopRequireDefault(_Header);
   
@@ -679,7 +679,7 @@ webpackJsonp([0],{
   
   var App = _interopRequireWildcard(_App);
   
-  var _Colors = __webpack_require__(15);
+  var _Colors = __webpack_require__(14);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -752,11 +752,11 @@ webpackJsonp([0],{
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(16);
+  var _Link = __webpack_require__(15);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(40);
+  var _Navigation = __webpack_require__(37);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -770,6 +770,11 @@ webpackJsonp([0],{
     return _react2.default.createElement(
       'nav',
       { className: _Navigation2.default.nav },
+      _react2.default.createElement(
+        _Link2.default,
+        { className: linkClass('/contact'), to: '/contact' },
+        _react2.default.createElement('i', { className: 'fa fa-phone' })
+      ),
       _react2.default.createElement(
         _Link2.default,
         { className: linkClass('/projects'), to: '/projects' },
@@ -791,11 +796,11 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(21);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(13);
+  var _objectWithoutProperties2 = __webpack_require__(16);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -913,26 +918,26 @@ webpackJsonp([0],{
 /***/ 27:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(32);
-  module.exports = __webpack_require__(12).Object.getPrototypeOf;
+  __webpack_require__(30);
+  module.exports = __webpack_require__(11).Object.getPrototypeOf;
 
 /***/ },
 
 /***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(33);
-  module.exports = __webpack_require__(12).Object.setPrototypeOf;
+  __webpack_require__(31);
+  module.exports = __webpack_require__(11).Object.setPrototypeOf;
 
 /***/ },
 
-/***/ 31:
+/***/ 29:
 /***/ function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
   var isObject = __webpack_require__(42)
-    , anObject = __webpack_require__(29);
+    , anObject = __webpack_require__(38);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -941,7 +946,7 @@ webpackJsonp([0],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(41)(Function.call, __webpack_require__(53).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(41)(Function.call, __webpack_require__(50).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -957,14 +962,14 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 32:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(44)
-    , $getPrototypeOf = __webpack_require__(54);
+  var toObject        = __webpack_require__(43)
+    , $getPrototypeOf = __webpack_require__(51);
   
-  __webpack_require__(55)('getPrototypeOf', function(){
+  __webpack_require__(52)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -972,16 +977,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 33:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(30);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(31).set});
+  var $export = __webpack_require__(39);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(29).set});
 
 /***/ },
 
-/***/ 34:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1000,7 +1005,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 35:
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1017,7 +1022,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 36:
+/***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1025,7 +1030,7 @@ webpackJsonp([0],{
   
   
   // module
-  exports.push([module.id, "/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n.Navigation_nav_3_J {\n\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;AAEH;;CAEC;;AAED;EACE,sBAAsB;CACvB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":["/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n.nav {\n\n}\n\n.link {\n  display: inline-block;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".Navigation_nav_3_J {\n\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n  margin-left: 24px;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;EACE,sBAAsB;EACtB,kBAAkB;CACnB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":[".nav {\n\n}\n\n.link {\n  display: inline-block;\n  margin-left: 24px;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -1036,16 +1041,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 38:
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(34);
+  var content = __webpack_require__(32);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1063,16 +1068,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 39:
+/***/ 36:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(35);
+  var content = __webpack_require__(33);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1090,16 +1095,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 40:
+/***/ 37:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(36);
+  var content = __webpack_require__(34);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1117,34 +1122,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 84:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = undefined;
-  
-  var _Home = __webpack_require__(221);
-  
-  var _Home2 = _interopRequireDefault(_Home);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = _Home2.default; /**
-                                     * React App SDK (https://github.com/kriasoft/react-app)
-                                     *
-                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-                                     *
-                                     * This source code is licensed under the MIT license found in the
-                                     * LICENSE.txt file in the root directory of this source tree.
-                                     */
-
-/***/ },
-
-/***/ 101:
+/***/ 73:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1153,11 +1131,11 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(21);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(13);
+  var _objectWithoutProperties2 = __webpack_require__(16);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -1185,7 +1163,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(14);
+  var _reactFlexbox = __webpack_require__(13);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1193,11 +1171,11 @@ webpackJsonp([0],{
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Layout = __webpack_require__(39);
+  var _Layout = __webpack_require__(36);
   
   var _Layout2 = _interopRequireDefault(_Layout);
   
-  var _Colors = __webpack_require__(15);
+  var _Colors = __webpack_require__(14);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -1257,7 +1235,34 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 221:
+/***/ 85:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = undefined;
+  
+  var _Home = __webpack_require__(223);
+  
+  var _Home2 = _interopRequireDefault(_Home);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = _Home2.default; /**
+                                     * React App SDK (https://github.com/kriasoft/react-app)
+                                     *
+                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
+                                     *
+                                     * This source code is licensed under the MIT license found in the
+                                     * LICENSE.txt file in the root directory of this source tree.
+                                     */
+
+/***/ },
+
+/***/ 223:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1290,25 +1295,25 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(14);
+  var _reactFlexbox = __webpack_require__(13);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _HeaderLayout = __webpack_require__(101);
+  var _HeaderLayout = __webpack_require__(73);
   
   var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
   
-  var _Link = __webpack_require__(16);
+  var _Link = __webpack_require__(15);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Home = __webpack_require__(392);
+  var _Home = __webpack_require__(396);
   
   var _Home2 = _interopRequireDefault(_Home);
   
-  var _Home3 = __webpack_require__(400);
+  var _Home3 = __webpack_require__(405);
   
-  var _Colors = __webpack_require__(15);
+  var _Colors = __webpack_require__(14);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -1388,7 +1393,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 277:
+/***/ 280:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1405,16 +1410,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 392:
+/***/ 396:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(277);
+  var content = __webpack_require__(280);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1432,7 +1437,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 400:
+/***/ 405:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Hello!","desc":"I make wonderful things.","html":""};
@@ -1440,4 +1445,4 @@ webpackJsonp([0],{
 /***/ }
 
 });
-//# sourceMappingURL=0.js.map?6aec69a13f5d7352b9e2
+//# sourceMappingURL=0.js.map?675b1b1e6786989e6368

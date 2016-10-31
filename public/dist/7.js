@@ -29,7 +29,7 @@ webpackJsonp([7],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(52);
+  var _defineProperty = __webpack_require__(49);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -66,11 +66,11 @@ webpackJsonp([7],{
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(51);
+  var _create = __webpack_require__(48);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(20);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([7],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(20);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -174,7 +174,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 10:
+/***/ 8:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -428,27 +428,6 @@ webpackJsonp([7],{
 /***/ },
 
 /***/ 13:
-/***/ function(module, exports) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
-  exports.default = function (obj, keys) {
-    var target = {};
-  
-    for (var i in obj) {
-      if (keys.indexOf(i) >= 0) continue;
-      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-      target[i] = obj[i];
-    }
-  
-    return target;
-  };
-
-/***/ },
-
-/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -572,7 +551,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 15:
+/***/ 14:
 /***/ function(module, exports) {
 
   'use strict';
@@ -587,7 +566,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 16:
+/***/ 15:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -611,6 +590,27 @@ webpackJsonp([7],{
                                      * This source code is licensed under the MIT license found in the
                                      * LICENSE.txt file in the root directory of this source tree.
                                      */
+
+/***/ },
+
+/***/ 16:
+/***/ function(module, exports) {
+
+  "use strict";
+  
+  exports.__esModule = true;
+  
+  exports.default = function (obj, keys) {
+    var target = {};
+  
+    for (var i in obj) {
+      if (keys.indexOf(i) >= 0) continue;
+      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+      target[i] = obj[i];
+    }
+  
+    return target;
+  };
 
 /***/ },
 
@@ -659,7 +659,7 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(14);
+  var _reactFlexbox = __webpack_require__(13);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -667,11 +667,11 @@ webpackJsonp([7],{
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(16);
+  var _Link = __webpack_require__(15);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Header = __webpack_require__(38);
+  var _Header = __webpack_require__(35);
   
   var _Header2 = _interopRequireDefault(_Header);
   
@@ -679,7 +679,7 @@ webpackJsonp([7],{
   
   var App = _interopRequireWildcard(_App);
   
-  var _Colors = __webpack_require__(15);
+  var _Colors = __webpack_require__(14);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -752,11 +752,11 @@ webpackJsonp([7],{
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(16);
+  var _Link = __webpack_require__(15);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(40);
+  var _Navigation = __webpack_require__(37);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -770,6 +770,11 @@ webpackJsonp([7],{
     return _react2.default.createElement(
       'nav',
       { className: _Navigation2.default.nav },
+      _react2.default.createElement(
+        _Link2.default,
+        { className: linkClass('/contact'), to: '/contact' },
+        _react2.default.createElement('i', { className: 'fa fa-phone' })
+      ),
       _react2.default.createElement(
         _Link2.default,
         { className: linkClass('/projects'), to: '/projects' },
@@ -791,11 +796,11 @@ webpackJsonp([7],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(21);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(13);
+  var _objectWithoutProperties2 = __webpack_require__(16);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -913,26 +918,26 @@ webpackJsonp([7],{
 /***/ 27:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(32);
-  module.exports = __webpack_require__(12).Object.getPrototypeOf;
+  __webpack_require__(30);
+  module.exports = __webpack_require__(11).Object.getPrototypeOf;
 
 /***/ },
 
 /***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(33);
-  module.exports = __webpack_require__(12).Object.setPrototypeOf;
+  __webpack_require__(31);
+  module.exports = __webpack_require__(11).Object.setPrototypeOf;
 
 /***/ },
 
-/***/ 31:
+/***/ 29:
 /***/ function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
   var isObject = __webpack_require__(42)
-    , anObject = __webpack_require__(29);
+    , anObject = __webpack_require__(38);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -941,7 +946,7 @@ webpackJsonp([7],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(41)(Function.call, __webpack_require__(53).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(41)(Function.call, __webpack_require__(50).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -957,14 +962,14 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 32:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(44)
-    , $getPrototypeOf = __webpack_require__(54);
+  var toObject        = __webpack_require__(43)
+    , $getPrototypeOf = __webpack_require__(51);
   
-  __webpack_require__(55)('getPrototypeOf', function(){
+  __webpack_require__(52)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -972,16 +977,16 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 33:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(30);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(31).set});
+  var $export = __webpack_require__(39);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(29).set});
 
 /***/ },
 
-/***/ 34:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1000,7 +1005,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 35:
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1017,7 +1022,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 36:
+/***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(7)();
@@ -1025,7 +1030,7 @@ webpackJsonp([7],{
   
   
   // module
-  exports.push([module.id, "/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n.Navigation_nav_3_J {\n\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;AAEH;;CAEC;;AAED;EACE,sBAAsB;CACvB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":["/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n.nav {\n\n}\n\n.link {\n  display: inline-block;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".Navigation_nav_3_J {\n\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n  margin-left: 24px;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;EACE,sBAAsB;EACtB,kBAAkB;CACnB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":[".nav {\n\n}\n\n.link {\n  display: inline-block;\n  margin-left: 24px;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -1036,16 +1041,16 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 38:
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(34);
+  var content = __webpack_require__(32);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1063,16 +1068,16 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 39:
+/***/ 36:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(35);
+  var content = __webpack_require__(33);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1090,16 +1095,16 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 40:
+/***/ 37:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(36);
+  var content = __webpack_require__(34);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(8)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1117,7 +1122,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 43:
+/***/ 44:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1130,7 +1135,7 @@ webpackJsonp([7],{
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _objectWithoutProperties2 = __webpack_require__(13);
+  var _objectWithoutProperties2 = __webpack_require__(16);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -1158,7 +1163,7 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(14);
+  var _reactFlexbox = __webpack_require__(13);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1166,11 +1171,11 @@ webpackJsonp([7],{
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Layout = __webpack_require__(39);
+  var _Layout = __webpack_require__(36);
   
   var _Layout2 = _interopRequireDefault(_Layout);
   
-  var _Colors = __webpack_require__(15);
+  var _Colors = __webpack_require__(14);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -1271,7 +1276,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 147:
+/***/ 149:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1281,17 +1286,17 @@ webpackJsonp([7],{
   });
   exports.default = undefined;
   
-  var _Datablade = __webpack_require__(222);
+  var _Energysavvy = __webpack_require__(225);
   
-  var _Datablade2 = _interopRequireDefault(_Datablade);
+  var _Energysavvy2 = _interopRequireDefault(_Energysavvy);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Datablade2.default;
+  exports.default = _Energysavvy2.default;
 
 /***/ },
 
-/***/ 222:
+/***/ 225:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1324,50 +1329,50 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(43);
+  var _ArticleLayout = __webpack_require__(44);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Datablade = __webpack_require__(401);
+  var _Energysavvy = __webpack_require__(407);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var DatabladePage = function (_React$Component) {
-    (0, _inherits3.default)(DatabladePage, _React$Component);
+  var EnergysavvyPage = function (_React$Component) {
+    (0, _inherits3.default)(EnergysavvyPage, _React$Component);
   
-    function DatabladePage() {
-      (0, _classCallCheck3.default)(this, DatabladePage);
-      return (0, _possibleConstructorReturn3.default)(this, (DatabladePage.__proto__ || (0, _getPrototypeOf2.default)(DatabladePage)).apply(this, arguments));
+    function EnergysavvyPage() {
+      (0, _classCallCheck3.default)(this, EnergysavvyPage);
+      return (0, _possibleConstructorReturn3.default)(this, (EnergysavvyPage.__proto__ || (0, _getPrototypeOf2.default)(EnergysavvyPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(DatabladePage, [{
+    (0, _createClass3.default)(EnergysavvyPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Datablade.title;
+        document.title = _Energysavvy.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Datablade.title },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Datablade.html } })
+          { title: _Energysavvy.title },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Energysavvy.html } })
         );
       }
     }]);
-    return DatabladePage;
+    return EnergysavvyPage;
   }(_react2.default.Component);
   
-  exports.default = DatabladePage;
+  exports.default = EnergysavvyPage;
 
 /***/ },
 
-/***/ 401:
+/***/ 407:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"Datablade.io","subtitle":2015,"url":"http://datablade.io","html":"<p>Datablade is a small startup trying to make data anlayst lives easier. The platform allows data scientists to access, analyze and automate thier data processing. I was brought onboard to help with the web app and design some of the look and feel of some of thier components. The team was technically very deep and lead by my very talented and good friend Allen, an excellent programmer who has been there for me and encouraged me throught out my painful learning process. I didn't want to let him down.</p>\n<p>I was dumped into a complex codebase and needed to produce some results quickly. When I started helping out I was just learning about redux and they had already adopted alt.js. I had to keep pushing on learning the react fluxxy/reduxxy way of doing things, while still making progress using alt.js. It was a challenge because it was like learning how alt.js worked while utilizing the lib in production, kind of crazy, mistakes were made. The experience has helped me going forward and I think about apps in a much cleaner and seperated manner now!</p>\n"};
+  module.exports = {"title":"EnergySavvy","subtitle":2015,"url":"//energysavvy.com","html":"<p>The engineers at EnergySavvy are really good. Thats it for this paragraph.</p>\n<p>I spent some time working on some prototypes in React most notably a <a href=\"http://energysavvy.s3-website-us-east-1.amazonaws.com/react-solar-calculator/dist/index.html\">Solar Calculator</a>. The goal of solar calculator was to help my clients users to calculate thier energy and financial savings when using electric. The most difficult part of this project was working with thier math guys and wrapping some unit tests around complex financial and energy calculations. This was quite painful, but we got through it. This was my first React project so there was some not so polished code and wtf is this, but it was great learning experience and I am much more fluent and comfortable doing things the React way now. Working with Kalpana, Gabe and Graham was awesome, all around great company and smart guys and girls!</p>\n<p>Another story of sad to leave, hopefully we will cross paths again in the future!</p>\n"};
 
 /***/ }
 
 });
-//# sourceMappingURL=7.js.map?077cd54bf8c0c50cd6d7
+//# sourceMappingURL=7.js.map?6742060f4cb415ceba92
