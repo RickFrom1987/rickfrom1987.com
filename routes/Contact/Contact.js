@@ -21,8 +21,7 @@ class ContactPage extends React.Component {
       color: Colors.WHITE,
     };
     const itemStyle = {
-      fontSize: 24,
-      padding: 6,
+      fontSize: 14,
     };
     return (
       <HeaderLayout centered>
