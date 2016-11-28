@@ -109,7 +109,7 @@ a:active { -webkit-transition: all .3s; transition: all .3s; all: #3aa3e3; }
 
 .article ul li {
   margin: 0;
-  padding: 12px;
+  padding: 6px;
 }
 
 @media (max-width: 480px) {

@@ -39,10 +39,10 @@ class ArticleLayout extends React.Component {
       backgroundColor: 'white',
     };
     const contentStyle = {
-      width: '66%',
+      width: '85%',
       maxWidth: 1024,
       minWidth: 248,
-      padding: '48px 0',
+      padding: '24px 0',
     };
     const linkStyle = {
       fontSize: 24,
