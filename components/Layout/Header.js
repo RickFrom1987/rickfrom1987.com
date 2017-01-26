@@ -1,22 +1,22 @@
 import React from 'react';
-import View from 'react-flexbox';
 import Navigation from './Navigation';
 import Link from '../Link';
-import s from './Header.css';
-
+import s from '../bootstrap-grid.css';
 import * as App from '../Constants/App';
 import * as Colors from '../Constants/Colors';
 
 class Header extends React.Component {
   render() {
+    console.log('style',s);
     const logoStyle = {
       color: Colors.WHITE,
+      height: App.HEADER_HEIGHT,
+      lineHeight: App.HEADER_HEIGHT,
+      whiteSpace: 'nowrap',
     };
     const headerStyle = {
       fontFamily: 'Montserrat',
       textTransform: 'uppercase',
-      justifyContent: 'space-between',
-      alignItems: 'center',
       position: 'fixed',
       top: 0,
       left: 0,
@@ -28,10 +28,16 @@ class Header extends React.Component {
       padding: '0 24px',
     };
     return (
-      <View row style={headerStyle}>
-        <a href="/" style={logoStyle}>RickFrom1987</a>
-        <Navigation/>
-      </View>
+      <div className={s['container-fluid']} style={headerStyle}>
+        <div className={s.row}>
+          <div className={`${s["col-md-3"]}`}>
+            <a href="/" style={logoStyle}>RickFrom1987</a>
+          </div>
+          <div className={`${s["col-md-9s"]}`}>
+            <Navigation/>
+          </div>
+        </div>
+      </div>
     );
   }
 
