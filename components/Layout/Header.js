@@ -1,13 +1,11 @@
 import React from 'react';
 import Navigation from './Navigation';
 import Link from '../Link';
-import s from '../bootstrap-grid.css';
 import * as App from '../Constants/App';
 import * as Colors from '../Constants/Colors';
 
 class Header extends React.Component {
   render() {
-    console.log('style',s);
     const logoStyle = {
       color: Colors.WHITE,
       height: App.HEADER_HEIGHT,
@@ -25,15 +23,14 @@ class Header extends React.Component {
       height: App.HEADER_HEIGHT,
       color: Colors.WHITE,
       backgroundColor: 'rgba(0,0,0, 0.5)',
-      padding: '0 24px',
     };
     return (
-      <div className={s['container-fluid']} style={headerStyle}>
-        <div className={s.row}>
-          <div className={`${s["col-md-3"]}`}>
+      <div className="container-fluid" style={headerStyle}>
+        <div className="row">
+          <div className="col-sm-6">
             <a href="/" style={logoStyle}>RickFrom1987</a>
           </div>
-          <div className={`${s["col-md-9s"]}`}>
+          <div className="col-sm-6">
             <Navigation/>
           </div>
         </div>
