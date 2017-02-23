@@ -1,4 +1,4 @@
-webpackJsonp([0],{
+webpackJsonp([11],{
 
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
@@ -1080,7 +1080,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 63:
+/***/ 42:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1089,9 +1089,9 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(20);
+  var _assign = __webpack_require__(59);
   
-  var _extends3 = _interopRequireDefault(_extends2);
+  var _assign2 = _interopRequireDefault(_assign);
   
   var _objectWithoutProperties2 = __webpack_require__(14);
   
@@ -1141,59 +1141,100 @@ webpackJsonp([0],{
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var HeaderLayout = function (_React$Component) {
-    (0, _inherits3.default)(HeaderLayout, _React$Component);
+  var ArticleLayout = function (_React$Component) {
+    (0, _inherits3.default)(ArticleLayout, _React$Component);
   
-    function HeaderLayout(props) {
-      (0, _classCallCheck3.default)(this, HeaderLayout);
+    function ArticleLayout(props) {
+      (0, _classCallCheck3.default)(this, ArticleLayout);
   
-      var _this = (0, _possibleConstructorReturn3.default)(this, (HeaderLayout.__proto__ || (0, _getPrototypeOf2.default)(HeaderLayout)).call(this, props));
+      var _this = (0, _possibleConstructorReturn3.default)(this, (ArticleLayout.__proto__ || (0, _getPrototypeOf2.default)(ArticleLayout)).call(this, props));
   
       _this.state = {};
       return _this;
     }
   
-    (0, _createClass3.default)(HeaderLayout, [{
+    (0, _createClass3.default)(ArticleLayout, [{
       key: 'render',
       value: function render() {
         var _props = this.props;
+        var title = _props.title;
+        var subtitle = _props.subtitle;
+        var url = _props.url;
         var style = _props.style;
-        var centered = _props.centered;
-        var props = (0, _objectWithoutProperties3.default)(_props, ['style', 'centered']);
+        var props = (0, _objectWithoutProperties3.default)(_props, ['title', 'subtitle', 'url', 'style']);
   
-        var layoutStyle = {
-          paddingTop: 48
+        var baseStyle = {
+          height: '100%'
         };
-  
-        var centerStyle = void 0;
-        if (centered) {
-          centerStyle = {
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%,-50%)'
-          };
-        }
-  
+        var headerStyle = {
+          width: '100%',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '50%',
+          minHeight: 320,
+          maxHeight: 580,
+          color: Colors.WHITE,
+          fontSize: 16
+        };
+        var bodyStyle = {
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundColor: 'white'
+        };
+        var contentStyle = {
+          width: '85%',
+          maxWidth: 1024,
+          minWidth: 248,
+          padding: '24px 0'
+        };
+        var linkStyle = {
+          fontSize: 24
+        };
+        var articleLayoutStyle = (0, _assign2.default)({}, baseStyle, style);
         return _react2.default.createElement(
           _reactFlexbox2.default,
-          { column: true, style: layoutStyle },
+          { column: true, style: articleLayoutStyle },
           _react2.default.createElement(_Header2.default, null),
-          _react2.default.createElement(_reactFlexbox2.default, (0, _extends3.default)({ column: true }, props, { style: centerStyle }))
+          _react2.default.createElement(
+            _reactFlexbox2.default,
+            { column: true, style: headerStyle },
+            _react2.default.createElement(
+              'h1',
+              null,
+              title
+            ),
+            _react2.default.createElement(
+              'h2',
+              null,
+              subtitle
+            )
+          ),
+          _react2.default.createElement(
+            _reactFlexbox2.default,
+            { row: true, className: _Layout2.default.article, style: bodyStyle },
+            _react2.default.createElement(
+              'div',
+              { style: contentStyle },
+              this.props.children
+            )
+          )
         );
       }
     }]);
-    return HeaderLayout;
+    return ArticleLayout;
   }(_react2.default.Component);
   
-  HeaderLayout.propTypes = {
-    centered: _react2.default.PropTypes.bool
+  ArticleLayout.propTypes = {
+    style: _react2.default.PropTypes.object,
+    title: _react2.default.PropTypes.node,
+    subtitle: _react2.default.PropTypes.node,
+    url: _react2.default.PropTypes.node
   };
-  exports.default = HeaderLayout;
+  exports.default = ArticleLayout;
 
 /***/ },
 
-/***/ 83:
+/***/ 142:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1203,24 +1244,17 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Home = __webpack_require__(222);
+  var _Booking = __webpack_require__(219);
   
-  var _Home2 = _interopRequireDefault(_Home);
+  var _Booking2 = _interopRequireDefault(_Booking);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Home2.default; /**
-                                     * React App SDK (https://github.com/kriasoft/react-app)
-                                     *
-                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-                                     *
-                                     * This source code is licensed under the MIT license found in the
-                                     * LICENSE.txt file in the root directory of this source tree.
-                                     */
+  exports.default = _Booking2.default;
 
 /***/ },
 
-/***/ 222:
+/***/ 219:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1253,154 +1287,50 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _ArticleLayout = __webpack_require__(42);
   
-  var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
+  var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _HeaderLayout = __webpack_require__(63);
-  
-  var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
-  
-  var _Link = __webpack_require__(12);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  var _Home = __webpack_require__(397);
-  
-  var _Home2 = _interopRequireDefault(_Home);
-  
-  var _Home3 = __webpack_require__(407);
-  
-  var _Colors = __webpack_require__(11);
-  
-  var Colors = _interopRequireWildcard(_Colors);
-  
-  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+  var _Booking = __webpack_require__(404);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var documentTitle = 'RickFrom1987';
+  var BookingPage = function (_React$Component) {
+    (0, _inherits3.default)(BookingPage, _React$Component);
   
-  var HomePage = function (_React$Component) {
-    (0, _inherits3.default)(HomePage, _React$Component);
-  
-    function HomePage() {
-      (0, _classCallCheck3.default)(this, HomePage);
-      return (0, _possibleConstructorReturn3.default)(this, (HomePage.__proto__ || (0, _getPrototypeOf2.default)(HomePage)).apply(this, arguments));
+    function BookingPage() {
+      (0, _classCallCheck3.default)(this, BookingPage);
+      return (0, _possibleConstructorReturn3.default)(this, (BookingPage.__proto__ || (0, _getPrototypeOf2.default)(BookingPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(HomePage, [{
+    (0, _createClass3.default)(BookingPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = documentTitle;
+        document.title = _Booking.title;
       }
     }, {
       key: 'render',
       value: function render() {
-        var homeStyle = {
-          textAlign: 'center',
-          color: Colors.WHITE
-        };
-        var linkStyle = {
-          fontSize: 24,
-          padding: 12
-        };
         return _react2.default.createElement(
-          _HeaderLayout2.default,
-          { centered: true },
-          _react2.default.createElement(
-            _reactFlexbox2.default,
-            { column: true, style: homeStyle },
-            _react2.default.createElement(
-              'h1',
-              null,
-              _Home3.title
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              _Home3.desc
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '//www.facebook.com/rickfrom1987', style: linkStyle },
-                _react2.default.createElement('i', { className: 'fa fa-facebook' })
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '//www.linkedin.com/in/rickfrom1987', style: linkStyle },
-                _react2.default.createElement('i', { className: 'fa fa-linkedin' })
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '//github.com/rickfrom1987', style: linkStyle },
-                _react2.default.createElement('i', { className: 'fa fa-github' })
-              )
-            )
-          )
+          _ArticleLayout2.default,
+          { title: _Booking.title },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Booking.html } })
         );
       }
     }]);
-    return HomePage;
+    return BookingPage;
   }(_react2.default.Component);
   
-  exports.default = HomePage;
+  exports.default = BookingPage;
 
 /***/ },
 
-/***/ 280:
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(9)();
-  // imports
-  
-  
-  // module
-  exports.push([module.id, "/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@media screen and (max-width: 1024px) {\n\n  .Home_content_3u8 {\n    padding: 0 16px;\n  }\n\n}\n", "", {"version":3,"sources":["/./routes/Home/Home.css"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;AAEH;;EAEE;IACE,gBAAgB;GACjB;;CAEF","file":"Home.css","sourcesContent":["/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@media screen and (max-width: 1024px) {\n\n  .content {\n    padding: 0 16px;\n  }\n\n}\n"],"sourceRoot":"webpack://"}]);
-  
-  // exports
-  exports.locals = {
-  	"content": "Home_content_3u8"
-  };
-
-/***/ },
-
-/***/ 397:
-/***/ function(module, exports, __webpack_require__) {
-
-  // style-loader: Adds some css to the DOM by adding a <style> tag
-  
-  // load the styles
-  var content = __webpack_require__(280);
-  if(typeof content === 'string') content = [[module.id, content, '']];
-  // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
-  if(content.locals) module.exports = content.locals;
-  // Hot Module Replacement
-  if(false) {
-  	// When the styles change, update the <style> tags
-  	if(!content.locals) {
-  		module.hot.accept("!!./../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../../node_modules/postcss-loader/index.js!./Home.css", function() {
-  			var newContent = require("!!./../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../../node_modules/postcss-loader/index.js!./Home.css");
-  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-  			update(newContent);
-  		});
-  	}
-  	// When the module is disposed, remove the <style> tags
-  	module.hot.dispose(function() { update(); });
-  }
-
-/***/ },
-
-/***/ 407:
+/***/ 404:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"Hello!","desc":"I make wonderful things.","html":""};
+  module.exports = {"title":"Booking.com","subtitle":2015,"url":"//suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"//suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine. I was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams. I really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim &lt;3</p>\n"};
 
 /***/ }
 
 });
-//# sourceMappingURL=0.js.map?0fec3f8b57394b53e853
+//# sourceMappingURL=11.js.map?94fb051938165596c2d9

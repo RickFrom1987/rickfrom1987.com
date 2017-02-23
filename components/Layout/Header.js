@@ -27,12 +27,8 @@ class Header extends React.Component {
     return (
       <div className="container-fluid" style={headerStyle}>
         <div className="row">
-          <div className="col-sm-6">
-            <a href="/" style={logoStyle}>RickFrom1987</a>
-          </div>
-          <div className="col-sm-6">
-            <Navigation/>
-          </div>
+          <a href="/" style={logoStyle}>RickFrom1987</a>
+          <Navigation/>
         </div>
       </div>
     );
