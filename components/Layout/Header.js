@@ -11,6 +11,7 @@ class Header extends React.Component {
       height: App.HEADER_HEIGHT,
       lineHeight: App.HEADER_HEIGHT,
       whiteSpace: 'nowrap',
+      margin: '0 12px',
     };
     const headerStyle = {
       fontFamily: 'Montserrat',

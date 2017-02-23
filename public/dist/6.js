@@ -715,19 +715,11 @@ webpackJsonp([6],{
             'div',
             { className: 'row' },
             _react2.default.createElement(
-              'div',
-              { className: 'col-sm-6' },
-              _react2.default.createElement(
-                'a',
-                { href: '/', style: logoStyle },
-                'RickFrom1987'
-              )
+              'a',
+              { href: '/', style: logoStyle },
+              'RickFrom1987'
             ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-sm-6' },
-              _react2.default.createElement(_Navigation2.default, null)
-            )
+            _react2.default.createElement(_Navigation2.default, null)
           )
         );
       }
@@ -1333,4 +1325,4 @@ webpackJsonp([6],{
 /***/ }
 
 });
-//# sourceMappingURL=6.js.map?ef391ae5c4b53ba71bbc
+//# sourceMappingURL=6.js.map?d5669e3566da74a7586e
