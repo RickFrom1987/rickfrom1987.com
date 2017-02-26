@@ -694,7 +694,8 @@ webpackJsonp([6],{
           color: Colors.WHITE,
           height: App.HEADER_HEIGHT,
           lineHeight: App.HEADER_HEIGHT,
-          whiteSpace: 'nowrap'
+          whiteSpace: 'nowrap',
+          margin: '0 12px'
         };
         var headerStyle = {
           fontFamily: 'Montserrat',
@@ -1325,4 +1326,4 @@ webpackJsonp([6],{
 /***/ }
 
 });
-//# sourceMappingURL=6.js.map?d5669e3566da74a7586e
+//# sourceMappingURL=6.js.map?6a5f8090ec2268aed586
