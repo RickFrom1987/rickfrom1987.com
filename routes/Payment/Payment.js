@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import View from 'react-flexbox';
+import BrowserMock from '../../components/BrowserMock';
 import axios from 'axios';
 
 import history from '../../core/history';
@@ -26,27 +27,19 @@ class PaymentPage extends React.Component {
   componentDidMount = () => {
     this.onToken({ test: 'token' });
   }
-  onToken = (token) => {
-    console.log("token", token);
-    axios.get('https://gbejaxzbq9.execute-api.us-east-1.amazonaws.com/prod/pay')
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
 
-    fetch('https://gbejaxzbq9.execute-api.us-east-1.amazonaws.com/prod/pay', {
-      mode: 'no-cors',
-      method: 'POST',
-      body: JSON.stringify(token),
-    }).then((resp) => {
-      console.log("resp", resp, resp.body);
+  onToken = (token) => {
+    axios.post('https://25cw6kon3l.execute-api.us-east-1.amazonaws.com/prod/payment')
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
     });
   }
 
   render = () => {
-    const loc =  history.getCurrentLocation();
+    const loc = history.getCurrentLocation();
     let key;
     if (loc.query.test) {
       key = CONFIG.key.test;
@@ -58,22 +51,58 @@ class PaymentPage extends React.Component {
       fontSize: 24,
       padding: 12,
     };
+    const sectionStyle = {
+      color: 'white',
+      height: 300,
+      marginBottom: 12
+    };
     return (
       <HeaderLayout centered>
-        <StripeCheckout
-          name="RickFrom1987"
-          description="Pro Subscription ($100 per month)"
-          label="Subscribe"
-          panelLabel="Subscribe"
-          amount={10000}
-          token={this.onToken}
-          stripeKey={key}
-          allowRememberMe={false}
-          desktopShowModal/>
+        <div className="row">
+          <div className="col-sm-12">
+            <BrowserMock style={sectionStyle}>
+              <h2>Individual</h2>
+              <p>$100 / month</p>
+              <StripeCheckout
+                name="RickFrom1987"
+                description="Individual ($100 per month)"
+                label="Subscribe"
+                panelLabel="Subscribe"
+                amount={10000}
+                token={this.onToken}
+                stripeKey={key}
+                allowRememberMe={false}
+                style={{
+                  position: 'relative',
+                  zIndex: 1000,
+                  marginTop: 12
+                }}/>
+            </BrowserMock>
+          </div>
+          <div className="col-sm-12">
+            <BrowserMock style={sectionStyle}>
+              <h2>Enterprise</h2>
+              <p>$300 / month</p>
+              <StripeCheckout
+                name="RickFrom1987"
+                description="Enterprise ($300 per month)"
+                label="Subscribe"
+                panelLabel="Subscribe"
+                amount={30000}
+                token={this.onToken}
+                stripeKey={key}
+                allowRememberMe={false}
+                style={{
+                  position: 'relative',
+                  zIndex: 1000,
+                  marginTop: 12
+                }}/>
+            </BrowserMock>
+          </div>
+        </div>
       </HeaderLayout>
     );
   }
-
 }
 
 export default PaymentPage;

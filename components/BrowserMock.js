@@ -13,7 +13,6 @@ class BrowserMock extends React.Component {
       hover: false,
     };
   }
-
   static propTypes = {
     style: React.PropTypes.object,
     pathname: React.PropTypes.string,
@@ -29,16 +28,20 @@ class BrowserMock extends React.Component {
       hover: false,
     });
   }
-  onMouseDown = () => {
-    window.setTimeout(() => {
-      const pathname = this.props.pathname;
-      history.push({
-        pathname: pathname
-      });
-    }, 100);
+  onMouseUp = () => {
+    if (!this.props.pathname) {
+      return;
+    } else {
+      window.setTimeout(() => {
+        const pathname = this.props.pathname;
+        history.push({
+          pathname: pathname
+        });
+      }, 500);
+    }
   }
   render() {
-    const { pathname, ...props } = this.props;
+    const { pathname, style, ...props } = this.props;
     const browserMockStyle = {
       alignItems: 'center',
       justifyContent: 'center',
@@ -62,6 +65,7 @@ class BrowserMock extends React.Component {
       boxShadow: '0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5',
     };
     const browserBodyStyle = {
+      position: 'relative',
       height: '100%',
       minWidth: 200,
       overflowY: 'hidden',
@@ -70,20 +74,21 @@ class BrowserMock extends React.Component {
       alignItems: 'center',
       textAlign: 'center',
       width: '100%',
+      zIndex: 1000,
     };
     if (this.state.hover) {
       browserMockStyle.backgroundColor = 'rgba(0,0,0,0.25)';
       browserMockStyle.cursor = 'pointer';
     }
+    const viewStyle = Object.assign({}, browserMockStyle, style);
     return (
       <View 
         {...props}
         column
-        style={browserMockStyle}
+        style={viewStyle}
         onMouseOver={this.onMouseOver}
         onMouseLeave={this.onMouseLeave}
-        onMouseDown={this.onMouseDown}
-        onClick={this.onMouseDown}>
+        onMouseUp={this.onMouseUp}>
         <div style={browserDotsStyle}></div>
         <View column style={browserBodyStyle} className={s.ripple}>
           {this.props.children}

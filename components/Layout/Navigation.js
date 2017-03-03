@@ -14,6 +14,9 @@ function Navigation() {
       <Link className={linkClass('/projects')} to="/projects">
         <i className="fa fa-desktop"></i>
       </Link>
+      <Link className={linkClass('/payment')} to="/payment">
+        <i className="fa fa-credit-card"></i>
+      </Link>
     </nav>
   );
 }

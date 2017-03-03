@@ -13,7 +13,7 @@
   padding-top: 200%;
   padding-left: 200%;
   opacity: 0;
-  transition: all 1.5s
+  transition: all 0.5s
 }
 .ripple:active:after {
   padding-top: 0;
