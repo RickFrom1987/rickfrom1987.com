@@ -29,48 +29,15 @@ webpackJsonp([8],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(45);
-  
-  var _defineProperty2 = _interopRequireDefault(_defineProperty);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = function () {
-    function defineProperties(target, props) {
-      for (var i = 0; i < props.length; i++) {
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor) descriptor.writable = true;
-        (0, _defineProperty2.default)(target, descriptor.key, descriptor);
-      }
-    }
-  
-    return function (Constructor, protoProps, staticProps) {
-      if (protoProps) defineProperties(Constructor.prototype, protoProps);
-      if (staticProps) defineProperties(Constructor, staticProps);
-      return Constructor;
-    };
-  }();
-
-/***/ },
-
-/***/ 5:
-/***/ function(module, exports, __webpack_require__) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
   var _setPrototypeOf = __webpack_require__(25);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(44);
+  var _create = __webpack_require__(45);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(20);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -94,14 +61,14 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 6:
+/***/ 5:
 /***/ function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(20);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -114,6 +81,39 @@ webpackJsonp([8],{
   
     return call && ((typeof call === "undefined" ? "undefined" : (0, _typeof3.default)(call)) === "object" || typeof call === "function") ? call : self;
   };
+
+/***/ },
+
+/***/ 6:
+/***/ function(module, exports, __webpack_require__) {
+
+  "use strict";
+  
+  exports.__esModule = true;
+  
+  var _defineProperty = __webpack_require__(46);
+  
+  var _defineProperty2 = _interopRequireDefault(_defineProperty);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        (0, _defineProperty2.default)(target, descriptor.key, descriptor);
+      }
+    }
+  
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
 
 /***/ },
 
@@ -443,6 +443,27 @@ webpackJsonp([8],{
 /***/ },
 
 /***/ 12:
+/***/ function(module, exports) {
+
+  "use strict";
+  
+  exports.__esModule = true;
+  
+  exports.default = function (obj, keys) {
+    var target = {};
+  
+    for (var i in obj) {
+      if (keys.indexOf(i) >= 0) continue;
+      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+      target[i] = obj[i];
+    }
+  
+    return target;
+  };
+
+/***/ },
+
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -466,27 +487,6 @@ webpackJsonp([8],{
                                      * This source code is licensed under the MIT license found in the
                                      * LICENSE.txt file in the root directory of this source tree.
                                      */
-
-/***/ },
-
-/***/ 14:
-/***/ function(module, exports) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
-  exports.default = function (obj, keys) {
-    var target = {};
-  
-    for (var i in obj) {
-      if (keys.indexOf(i) >= 0) continue;
-      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-      target[i] = obj[i];
-    }
-  
-    return target;
-  };
 
 /***/ },
 
@@ -643,15 +643,15 @@ webpackJsonp([8],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(6);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(5);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(4);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -663,7 +663,7 @@ webpackJsonp([8],{
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(12);
+  var _Link = __webpack_require__(14);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -745,11 +745,11 @@ webpackJsonp([8],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(18);
+  var _history = __webpack_require__(17);
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(12);
+  var _Link = __webpack_require__(14);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -776,6 +776,11 @@ webpackJsonp([8],{
         _Link2.default,
         { className: linkClass('/projects'), to: '/projects' },
         _react2.default.createElement('i', { className: 'fa fa-desktop' })
+      ),
+      _react2.default.createElement(
+        _Link2.default,
+        { className: linkClass('/payment'), to: '/payment' },
+        _react2.default.createElement('i', { className: 'fa fa-credit-card' })
       )
     );
   }
@@ -793,11 +798,11 @@ webpackJsonp([8],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(20);
+  var _extends2 = __webpack_require__(19);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _objectWithoutProperties2 = __webpack_require__(12);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -809,15 +814,15 @@ webpackJsonp([8],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(6);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(5);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(4);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -825,7 +830,7 @@ webpackJsonp([8],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(18);
+  var _history = __webpack_require__(17);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -943,7 +948,7 @@ webpackJsonp([8],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(39)(Function.call, __webpack_require__(47).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(39)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -964,9 +969,9 @@ webpackJsonp([8],{
 
   // 19.1.2.9 Object.getPrototypeOf(O)
   var toObject        = __webpack_require__(41)
-    , $getPrototypeOf = __webpack_require__(48);
+    , $getPrototypeOf = __webpack_require__(49);
   
-  __webpack_require__(49)('getPrototypeOf', function(){
+  __webpack_require__(50)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -1082,11 +1087,11 @@ webpackJsonp([8],{
     value: true
   });
   
-  var _assign = __webpack_require__(59);
+  var _assign = __webpack_require__(55);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _objectWithoutProperties2 = __webpack_require__(12);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -1098,15 +1103,15 @@ webpackJsonp([8],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(6);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(5);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(4);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1227,7 +1232,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 148:
+/***/ 158:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1237,7 +1242,7 @@ webpackJsonp([8],{
   });
   exports.default = undefined;
   
-  var _Energysavvy = __webpack_require__(225);
+  var _Energysavvy = __webpack_require__(252);
   
   var _Energysavvy2 = _interopRequireDefault(_Energysavvy);
   
@@ -1247,7 +1252,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 225:
+/***/ 252:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1264,15 +1269,15 @@ webpackJsonp([8],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(6);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(5);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(4);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1284,7 +1289,7 @@ webpackJsonp([8],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Energysavvy = __webpack_require__(410);
+  var _Energysavvy = __webpack_require__(434);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -1318,7 +1323,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 410:
+/***/ 434:
 /***/ function(module, exports) {
 
   module.exports = {"title":"EnergySavvy","subtitle":2015,"url":"//energysavvy.com","html":"<p>The engineers at <a href=\"//energysavvy.com\">EnergySavvy</a> are really good. Thats it for this paragraph.</p>\n<p>I spent some time working on some prototypes in React most notably a <a href=\"http://energysavvy.s3-website-us-east-1.amazonaws.com/react-solar-calculator/dist/index.html\">Solar Calculator</a>. The goal of solar calculator was to help my clients users to calculate thier energy and financial savings when using electric. The most difficult part of this project was working with thier math guys and wrapping some unit tests around complex financial and energy calculations. This was quite painful, but we got through it. This was my first React project so there was some not so polished code and wtf is this, but it was great learning experience and I am much more fluent and comfortable doing things the React way now. Working with Kalpana, Gabe and Graham was awesome, all around great company and smart guys and girls!</p>\n<p>Another story of sad to leave, hopefully we will cross paths again in the future!</p>\n"};
@@ -1326,4 +1331,4 @@ webpackJsonp([8],{
 /***/ }
 
 });
-//# sourceMappingURL=8.js.map?d2943eebbae26cb859a6
+//# sourceMappingURL=8.js.map?291105fe4393b618ddf3

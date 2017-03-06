@@ -4,14 +4,6 @@
     "component": "./routes/Home"
   },
   {
-    "path": "/payment",
-    "component": "./routes/Payment"
-  },
-  {
-    "path": "/payment/:env",
-    "component": "./routes/Payment"
-  },
-  {
     "path": "/contact",
     "component": "./routes/Contact"
   },

@@ -29,48 +29,15 @@ webpackJsonp([6],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(45);
-  
-  var _defineProperty2 = _interopRequireDefault(_defineProperty);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = function () {
-    function defineProperties(target, props) {
-      for (var i = 0; i < props.length; i++) {
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor) descriptor.writable = true;
-        (0, _defineProperty2.default)(target, descriptor.key, descriptor);
-      }
-    }
-  
-    return function (Constructor, protoProps, staticProps) {
-      if (protoProps) defineProperties(Constructor.prototype, protoProps);
-      if (staticProps) defineProperties(Constructor, staticProps);
-      return Constructor;
-    };
-  }();
-
-/***/ },
-
-/***/ 5:
-/***/ function(module, exports, __webpack_require__) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
   var _setPrototypeOf = __webpack_require__(25);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(44);
+  var _create = __webpack_require__(45);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(20);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -94,14 +61,14 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 6:
+/***/ 5:
 /***/ function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(20);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -114,6 +81,39 @@ webpackJsonp([6],{
   
     return call && ((typeof call === "undefined" ? "undefined" : (0, _typeof3.default)(call)) === "object" || typeof call === "function") ? call : self;
   };
+
+/***/ },
+
+/***/ 6:
+/***/ function(module, exports, __webpack_require__) {
+
+  "use strict";
+  
+  exports.__esModule = true;
+  
+  var _defineProperty = __webpack_require__(46);
+  
+  var _defineProperty2 = _interopRequireDefault(_defineProperty);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        (0, _defineProperty2.default)(target, descriptor.key, descriptor);
+      }
+    }
+  
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
 
 /***/ },
 
@@ -443,6 +443,27 @@ webpackJsonp([6],{
 /***/ },
 
 /***/ 12:
+/***/ function(module, exports) {
+
+  "use strict";
+  
+  exports.__esModule = true;
+  
+  exports.default = function (obj, keys) {
+    var target = {};
+  
+    for (var i in obj) {
+      if (keys.indexOf(i) >= 0) continue;
+      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+      target[i] = obj[i];
+    }
+  
+    return target;
+  };
+
+/***/ },
+
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -466,27 +487,6 @@ webpackJsonp([6],{
                                      * This source code is licensed under the MIT license found in the
                                      * LICENSE.txt file in the root directory of this source tree.
                                      */
-
-/***/ },
-
-/***/ 14:
-/***/ function(module, exports) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
-  exports.default = function (obj, keys) {
-    var target = {};
-  
-    for (var i in obj) {
-      if (keys.indexOf(i) >= 0) continue;
-      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-      target[i] = obj[i];
-    }
-  
-    return target;
-  };
 
 /***/ },
 
@@ -643,15 +643,15 @@ webpackJsonp([6],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(6);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(5);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(4);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -663,7 +663,7 @@ webpackJsonp([6],{
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(12);
+  var _Link = __webpack_require__(14);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -745,11 +745,11 @@ webpackJsonp([6],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(18);
+  var _history = __webpack_require__(17);
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(12);
+  var _Link = __webpack_require__(14);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -776,6 +776,11 @@ webpackJsonp([6],{
         _Link2.default,
         { className: linkClass('/projects'), to: '/projects' },
         _react2.default.createElement('i', { className: 'fa fa-desktop' })
+      ),
+      _react2.default.createElement(
+        _Link2.default,
+        { className: linkClass('/payment'), to: '/payment' },
+        _react2.default.createElement('i', { className: 'fa fa-credit-card' })
       )
     );
   }
@@ -793,11 +798,11 @@ webpackJsonp([6],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(20);
+  var _extends2 = __webpack_require__(19);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _objectWithoutProperties2 = __webpack_require__(12);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -809,15 +814,15 @@ webpackJsonp([6],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(6);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(5);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(4);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -825,7 +830,7 @@ webpackJsonp([6],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(18);
+  var _history = __webpack_require__(17);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -943,7 +948,7 @@ webpackJsonp([6],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(39)(Function.call, __webpack_require__(47).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(39)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -964,9 +969,9 @@ webpackJsonp([6],{
 
   // 19.1.2.9 Object.getPrototypeOf(O)
   var toObject        = __webpack_require__(41)
-    , $getPrototypeOf = __webpack_require__(48);
+    , $getPrototypeOf = __webpack_require__(49);
   
-  __webpack_require__(49)('getPrototypeOf', function(){
+  __webpack_require__(50)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -1082,11 +1087,11 @@ webpackJsonp([6],{
     value: true
   });
   
-  var _assign = __webpack_require__(59);
+  var _assign = __webpack_require__(55);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _objectWithoutProperties2 = __webpack_require__(12);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -1098,15 +1103,15 @@ webpackJsonp([6],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(6);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(5);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(4);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1227,7 +1232,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 150:
+/***/ 160:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1237,7 +1242,7 @@ webpackJsonp([6],{
   });
   exports.default = undefined;
   
-  var _Moment = __webpack_require__(227);
+  var _Moment = __webpack_require__(254);
   
   var _Moment2 = _interopRequireDefault(_Moment);
   
@@ -1247,7 +1252,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 227:
+/***/ 254:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1264,15 +1269,15 @@ webpackJsonp([6],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(6);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(5);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(4);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1284,7 +1289,7 @@ webpackJsonp([6],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Moment = __webpack_require__(412);
+  var _Moment = __webpack_require__(436);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -1318,7 +1323,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 412:
+/***/ 436:
 /***/ function(module, exports) {
 
   module.exports = {"title":"MomentLens","subtitle":2015,"url":"https://momentlens.co","html":"<p>Working with friends @ <a href=\"//momentlens.co\">MomentLens</a> was a once in a lifetime opportunity. It was the first hardware startup I have worked for and it was so insanely fun and exciting! I was able to learn a ton from Marc, Erik and Wes (the man behind the hardware of Moment Case!) about so many aspects of business, design and hardware. I was lucky enough to be onboard during which our team was able to raise money on <a href=\"https://www.kickstarter.com/projects/584288471/moment-case-worlds-best-iphone-case-for-mobile-pho\">Kickstarter for the Moment Case</a>. I was brought in to work on whatever needed to be worked on:</p>\n<p><b>Basic Infrastructure.</b> Their online shop and website was standing up and operating fairly well, but they wanted features, design changes and stability with little infrastructure to support it. I started by moving them onto version control and getting everything into Github asap, before editing a single line of code. I also setup some basic tests and pingdom monitoring so we could make small steps forward. Lessons here is to think about removing code before adding more!</p>\n<p><b>Wordpress Plugin Hell.</b> They didn’t have a full time dev on the site prior to my arrival so they were able to get what they needed by adding a ton of Wordpress and Woocommerce plugins. The problem here is that they are constantly needing updates and can cause issues when doing theme or feature development. Also it is hell on page load time (this affected the site on mobile heavily). Before writing any more code I sat down with the team and went through every plugin to decide whether we actually needed them or not and defensively patched and removed plugins that we didn’t need to help make our codebase smaller and less of a headache.</p>\n<p><b>Streamlining Monotonous Tasks.</b> My first major contribution was to help streamline their ordering process within WooCommerce. They had a manual process that took our customer support gal hours to complete. I hacked together a Woocommerce plugin that took away this task. The code is not ideal as I had zero experience writing Woocommerce plugins, but it worked and we moved forward.</p>\n<p><b>Data and Analytics.</b> Turns out it is really important to understand your users and their buying behaviors. The learning in this area has been immense for me. I have always just setup Google analytics and that was the end of that. I am now using Google analytics a bit more carefully now. Working here has taught me that thinking carefully about where and when to hook into google analytics actions and events can make a world of difference in understanding a user base!</p>\n<p>I faced many challenges during my time at moment. The site handled hundreds of orders a day, processing in the tens of thousands per month. I helped streamline the project management on the business side as well as some python scripts to help automate business processes. I also was able to train and help the tech intern Eli! Who is now on his way to working on great things, really proud of my time with him and helping him along.</p>\n"};
@@ -1326,4 +1331,4 @@ webpackJsonp([6],{
 /***/ }
 
 });
-//# sourceMappingURL=6.js.map?6a5f8090ec2268aed586
+//# sourceMappingURL=6.js.map?ac67c25faf00ffb5e243
