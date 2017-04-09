@@ -70,7 +70,7 @@ webpackJsonp([8],{
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([8],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -159,7 +159,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 12:
+/***/ 13:
 /***/ function(module, exports) {
 
   /*
@@ -216,7 +216,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 13:
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -490,7 +490,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 16:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -750,7 +750,7 @@ webpackJsonp([8],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -835,7 +835,7 @@ webpackJsonp([8],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -996,7 +996,7 @@ webpackJsonp([8],{
 /***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1021,7 +1021,7 @@ webpackJsonp([8],{
   var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1048,7 +1048,7 @@ webpackJsonp([8],{
     value: true
   });
   
-  var _assign = __webpack_require__(53);
+  var _assign = __webpack_require__(54);
   
   var _assign2 = _interopRequireDefault(_assign);
   
@@ -1080,7 +1080,7 @@ webpackJsonp([8],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1214,7 +1214,7 @@ webpackJsonp([8],{
 /***/ 41:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1238,7 +1238,7 @@ webpackJsonp([8],{
   var content = __webpack_require__(41);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1256,7 +1256,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 143:
+/***/ 147:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1266,7 +1266,7 @@ webpackJsonp([8],{
   });
   exports.default = undefined;
   
-  var _Energysavvy = __webpack_require__(218);
+  var _Energysavvy = __webpack_require__(226);
   
   var _Energysavvy2 = _interopRequireDefault(_Energysavvy);
   
@@ -1276,7 +1276,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 218:
+/***/ 226:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1313,7 +1313,7 @@ webpackJsonp([8],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Energysavvy = __webpack_require__(418);
+  var _Energysavvy = __webpack_require__(414);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -1347,7 +1347,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 418:
+/***/ 414:
 /***/ function(module, exports) {
 
   module.exports = {"title":"EnergySavvy","subtitle":2015,"url":"//energysavvy.com","html":"<p>The engineers at <a href=\"//energysavvy.com\">EnergySavvy</a> are really good. Thats it for this paragraph.</p>\n<p>I spent some time working on some prototypes in React most notably a <a href=\"http://energysavvy.s3-website-us-east-1.amazonaws.com/react-solar-calculator/dist/index.html\">Solar Calculator</a>. The goal of solar calculator was to help my clients users to calculate thier energy and financial savings when using electric. The most difficult part of this project was working with thier math guys and wrapping some unit tests around complex financial and energy calculations. This was quite painful, but we got through it. This was my first React project so there was some not so polished code and wtf is this, but it was great learning experience and I am much more fluent and comfortable doing things the React way now. Working with Kalpana, Gabe and Graham was awesome, all around great company and smart guys and girls!</p>\n<p>Another story of sad to leave, hopefully we will cross paths again in the future!</p>\n"};
@@ -1355,4 +1355,4 @@ webpackJsonp([8],{
 /***/ }
 
 });
-//# sourceMappingURL=8.js.map?c142d8f69e79292d36e4
+//# sourceMappingURL=8.js.map?3cd4dabcd5e829a3483b

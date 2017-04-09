@@ -70,7 +70,7 @@ webpackJsonp([6],{
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([6],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -159,7 +159,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 12:
+/***/ 13:
 /***/ function(module, exports) {
 
   /*
@@ -216,7 +216,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 13:
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -490,7 +490,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 16:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -750,7 +750,7 @@ webpackJsonp([6],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -835,7 +835,7 @@ webpackJsonp([6],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -996,7 +996,7 @@ webpackJsonp([6],{
 /***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1021,7 +1021,7 @@ webpackJsonp([6],{
   var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1048,7 +1048,7 @@ webpackJsonp([6],{
     value: true
   });
   
-  var _assign = __webpack_require__(53);
+  var _assign = __webpack_require__(54);
   
   var _assign2 = _interopRequireDefault(_assign);
   
@@ -1080,7 +1080,7 @@ webpackJsonp([6],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1214,7 +1214,7 @@ webpackJsonp([6],{
 /***/ 41:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1238,7 +1238,7 @@ webpackJsonp([6],{
   var content = __webpack_require__(41);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1256,7 +1256,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 145:
+/***/ 149:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1266,7 +1266,7 @@ webpackJsonp([6],{
   });
   exports.default = undefined;
   
-  var _Moment = __webpack_require__(221);
+  var _Moment = __webpack_require__(229);
   
   var _Moment2 = _interopRequireDefault(_Moment);
   
@@ -1276,7 +1276,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 221:
+/***/ 229:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1313,7 +1313,7 @@ webpackJsonp([6],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Moment = __webpack_require__(421);
+  var _Moment = __webpack_require__(417);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -1347,7 +1347,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 421:
+/***/ 417:
 /***/ function(module, exports) {
 
   module.exports = {"title":"MomentLens","subtitle":2015,"url":"https://momentlens.co","html":"<p>Working with friends @ <a href=\"//momentlens.co\">MomentLens</a> was a once in a lifetime opportunity. It was the first hardware startup I have worked for and it was so insanely fun and exciting! I was able to learn a ton from Marc, Erik and Wes (the man behind the hardware of Moment Case!) about so many aspects of business, design and hardware. I was lucky enough to be onboard during which our team was able to raise money on <a href=\"https://www.kickstarter.com/projects/584288471/moment-case-worlds-best-iphone-case-for-mobile-pho\">Kickstarter for the Moment Case</a>. I was brought in to work on whatever needed to be worked on:</p>\n<p><b>Basic Infrastructure.</b></p>\n<p>\nTheir online shop and website was standing up and operating fairly well, but they wanted features, design changes and stability with little infrastructure to support it. I started by moving them onto version control and getting everything into Github asap, before editing a single line of code. I also setup some basic tests and pingdom monitoring so we could make small steps forward. Lessons here is to think about removing code before adding more!\n</p>\n<p><b>Wordpress Plugin Hell.</b></p>\n<p>\nThey didn’t have a full time dev on the site prior to my arrival so they were able to get what they needed by adding a ton of Wordpress and Woocommerce plugins. The problem here is that they are constantly needing updates and can cause issues when doing theme or feature development. Also it is hell on page load time (this affected the site on mobile heavily). Before writing any more code I sat down with the team and went through every plugin to decide whether we actually needed them or not and defensively patched and removed plugins that we didn’t need to help make our codebase smaller and less of a headache.\n</p>\n<p><b>Streamlining Monotonous Tasks.</b></p>\n<p>\nMy first major contribution was to help streamline their ordering process within WooCommerce. They had a manual process that took our customer support gal hours to complete. I hacked together a Woocommerce plugin that took away this task. The code is not ideal as I had zero experience writing Woocommerce plugins, but it worked and we moved forward.\n</p>\n<p><b>Data and Analytics.</b></p>\n<p>\nTurns out it is really important to understand your users and their buying behaviors. The learning in this area has been immense for me. I have always just setup Google analytics and that was the end of that. I am now using Google analytics a bit more carefully now. Working here has taught me that thinking carefully about where and when to hook into google analytics actions and events can make a world of difference in understanding a user base!\n</p>\n<p>I faced many challenges during my time at moment. The site handled hundreds of orders a day, processing in the tens of thousands per month. I helped streamline the project management on the business side as well as some python scripts to help automate business processes. I also was able to train and help the tech intern Eli! Who is now on his way to working on great things, really proud of my time with him and helping him along.</p>\n"};
@@ -1355,4 +1355,4 @@ webpackJsonp([6],{
 /***/ }
 
 });
-//# sourceMappingURL=6.js.map?c3418bba22c368c91143
+//# sourceMappingURL=6.js.map?d1fb309f97d109aaf673

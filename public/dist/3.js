@@ -70,7 +70,7 @@ webpackJsonp([3],{
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([3],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -159,7 +159,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 12:
+/***/ 13:
 /***/ function(module, exports) {
 
   /*
@@ -216,7 +216,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 13:
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -490,7 +490,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 16:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -750,7 +750,7 @@ webpackJsonp([3],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -835,7 +835,7 @@ webpackJsonp([3],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -996,7 +996,7 @@ webpackJsonp([3],{
 /***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1021,7 +1021,7 @@ webpackJsonp([3],{
   var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1080,7 +1080,7 @@ webpackJsonp([3],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1150,7 +1150,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 141:
+/***/ 145:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1160,7 +1160,7 @@ webpackJsonp([3],{
   });
   exports.default = undefined;
   
-  var _Contact = __webpack_require__(216);
+  var _Contact = __webpack_require__(224);
   
   var _Contact2 = _interopRequireDefault(_Contact);
   
@@ -1170,7 +1170,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 216:
+/***/ 224:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1203,7 +1203,7 @@ webpackJsonp([3],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1215,11 +1215,11 @@ webpackJsonp([3],{
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Contact = __webpack_require__(407);
+  var _Contact = __webpack_require__(404);
   
   var _Contact2 = _interopRequireDefault(_Contact);
   
-  var _Contact3 = __webpack_require__(416);
+  var _Contact3 = __webpack_require__(412);
   
   var _Colors = __webpack_require__(10);
   
@@ -1296,10 +1296,10 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 273:
+/***/ 281:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1313,16 +1313,16 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 407:
+/***/ 404:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(273);
+  var content = __webpack_require__(281);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1340,7 +1340,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 416:
+/***/ 412:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Call me maybe","phone":"425.985.9755","email":"rick@rickfrom1987.com","html":""};
@@ -1348,4 +1348,4 @@ webpackJsonp([3],{
 /***/ }
 
 });
-//# sourceMappingURL=3.js.map?8bc7938d20c6683a2e9d
+//# sourceMappingURL=3.js.map?d91a269717207c687685

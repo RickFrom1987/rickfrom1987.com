@@ -70,7 +70,7 @@ webpackJsonp([10],{
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([10],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -159,7 +159,7 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 12:
+/***/ 13:
 /***/ function(module, exports) {
 
   /*
@@ -216,7 +216,7 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 13:
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -490,7 +490,7 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 16:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -750,7 +750,7 @@ webpackJsonp([10],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -835,7 +835,7 @@ webpackJsonp([10],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -996,7 +996,7 @@ webpackJsonp([10],{
 /***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1021,7 +1021,7 @@ webpackJsonp([10],{
   var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1048,7 +1048,7 @@ webpackJsonp([10],{
     value: true
   });
   
-  var _assign = __webpack_require__(53);
+  var _assign = __webpack_require__(54);
   
   var _assign2 = _interopRequireDefault(_assign);
   
@@ -1080,7 +1080,7 @@ webpackJsonp([10],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1214,7 +1214,7 @@ webpackJsonp([10],{
 /***/ 41:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1238,7 +1238,7 @@ webpackJsonp([10],{
   var content = __webpack_require__(41);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1256,7 +1256,7 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 140:
+/***/ 144:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1266,7 +1266,7 @@ webpackJsonp([10],{
   });
   exports.default = undefined;
   
-  var _Brandly = __webpack_require__(215);
+  var _Brandly = __webpack_require__(223);
   
   var _Brandly2 = _interopRequireDefault(_Brandly);
   
@@ -1276,7 +1276,7 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 215:
+/***/ 223:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1313,7 +1313,7 @@ webpackJsonp([10],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Brandly = __webpack_require__(415);
+  var _Brandly = __webpack_require__(411);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -1347,7 +1347,7 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 415:
+/***/ 411:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Brandly.com","subtitle":2015,"url":"//brandly.com","html":"<p><a href=\"//brandly.com\">Brandly</a> is a small startup in Seattle that wants to make ordering business cards easier. They needed some frontend love to bring an existing angular app up to date. I was brought in to help give the app a facelift and make the user experience better. I enjoyed working with Doug, Reed, Saaj and Tony. The team was passionate about what they were doing and it really make a huge difference when you go in everyday.</p>\n<p>In this job the first challenge I faced was making small unbreaking changes to a complex frontend. The original author had since moved on and there was not much documentation or solid patterns to follow. I wanted to show the business progress, by making a ton of changes quickly, but I had to control myself and ensure the app still worked as expected with small controlled changes and testing before moving on.</p>\n<p>There was also a requirement to build a loading screen in pure js with out any deps, so I did that for them. You can see a standalone version <a href=\"http://brandly-loader.s3-website-us-east-1.amazonaws.com/\">here</a>.</p>\n<p>At the end I was sad to go, but they are on the path forward and I hope to work with them again.</p>\n"};
@@ -1355,4 +1355,4 @@ webpackJsonp([10],{
 /***/ }
 
 });
-//# sourceMappingURL=10.js.map?8abf8f9aa3079afa0318
+//# sourceMappingURL=10.js.map?2280f06903d93b94b95f

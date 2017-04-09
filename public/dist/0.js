@@ -70,7 +70,7 @@ webpackJsonp([0],{
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -159,7 +159,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 12:
+/***/ 13:
 /***/ function(module, exports) {
 
   /*
@@ -216,7 +216,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 13:
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -490,7 +490,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 16:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -750,7 +750,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -835,7 +835,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -996,7 +996,7 @@ webpackJsonp([0],{
 /***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1021,7 +1021,7 @@ webpackJsonp([0],{
   var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1080,7 +1080,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1150,7 +1150,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 83:
+/***/ 84:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1160,7 +1160,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Home = __webpack_require__(220);
+  var _Home = __webpack_require__(228);
   
   var _Home2 = _interopRequireDefault(_Home);
   
@@ -1177,7 +1177,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 220:
+/***/ 228:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1210,7 +1210,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1222,11 +1222,11 @@ webpackJsonp([0],{
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Home = __webpack_require__(408);
+  var _Home = __webpack_require__(405);
   
   var _Home2 = _interopRequireDefault(_Home);
   
-  var _Home3 = __webpack_require__(420);
+  var _Home3 = __webpack_require__(416);
   
   var _Colors = __webpack_require__(10);
   
@@ -1308,10 +1308,10 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 274:
+/***/ 282:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1325,16 +1325,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 408:
+/***/ 405:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(274);
+  var content = __webpack_require__(282);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1352,7 +1352,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 420:
+/***/ 416:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Hello.","desc":"I make wonderful things.","html":""};
@@ -1360,4 +1360,4 @@ webpackJsonp([0],{
 /***/ }
 
 });
-//# sourceMappingURL=0.js.map?68ed951825e64da2f799
+//# sourceMappingURL=0.js.map?7c8052905605a82012b2

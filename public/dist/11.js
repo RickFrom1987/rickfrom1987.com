@@ -70,7 +70,7 @@ webpackJsonp([11],{
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([11],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -159,7 +159,7 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 12:
+/***/ 13:
 /***/ function(module, exports) {
 
   /*
@@ -216,7 +216,7 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 13:
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -490,7 +490,7 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 16:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -750,7 +750,7 @@ webpackJsonp([11],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -835,7 +835,7 @@ webpackJsonp([11],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -996,7 +996,7 @@ webpackJsonp([11],{
 /***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1021,7 +1021,7 @@ webpackJsonp([11],{
   var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1048,7 +1048,7 @@ webpackJsonp([11],{
     value: true
   });
   
-  var _assign = __webpack_require__(53);
+  var _assign = __webpack_require__(54);
   
   var _assign2 = _interopRequireDefault(_assign);
   
@@ -1080,7 +1080,7 @@ webpackJsonp([11],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1214,7 +1214,7 @@ webpackJsonp([11],{
 /***/ 41:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1238,7 +1238,7 @@ webpackJsonp([11],{
   var content = __webpack_require__(41);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1256,7 +1256,7 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 139:
+/***/ 143:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1266,7 +1266,7 @@ webpackJsonp([11],{
   });
   exports.default = undefined;
   
-  var _Booking = __webpack_require__(214);
+  var _Booking = __webpack_require__(222);
   
   var _Booking2 = _interopRequireDefault(_Booking);
   
@@ -1276,7 +1276,7 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 214:
+/***/ 222:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1313,7 +1313,7 @@ webpackJsonp([11],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Booking = __webpack_require__(414);
+  var _Booking = __webpack_require__(410);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -1347,7 +1347,7 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 414:
+/***/ 410:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Booking.com","subtitle":2015,"url":"//suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"//suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine. I was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams. I really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim &lt;3</p>\n"};
@@ -1355,4 +1355,4 @@ webpackJsonp([11],{
 /***/ }
 
 });
-//# sourceMappingURL=11.js.map?ec49237083c37c1ff2ea
+//# sourceMappingURL=11.js.map?d71b22ce569c850521d4

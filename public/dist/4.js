@@ -70,7 +70,7 @@ webpackJsonp([4],{
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([4],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -159,7 +159,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 12:
+/***/ 13:
 /***/ function(module, exports) {
 
   /*
@@ -216,7 +216,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 13:
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -490,7 +490,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 16:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -750,7 +750,7 @@ webpackJsonp([4],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -835,7 +835,7 @@ webpackJsonp([4],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -996,7 +996,7 @@ webpackJsonp([4],{
 /***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1021,7 +1021,7 @@ webpackJsonp([4],{
   var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1048,7 +1048,7 @@ webpackJsonp([4],{
     value: true
   });
   
-  var _assign = __webpack_require__(53);
+  var _assign = __webpack_require__(54);
   
   var _assign2 = _interopRequireDefault(_assign);
   
@@ -1080,7 +1080,7 @@ webpackJsonp([4],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1214,7 +1214,7 @@ webpackJsonp([4],{
 /***/ 41:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1238,7 +1238,7 @@ webpackJsonp([4],{
   var content = __webpack_require__(41);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1256,7 +1256,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 148:
+/***/ 152:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1266,7 +1266,7 @@ webpackJsonp([4],{
   });
   exports.default = undefined;
   
-  var _Yahoo = __webpack_require__(223);
+  var _Yahoo = __webpack_require__(231);
   
   var _Yahoo2 = _interopRequireDefault(_Yahoo);
   
@@ -1276,7 +1276,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 223:
+/***/ 231:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1313,7 +1313,7 @@ webpackJsonp([4],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Yahoo = __webpack_require__(423);
+  var _Yahoo = __webpack_require__(419);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -1347,7 +1347,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 423:
+/***/ 419:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Yahoo!","subtitle":2009,"url":"https://yahoo.com","html":"<p>My first job ever was at Yahoo! It feels like forever ago. I met great people and lifelong friends here. Yahoo! was one of the best places I have ever worked. Lots of perks and working with really fun and smart people. My main goal was to learn from others and do the best that I could as I didn't know much about life or programming. I just kind of dove head first into anything they would let me work on. Met some great engineers / friends like Naveen, Rohith, Nat and Steven Ramkumar. I got to work with a great team. Special thanks to everyone on Yahoo! Local who helped me grow as a developer and person, I will never have enough good things to say about my time there.</p>\n"};
@@ -1355,4 +1355,4 @@ webpackJsonp([4],{
 /***/ }
 
 });
-//# sourceMappingURL=4.js.map?83a6b7ed1fe2fae14744
+//# sourceMappingURL=4.js.map?3cfd977cf56fa002e02f

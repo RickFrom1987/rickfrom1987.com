@@ -70,7 +70,7 @@ webpackJsonp([5],{
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([5],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(19);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -159,7 +159,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 12:
+/***/ 13:
 /***/ function(module, exports) {
 
   /*
@@ -216,7 +216,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 13:
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -490,7 +490,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 16:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -750,7 +750,7 @@ webpackJsonp([5],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -835,7 +835,7 @@ webpackJsonp([5],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -996,7 +996,7 @@ webpackJsonp([5],{
 /***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1021,7 +1021,7 @@ webpackJsonp([5],{
   var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1048,7 +1048,7 @@ webpackJsonp([5],{
     value: true
   });
   
-  var _assign = __webpack_require__(53);
+  var _assign = __webpack_require__(54);
   
   var _assign2 = _interopRequireDefault(_assign);
   
@@ -1080,7 +1080,7 @@ webpackJsonp([5],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1214,7 +1214,7 @@ webpackJsonp([5],{
 /***/ 41:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(13)();
   // imports
   
   
@@ -1238,7 +1238,7 @@ webpackJsonp([5],{
   var content = __webpack_require__(41);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(14)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1256,7 +1256,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 146:
+/***/ 150:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1266,7 +1266,7 @@ webpackJsonp([5],{
   });
   exports.default = undefined;
   
-  var _MotionSocial = __webpack_require__(222);
+  var _MotionSocial = __webpack_require__(230);
   
   var _MotionSocial2 = _interopRequireDefault(_MotionSocial);
   
@@ -1276,7 +1276,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 222:
+/***/ 230:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1313,7 +1313,7 @@ webpackJsonp([5],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _MotionSocial = __webpack_require__(422);
+  var _MotionSocial = __webpack_require__(418);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -1347,7 +1347,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 422:
+/***/ 418:
 /***/ function(module, exports) {
 
   module.exports = {"title":"motion.social","subtitle":2016,"url":"https://motion.social","html":"<p>I had the opportunity to pair program with one of the co-founders of Picnik/PicMonkey and one of the best developers I have ever worked with. I was brought in to help build a set of internal UI components in React, that could be customized to thier liking. I also had some fun times building out some tests and basic utils to help with image processing and galleries. Some challenges we faced were wrestling with the insanity that is webpack/babel and getting my macOS/docker setup to play nicely with his Linux setup. Working with someone who sees solutions so clearly was a wonderful experience for me. I was pushed to write more readable and concise code and always thinking about how to do so, a skill that will carry with me forever! I learned to slow down my thought process and refine, refine, refine. Working with and getting to know RJ, David and JJHuff was something I will always look back on and have so many great memories, hopefully we'll team up again soon! Here is an article about the project on <a href=\"http://blog.seattlepi.com/velocity/2016/11/04/introducing-motion-social/\">Seattle PI</a>.</p>\n"};
@@ -1355,4 +1355,4 @@ webpackJsonp([5],{
 /***/ }
 
 });
-//# sourceMappingURL=5.js.map?7a1dd5f5f594eaea7a76
+//# sourceMappingURL=5.js.map?d0ab5a9653069a6d9506
