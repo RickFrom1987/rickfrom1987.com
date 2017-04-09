@@ -120,6 +120,48 @@ webpackJsonp([4],{
 /***/ 10:
 /***/ function(module, exports) {
 
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  var WHITE = exports.WHITE = '#F8F8FF';
+  var BLACK = exports.BLACK = '#555459';
+  var BLUE = exports.BLUE = '#2986BE';
+  var GRADIENT_BG = exports.GRADIENT_BG = 'linear-gradient(-150deg, #00C1B6 0%, #136EB5 97%)';
+
+/***/ },
+
+/***/ 11:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = undefined;
+  
+  var _Link = __webpack_require__(23);
+  
+  var _Link2 = _interopRequireDefault(_Link);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = _Link2.default; /**
+                                     * React App SDK (https://github.com/kriasoft/react-app)
+                                     *
+                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
+                                     *
+                                     * This source code is licensed under the MIT license found in the
+                                     * LICENSE.txt file in the root directory of this source tree.
+                                     */
+
+/***/ },
+
+/***/ 12:
+/***/ function(module, exports) {
+
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
   	Author Tobias Koppers @sokra
@@ -174,7 +216,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 11:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -427,49 +469,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 12:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  var WHITE = exports.WHITE = '#F8F8FF';
-  var BLACK = exports.BLACK = '#555459';
-  var BLUE = exports.BLUE = '#2986BE';
-  var GRADIENT_BG = exports.GRADIENT_BG = 'linear-gradient(-150deg, #00C1B6 0%, #136EB5 97%)';
-
-/***/ },
-
-/***/ 13:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = undefined;
-  
-  var _Link = __webpack_require__(23);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = _Link2.default; /**
-                                     * React App SDK (https://github.com/kriasoft/react-app)
-                                     *
-                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-                                     *
-                                     * This source code is licensed under the MIT license found in the
-                                     * LICENSE.txt file in the root directory of this source tree.
-                                     */
-
-/***/ },
-
-/***/ 14:
+/***/ 15:
 /***/ function(module, exports) {
 
   "use strict";
@@ -663,7 +663,7 @@ webpackJsonp([4],{
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(13);
+  var _Link = __webpack_require__(11);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -671,7 +671,7 @@ webpackJsonp([4],{
   
   var App = _interopRequireWildcard(_App);
   
-  var _Colors = __webpack_require__(12);
+  var _Colors = __webpack_require__(10);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -695,10 +695,11 @@ webpackJsonp([4],{
           height: App.HEADER_HEIGHT,
           lineHeight: App.HEADER_HEIGHT,
           whiteSpace: 'nowrap',
-          margin: '0 12px'
+          margin: '0 12px',
+          fontWeight: 300,
+          fontSize: 18
         };
         var headerStyle = {
-          fontFamily: 'Montserrat',
           textTransform: 'uppercase',
           position: 'fixed',
           top: 0,
@@ -716,9 +717,13 @@ webpackJsonp([4],{
             'div',
             { className: 'row' },
             _react2.default.createElement(
-              'a',
-              { href: '/', style: logoStyle },
-              'RickFrom1987'
+              'h1',
+              { style: logoStyle },
+              _react2.default.createElement(
+                'a',
+                { href: '/', style: { color: Colors.WHITE } },
+                'RickFrom1987'
+              )
             ),
             _react2.default.createElement(_Navigation2.default, null)
           )
@@ -749,11 +754,11 @@ webpackJsonp([4],{
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(13);
+  var _Link = __webpack_require__(11);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(34);
+  var _Navigation = __webpack_require__(32);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -802,7 +807,7 @@ webpackJsonp([4],{
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _objectWithoutProperties2 = __webpack_require__(15);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -938,8 +943,8 @@ webpackJsonp([4],{
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(40)
-    , anObject = __webpack_require__(36);
+  var isObject = __webpack_require__(38)
+    , anObject = __webpack_require__(34);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -948,7 +953,7 @@ webpackJsonp([4],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(39)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(37)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -968,7 +973,7 @@ webpackJsonp([4],{
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(42)
+  var toObject        = __webpack_require__(40)
     , $getPrototypeOf = __webpack_require__(49);
   
   __webpack_require__(50)('getPrototypeOf', function(){
@@ -983,7 +988,7 @@ webpackJsonp([4],{
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(37);
+  var $export = __webpack_require__(35);
   $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(28).set});
 
 /***/ },
@@ -991,24 +996,7 @@ webpackJsonp([4],{
 /***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(10)();
-  // imports
-  
-  
-  // module
-  exports.push([module.id, "progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}figcaption, menu,article,aside,details,figure,footer,header,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html {\n  box-sizing: border-box;\n}*, *:before, *:after {\n  box-sizing: inherit;\n}html,\nbody {\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: #252525;\n}body {\n  background-attachment: fixed;\n  background-image: -webkit-linear-gradient(240deg, rgb(0, 193, 182) 0%, rgb(19, 110, 181) 97%);\n  background-image: linear-gradient(-150deg, rgb(0, 193, 182) 0%, rgb(19, 110, 181) 97%);\n  background-color: rgb(41, 134, 190);\n  overflow-y: scroll;\n}h1, h2, h3, h4, h5, h6 {\n  font-family: 'Montserrat', sans-serif;\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n  text-shadow: 0px 0px 2px #7FDBFF;\n}h1 {\n  font-size: 48px;\n}h2 {\n  font-size: 18px;\n}h3 {\n  font-size: 14px;\n}p {\n  font-family: 'Noto Serif', serif;\n  font-size: 16px;\n  line-height: 32px;\n  margin: 0;\n  padding: 0;\n}a {\n  text-decoration: none;\n  -webkit-transition: all .4s;\n  transition: all .4s;\n  color: rgb(41, 134, 190);\n  text-shadow: 0px 0px 4px #7FDBFF;\n  cursor: pointer;\n}a:link, a:visited { \n  color: #7FDDE0;\n}a:hover { \n  color: #F8F8FF;\n  text-shadow: 0px 0px 2px #7FDBFF;\n}a:active { -webkit-transition: all .3s; transition: all .3s; all: #3aa3e3; }.Layout_article_2Uo p {\n  margin: 24px 0;\n}.Layout_article_2Uo a {\n  text-decoration: none;\n  -webkit-transition: all .4s;\n  transition: all .4s;\n  color: #00A1DF;\n  text-shadow: 0px 0px 1px #7FDBFF;\n  cursor: pointer;\n}.Layout_article_2Uo a:link, .Layout_article_2Uo a:visited { \n  color: #00A1DF;\n}.Layout_article_2Uo a:hover { \n  color: rgb(19, 110, 181);\n  text-shadow: 0px 0px 2px #7FDBFF;\n}.Layout_article_2Uo a:active { -webkit-transition: all .3s; transition: all .3s; all: #3aa3e3; }.Layout_article_2Uo ul {\n  margin: 0;\n  padding: 12px;\n  background: #f5f5f5;\n  list-style: none;\n  border: 1px solid #dedede\n}.Layout_article_2Uo ul li {\n  margin: 0;\n  padding: 6px;\n}@media (max-width: 480px) {\n  h1 {\n    font-size: 32px;\n  }\n}\n\n", "", {"version":3,"sources":["/./components/Layout/Layout.css"],"names":[],"mappings":"AAAA,iBAAiB,uBAAuB,CAAC,gBAAgB,gBAAgB,CAAC,KAAK,uBAAuB,0BAA0B,6BAA6B,CAAC,KAAK,QAAQ,CAAC,qFAAsF,aAAa,CAAC,4BAA4B,oBAAoB,CAAC,sBAAsB,aAAa,QAAQ,CAAC,kBAAmB,YAAY,CAAC,EAAE,6BAA6B,oCAAoC,CAAC,iBAAiB,eAAe,CAAC,YAAY,mBAAmB,0BAA0B,gCAAgC,CAAC,SAAS,kBAAkB,CAAC,IAAI,iBAAiB,CAAC,GAAG,cAAc,cAAc,CAAC,KAAK,sBAAsB,UAAU,CAAC,MAAM,aAAa,CAAC,QAAQ,cAAc,cAAc,iBAAiB,CAAC,IAAI,aAAa,CAAC,IAAI,SAAS,CAAC,IAAI,iBAAiB,CAAC,eAAe,eAAe,CAAC,kBAAkB,gCAAgC,aAAa,CAAC,OAAO,eAAe,CAAC,GAAG,uBAAuB,QAAQ,CAAC,6BAA6B,aAAa,QAAQ,CAAC,SAAS,eAAe,CAAC,cAAc,cAAc,mBAAmB,CAAC,sDAAsD,yBAAyB,CAAC,wHAAwH,kBAAkB,SAAS,CAAC,4GAA4G,6BAA6B,CAAC,SAAS,wBAAwB,aAAa,0BAA0B,CAAC,OAAO,sBAAsB,cAAc,cAAc,eAAe,UAAU,kBAAkB,CAAC,SAAS,aAAa,CAAC,6BAA6B,sBAAsB,SAAS,CAAC,kFAAkF,WAAW,CAAC,cAAc,6BAA6B,mBAAmB,CAAC,qFAAqF,uBAAuB,CAAC,4BAA4B,cAAc,WAAW,CAAC,6BAA6B,0BAA0B,YAAY,CAAC;EAK3kE,uBAAuB;CACxB;EAKC,oBAAoB;CACrB;;EAIC,mBAAmB;EACnB,aAAa;EACb,YAAY;EACZ,eAAe;CAChB;EAGC,6BAA6B;EAC7B,8FAAuF;EAAvF,uFAAuF;EACvF,oCAAoC;EACpC,mBAAmB;CACpB;EAGC,sCAAsC;EACtC,UAAU;EACV,WAAW;EACX,0BAA0B;EAC1B,iCAAiC;CAClC;EAGC,gBAAgB;CACjB;EAGC,gBAAgB;CACjB;EAGC,gBAAgB;CACjB;EAGC,iCAAiC;EACjC,gBAAgB;EAChB,kBAAkB;EAClB,UAAU;EACV,WAAW;CACZ;EAGC,sBAAsB;EACtB,4BAA4B;EAC5B,oBAAoB;EACpB,yBAAyB;EACzB,iCAAiC;EACjC,gBAAgB;CACjB;EAGC,eAAe;CAChB;EAGC,eAAe;EACf,iCAAiC;CAClC,WAEU,4BAA4B,CAAC,oBAAoB,CAAC,aAAa,EAAE;EAG1E,eAAe;CAChB;EAGC,sBAAsB;EACtB,4BAA4B;EAC5B,oBAAoB;EACpB,eAAe;EACf,iCAAiC;EACjC,gBAAgB;CACjB;EAGC,eAAe;CAChB;EAGC,yBAAyB;EACzB,iCAAiC;CAClC,+BAEmB,4BAA4B,CAAC,oBAAoB,CAAC,aAAa,EAAE;EAGnF,UAAU;EACV,cAAc;EACd,oBAAoB;EACpB,iBAAiB;EACjB,yBAAyB;CAC1B;EAGC,UAAU;EACV,aAAa;CACd;EAGC;IACE,gBAAgB;GACjB;CACF","file":"Layout.css","sourcesContent":["progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} figcaption, menu,article,aside,details,figure,footer,header,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0} [hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}\n\nhtml {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n\n*, *:before, *:after {\n  -webkit-box-sizing: inherit;\n  -moz-box-sizing: inherit;\n  box-sizing: inherit;\n}\n\nhtml,\nbody {\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: #252525;\n}\n\nbody {\n  background-attachment: fixed;\n  background-image: linear-gradient(-150deg, rgb(0, 193, 182) 0%, rgb(19, 110, 181) 97%);\n  background-color: rgb(41, 134, 190);\n  overflow-y: scroll;\n}\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Montserrat', sans-serif;\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n  text-shadow: 0px 0px 2px #7FDBFF;\n}\n\nh1 {\n  font-size: 48px;\n}\n\nh2 {\n  font-size: 18px;\n}\n\nh3 {\n  font-size: 14px;\n}\n\np {\n  font-family: 'Noto Serif', serif;\n  font-size: 16px;\n  line-height: 32px;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  text-decoration: none;\n  -webkit-transition: all .4s;\n  transition: all .4s;\n  color: rgb(41, 134, 190);\n  text-shadow: 0px 0px 4px #7FDBFF;\n  cursor: pointer;\n}\n\na:link, a:visited { \n  color: #7FDDE0;\n}\n\na:hover { \n  color: #F8F8FF;\n  text-shadow: 0px 0px 2px #7FDBFF;\n}\n\na:active { -webkit-transition: all .3s; transition: all .3s; all: #3aa3e3; }\n\n.article p {\n  margin: 24px 0;\n}\n\n.article a {\n  text-decoration: none;\n  -webkit-transition: all .4s;\n  transition: all .4s;\n  color: #00A1DF;\n  text-shadow: 0px 0px 1px #7FDBFF;\n  cursor: pointer;\n}\n\n.article a:link, .article a:visited { \n  color: #00A1DF;\n}\n\n.article a:hover { \n  color: rgb(19, 110, 181);\n  text-shadow: 0px 0px 2px #7FDBFF;\n}\n\n.article a:active { -webkit-transition: all .3s; transition: all .3s; all: #3aa3e3; }\n\n.article ul {\n  margin: 0;\n  padding: 12px;\n  background: #f5f5f5;\n  list-style: none;\n  border: 1px solid #dedede\n}\n\n.article ul li {\n  margin: 0;\n  padding: 6px;\n}\n\n@media (max-width: 480px) {\n  h1 {\n    font-size: 32px;\n  }\n}\n\n"],"sourceRoot":"webpack://"}]);
-  
-  // exports
-  exports.locals = {
-  	"article": "Layout_article_2Uo"
-  };
-
-/***/ },
-
-/***/ 32:
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(10)();
+  exports = module.exports = __webpack_require__(12)();
   // imports
   
   
@@ -1024,7 +1012,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 33:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1033,34 +1021,7 @@ webpackJsonp([4],{
   var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(11)(content, {});
-  if(content.locals) module.exports = content.locals;
-  // Hot Module Replacement
-  if(false) {
-  	// When the styles change, update the <style> tags
-  	if(!content.locals) {
-  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Layout.css", function() {
-  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Layout.css");
-  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-  			update(newContent);
-  		});
-  	}
-  	// When the module is disposed, remove the <style> tags
-  	module.hot.dispose(function() { update(); });
-  }
-
-/***/ },
-
-/***/ 34:
-/***/ function(module, exports, __webpack_require__) {
-
-  // style-loader: Adds some css to the DOM by adding a <style> tag
-  
-  // load the styles
-  var content = __webpack_require__(32);
-  if(typeof content === 'string') content = [[module.id, content, '']];
-  // add the styles to the DOM
-  var update = __webpack_require__(11)(content, {});
+  var update = __webpack_require__(13)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1078,7 +1039,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 41:
+/***/ 39:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1091,9 +1052,9 @@ webpackJsonp([4],{
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _defineProperty2 = __webpack_require__(56);
   
-  var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+  var _defineProperty3 = _interopRequireDefault(_defineProperty2);
   
   var _getPrototypeOf = __webpack_require__(2);
   
@@ -1127,13 +1088,13 @@ webpackJsonp([4],{
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Layout = __webpack_require__(33);
-  
-  var _Layout2 = _interopRequireDefault(_Layout);
-  
-  var _Colors = __webpack_require__(12);
+  var _Colors = __webpack_require__(10);
   
   var Colors = _interopRequireWildcard(_Colors);
+  
+  var _Article = __webpack_require__(42);
+  
+  var _Article2 = _interopRequireDefault(_Article);
   
   function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
   
@@ -1158,63 +1119,81 @@ webpackJsonp([4],{
             title = _props.title,
             subtitle = _props.subtitle,
             url = _props.url,
-            style = _props.style,
-            props = (0, _objectWithoutProperties3.default)(_props, ['title', 'subtitle', 'url', 'style']);
+            style = _props.style;
   
         var baseStyle = {
-          height: '100%'
-        };
-        var headerStyle = {
-          width: '100%',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '50%',
-          minHeight: 320,
-          maxHeight: 580,
-          color: Colors.WHITE,
-          fontSize: 16
-        };
-        var bodyStyle = {
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundColor: 'white'
-        };
-        var contentStyle = {
-          width: '85%',
-          maxWidth: 1024,
-          minWidth: 248,
-          padding: '24px 0'
+          paddingTop: 50,
+          minHeight: '100%',
+          width: '100%'
         };
         var linkStyle = {
           fontSize: 24
         };
+        var leftStyle = void 0;
+        var rightStyle = void 0;
+        if (window.innerWidth > 480) {
+          var _leftStyle;
+  
+          baseStyle.flexFlow = 'row';
+          leftStyle = (_leftStyle = {
+            flexShrink: 0,
+            flexGrow: 0,
+            height: '100%',
+            width: '100%'
+          }, (0, _defineProperty3.default)(_leftStyle, 'width', 200), (0, _defineProperty3.default)(_leftStyle, 'color', Colors.WHITE), (0, _defineProperty3.default)(_leftStyle, 'alignItems', 'center'), _leftStyle);
+          rightStyle = {
+            marginLeft: 'auto',
+            flex: '0 1 auto',
+            padding: 24,
+            backgroundColor: 'white'
+          };
+        } else {
+          baseStyle.flexFlow = 'column';
+          leftStyle = {
+            color: Colors.WHITE,
+            alignItems: 'center'
+          };
+          rightStyle = {
+            backgroundColor: Colors.WHITE,
+            padding: 24
+          };
+        }
         var articleLayoutStyle = (0, _assign2.default)({}, baseStyle, style);
         return _react2.default.createElement(
           _reactFlexbox2.default,
-          { column: true, style: articleLayoutStyle },
+          { row: true, style: articleLayoutStyle },
           _react2.default.createElement(_Header2.default, null),
           _react2.default.createElement(
             _reactFlexbox2.default,
-            { column: true, style: headerStyle },
+            { column: true, style: leftStyle },
             _react2.default.createElement(
-              'h1',
-              null,
-              title
-            ),
-            _react2.default.createElement(
-              'h2',
-              null,
-              subtitle
+              'div',
+              { style: { padding: 24 } },
+              _react2.default.createElement(
+                'h1',
+                { style: { fontSize: 18 } },
+                title
+              ),
+              _react2.default.createElement(
+                'h2',
+                null,
+                subtitle
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: url },
+                  'View Project'
+                )
+              )
             )
           ),
           _react2.default.createElement(
             _reactFlexbox2.default,
-            { row: true, className: _Layout2.default.article, style: bodyStyle },
-            _react2.default.createElement(
-              'div',
-              { style: contentStyle },
-              this.props.children
-            )
+            { column: true, style: rightStyle, className: _Article2.default.article },
+            this.props.children
           )
         );
       }
@@ -1232,7 +1211,52 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 147:
+/***/ 41:
+/***/ function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(12)();
+  // imports
+  
+  
+  // module
+  exports.push([module.id, ".Article_article_2_j a {\n  text-decoration: underline;\n  font-weight: 500;\n}\n\n.Article_article_2_j a:link, .Article_article_2_j a:visited {\n  color: #0099e5;\n}\n\n.Article_article_2_j p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .Article_layout_1WS {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-flow: column;\n          flex-flow: column;\n }\n}", "", {"version":3,"sources":["/./components/Layout/Article.css"],"names":[],"mappings":"AAAA;EACE,2BAA2B;EAC3B,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB;;AAED;EACE,oBAAoB;CACrB;;AAED;CACC;EACC,6BAAkB;EAAlB,8BAAkB;MAAlB,sBAAkB;UAAlB,kBAAkB;EAClB;CACD","file":"Article.css","sourcesContent":[".article a {\n  text-decoration: underline;\n  font-weight: 500;\n}\n\n.article a:link, .article a:visited {\n  color: #0099e5;\n}\n\n.article p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .layout {\n  flex-flow: column;\n }\n}"],"sourceRoot":"webpack://"}]);
+  
+  // exports
+  exports.locals = {
+  	"article": "Article_article_2_j",
+  	"layout": "Article_layout_1WS"
+  };
+
+/***/ },
+
+/***/ 42:
+/***/ function(module, exports, __webpack_require__) {
+
+  // style-loader: Adds some css to the DOM by adding a <style> tag
+  
+  // load the styles
+  var content = __webpack_require__(41);
+  if(typeof content === 'string') content = [[module.id, content, '']];
+  // add the styles to the DOM
+  var update = __webpack_require__(13)(content, {});
+  if(content.locals) module.exports = content.locals;
+  // Hot Module Replacement
+  if(false) {
+  	// When the styles change, update the <style> tags
+  	if(!content.locals) {
+  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Article.css", function() {
+  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Article.css");
+  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+  			update(newContent);
+  		});
+  	}
+  	// When the module is disposed, remove the <style> tags
+  	module.hot.dispose(function() { update(); });
+  }
+
+/***/ },
+
+/***/ 148:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1242,7 +1266,7 @@ webpackJsonp([4],{
   });
   exports.default = undefined;
   
-  var _Yahoo = __webpack_require__(222);
+  var _Yahoo = __webpack_require__(223);
   
   var _Yahoo2 = _interopRequireDefault(_Yahoo);
   
@@ -1252,7 +1276,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 222:
+/***/ 223:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1285,7 +1309,7 @@ webpackJsonp([4],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(41);
+  var _ArticleLayout = __webpack_require__(39);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
@@ -1311,7 +1335,7 @@ webpackJsonp([4],{
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Yahoo.title },
+          { title: _Yahoo.title, url: _Yahoo.url },
           _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Yahoo.html } })
         );
       }
@@ -1331,4 +1355,4 @@ webpackJsonp([4],{
 /***/ }
 
 });
-//# sourceMappingURL=4.js.map?8ffd2190fa64695b2a62
+//# sourceMappingURL=4.js.map?83a6b7ed1fe2fae14744

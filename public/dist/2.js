@@ -120,6 +120,48 @@ webpackJsonp([2],{
 /***/ 10:
 /***/ function(module, exports) {
 
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  var WHITE = exports.WHITE = '#F8F8FF';
+  var BLACK = exports.BLACK = '#555459';
+  var BLUE = exports.BLUE = '#2986BE';
+  var GRADIENT_BG = exports.GRADIENT_BG = 'linear-gradient(-150deg, #00C1B6 0%, #136EB5 97%)';
+
+/***/ },
+
+/***/ 11:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = undefined;
+  
+  var _Link = __webpack_require__(23);
+  
+  var _Link2 = _interopRequireDefault(_Link);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = _Link2.default; /**
+                                     * React App SDK (https://github.com/kriasoft/react-app)
+                                     *
+                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
+                                     *
+                                     * This source code is licensed under the MIT license found in the
+                                     * LICENSE.txt file in the root directory of this source tree.
+                                     */
+
+/***/ },
+
+/***/ 12:
+/***/ function(module, exports) {
+
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
   	Author Tobias Koppers @sokra
@@ -174,7 +216,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 11:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -427,49 +469,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 12:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  var WHITE = exports.WHITE = '#F8F8FF';
-  var BLACK = exports.BLACK = '#555459';
-  var BLUE = exports.BLUE = '#2986BE';
-  var GRADIENT_BG = exports.GRADIENT_BG = 'linear-gradient(-150deg, #00C1B6 0%, #136EB5 97%)';
-
-/***/ },
-
-/***/ 13:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = undefined;
-  
-  var _Link = __webpack_require__(23);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = _Link2.default; /**
-                                     * React App SDK (https://github.com/kriasoft/react-app)
-                                     *
-                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-                                     *
-                                     * This source code is licensed under the MIT license found in the
-                                     * LICENSE.txt file in the root directory of this source tree.
-                                     */
-
-/***/ },
-
-/***/ 14:
+/***/ 15:
 /***/ function(module, exports) {
 
   "use strict";
@@ -663,7 +663,7 @@ webpackJsonp([2],{
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(13);
+  var _Link = __webpack_require__(11);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -671,7 +671,7 @@ webpackJsonp([2],{
   
   var App = _interopRequireWildcard(_App);
   
-  var _Colors = __webpack_require__(12);
+  var _Colors = __webpack_require__(10);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -695,10 +695,11 @@ webpackJsonp([2],{
           height: App.HEADER_HEIGHT,
           lineHeight: App.HEADER_HEIGHT,
           whiteSpace: 'nowrap',
-          margin: '0 12px'
+          margin: '0 12px',
+          fontWeight: 300,
+          fontSize: 18
         };
         var headerStyle = {
-          fontFamily: 'Montserrat',
           textTransform: 'uppercase',
           position: 'fixed',
           top: 0,
@@ -716,9 +717,13 @@ webpackJsonp([2],{
             'div',
             { className: 'row' },
             _react2.default.createElement(
-              'a',
-              { href: '/', style: logoStyle },
-              'RickFrom1987'
+              'h1',
+              { style: logoStyle },
+              _react2.default.createElement(
+                'a',
+                { href: '/', style: { color: Colors.WHITE } },
+                'RickFrom1987'
+              )
             ),
             _react2.default.createElement(_Navigation2.default, null)
           )
@@ -749,11 +754,11 @@ webpackJsonp([2],{
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(13);
+  var _Link = __webpack_require__(11);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(34);
+  var _Navigation = __webpack_require__(32);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -802,7 +807,7 @@ webpackJsonp([2],{
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _objectWithoutProperties2 = __webpack_require__(15);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -938,8 +943,8 @@ webpackJsonp([2],{
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(40)
-    , anObject = __webpack_require__(36);
+  var isObject = __webpack_require__(38)
+    , anObject = __webpack_require__(34);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -948,7 +953,7 @@ webpackJsonp([2],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(39)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(37)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -968,7 +973,7 @@ webpackJsonp([2],{
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(42)
+  var toObject        = __webpack_require__(40)
     , $getPrototypeOf = __webpack_require__(49);
   
   __webpack_require__(50)('getPrototypeOf', function(){
@@ -983,7 +988,7 @@ webpackJsonp([2],{
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(37);
+  var $export = __webpack_require__(35);
   $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(28).set});
 
 /***/ },
@@ -991,24 +996,7 @@ webpackJsonp([2],{
 /***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(10)();
-  // imports
-  
-  
-  // module
-  exports.push([module.id, "progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}figcaption, menu,article,aside,details,figure,footer,header,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html {\n  box-sizing: border-box;\n}*, *:before, *:after {\n  box-sizing: inherit;\n}html,\nbody {\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: #252525;\n}body {\n  background-attachment: fixed;\n  background-image: -webkit-linear-gradient(240deg, rgb(0, 193, 182) 0%, rgb(19, 110, 181) 97%);\n  background-image: linear-gradient(-150deg, rgb(0, 193, 182) 0%, rgb(19, 110, 181) 97%);\n  background-color: rgb(41, 134, 190);\n  overflow-y: scroll;\n}h1, h2, h3, h4, h5, h6 {\n  font-family: 'Montserrat', sans-serif;\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n  text-shadow: 0px 0px 2px #7FDBFF;\n}h1 {\n  font-size: 48px;\n}h2 {\n  font-size: 18px;\n}h3 {\n  font-size: 14px;\n}p {\n  font-family: 'Noto Serif', serif;\n  font-size: 16px;\n  line-height: 32px;\n  margin: 0;\n  padding: 0;\n}a {\n  text-decoration: none;\n  -webkit-transition: all .4s;\n  transition: all .4s;\n  color: rgb(41, 134, 190);\n  text-shadow: 0px 0px 4px #7FDBFF;\n  cursor: pointer;\n}a:link, a:visited { \n  color: #7FDDE0;\n}a:hover { \n  color: #F8F8FF;\n  text-shadow: 0px 0px 2px #7FDBFF;\n}a:active { -webkit-transition: all .3s; transition: all .3s; all: #3aa3e3; }.Layout_article_2Uo p {\n  margin: 24px 0;\n}.Layout_article_2Uo a {\n  text-decoration: none;\n  -webkit-transition: all .4s;\n  transition: all .4s;\n  color: #00A1DF;\n  text-shadow: 0px 0px 1px #7FDBFF;\n  cursor: pointer;\n}.Layout_article_2Uo a:link, .Layout_article_2Uo a:visited { \n  color: #00A1DF;\n}.Layout_article_2Uo a:hover { \n  color: rgb(19, 110, 181);\n  text-shadow: 0px 0px 2px #7FDBFF;\n}.Layout_article_2Uo a:active { -webkit-transition: all .3s; transition: all .3s; all: #3aa3e3; }.Layout_article_2Uo ul {\n  margin: 0;\n  padding: 12px;\n  background: #f5f5f5;\n  list-style: none;\n  border: 1px solid #dedede\n}.Layout_article_2Uo ul li {\n  margin: 0;\n  padding: 6px;\n}@media (max-width: 480px) {\n  h1 {\n    font-size: 32px;\n  }\n}\n\n", "", {"version":3,"sources":["/./components/Layout/Layout.css"],"names":[],"mappings":"AAAA,iBAAiB,uBAAuB,CAAC,gBAAgB,gBAAgB,CAAC,KAAK,uBAAuB,0BAA0B,6BAA6B,CAAC,KAAK,QAAQ,CAAC,qFAAsF,aAAa,CAAC,4BAA4B,oBAAoB,CAAC,sBAAsB,aAAa,QAAQ,CAAC,kBAAmB,YAAY,CAAC,EAAE,6BAA6B,oCAAoC,CAAC,iBAAiB,eAAe,CAAC,YAAY,mBAAmB,0BAA0B,gCAAgC,CAAC,SAAS,kBAAkB,CAAC,IAAI,iBAAiB,CAAC,GAAG,cAAc,cAAc,CAAC,KAAK,sBAAsB,UAAU,CAAC,MAAM,aAAa,CAAC,QAAQ,cAAc,cAAc,iBAAiB,CAAC,IAAI,aAAa,CAAC,IAAI,SAAS,CAAC,IAAI,iBAAiB,CAAC,eAAe,eAAe,CAAC,kBAAkB,gCAAgC,aAAa,CAAC,OAAO,eAAe,CAAC,GAAG,uBAAuB,QAAQ,CAAC,6BAA6B,aAAa,QAAQ,CAAC,SAAS,eAAe,CAAC,cAAc,cAAc,mBAAmB,CAAC,sDAAsD,yBAAyB,CAAC,wHAAwH,kBAAkB,SAAS,CAAC,4GAA4G,6BAA6B,CAAC,SAAS,wBAAwB,aAAa,0BAA0B,CAAC,OAAO,sBAAsB,cAAc,cAAc,eAAe,UAAU,kBAAkB,CAAC,SAAS,aAAa,CAAC,6BAA6B,sBAAsB,SAAS,CAAC,kFAAkF,WAAW,CAAC,cAAc,6BAA6B,mBAAmB,CAAC,qFAAqF,uBAAuB,CAAC,4BAA4B,cAAc,WAAW,CAAC,6BAA6B,0BAA0B,YAAY,CAAC;EAK3kE,uBAAuB;CACxB;EAKC,oBAAoB;CACrB;;EAIC,mBAAmB;EACnB,aAAa;EACb,YAAY;EACZ,eAAe;CAChB;EAGC,6BAA6B;EAC7B,8FAAuF;EAAvF,uFAAuF;EACvF,oCAAoC;EACpC,mBAAmB;CACpB;EAGC,sCAAsC;EACtC,UAAU;EACV,WAAW;EACX,0BAA0B;EAC1B,iCAAiC;CAClC;EAGC,gBAAgB;CACjB;EAGC,gBAAgB;CACjB;EAGC,gBAAgB;CACjB;EAGC,iCAAiC;EACjC,gBAAgB;EAChB,kBAAkB;EAClB,UAAU;EACV,WAAW;CACZ;EAGC,sBAAsB;EACtB,4BAA4B;EAC5B,oBAAoB;EACpB,yBAAyB;EACzB,iCAAiC;EACjC,gBAAgB;CACjB;EAGC,eAAe;CAChB;EAGC,eAAe;EACf,iCAAiC;CAClC,WAEU,4BAA4B,CAAC,oBAAoB,CAAC,aAAa,EAAE;EAG1E,eAAe;CAChB;EAGC,sBAAsB;EACtB,4BAA4B;EAC5B,oBAAoB;EACpB,eAAe;EACf,iCAAiC;EACjC,gBAAgB;CACjB;EAGC,eAAe;CAChB;EAGC,yBAAyB;EACzB,iCAAiC;CAClC,+BAEmB,4BAA4B,CAAC,oBAAoB,CAAC,aAAa,EAAE;EAGnF,UAAU;EACV,cAAc;EACd,oBAAoB;EACpB,iBAAiB;EACjB,yBAAyB;CAC1B;EAGC,UAAU;EACV,aAAa;CACd;EAGC;IACE,gBAAgB;GACjB;CACF","file":"Layout.css","sourcesContent":["progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} figcaption, menu,article,aside,details,figure,footer,header,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0} [hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}\n\nhtml {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n\n*, *:before, *:after {\n  -webkit-box-sizing: inherit;\n  -moz-box-sizing: inherit;\n  box-sizing: inherit;\n}\n\nhtml,\nbody {\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: #252525;\n}\n\nbody {\n  background-attachment: fixed;\n  background-image: linear-gradient(-150deg, rgb(0, 193, 182) 0%, rgb(19, 110, 181) 97%);\n  background-color: rgb(41, 134, 190);\n  overflow-y: scroll;\n}\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Montserrat', sans-serif;\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n  text-shadow: 0px 0px 2px #7FDBFF;\n}\n\nh1 {\n  font-size: 48px;\n}\n\nh2 {\n  font-size: 18px;\n}\n\nh3 {\n  font-size: 14px;\n}\n\np {\n  font-family: 'Noto Serif', serif;\n  font-size: 16px;\n  line-height: 32px;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  text-decoration: none;\n  -webkit-transition: all .4s;\n  transition: all .4s;\n  color: rgb(41, 134, 190);\n  text-shadow: 0px 0px 4px #7FDBFF;\n  cursor: pointer;\n}\n\na:link, a:visited { \n  color: #7FDDE0;\n}\n\na:hover { \n  color: #F8F8FF;\n  text-shadow: 0px 0px 2px #7FDBFF;\n}\n\na:active { -webkit-transition: all .3s; transition: all .3s; all: #3aa3e3; }\n\n.article p {\n  margin: 24px 0;\n}\n\n.article a {\n  text-decoration: none;\n  -webkit-transition: all .4s;\n  transition: all .4s;\n  color: #00A1DF;\n  text-shadow: 0px 0px 1px #7FDBFF;\n  cursor: pointer;\n}\n\n.article a:link, .article a:visited { \n  color: #00A1DF;\n}\n\n.article a:hover { \n  color: rgb(19, 110, 181);\n  text-shadow: 0px 0px 2px #7FDBFF;\n}\n\n.article a:active { -webkit-transition: all .3s; transition: all .3s; all: #3aa3e3; }\n\n.article ul {\n  margin: 0;\n  padding: 12px;\n  background: #f5f5f5;\n  list-style: none;\n  border: 1px solid #dedede\n}\n\n.article ul li {\n  margin: 0;\n  padding: 6px;\n}\n\n@media (max-width: 480px) {\n  h1 {\n    font-size: 32px;\n  }\n}\n\n"],"sourceRoot":"webpack://"}]);
-  
-  // exports
-  exports.locals = {
-  	"article": "Layout_article_2Uo"
-  };
-
-/***/ },
-
-/***/ 32:
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(10)();
+  exports = module.exports = __webpack_require__(12)();
   // imports
   
   
@@ -1024,7 +1012,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 33:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1033,34 +1021,7 @@ webpackJsonp([2],{
   var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(11)(content, {});
-  if(content.locals) module.exports = content.locals;
-  // Hot Module Replacement
-  if(false) {
-  	// When the styles change, update the <style> tags
-  	if(!content.locals) {
-  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Layout.css", function() {
-  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Layout.css");
-  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-  			update(newContent);
-  		});
-  	}
-  	// When the module is disposed, remove the <style> tags
-  	module.hot.dispose(function() { update(); });
-  }
-
-/***/ },
-
-/***/ 34:
-/***/ function(module, exports, __webpack_require__) {
-
-  // style-loader: Adds some css to the DOM by adding a <style> tag
-  
-  // load the styles
-  var content = __webpack_require__(32);
-  if(typeof content === 'string') content = [[module.id, content, '']];
-  // add the styles to the DOM
-  var update = __webpack_require__(11)(content, {});
+  var update = __webpack_require__(13)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1078,7 +1039,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 71:
+/***/ 72:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1091,7 +1052,7 @@ webpackJsonp([2],{
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _objectWithoutProperties2 = __webpack_require__(15);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -1127,11 +1088,7 @@ webpackJsonp([2],{
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Layout = __webpack_require__(33);
-  
-  var _Layout2 = _interopRequireDefault(_Layout);
-  
-  var _Colors = __webpack_require__(12);
+  var _Colors = __webpack_require__(10);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -1193,7 +1150,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 81:
+/***/ 82:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1224,7 +1181,7 @@ webpackJsonp([2],{
   exports.validateLayout = validateLayout;
   exports.autoBindHandlers = autoBindHandlers;
   
-  var _lodash = __webpack_require__(115);
+  var _lodash = __webpack_require__(116);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
@@ -1663,7 +1620,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 115:
+/***/ 116:
 /***/ function(module, exports, __webpack_require__) {
 
   /* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -3515,11 +3472,11 @@ webpackJsonp([2],{
   
   module.exports = isEqual;
   
-  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(137)(module)))
+  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(138)(module)))
 
 /***/ },
 
-/***/ 146:
+/***/ 147:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3552,15 +3509,15 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _HeaderLayout = __webpack_require__(71);
+  var _HeaderLayout = __webpack_require__(72);
   
   var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
   
-  var _ProjectGridLayout = __webpack_require__(208);
+  var _ProjectGridLayout = __webpack_require__(209);
   
   var _ProjectGridLayout2 = _interopRequireDefault(_ProjectGridLayout);
   
-  var _Link = __webpack_require__(13);
+  var _Link = __webpack_require__(11);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -3606,12 +3563,12 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 193:
+/***/ 194:
 /***/ function(module, exports, __webpack_require__) {
 
   (function webpackUniversalModuleDefinition(root, factory) {
   	if(true)
-  		module.exports = factory(__webpack_require__(1), __webpack_require__(90));
+  		module.exports = factory(__webpack_require__(1), __webpack_require__(91));
   	else if(typeof define === 'function' && define.amd)
   		define(["react", "react-dom"], factory);
   	else if(typeof exports === 'object')
@@ -5219,7 +5176,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 194:
+/***/ 195:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5232,11 +5189,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _lodash = __webpack_require__(115);
+  var _lodash = __webpack_require__(116);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _utils = __webpack_require__(81);
+  var _utils = __webpack_require__(82);
   
   var _GridItem = __webpack_require__(379);
   
@@ -5761,7 +5718,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 195:
+/***/ 196:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5772,7 +5729,7 @@ webpackJsonp([2],{
   exports.findOrGenerateResponsiveLayout = findOrGenerateResponsiveLayout;
   exports.sortBreakpoints = sortBreakpoints;
   
-  var _utils = __webpack_require__(81);
+  var _utils = __webpack_require__(82);
   
   /**
    * Given a width, find the highest breakpoint that matches is valid for it (width > breakpoint).
@@ -5854,7 +5811,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 198:
+/***/ 199:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5867,7 +5824,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDraggable = __webpack_require__(193);
+  var _reactDraggable = __webpack_require__(194);
   
   var _cloneElement = __webpack_require__(389);
   
@@ -6155,7 +6112,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 206:
+/***/ 207:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6172,7 +6129,7 @@ webpackJsonp([2],{
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _objectWithoutProperties2 = __webpack_require__(15);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -6331,7 +6288,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 207:
+/***/ 208:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6434,7 +6391,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 208:
+/***/ 209:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6447,7 +6404,7 @@ webpackJsonp([2],{
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _objectWithoutProperties2 = __webpack_require__(15);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -6479,19 +6436,19 @@ webpackJsonp([2],{
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _reactDom = __webpack_require__(90);
+  var _reactDom = __webpack_require__(91);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
-  var _GridLayout = __webpack_require__(207);
+  var _GridLayout = __webpack_require__(208);
   
   var _GridLayout2 = _interopRequireDefault(_GridLayout);
   
-  var _BrowserMock = __webpack_require__(206);
+  var _BrowserMock = __webpack_require__(207);
   
   var _BrowserMock2 = _interopRequireDefault(_BrowserMock);
   
-  var _TagList = __webpack_require__(209);
+  var _TagList = __webpack_require__(210);
   
   var _TagList2 = _interopRequireDefault(_TagList);
   
@@ -6591,11 +6548,6 @@ webpackJsonp([2],{
                 null,
                 item.company
               ),
-              _react2.default.createElement(
-                'h3',
-                null,
-                item.position
-              ),
               _react2.default.createElement(_TagList2.default, { tags: item.tags })
             )
           );
@@ -6625,7 +6577,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 209:
+/***/ 210:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6638,7 +6590,7 @@ webpackJsonp([2],{
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(14);
+  var _objectWithoutProperties2 = __webpack_require__(15);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -6666,7 +6618,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Colors = __webpack_require__(12);
+  var _Colors = __webpack_require__(10);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -6700,7 +6652,6 @@ webpackJsonp([2],{
             props = (0, _objectWithoutProperties3.default)(_props, ['style', 'tags']);
   
         var tagListStyle = {
-          fontFamily: 'Montserrat',
           fontSize: 12,
           width: '100%',
           justifyContent: 'flex-start',
@@ -6749,7 +6700,7 @@ webpackJsonp([2],{
 /***/ 272:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(10)();
+  exports = module.exports = __webpack_require__(12)();
   // imports
   
   
@@ -6766,7 +6717,7 @@ webpackJsonp([2],{
 /***/ 275:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(10)();
+  exports = module.exports = __webpack_require__(12)();
   // imports
   
   
@@ -6783,26 +6734,6 @@ webpackJsonp([2],{
 
   module.exports = [
   	{
-  		"company": "motion.social",
-  		"name": "motion.social",
-  		"thumbnail": "/placeholder.jpg",
-  		"position": "RickFrom1987",
-  		"website": "https://motion.social",
-  		"url": "/motionsocial",
-  		"tags": [
-  			"react",
-  			"go",
-  			"docker",
-  			"mocha",
-  			"sentry"
-  		],
-  		"highlights": [
-  			"Built a suite of internal react UI components",
-  			"Help grow user base and product 1000 users/groups",
-  			"Worked with co-founder of PicMonkey"
-  		]
-  	},
-  	{
   		"company": "datablade.io",
   		"name": "datablade",
   		"thumbnail": "/datablade.jpg",
@@ -6813,7 +6744,9 @@ webpackJsonp([2],{
   			"alt.js",
   			"react",
   			"coreOS",
-  			"aws"
+  			"aws",
+  			"npm",
+  			"node"
   		],
   		"highlights": [
   			"TechStars 2015",
@@ -6848,13 +6781,37 @@ webpackJsonp([2],{
   		"url": "/energysavvy",
   		"tags": [
   			"react",
-  			"aws"
+  			"aws",
+  			"npm",
+  			"node"
   		],
   		"highlights": [
   			"First react app",
   			"mocha + sinon",
   			"Financial calculations test coverage",
   			"Solar calculations test coverage"
+  		]
+  	},
+  	{
+  		"company": "motion.social",
+  		"name": "motion.social",
+  		"thumbnail": "/placeholder.jpg",
+  		"position": "RickFrom1987",
+  		"website": "https://motion.social",
+  		"url": "/motionsocial",
+  		"tags": [
+  			"react",
+  			"go",
+  			"docker",
+  			"mocha",
+  			"sentry",
+  			"npm",
+  			"node"
+  		],
+  		"highlights": [
+  			"Built a suite of internal react UI components",
+  			"Help grow user base and product 1000 users/groups",
+  			"Worked with co-founder of PicMonkey"
   		]
   	},
   	{
@@ -6865,7 +6822,9 @@ webpackJsonp([2],{
   		"tags": [
   			"javascript",
   			"Google App Engine",
-  			"gulp"
+  			"gulp",
+  			"npm",
+  			"node"
   		],
   		"highlights": [
   			"Architected js management system",
@@ -24019,7 +23978,7 @@ webpackJsonp([2],{
     }
   }.call(this));
   
-  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(137)(module)))
+  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(138)(module)))
 
 /***/ },
 
@@ -24036,11 +23995,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDraggable = __webpack_require__(193);
+  var _reactDraggable = __webpack_require__(194);
   
   var _reactResizable = __webpack_require__(390);
   
-  var _utils = __webpack_require__(81);
+  var _utils = __webpack_require__(82);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -24529,15 +24488,15 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _lodash = __webpack_require__(115);
+  var _lodash = __webpack_require__(116);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _utils = __webpack_require__(81);
+  var _utils = __webpack_require__(82);
   
-  var _responsiveUtils = __webpack_require__(195);
+  var _responsiveUtils = __webpack_require__(196);
   
-  var _ReactGridLayout = __webpack_require__(194);
+  var _ReactGridLayout = __webpack_require__(195);
   
   var _ReactGridLayout2 = _interopRequireDefault(_ReactGridLayout);
   
@@ -24758,7 +24717,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDom = __webpack_require__(90);
+  var _reactDom = __webpack_require__(91);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
@@ -24837,10 +24796,10 @@ webpackJsonp([2],{
 /***/ 382:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__(194).default;
-  module.exports.utils = __webpack_require__(81);
+  module.exports = __webpack_require__(195).default;
+  module.exports.utils = __webpack_require__(82);
   module.exports.Responsive = __webpack_require__(380).default;
-  module.exports.Responsive.utils = __webpack_require__(195);
+  module.exports.Responsive.utils = __webpack_require__(196);
   module.exports.WidthProvider = __webpack_require__(381).default;
 
 
@@ -24859,7 +24818,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Resizable = __webpack_require__(198);
+  var _Resizable = __webpack_require__(199);
   
   var _Resizable2 = _interopRequireDefault(_Resizable);
   
@@ -25008,7 +24967,7 @@ webpackJsonp([2],{
     throw new Error("Don't instantiate Resizable directly! Use require('react-resizable').Resizable");
   };
   
-  module.exports.Resizable = __webpack_require__(198).default;
+  module.exports.Resizable = __webpack_require__(199).default;
   module.exports.ResizableBox = __webpack_require__(388).default;
 
 
@@ -25023,7 +24982,7 @@ webpackJsonp([2],{
   var content = __webpack_require__(272);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(11)(content, {});
+  var update = __webpack_require__(13)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -25050,7 +25009,7 @@ webpackJsonp([2],{
   var content = __webpack_require__(275);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(11)(content, {});
+  var update = __webpack_require__(13)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -25069,4 +25028,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?167a0d2fbf1137e864f8
+//# sourceMappingURL=2.js.map?068b4773cc05a5bcde99
