@@ -12,6 +12,10 @@
     "component": "./routes/Projects"
   },
   {
+    "path": "/motionsocial",
+    "component": "./routes/MotionSocial"
+  },
+  {
     "path": "/booking",
     "component": "./routes/Booking"
   },
@@ -21,23 +25,23 @@
   },
   {
     "path": "/datablade",
-    "component": "./routes/datablade"
+    "component": "./routes/Datablade"
   },
   {
     "path": "/energysavvy",
-    "component": "./routes/energysavvy"
+    "component": "./routes/Energysavvy"
   },
   {
     "path": "/haikudeck",
-    "component": "./routes/haikudeck"
+    "component": "./routes/Haikudeck"
   },
   {
     "path": "/moment",
-    "component": "./routes/moment"
+    "component": "./routes/Moment"
   },
   {
     "path": "/yahoo",
-    "component": "./routes/yahoo"
+    "component": "./routes/Yahoo"
   },
   {
     "path": "/tasks/:status(pending|completed)?",

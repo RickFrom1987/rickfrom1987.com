@@ -1,5 +1,19 @@
 [
   {
+    "company": "motion.social",
+    "name": "motion.social",
+    "thumbnail": "/placeholder.jpg",
+    "position": "RickFrom1987",
+    "website": "https://motion.social",
+    "url": "/motionsocial",
+    "tags": ["react", "go", "docker", "mocha"],
+    "highlights": [
+      "TechStars 2015",
+      "Iterate very quickly in a fast paced environment",
+      "Used alt.js and React to build components"
+    ]
+  },
+  {
     "company": "datablade.io",
     "name": "datablade",
     "thumbnail": "/datablade.jpg",

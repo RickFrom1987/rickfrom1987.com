@@ -3,7 +3,7 @@ webpackJsonp([0],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(26), __esModule: true };
+  module.exports = { "default": __webpack_require__(27), __esModule: true };
 
 /***/ },
 
@@ -29,69 +29,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(25);
-  
-  var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
-  
-  var _create = __webpack_require__(45);
-  
-  var _create2 = _interopRequireDefault(_create);
-  
-  var _typeof2 = __webpack_require__(20);
-  
-  var _typeof3 = _interopRequireDefault(_typeof2);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = function (subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-      throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : (0, _typeof3.default)(superClass)));
-    }
-  
-    subClass.prototype = (0, _create2.default)(superClass && superClass.prototype, {
-      constructor: {
-        value: subClass,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }
-    });
-    if (superClass) _setPrototypeOf2.default ? (0, _setPrototypeOf2.default)(subClass, superClass) : subClass.__proto__ = superClass;
-  };
-
-/***/ },
-
-/***/ 5:
-/***/ function(module, exports, __webpack_require__) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
-  var _typeof2 = __webpack_require__(20);
-  
-  var _typeof3 = _interopRequireDefault(_typeof2);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = function (self, call) {
-    if (!self) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-  
-    return call && ((typeof call === "undefined" ? "undefined" : (0, _typeof3.default)(call)) === "object" || typeof call === "function") ? call : self;
-  };
-
-/***/ },
-
-/***/ 6:
-/***/ function(module, exports, __webpack_require__) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
-  var _defineProperty = __webpack_require__(46);
+  var _defineProperty = __webpack_require__(48);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -117,7 +55,69 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 9:
+/***/ 5:
+/***/ function(module, exports, __webpack_require__) {
+
+  "use strict";
+  
+  exports.__esModule = true;
+  
+  var _setPrototypeOf = __webpack_require__(26);
+  
+  var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
+  
+  var _create = __webpack_require__(47);
+  
+  var _create2 = _interopRequireDefault(_create);
+  
+  var _typeof2 = __webpack_require__(19);
+  
+  var _typeof3 = _interopRequireDefault(_typeof2);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = function (subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : (0, _typeof3.default)(superClass)));
+    }
+  
+    subClass.prototype = (0, _create2.default)(superClass && superClass.prototype, {
+      constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    if (superClass) _setPrototypeOf2.default ? (0, _setPrototypeOf2.default)(subClass, superClass) : subClass.__proto__ = superClass;
+  };
+
+/***/ },
+
+/***/ 6:
+/***/ function(module, exports, __webpack_require__) {
+
+  "use strict";
+  
+  exports.__esModule = true;
+  
+  var _typeof2 = __webpack_require__(19);
+  
+  var _typeof3 = _interopRequireDefault(_typeof2);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = function (self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+  
+    return call && ((typeof call === "undefined" ? "undefined" : (0, _typeof3.default)(call)) === "object" || typeof call === "function") ? call : self;
+  };
+
+/***/ },
+
+/***/ 10:
 /***/ function(module, exports) {
 
   /*
@@ -174,7 +174,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 10:
+/***/ 11:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -190,7 +190,7 @@ webpackJsonp([0],{
   		};
   	},
   	isOldIE = memoize(function() {
-  		return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+  		return /msie [6-9]\b/.test(self.navigator.userAgent.toLowerCase());
   	}),
   	getHeadElement = memoize(function () {
   		return document.head || document.getElementsByTagName("head")[0];
@@ -427,7 +427,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 11:
+/***/ 12:
 /***/ function(module, exports) {
 
   'use strict';
@@ -442,7 +442,34 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 12:
+/***/ 13:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = undefined;
+  
+  var _Link = __webpack_require__(25);
+  
+  var _Link2 = _interopRequireDefault(_Link);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = _Link2.default; /**
+                                     * React App SDK (https://github.com/kriasoft/react-app)
+                                     *
+                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
+                                     *
+                                     * This source code is licensed under the MIT license found in the
+                                     * LICENSE.txt file in the root directory of this source tree.
+                                     */
+
+/***/ },
+
+/***/ 14:
 /***/ function(module, exports) {
 
   "use strict";
@@ -463,34 +490,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 14:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = undefined;
-  
-  var _Link = __webpack_require__(24);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = _Link2.default; /**
-                                     * React App SDK (https://github.com/kriasoft/react-app)
-                                     *
-                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-                                     *
-                                     * This source code is licensed under the MIT license found in the
-                                     * LICENSE.txt file in the root directory of this source tree.
-                                     */
-
-/***/ },
-
-/***/ 16:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -614,7 +614,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 21:
+/***/ 22:
 /***/ function(module, exports) {
 
   'use strict';
@@ -626,7 +626,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 22:
+/***/ 23:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -643,15 +643,15 @@ webpackJsonp([0],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(6);
+  var _createClass2 = __webpack_require__(4);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(5);
+  var _possibleConstructorReturn2 = __webpack_require__(6);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(4);
+  var _inherits2 = __webpack_require__(5);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -659,19 +659,19 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Navigation = __webpack_require__(23);
+  var _Navigation = __webpack_require__(24);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(14);
+  var _Link = __webpack_require__(13);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _App = __webpack_require__(21);
+  var _App = __webpack_require__(22);
   
   var App = _interopRequireWildcard(_App);
   
-  var _Colors = __webpack_require__(11);
+  var _Colors = __webpack_require__(12);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -732,7 +732,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 23:
+/***/ 24:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -745,15 +745,15 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(14);
+  var _Link = __webpack_require__(13);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(34);
+  var _Navigation = __webpack_require__(35);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -778,8 +778,8 @@ webpackJsonp([0],{
         _react2.default.createElement('i', { className: 'fa fa-desktop' })
       ),
       _react2.default.createElement(
-        _Link2.default,
-        { className: linkClass('/payment'), to: '/payment' },
+        'a',
+        { className: linkClass('/payment'), href: 'https://payments.rickfrom1987.com' },
         _react2.default.createElement('i', { className: 'fa fa-credit-card' })
       )
     );
@@ -789,7 +789,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 24:
+/***/ 25:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -798,11 +798,11 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(19);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(12);
+  var _objectWithoutProperties2 = __webpack_require__(14);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -814,15 +814,15 @@ webpackJsonp([0],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(6);
+  var _createClass2 = __webpack_require__(4);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(5);
+  var _possibleConstructorReturn2 = __webpack_require__(6);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(4);
+  var _inherits2 = __webpack_require__(5);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -830,7 +830,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(17);
+  var _history = __webpack_require__(18);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -892,9 +892,9 @@ webpackJsonp([0],{
     (0, _createClass3.default)(Link, [{
       key: 'render',
       value: function render() {
-        var _props = this.props;
-        var to = _props.to;
-        var props = (0, _objectWithoutProperties3.default)(_props, ['to']); // eslint-disable-line no-use-before-define
+        var _props = this.props,
+            to = _props.to,
+            props = (0, _objectWithoutProperties3.default)(_props, ['to']); // eslint-disable-line no-use-before-define
   
         return _react2.default.createElement('a', (0, _extends3.default)({ href: _history2.default.createHref(to) }, props, { onClick: this.handleClick }));
       }
@@ -910,18 +910,10 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 25:
-/***/ function(module, exports, __webpack_require__) {
-
-  module.exports = { "default": __webpack_require__(27), __esModule: true };
-
-/***/ },
-
 /***/ 26:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(29);
-  module.exports = __webpack_require__(13).Object.getPrototypeOf;
+  module.exports = { "default": __webpack_require__(28), __esModule: true };
 
 /***/ },
 
@@ -929,11 +921,19 @@ webpackJsonp([0],{
 /***/ function(module, exports, __webpack_require__) {
 
   __webpack_require__(30);
-  module.exports = __webpack_require__(13).Object.setPrototypeOf;
+  module.exports = __webpack_require__(9).Object.getPrototypeOf;
 
 /***/ },
 
 /***/ 28:
+/***/ function(module, exports, __webpack_require__) {
+
+  __webpack_require__(31);
+  module.exports = __webpack_require__(9).Object.setPrototypeOf;
+
+/***/ },
+
+/***/ 29:
 /***/ function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -948,7 +948,7 @@ webpackJsonp([0],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(39)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(39)(Function.call, __webpack_require__(49).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -964,14 +964,14 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 29:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
   var toObject        = __webpack_require__(41)
-    , $getPrototypeOf = __webpack_require__(49);
+    , $getPrototypeOf = __webpack_require__(50);
   
-  __webpack_require__(50)('getPrototypeOf', function(){
+  __webpack_require__(51)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -979,19 +979,19 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 30:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
   var $export = __webpack_require__(37);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(28).set});
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(29).set});
 
 /***/ },
 
-/***/ 31:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(9)();
+  exports = module.exports = __webpack_require__(10)();
   // imports
   
   
@@ -1005,10 +1005,10 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 32:
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(9)();
+  exports = module.exports = __webpack_require__(10)();
   // imports
   
   
@@ -1024,33 +1024,6 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 33:
-/***/ function(module, exports, __webpack_require__) {
-
-  // style-loader: Adds some css to the DOM by adding a <style> tag
-  
-  // load the styles
-  var content = __webpack_require__(31);
-  if(typeof content === 'string') content = [[module.id, content, '']];
-  // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
-  if(content.locals) module.exports = content.locals;
-  // Hot Module Replacement
-  if(false) {
-  	// When the styles change, update the <style> tags
-  	if(!content.locals) {
-  		module.hot.accept("!!./../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../../node_modules/postcss-loader/index.js!./Layout.css", function() {
-  			var newContent = require("!!./../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../../node_modules/postcss-loader/index.js!./Layout.css");
-  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-  			update(newContent);
-  		});
-  	}
-  	// When the module is disposed, remove the <style> tags
-  	module.hot.dispose(function() { update(); });
-  }
-
-/***/ },
-
 /***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1060,14 +1033,14 @@ webpackJsonp([0],{
   var content = __webpack_require__(32);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(11)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
   	// When the styles change, update the <style> tags
   	if(!content.locals) {
-  		module.hot.accept("!!./../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../../node_modules/postcss-loader/index.js!./Navigation.css", function() {
-  			var newContent = require("!!./../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../../node_modules/postcss-loader/index.js!./Navigation.css");
+  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Layout.css", function() {
+  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Layout.css");
   			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
   			update(newContent);
   		});
@@ -1078,313 +1051,34 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 44:
+/***/ 35:
 /***/ function(module, exports, __webpack_require__) {
 
-  'use strict';
+  // style-loader: Adds some css to the DOM by adding a <style> tag
   
-  var bind = __webpack_require__(152);
-  
-  /*global toString:true*/
-  
-  // utils is a library of generic helper functions non-specific to axios
-  
-  var toString = Object.prototype.toString;
-  
-  /**
-   * Determine if a value is an Array
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is an Array, otherwise false
-   */
-  function isArray(val) {
-    return toString.call(val) === '[object Array]';
+  // load the styles
+  var content = __webpack_require__(33);
+  if(typeof content === 'string') content = [[module.id, content, '']];
+  // add the styles to the DOM
+  var update = __webpack_require__(11)(content, {});
+  if(content.locals) module.exports = content.locals;
+  // Hot Module Replacement
+  if(false) {
+  	// When the styles change, update the <style> tags
+  	if(!content.locals) {
+  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css", function() {
+  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css");
+  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+  			update(newContent);
+  		});
+  	}
+  	// When the module is disposed, remove the <style> tags
+  	module.hot.dispose(function() { update(); });
   }
-  
-  /**
-   * Determine if a value is an ArrayBuffer
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is an ArrayBuffer, otherwise false
-   */
-  function isArrayBuffer(val) {
-    return toString.call(val) === '[object ArrayBuffer]';
-  }
-  
-  /**
-   * Determine if a value is a FormData
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is an FormData, otherwise false
-   */
-  function isFormData(val) {
-    return (typeof FormData !== 'undefined') && (val instanceof FormData);
-  }
-  
-  /**
-   * Determine if a value is a view on an ArrayBuffer
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
-   */
-  function isArrayBufferView(val) {
-    var result;
-    if ((typeof ArrayBuffer !== 'undefined') && (ArrayBuffer.isView)) {
-      result = ArrayBuffer.isView(val);
-    } else {
-      result = (val) && (val.buffer) && (val.buffer instanceof ArrayBuffer);
-    }
-    return result;
-  }
-  
-  /**
-   * Determine if a value is a String
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is a String, otherwise false
-   */
-  function isString(val) {
-    return typeof val === 'string';
-  }
-  
-  /**
-   * Determine if a value is a Number
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is a Number, otherwise false
-   */
-  function isNumber(val) {
-    return typeof val === 'number';
-  }
-  
-  /**
-   * Determine if a value is undefined
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if the value is undefined, otherwise false
-   */
-  function isUndefined(val) {
-    return typeof val === 'undefined';
-  }
-  
-  /**
-   * Determine if a value is an Object
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is an Object, otherwise false
-   */
-  function isObject(val) {
-    return val !== null && typeof val === 'object';
-  }
-  
-  /**
-   * Determine if a value is a Date
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is a Date, otherwise false
-   */
-  function isDate(val) {
-    return toString.call(val) === '[object Date]';
-  }
-  
-  /**
-   * Determine if a value is a File
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is a File, otherwise false
-   */
-  function isFile(val) {
-    return toString.call(val) === '[object File]';
-  }
-  
-  /**
-   * Determine if a value is a Blob
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is a Blob, otherwise false
-   */
-  function isBlob(val) {
-    return toString.call(val) === '[object Blob]';
-  }
-  
-  /**
-   * Determine if a value is a Function
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is a Function, otherwise false
-   */
-  function isFunction(val) {
-    return toString.call(val) === '[object Function]';
-  }
-  
-  /**
-   * Determine if a value is a Stream
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is a Stream, otherwise false
-   */
-  function isStream(val) {
-    return isObject(val) && isFunction(val.pipe);
-  }
-  
-  /**
-   * Determine if a value is a URLSearchParams object
-   *
-   * @param {Object} val The value to test
-   * @returns {boolean} True if value is a URLSearchParams object, otherwise false
-   */
-  function isURLSearchParams(val) {
-    return typeof URLSearchParams !== 'undefined' && val instanceof URLSearchParams;
-  }
-  
-  /**
-   * Trim excess whitespace off the beginning and end of a string
-   *
-   * @param {String} str The String to trim
-   * @returns {String} The String freed of excess whitespace
-   */
-  function trim(str) {
-    return str.replace(/^\s*/, '').replace(/\s*$/, '');
-  }
-  
-  /**
-   * Determine if we're running in a standard browser environment
-   *
-   * This allows axios to run in a web worker, and react-native.
-   * Both environments support XMLHttpRequest, but not fully standard globals.
-   *
-   * web workers:
-   *  typeof window -> undefined
-   *  typeof document -> undefined
-   *
-   * react-native:
-   *  typeof document.createElement -> undefined
-   */
-  function isStandardBrowserEnv() {
-    return (
-      typeof window !== 'undefined' &&
-      typeof document !== 'undefined' &&
-      typeof document.createElement === 'function'
-    );
-  }
-  
-  /**
-   * Iterate over an Array or an Object invoking a function for each item.
-   *
-   * If `obj` is an Array callback will be called passing
-   * the value, index, and complete array for each item.
-   *
-   * If 'obj' is an Object callback will be called passing
-   * the value, key, and complete object for each property.
-   *
-   * @param {Object|Array} obj The object to iterate
-   * @param {Function} fn The callback to invoke for each item
-   */
-  function forEach(obj, fn) {
-    // Don't bother if no value provided
-    if (obj === null || typeof obj === 'undefined') {
-      return;
-    }
-  
-    // Force an array if not already something iterable
-    if (typeof obj !== 'object' && !isArray(obj)) {
-      /*eslint no-param-reassign:0*/
-      obj = [obj];
-    }
-  
-    if (isArray(obj)) {
-      // Iterate over array values
-      for (var i = 0, l = obj.length; i < l; i++) {
-        fn.call(null, obj[i], i, obj);
-      }
-    } else {
-      // Iterate over object keys
-      for (var key in obj) {
-        if (Object.prototype.hasOwnProperty.call(obj, key)) {
-          fn.call(null, obj[key], key, obj);
-        }
-      }
-    }
-  }
-  
-  /**
-   * Accepts varargs expecting each argument to be an object, then
-   * immutably merges the properties of each object and returns result.
-   *
-   * When multiple objects contain the same key the later object in
-   * the arguments list will take precedence.
-   *
-   * Example:
-   *
-   * ```js
-   * var result = merge({foo: 123}, {foo: 456});
-   * console.log(result.foo); // outputs 456
-   * ```
-   *
-   * @param {Object} obj1 Object to merge
-   * @returns {Object} Result of all merge properties
-   */
-  function merge(/* obj1, obj2, obj3, ... */) {
-    var result = {};
-    function assignValue(val, key) {
-      if (typeof result[key] === 'object' && typeof val === 'object') {
-        result[key] = merge(result[key], val);
-      } else {
-        result[key] = val;
-      }
-    }
-  
-    for (var i = 0, l = arguments.length; i < l; i++) {
-      forEach(arguments[i], assignValue);
-    }
-    return result;
-  }
-  
-  /**
-   * Extends object a by mutably adding to it the properties of object b.
-   *
-   * @param {Object} a The object to be extended
-   * @param {Object} b The object to copy properties from
-   * @param {Object} thisArg The object to bind function to
-   * @return {Object} The resulting value of object a
-   */
-  function extend(a, b, thisArg) {
-    forEach(b, function assignValue(val, key) {
-      if (thisArg && typeof val === 'function') {
-        a[key] = bind(val, thisArg);
-      } else {
-        a[key] = val;
-      }
-    });
-    return a;
-  }
-  
-  module.exports = {
-    isArray: isArray,
-    isArrayBuffer: isArrayBuffer,
-    isFormData: isFormData,
-    isArrayBufferView: isArrayBufferView,
-    isString: isString,
-    isNumber: isNumber,
-    isObject: isObject,
-    isUndefined: isUndefined,
-    isDate: isDate,
-    isFile: isFile,
-    isBlob: isBlob,
-    isFunction: isFunction,
-    isStream: isStream,
-    isURLSearchParams: isURLSearchParams,
-    isStandardBrowserEnv: isStandardBrowserEnv,
-    forEach: forEach,
-    merge: merge,
-    extend: extend,
-    trim: trim
-  };
-
 
 /***/ },
 
-/***/ 64:
+/***/ 71:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1393,11 +1087,11 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(19);
+  var _extends2 = __webpack_require__(20);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(12);
+  var _objectWithoutProperties2 = __webpack_require__(14);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -1409,15 +1103,15 @@ webpackJsonp([0],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(6);
+  var _createClass2 = __webpack_require__(4);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(5);
+  var _possibleConstructorReturn2 = __webpack_require__(6);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(4);
+  var _inherits2 = __webpack_require__(5);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1425,19 +1119,19 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _Header = __webpack_require__(22);
+  var _Header = __webpack_require__(23);
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Layout = __webpack_require__(33);
+  var _Layout = __webpack_require__(34);
   
   var _Layout2 = _interopRequireDefault(_Layout);
   
-  var _Colors = __webpack_require__(11);
+  var _Colors = __webpack_require__(12);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -1460,10 +1154,10 @@ webpackJsonp([0],{
     (0, _createClass3.default)(HeaderLayout, [{
       key: 'render',
       value: function render() {
-        var _props = this.props;
-        var style = _props.style;
-        var centered = _props.centered;
-        var props = (0, _objectWithoutProperties3.default)(_props, ['style', 'centered']);
+        var _props = this.props,
+            style = _props.style,
+            centered = _props.centered,
+            props = (0, _objectWithoutProperties3.default)(_props, ['style', 'centered']);
   
         var layoutStyle = {
           paddingTop: 48
@@ -1499,7 +1193,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 85:
+/***/ 82:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1509,125 +1203,24 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Payment = __webpack_require__(250);
+  var _Home = __webpack_require__(215);
   
-  var _Payment2 = _interopRequireDefault(_Payment);
+  var _Home2 = _interopRequireDefault(_Home);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Payment2.default; /**
-                                        * React App SDK (https://github.com/kriasoft/react-app)
-                                        *
-                                        * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-                                        *
-                                        * This source code is licensed under the MIT license found in the
-                                        * LICENSE.txt file in the root directory of this source tree.
-                                        */
+  exports.default = _Home2.default; /**
+                                     * React App SDK (https://github.com/kriasoft/react-app)
+                                     *
+                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
+                                     *
+                                     * This source code is licensed under the MIT license found in the
+                                     * LICENSE.txt file in the root directory of this source tree.
+                                     */
 
 /***/ },
 
-/***/ 103:
-/***/ function(module, exports, __webpack_require__) {
-
-  /* WEBPACK VAR INJECTION */(function(process) {'use strict';
-  
-  var utils = __webpack_require__(44);
-  var normalizeHeaderName = __webpack_require__(237);
-  
-  var PROTECTION_PREFIX = /^\)\]\}',?\n/;
-  var DEFAULT_CONTENT_TYPE = {
-    'Content-Type': 'application/x-www-form-urlencoded'
-  };
-  
-  function setContentTypeIfUnset(headers, value) {
-    if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
-      headers['Content-Type'] = value;
-    }
-  }
-  
-  function getDefaultAdapter() {
-    var adapter;
-    if (typeof XMLHttpRequest !== 'undefined') {
-      // For browsers use XHR adapter
-      adapter = __webpack_require__(148);
-    } else if (typeof process !== 'undefined') {
-      // For node use HTTP adapter
-      adapter = __webpack_require__(148);
-    }
-    return adapter;
-  }
-  
-  var defaults = {
-    adapter: getDefaultAdapter(),
-  
-    transformRequest: [function transformRequest(data, headers) {
-      normalizeHeaderName(headers, 'Content-Type');
-      if (utils.isFormData(data) ||
-        utils.isArrayBuffer(data) ||
-        utils.isStream(data) ||
-        utils.isFile(data) ||
-        utils.isBlob(data)
-      ) {
-        return data;
-      }
-      if (utils.isArrayBufferView(data)) {
-        return data.buffer;
-      }
-      if (utils.isURLSearchParams(data)) {
-        setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
-        return data.toString();
-      }
-      if (utils.isObject(data)) {
-        setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
-        return JSON.stringify(data);
-      }
-      return data;
-    }],
-  
-    transformResponse: [function transformResponse(data) {
-      /*eslint no-param-reassign:0*/
-      if (typeof data === 'string') {
-        data = data.replace(PROTECTION_PREFIX, '');
-        try {
-          data = JSON.parse(data);
-        } catch (e) { /* Ignore */ }
-      }
-      return data;
-    }],
-  
-    timeout: 0,
-  
-    xsrfCookieName: 'XSRF-TOKEN',
-    xsrfHeaderName: 'X-XSRF-TOKEN',
-  
-    maxContentLength: -1,
-  
-    validateStatus: function validateStatus(status) {
-      return status >= 200 && status < 300;
-    }
-  };
-  
-  defaults.headers = {
-    common: {
-      'Accept': 'application/json, text/plain, */*'
-    }
-  };
-  
-  utils.forEach(['delete', 'get', 'head'], function forEachMehtodNoData(method) {
-    defaults.headers[method] = {};
-  });
-  
-  utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
-    defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
-  });
-  
-  module.exports = defaults;
-  
-  /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(93)))
-
-/***/ },
-
-/***/ 104:
+/***/ 215:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1635,18 +1228,6 @@ webpackJsonp([0],{
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  
-  var _extends2 = __webpack_require__(19);
-  
-  var _extends3 = _interopRequireDefault(_extends2);
-  
-  var _assign = __webpack_require__(55);
-  
-  var _assign2 = _interopRequireDefault(_assign);
-  
-  var _objectWithoutProperties2 = __webpack_require__(12);
-  
-  var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
   var _getPrototypeOf = __webpack_require__(2);
   
@@ -1656,15 +1237,15 @@ webpackJsonp([0],{
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(6);
+  var _createClass2 = __webpack_require__(4);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(5);
+  var _possibleConstructorReturn2 = __webpack_require__(6);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(4);
+  var _inherits2 = __webpack_require__(5);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1672,171 +1253,138 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(16);
+  var _reactFlexbox = __webpack_require__(17);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _history = __webpack_require__(17);
+  var _HeaderLayout = __webpack_require__(71);
   
-  var _history2 = _interopRequireDefault(_history);
+  var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
   
-  var _BrowserMock = __webpack_require__(147);
+  var _Link = __webpack_require__(13);
   
-  var _BrowserMock2 = _interopRequireDefault(_BrowserMock);
+  var _Link2 = _interopRequireDefault(_Link);
+  
+  var _Home = __webpack_require__(406);
+  
+  var _Home2 = _interopRequireDefault(_Home);
+  
+  var _Home3 = __webpack_require__(415);
+  
+  var _Colors = __webpack_require__(12);
+  
+  var Colors = _interopRequireWildcard(_Colors);
+  
+  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var PADDING = 12;
+  var documentTitle = 'RickFrom1987';
   
-  var BrowserMock = function (_React$Component) {
-    (0, _inherits3.default)(BrowserMock, _React$Component);
+  var HomePage = function (_React$Component) {
+    (0, _inherits3.default)(HomePage, _React$Component);
   
-    function BrowserMock(props) {
-      (0, _classCallCheck3.default)(this, BrowserMock);
-  
-      var _this = (0, _possibleConstructorReturn3.default)(this, (BrowserMock.__proto__ || (0, _getPrototypeOf2.default)(BrowserMock)).call(this, props));
-  
-      _this.onMouseOver = function () {
-        _this.setState({
-          hover: true
-        });
-      };
-  
-      _this.onMouseLeave = function () {
-        _this.setState({
-          hover: false
-        });
-      };
-  
-      _this.onMouseUp = function () {
-        if (!_this.props.pathname) {
-          return;
-        } else {
-          window.setTimeout(function () {
-            var pathname = _this.props.pathname;
-            _history2.default.push({
-              pathname: pathname
-            });
-          }, 500);
-        }
-      };
-  
-      _this.state = {
-        hover: false
-      };
-      return _this;
+    function HomePage() {
+      (0, _classCallCheck3.default)(this, HomePage);
+      return (0, _possibleConstructorReturn3.default)(this, (HomePage.__proto__ || (0, _getPrototypeOf2.default)(HomePage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(BrowserMock, [{
+    (0, _createClass3.default)(HomePage, [{
+      key: 'componentDidMount',
+      value: function componentDidMount() {
+        document.title = documentTitle;
+      }
+    }, {
       key: 'render',
       value: function render() {
-        var _props = this.props;
-        var pathname = _props.pathname;
-        var style = _props.style;
-        var props = (0, _objectWithoutProperties3.default)(_props, ['pathname', 'style']);
-  
-        var browserMockStyle = {
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '100%',
-          borderTop: '2em solid rgba(230, 230, 230, 0.7)',
-          boxShadow: '0 0.1em 1em 0 rgba(0, 0, 0, 0.4)',
-          position: 'relative',
-          borderRadius: '3px 3px 0 0',
-          transition: 'all 0.4s ease-out'
-        };
-        var browserDotsStyle = {
-          display: 'block',
-          position: 'absolute',
-          content: '',
-          top: '-1.25em',
-          left: '1em',
-          width: '0.5em',
-          height: '0.5em',
-          borderRadius: '50%',
-          backgroundColor: '#f44',
-          boxShadow: '0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5'
-        };
-        var browserBodyStyle = {
-          position: 'relative',
-          height: '100%',
-          minWidth: 200,
-          overflowY: 'hidden',
-          justifyContent: 'center',
-          alignSelf: 'center',
-          alignItems: 'center',
+        var homeStyle = {
           textAlign: 'center',
-          width: '100%',
-          zIndex: 1000
+          color: Colors.WHITE
         };
-        if (this.state.hover) {
-          browserMockStyle.backgroundColor = 'rgba(0,0,0,0.25)';
-          browserMockStyle.cursor = 'pointer';
-        }
-        var viewStyle = (0, _assign2.default)({}, browserMockStyle, style);
+        var linkStyle = {
+          fontSize: 24,
+          padding: 12
+        };
         return _react2.default.createElement(
-          _reactFlexbox2.default,
-          (0, _extends3.default)({}, props, {
-            column: true,
-            style: viewStyle,
-            onMouseOver: this.onMouseOver,
-            onMouseLeave: this.onMouseLeave,
-            onMouseUp: this.onMouseUp }),
-          _react2.default.createElement('div', { style: browserDotsStyle }),
+          _HeaderLayout2.default,
+          { centered: true },
           _react2.default.createElement(
             _reactFlexbox2.default,
-            { column: true, style: browserBodyStyle, className: _BrowserMock2.default.ripple },
-            this.props.children
+            { column: true, style: homeStyle },
+            _react2.default.createElement(
+              'h1',
+              null,
+              _Home3.title
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _Home3.desc
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: '//www.facebook.com/rickfrom1987', style: linkStyle },
+                _react2.default.createElement('i', { className: 'fa fa-facebook' })
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '//www.linkedin.com/in/rickfrom1987', style: linkStyle },
+                _react2.default.createElement('i', { className: 'fa fa-linkedin' })
+              ),
+              _react2.default.createElement(
+                'a',
+                { href: '//github.com/rickfrom1987', style: linkStyle },
+                _react2.default.createElement('i', { className: 'fa fa-github' })
+              )
+            )
           )
         );
       }
     }]);
-    return BrowserMock;
+    return HomePage;
   }(_react2.default.Component);
   
-  BrowserMock.propTypes = {
-    style: _react2.default.PropTypes.object,
-    pathname: _react2.default.PropTypes.string,
-    children: _react2.default.PropTypes.node
-  };
-  exports.default = BrowserMock;
+  exports.default = HomePage;
 
 /***/ },
 
-/***/ 120:
+/***/ 272:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(9)();
+  exports = module.exports = __webpack_require__(10)();
   // imports
   
   
   // module
-  exports.push([module.id, ".BrowserMock_ripple_1Kt {\n  position: relative;\n  overflow: hidden;\n}\n.BrowserMock_ripple_1Kt:after {\n  content: \"\";\n  background: rgba(255, 255, 255, 0.3);\n  display: block;\n  position: absolute;\n  top: -50%;\n  left: -50%;\n  border-radius: 50%;\n  padding-top: 200%;\n  padding-left: 200%;\n  opacity: 0;\n  -webkit-transition: all 0.5s;\n  transition: all 0.5s\n}\n.BrowserMock_ripple_1Kt:active:after {\n  padding-top: 0;\n  padding-left: 0;\n  opacity: 1;\n  -webkit-transition: 0s;\n  transition: 0s\n}", "", {"version":3,"sources":["/./components/BrowserMock.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,iBAAiB;CAClB;AACD;EACE,YAAY;EACZ,qCAAqC;EACrC,eAAe;EACf,mBAAmB;EACnB,UAAU;EACV,WAAW;EACX,mBAAmB;EACnB,kBAAkB;EAClB,mBAAmB;EACnB,WAAW;EACX,6BAAoB;EAApB,oBAAoB;CACrB;AACD;EACE,eAAe;EACf,gBAAgB;EAChB,WAAW;EACX,uBAAc;EAAd,cAAc;CACf","file":"BrowserMock.css","sourcesContent":[".ripple {\n  position: relative;\n  overflow: hidden;\n}\n.ripple:after {\n  content: \"\";\n  background: rgba(255, 255, 255, 0.3);\n  display: block;\n  position: absolute;\n  top: -50%;\n  left: -50%;\n  border-radius: 50%;\n  padding-top: 200%;\n  padding-left: 200%;\n  opacity: 0;\n  transition: all 0.5s\n}\n.ripple:active:after {\n  padding-top: 0;\n  padding-left: 0;\n  opacity: 1;\n  transition: 0s\n}"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, "/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@media screen and (max-width: 1024px) {\n\n  .Home_content_3u8 {\n    padding: 0 16px;\n  }\n\n}\n", "", {"version":3,"sources":["/./routes/Home/Home.css"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;AAEH;;EAEE;IACE,gBAAgB;GACjB;;CAEF","file":"Home.css","sourcesContent":["/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@media screen and (max-width: 1024px) {\n\n  .content {\n    padding: 0 16px;\n  }\n\n}\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
-  	"ripple": "BrowserMock_ripple_1Kt"
+  	"content": "Home_content_3u8"
   };
 
 /***/ },
 
-/***/ 147:
+/***/ 406:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(120);
+  var content = __webpack_require__(272);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(11)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
   	// When the styles change, update the <style> tags
   	if(!content.locals) {
-  		module.hot.accept("!!./../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../node_modules/postcss-loader/index.js!./BrowserMock.css", function() {
-  			var newContent = require("!!./../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../node_modules/postcss-loader/index.js!./BrowserMock.css");
+  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Home.css", function() {
+  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Home.css");
   			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
   			update(newContent);
   		});
@@ -1847,1840 +1395,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 148:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var utils = __webpack_require__(44);
-  var settle = __webpack_require__(229);
-  var buildURL = __webpack_require__(232);
-  var parseHeaders = __webpack_require__(238);
-  var isURLSameOrigin = __webpack_require__(236);
-  var createError = __webpack_require__(151);
-  var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(231);
-  
-  module.exports = function xhrAdapter(config) {
-    return new Promise(function dispatchXhrRequest(resolve, reject) {
-      var requestData = config.data;
-      var requestHeaders = config.headers;
-  
-      if (utils.isFormData(requestData)) {
-        delete requestHeaders['Content-Type']; // Let the browser set it
-      }
-  
-      var request = new XMLHttpRequest();
-      var loadEvent = 'onreadystatechange';
-      var xDomain = false;
-  
-      // For IE 8/9 CORS support
-      // Only supports POST and GET calls and doesn't returns the response headers.
-      // DON'T do this for testing b/c XMLHttpRequest is mocked, not XDomainRequest.
-      if (("development") !== 'test' &&
-          typeof window !== 'undefined' &&
-          window.XDomainRequest && !('withCredentials' in request) &&
-          !isURLSameOrigin(config.url)) {
-        request = new window.XDomainRequest();
-        loadEvent = 'onload';
-        xDomain = true;
-        request.onprogress = function handleProgress() {};
-        request.ontimeout = function handleTimeout() {};
-      }
-  
-      // HTTP basic authentication
-      if (config.auth) {
-        var username = config.auth.username || '';
-        var password = config.auth.password || '';
-        requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);
-      }
-  
-      request.open(config.method.toUpperCase(), buildURL(config.url, config.params, config.paramsSerializer), true);
-  
-      // Set the request timeout in MS
-      request.timeout = config.timeout;
-  
-      // Listen for ready state
-      request[loadEvent] = function handleLoad() {
-        if (!request || (request.readyState !== 4 && !xDomain)) {
-          return;
-        }
-  
-        // The request errored out and we didn't get a response, this will be
-        // handled by onerror instead
-        // With one exception: request that using file: protocol, most browsers
-        // will return status as 0 even though it's a successful request
-        if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf('file:') === 0)) {
-          return;
-        }
-  
-        // Prepare the response
-        var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
-        var responseData = !config.responseType || config.responseType === 'text' ? request.responseText : request.response;
-        var response = {
-          data: responseData,
-          // IE sends 1223 instead of 204 (https://github.com/mzabriskie/axios/issues/201)
-          status: request.status === 1223 ? 204 : request.status,
-          statusText: request.status === 1223 ? 'No Content' : request.statusText,
-          headers: responseHeaders,
-          config: config,
-          request: request
-        };
-  
-        settle(resolve, reject, response);
-  
-        // Clean up request
-        request = null;
-      };
-  
-      // Handle low level network errors
-      request.onerror = function handleError() {
-        // Real errors are hidden from us by the browser
-        // onerror should only fire if it's a network error
-        reject(createError('Network Error', config));
-  
-        // Clean up request
-        request = null;
-      };
-  
-      // Handle timeout
-      request.ontimeout = function handleTimeout() {
-        reject(createError('timeout of ' + config.timeout + 'ms exceeded', config, 'ECONNABORTED'));
-  
-        // Clean up request
-        request = null;
-      };
-  
-      // Add xsrf header
-      // This is only done if running in a standard browser environment.
-      // Specifically not if we're in a web worker, or react-native.
-      if (utils.isStandardBrowserEnv()) {
-        var cookies = __webpack_require__(234);
-  
-        // Add xsrf header
-        var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
-            cookies.read(config.xsrfCookieName) :
-            undefined;
-  
-        if (xsrfValue) {
-          requestHeaders[config.xsrfHeaderName] = xsrfValue;
-        }
-      }
-  
-      // Add headers to the request
-      if ('setRequestHeader' in request) {
-        utils.forEach(requestHeaders, function setRequestHeader(val, key) {
-          if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') {
-            // Remove Content-Type if data is undefined
-            delete requestHeaders[key];
-          } else {
-            // Otherwise add header to the request
-            request.setRequestHeader(key, val);
-          }
-        });
-      }
-  
-      // Add withCredentials to request if needed
-      if (config.withCredentials) {
-        request.withCredentials = true;
-      }
-  
-      // Add responseType to request if needed
-      if (config.responseType) {
-        try {
-          request.responseType = config.responseType;
-        } catch (e) {
-          if (request.responseType !== 'json') {
-            throw e;
-          }
-        }
-      }
-  
-      // Handle progress if needed
-      if (typeof config.onDownloadProgress === 'function') {
-        request.addEventListener('progress', config.onDownloadProgress);
-      }
-  
-      // Not all browsers support upload events
-      if (typeof config.onUploadProgress === 'function' && request.upload) {
-        request.upload.addEventListener('progress', config.onUploadProgress);
-      }
-  
-      if (config.cancelToken) {
-        // Handle cancellation
-        config.cancelToken.promise.then(function onCanceled(cancel) {
-          if (!request) {
-            return;
-          }
-  
-          request.abort();
-          reject(cancel);
-          // Clean up request
-          request = null;
-        });
-      }
-  
-      if (requestData === undefined) {
-        requestData = null;
-      }
-  
-      // Send the request
-      request.send(requestData);
-    });
-  };
-
-
-/***/ },
-
-/***/ 149:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  /**
-   * A `Cancel` is an object that is thrown when an operation is canceled.
-   *
-   * @class
-   * @param {string=} message The message.
-   */
-  function Cancel(message) {
-    this.message = message;
-  }
-  
-  Cancel.prototype.toString = function toString() {
-    return 'Cancel' + (this.message ? ': ' + this.message : '');
-  };
-  
-  Cancel.prototype.__CANCEL__ = true;
-  
-  module.exports = Cancel;
-
-
-/***/ },
-
-/***/ 150:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  module.exports = function isCancel(value) {
-    return !!(value && value.__CANCEL__);
-  };
-
-
-/***/ },
-
-/***/ 151:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var enhanceError = __webpack_require__(228);
-  
-  /**
-   * Create an Error with the specified message, config, error code, and response.
-   *
-   * @param {string} message The error message.
-   * @param {Object} config The config.
-   * @param {string} [code] The error code (for example, 'ECONNABORTED').
-   @ @param {Object} [response] The response.
-   * @returns {Error} The created error.
-   */
-  module.exports = function createError(message, config, code, response) {
-    var error = new Error(message);
-    return enhanceError(error, config, code, response);
-  };
-
-
-/***/ },
-
-/***/ 152:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  module.exports = function bind(fn, thisArg) {
-    return function wrap() {
-      var args = new Array(arguments.length);
-      for (var i = 0; i < args.length; i++) {
-        args[i] = arguments[i];
-      }
-      return fn.apply(thisArg, args);
-    };
-  };
-
-
-/***/ },
-
-/***/ 222:
-/***/ function(module, exports, __webpack_require__) {
-
-  module.exports = __webpack_require__(223);
-
-/***/ },
-
-/***/ 223:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var utils = __webpack_require__(44);
-  var bind = __webpack_require__(152);
-  var Axios = __webpack_require__(225);
-  var defaults = __webpack_require__(103);
-  
-  /**
-   * Create an instance of Axios
-   *
-   * @param {Object} defaultConfig The default config for the instance
-   * @return {Axios} A new instance of Axios
-   */
-  function createInstance(defaultConfig) {
-    var context = new Axios(defaultConfig);
-    var instance = bind(Axios.prototype.request, context);
-  
-    // Copy axios.prototype to instance
-    utils.extend(instance, Axios.prototype, context);
-  
-    // Copy context to instance
-    utils.extend(instance, context);
-  
-    return instance;
-  }
-  
-  // Create the default instance to be exported
-  var axios = createInstance(defaults);
-  
-  // Expose Axios class to allow class inheritance
-  axios.Axios = Axios;
-  
-  // Factory for creating new instances
-  axios.create = function create(instanceConfig) {
-    return createInstance(utils.merge(defaults, instanceConfig));
-  };
-  
-  // Expose Cancel & CancelToken
-  axios.Cancel = __webpack_require__(149);
-  axios.CancelToken = __webpack_require__(224);
-  axios.isCancel = __webpack_require__(150);
-  
-  // Expose all/spread
-  axios.all = function all(promises) {
-    return Promise.all(promises);
-  };
-  axios.spread = __webpack_require__(239);
-  
-  module.exports = axios;
-  
-  // Allow use of default import syntax in TypeScript
-  module.exports.default = axios;
-
-
-/***/ },
-
-/***/ 224:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var Cancel = __webpack_require__(149);
-  
-  /**
-   * A `CancelToken` is an object that can be used to request cancellation of an operation.
-   *
-   * @class
-   * @param {Function} executor The executor function.
-   */
-  function CancelToken(executor) {
-    if (typeof executor !== 'function') {
-      throw new TypeError('executor must be a function.');
-    }
-  
-    var resolvePromise;
-    this.promise = new Promise(function promiseExecutor(resolve) {
-      resolvePromise = resolve;
-    });
-  
-    var token = this;
-    executor(function cancel(message) {
-      if (token.reason) {
-        // Cancellation has already been requested
-        return;
-      }
-  
-      token.reason = new Cancel(message);
-      resolvePromise(token.reason);
-    });
-  }
-  
-  /**
-   * Throws a `Cancel` if cancellation has been requested.
-   */
-  CancelToken.prototype.throwIfRequested = function throwIfRequested() {
-    if (this.reason) {
-      throw this.reason;
-    }
-  };
-  
-  /**
-   * Returns an object that contains a new `CancelToken` and a function that, when called,
-   * cancels the `CancelToken`.
-   */
-  CancelToken.source = function source() {
-    var cancel;
-    var token = new CancelToken(function executor(c) {
-      cancel = c;
-    });
-    return {
-      token: token,
-      cancel: cancel
-    };
-  };
-  
-  module.exports = CancelToken;
-
-
-/***/ },
-
-/***/ 225:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var defaults = __webpack_require__(103);
-  var utils = __webpack_require__(44);
-  var InterceptorManager = __webpack_require__(226);
-  var dispatchRequest = __webpack_require__(227);
-  var isAbsoluteURL = __webpack_require__(235);
-  var combineURLs = __webpack_require__(233);
-  
-  /**
-   * Create a new instance of Axios
-   *
-   * @param {Object} instanceConfig The default config for the instance
-   */
-  function Axios(instanceConfig) {
-    this.defaults = instanceConfig;
-    this.interceptors = {
-      request: new InterceptorManager(),
-      response: new InterceptorManager()
-    };
-  }
-  
-  /**
-   * Dispatch a request
-   *
-   * @param {Object} config The config specific for this request (merged with this.defaults)
-   */
-  Axios.prototype.request = function request(config) {
-    /*eslint no-param-reassign:0*/
-    // Allow for axios('example/url'[, config]) a la fetch API
-    if (typeof config === 'string') {
-      config = utils.merge({
-        url: arguments[0]
-      }, arguments[1]);
-    }
-  
-    config = utils.merge(defaults, this.defaults, { method: 'get' }, config);
-  
-    // Support baseURL config
-    if (config.baseURL && !isAbsoluteURL(config.url)) {
-      config.url = combineURLs(config.baseURL, config.url);
-    }
-  
-    // Hook up interceptors middleware
-    var chain = [dispatchRequest, undefined];
-    var promise = Promise.resolve(config);
-  
-    this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
-      chain.unshift(interceptor.fulfilled, interceptor.rejected);
-    });
-  
-    this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
-      chain.push(interceptor.fulfilled, interceptor.rejected);
-    });
-  
-    while (chain.length) {
-      promise = promise.then(chain.shift(), chain.shift());
-    }
-  
-    return promise;
-  };
-  
-  // Provide aliases for supported request methods
-  utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
-    /*eslint func-names:0*/
-    Axios.prototype[method] = function(url, config) {
-      return this.request(utils.merge(config || {}, {
-        method: method,
-        url: url
-      }));
-    };
-  });
-  
-  utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
-    /*eslint func-names:0*/
-    Axios.prototype[method] = function(url, data, config) {
-      return this.request(utils.merge(config || {}, {
-        method: method,
-        url: url,
-        data: data
-      }));
-    };
-  });
-  
-  module.exports = Axios;
-
-
-/***/ },
-
-/***/ 226:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var utils = __webpack_require__(44);
-  
-  function InterceptorManager() {
-    this.handlers = [];
-  }
-  
-  /**
-   * Add a new interceptor to the stack
-   *
-   * @param {Function} fulfilled The function to handle `then` for a `Promise`
-   * @param {Function} rejected The function to handle `reject` for a `Promise`
-   *
-   * @return {Number} An ID used to remove interceptor later
-   */
-  InterceptorManager.prototype.use = function use(fulfilled, rejected) {
-    this.handlers.push({
-      fulfilled: fulfilled,
-      rejected: rejected
-    });
-    return this.handlers.length - 1;
-  };
-  
-  /**
-   * Remove an interceptor from the stack
-   *
-   * @param {Number} id The ID that was returned by `use`
-   */
-  InterceptorManager.prototype.eject = function eject(id) {
-    if (this.handlers[id]) {
-      this.handlers[id] = null;
-    }
-  };
-  
-  /**
-   * Iterate over all the registered interceptors
-   *
-   * This method is particularly useful for skipping over any
-   * interceptors that may have become `null` calling `eject`.
-   *
-   * @param {Function} fn The function to call for each interceptor
-   */
-  InterceptorManager.prototype.forEach = function forEach(fn) {
-    utils.forEach(this.handlers, function forEachHandler(h) {
-      if (h !== null) {
-        fn(h);
-      }
-    });
-  };
-  
-  module.exports = InterceptorManager;
-
-
-/***/ },
-
-/***/ 227:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var utils = __webpack_require__(44);
-  var transformData = __webpack_require__(230);
-  var isCancel = __webpack_require__(150);
-  var defaults = __webpack_require__(103);
-  
-  /**
-   * Throws a `Cancel` if cancellation has been requested.
-   */
-  function throwIfCancellationRequested(config) {
-    if (config.cancelToken) {
-      config.cancelToken.throwIfRequested();
-    }
-  }
-  
-  /**
-   * Dispatch a request to the server using the configured adapter.
-   *
-   * @param {object} config The config that is to be used for the request
-   * @returns {Promise} The Promise to be fulfilled
-   */
-  module.exports = function dispatchRequest(config) {
-    throwIfCancellationRequested(config);
-  
-    // Ensure headers exist
-    config.headers = config.headers || {};
-  
-    // Transform request data
-    config.data = transformData(
-      config.data,
-      config.headers,
-      config.transformRequest
-    );
-  
-    // Flatten headers
-    config.headers = utils.merge(
-      config.headers.common || {},
-      config.headers[config.method] || {},
-      config.headers || {}
-    );
-  
-    utils.forEach(
-      ['delete', 'get', 'head', 'post', 'put', 'patch', 'common'],
-      function cleanHeaderConfig(method) {
-        delete config.headers[method];
-      }
-    );
-  
-    var adapter = config.adapter || defaults.adapter;
-  
-    return adapter(config).then(function onAdapterResolution(response) {
-      throwIfCancellationRequested(config);
-  
-      // Transform response data
-      response.data = transformData(
-        response.data,
-        response.headers,
-        config.transformResponse
-      );
-  
-      return response;
-    }, function onAdapterRejection(reason) {
-      if (!isCancel(reason)) {
-        throwIfCancellationRequested(config);
-  
-        // Transform response data
-        if (reason && reason.response) {
-          reason.response.data = transformData(
-            reason.response.data,
-            reason.response.headers,
-            config.transformResponse
-          );
-        }
-      }
-  
-      return Promise.reject(reason);
-    });
-  };
-
-
-/***/ },
-
-/***/ 228:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  /**
-   * Update an Error with the specified config, error code, and response.
-   *
-   * @param {Error} error The error to update.
-   * @param {Object} config The config.
-   * @param {string} [code] The error code (for example, 'ECONNABORTED').
-   @ @param {Object} [response] The response.
-   * @returns {Error} The error.
-   */
-  module.exports = function enhanceError(error, config, code, response) {
-    error.config = config;
-    if (code) {
-      error.code = code;
-    }
-    error.response = response;
-    return error;
-  };
-
-
-/***/ },
-
-/***/ 229:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var createError = __webpack_require__(151);
-  
-  /**
-   * Resolve or reject a Promise based on response status.
-   *
-   * @param {Function} resolve A function that resolves the promise.
-   * @param {Function} reject A function that rejects the promise.
-   * @param {object} response The response.
-   */
-  module.exports = function settle(resolve, reject, response) {
-    var validateStatus = response.config.validateStatus;
-    // Note: status is not exposed by XDomainRequest
-    if (!response.status || !validateStatus || validateStatus(response.status)) {
-      resolve(response);
-    } else {
-      reject(createError(
-        'Request failed with status code ' + response.status,
-        response.config,
-        null,
-        response
-      ));
-    }
-  };
-
-
-/***/ },
-
-/***/ 230:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var utils = __webpack_require__(44);
-  
-  /**
-   * Transform the data for a request or a response
-   *
-   * @param {Object|String} data The data to be transformed
-   * @param {Array} headers The headers for the request or response
-   * @param {Array|Function} fns A single function or Array of functions
-   * @returns {*} The resulting transformed data
-   */
-  module.exports = function transformData(data, headers, fns) {
-    /*eslint no-param-reassign:0*/
-    utils.forEach(fns, function transform(fn) {
-      data = fn(data, headers);
-    });
-  
-    return data;
-  };
-
-
-/***/ },
-
-/***/ 231:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  // btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
-  
-  var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
-  
-  function E() {
-    this.message = 'String contains an invalid character';
-  }
-  E.prototype = new Error;
-  E.prototype.code = 5;
-  E.prototype.name = 'InvalidCharacterError';
-  
-  function btoa(input) {
-    var str = String(input);
-    var output = '';
-    for (
-      // initialize result and counter
-      var block, charCode, idx = 0, map = chars;
-      // if the next str index does not exist:
-      //   change the mapping table to "="
-      //   check if d has no fractional digits
-      str.charAt(idx | 0) || (map = '=', idx % 1);
-      // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
-      output += map.charAt(63 & block >> 8 - idx % 1 * 8)
-    ) {
-      charCode = str.charCodeAt(idx += 3 / 4);
-      if (charCode > 0xFF) {
-        throw new E();
-      }
-      block = block << 8 | charCode;
-    }
-    return output;
-  }
-  
-  module.exports = btoa;
-
-
-/***/ },
-
-/***/ 232:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var utils = __webpack_require__(44);
-  
-  function encode(val) {
-    return encodeURIComponent(val).
-      replace(/%40/gi, '@').
-      replace(/%3A/gi, ':').
-      replace(/%24/g, '$').
-      replace(/%2C/gi, ',').
-      replace(/%20/g, '+').
-      replace(/%5B/gi, '[').
-      replace(/%5D/gi, ']');
-  }
-  
-  /**
-   * Build a URL by appending params to the end
-   *
-   * @param {string} url The base of the url (e.g., http://www.google.com)
-   * @param {object} [params] The params to be appended
-   * @returns {string} The formatted url
-   */
-  module.exports = function buildURL(url, params, paramsSerializer) {
-    /*eslint no-param-reassign:0*/
-    if (!params) {
-      return url;
-    }
-  
-    var serializedParams;
-    if (paramsSerializer) {
-      serializedParams = paramsSerializer(params);
-    } else if (utils.isURLSearchParams(params)) {
-      serializedParams = params.toString();
-    } else {
-      var parts = [];
-  
-      utils.forEach(params, function serialize(val, key) {
-        if (val === null || typeof val === 'undefined') {
-          return;
-        }
-  
-        if (utils.isArray(val)) {
-          key = key + '[]';
-        }
-  
-        if (!utils.isArray(val)) {
-          val = [val];
-        }
-  
-        utils.forEach(val, function parseValue(v) {
-          if (utils.isDate(v)) {
-            v = v.toISOString();
-          } else if (utils.isObject(v)) {
-            v = JSON.stringify(v);
-          }
-          parts.push(encode(key) + '=' + encode(v));
-        });
-      });
-  
-      serializedParams = parts.join('&');
-    }
-  
-    if (serializedParams) {
-      url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
-    }
-  
-    return url;
-  };
-
-
-/***/ },
-
-/***/ 233:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  /**
-   * Creates a new URL by combining the specified URLs
-   *
-   * @param {string} baseURL The base URL
-   * @param {string} relativeURL The relative URL
-   * @returns {string} The combined URL
-   */
-  module.exports = function combineURLs(baseURL, relativeURL) {
-    return baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '');
-  };
-
-
-/***/ },
-
-/***/ 234:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var utils = __webpack_require__(44);
-  
-  module.exports = (
-    utils.isStandardBrowserEnv() ?
-  
-    // Standard browser envs support document.cookie
-    (function standardBrowserEnv() {
-      return {
-        write: function write(name, value, expires, path, domain, secure) {
-          var cookie = [];
-          cookie.push(name + '=' + encodeURIComponent(value));
-  
-          if (utils.isNumber(expires)) {
-            cookie.push('expires=' + new Date(expires).toGMTString());
-          }
-  
-          if (utils.isString(path)) {
-            cookie.push('path=' + path);
-          }
-  
-          if (utils.isString(domain)) {
-            cookie.push('domain=' + domain);
-          }
-  
-          if (secure === true) {
-            cookie.push('secure');
-          }
-  
-          document.cookie = cookie.join('; ');
-        },
-  
-        read: function read(name) {
-          var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
-          return (match ? decodeURIComponent(match[3]) : null);
-        },
-  
-        remove: function remove(name) {
-          this.write(name, '', Date.now() - 86400000);
-        }
-      };
-    })() :
-  
-    // Non standard browser env (web workers, react-native) lack needed support.
-    (function nonStandardBrowserEnv() {
-      return {
-        write: function write() {},
-        read: function read() { return null; },
-        remove: function remove() {}
-      };
-    })()
-  );
-
-
-/***/ },
-
-/***/ 235:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  /**
-   * Determines whether the specified URL is absolute
-   *
-   * @param {string} url The URL to test
-   * @returns {boolean} True if the specified URL is absolute, otherwise false
-   */
-  module.exports = function isAbsoluteURL(url) {
-    // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
-    // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
-    // by any combination of letters, digits, plus, period, or hyphen.
-    return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
-  };
-
-
-/***/ },
-
-/***/ 236:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var utils = __webpack_require__(44);
-  
-  module.exports = (
-    utils.isStandardBrowserEnv() ?
-  
-    // Standard browser envs have full support of the APIs needed to test
-    // whether the request URL is of the same origin as current location.
-    (function standardBrowserEnv() {
-      var msie = /(msie|trident)/i.test(navigator.userAgent);
-      var urlParsingNode = document.createElement('a');
-      var originURL;
-  
-      /**
-      * Parse a URL to discover it's components
-      *
-      * @param {String} url The URL to be parsed
-      * @returns {Object}
-      */
-      function resolveURL(url) {
-        var href = url;
-  
-        if (msie) {
-          // IE needs attribute set twice to normalize properties
-          urlParsingNode.setAttribute('href', href);
-          href = urlParsingNode.href;
-        }
-  
-        urlParsingNode.setAttribute('href', href);
-  
-        // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
-        return {
-          href: urlParsingNode.href,
-          protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
-          host: urlParsingNode.host,
-          search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
-          hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
-          hostname: urlParsingNode.hostname,
-          port: urlParsingNode.port,
-          pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
-                    urlParsingNode.pathname :
-                    '/' + urlParsingNode.pathname
-        };
-      }
-  
-      originURL = resolveURL(window.location.href);
-  
-      /**
-      * Determine if a URL shares the same origin as the current location
-      *
-      * @param {String} requestURL The URL to test
-      * @returns {boolean} True if URL shares the same origin, otherwise false
-      */
-      return function isURLSameOrigin(requestURL) {
-        var parsed = (utils.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
-        return (parsed.protocol === originURL.protocol &&
-              parsed.host === originURL.host);
-      };
-    })() :
-  
-    // Non standard browser envs (web workers, react-native) lack needed support.
-    (function nonStandardBrowserEnv() {
-      return function isURLSameOrigin() {
-        return true;
-      };
-    })()
-  );
-
-
-/***/ },
-
-/***/ 237:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var utils = __webpack_require__(44);
-  
-  module.exports = function normalizeHeaderName(headers, normalizedName) {
-    utils.forEach(headers, function processHeader(value, name) {
-      if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
-        headers[normalizedName] = value;
-        delete headers[name];
-      }
-    });
-  };
-
-
-/***/ },
-
-/***/ 238:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  var utils = __webpack_require__(44);
-  
-  /**
-   * Parse headers into an object
-   *
-   * ```
-   * Date: Wed, 27 Aug 2014 08:58:49 GMT
-   * Content-Type: application/json
-   * Connection: keep-alive
-   * Transfer-Encoding: chunked
-   * ```
-   *
-   * @param {String} headers Headers needing to be parsed
-   * @returns {Object} Headers parsed into an object
-   */
-  module.exports = function parseHeaders(headers) {
-    var parsed = {};
-    var key;
-    var val;
-    var i;
-  
-    if (!headers) { return parsed; }
-  
-    utils.forEach(headers.split('\n'), function parser(line) {
-      i = line.indexOf(':');
-      key = utils.trim(line.substr(0, i)).toLowerCase();
-      val = utils.trim(line.substr(i + 1));
-  
-      if (key) {
-        parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
-      }
-    });
-  
-    return parsed;
-  };
-
-
-/***/ },
-
-/***/ 239:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  /**
-   * Syntactic sugar for invoking a function and expanding an array for arguments.
-   *
-   * Common use case would be to use `Function.prototype.apply`.
-   *
-   *  ```js
-   *  function f(x, y, z) {}
-   *  var args = [1, 2, 3];
-   *  f.apply(null, args);
-   *  ```
-   *
-   * With `spread` this example can be re-written.
-   *
-   *  ```js
-   *  spread(function(x, y, z) {})([1, 2, 3]);
-   *  ```
-   *
-   * @param {Function} callback
-   * @returns {Function}
-   */
-  module.exports = function spread(callback) {
-    return function wrap(arr) {
-      return callback.apply(null, arr);
-    };
-  };
-
-
-/***/ },
-
-/***/ 250:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(2);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(3);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(5);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(4);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _reactStripeCheckout = __webpack_require__(347);
-  
-  var _reactStripeCheckout2 = _interopRequireDefault(_reactStripeCheckout);
-  
-  var _reactFlexbox = __webpack_require__(16);
-  
-  var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
-  
-  var _BrowserMock = __webpack_require__(104);
-  
-  var _BrowserMock2 = _interopRequireDefault(_BrowserMock);
-  
-  var _axios = __webpack_require__(222);
-  
-  var _axios2 = _interopRequireDefault(_axios);
-  
-  var _history = __webpack_require__(17);
-  
-  var _history2 = _interopRequireDefault(_history);
-  
-  var _Payment = __webpack_require__(432);
-  
-  var _HeaderLayout = __webpack_require__(64);
-  
-  var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
-  
-  var _Colors = __webpack_require__(11);
-  
-  var Colors = _interopRequireWildcard(_Colors);
-  
-  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var documentTitle = 'RickFrom1987';
-  
-  var CONFIG = {
-    key: {
-      test: 'pk_test_AwZhy8uwOOHku8SWAYiaGH54',
-      live: 'pk_live_wU9QymCYFQM8w2NKMeOIxB5R'
-    }
-  };
-  
-  var PaymentPage = function (_React$Component) {
-    (0, _inherits3.default)(PaymentPage, _React$Component);
-  
-    function PaymentPage(props) {
-      (0, _classCallCheck3.default)(this, PaymentPage);
-  
-      var _this = (0, _possibleConstructorReturn3.default)(this, (PaymentPage.__proto__ || (0, _getPrototypeOf2.default)(PaymentPage)).call(this, props));
-  
-      _this.componentDidMount = function () {
-        _this.onToken({ test: 'token' });
-      };
-  
-      _this.onToken = function (token) {
-        _axios2.default.post('https://25cw6kon3l.execute-api.us-east-1.amazonaws.com/prod/payment').then(function (response) {
-          console.log(response);
-        }).catch(function (error) {
-          console.log(error);
-        });
-      };
-  
-      _this.render = function () {
-        var loc = _history2.default.getCurrentLocation();
-        var key = void 0;
-        if (loc.query.test) {
-          key = CONFIG.key.test;
-          console.warn("Using test key:", key);
-        } else {
-          key = CONFIG.key.live;
-        }
-        var linkStyle = {
-          fontSize: 24,
-          padding: 12
-        };
-        var sectionStyle = {
-          color: 'white',
-          height: 300,
-          marginBottom: 12
-        };
-        return _react2.default.createElement(
-          _HeaderLayout2.default,
-          { centered: true },
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-sm-12' },
-              _react2.default.createElement(
-                _BrowserMock2.default,
-                { style: sectionStyle },
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  'Individual'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  '$100 / month'
-                ),
-                _react2.default.createElement(_reactStripeCheckout2.default, {
-                  name: 'RickFrom1987',
-                  description: 'Individual ($100 per month)',
-                  label: 'Subscribe',
-                  panelLabel: 'Subscribe',
-                  amount: 10000,
-                  token: _this.onToken,
-                  stripeKey: key,
-                  allowRememberMe: false,
-                  style: {
-                    position: 'relative',
-                    zIndex: 1000,
-                    marginTop: 12
-                  } })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-sm-12' },
-              _react2.default.createElement(
-                _BrowserMock2.default,
-                { style: sectionStyle },
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  'Enterprise'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  '$300 / month'
-                ),
-                _react2.default.createElement(_reactStripeCheckout2.default, {
-                  name: 'RickFrom1987',
-                  description: 'Enterprise ($300 per month)',
-                  label: 'Subscribe',
-                  panelLabel: 'Subscribe',
-                  amount: 30000,
-                  token: _this.onToken,
-                  stripeKey: key,
-                  allowRememberMe: false,
-                  style: {
-                    position: 'relative',
-                    zIndex: 1000,
-                    marginTop: 12
-                  } })
-              )
-            )
-          )
-        );
-      };
-  
-      return _this;
-    }
-  
-    return PaymentPage;
-  }(_react2.default.Component);
-  
-  exports.default = PaymentPage;
-
-/***/ },
-
-/***/ 347:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-  
-  var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-  
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-  
-  function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-  
-  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-  
-  var scriptLoading = false;
-  var scriptLoaded = false;
-  var scriptDidError = false;
-  
-  var ReactStripeCheckout = function (_React$Component) {
-    _inherits(ReactStripeCheckout, _React$Component);
-  
-    function ReactStripeCheckout(props) {
-      _classCallCheck(this, ReactStripeCheckout);
-  
-      var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ReactStripeCheckout).call(this, props));
-  
-      _this.onScriptLoaded = function () {
-        if (!ReactStripeCheckout.stripeHandler) {
-          ReactStripeCheckout.stripeHandler = StripeCheckout.configure({
-            key: _this.props.stripeKey
-          });
-          if (_this.hasPendingClick) {
-            _this.showStripeDialog();
-          }
-        }
-      };
-  
-      _this.onScriptError = function () {
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-          args[_key] = arguments[_key];
-        }
-  
-        _this.hideLoadingDialog();
-        if (_this.props.onScriptError) {
-          _this.props.onScriptError.apply(_this, args);
-        }
-      };
-  
-      _this.onClosed = function () {
-        for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-          args[_key2] = arguments[_key2];
-        }
-  
-        _this.setState({ open: false });
-        if (_this.props.closed) {
-          _this.props.closed.apply(_this, args);
-        }
-      };
-  
-      _this.onOpened = function () {
-        for (var _len3 = arguments.length, args = Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
-          args[_key3] = arguments[_key3];
-        }
-  
-        _this.setState({ open: true });
-        if (_this.props.opened) {
-          _this.props.opened.apply(_this, args);
-        }
-      };
-  
-      _this.getConfig = function () {
-        return ['token', 'image', 'name', 'description', 'amount', 'locale', 'currency', 'panelLabel', 'zipCode', 'shippingAddress', 'billingAddress', 'email', 'allowRememberMe', 'bitcoin', 'alipay', 'alipayReusable'].reduce(function (config, key) {
-          return _extends({}, config, _this.props.hasOwnProperty(key) && _defineProperty({}, key, _this.props[key]));
-        }, {
-          opened: _this.onOpened,
-          closed: _this.onClosed
-        });
-      };
-  
-      _this.onClick = function () {
-        // eslint-disable-line react/sort-comp
-        if (_this.props.disabled) {
-          return;
-        }
-  
-        if (scriptDidError) {
-          try {
-            throw new Error('Tried to call onClick, but StripeCheckout failed to load');
-          } catch (x) {} // eslint-disable-line no-empty
-        } else if (ReactStripeCheckout.stripeHandler) {
-          _this.showStripeDialog();
-        } else {
-          _this.showLoadingDialog();
-          _this.hasPendingClick = true;
-        }
-      };
-  
-      _this.handleOnMouseDown = function () {
-        _this.setState({
-          buttonActive: true
-        });
-      };
-  
-      _this.handleOnMouseUp = function () {
-        _this.setState({
-          buttonActive: false
-        });
-      };
-  
-      _this.state = {
-        open: false,
-        buttonActive: false
-      };
-      return _this;
-    }
-  
-    _createClass(ReactStripeCheckout, [{
-      key: 'componentDidMount',
-      value: function componentDidMount() {
-        var _this2 = this;
-  
-        if (scriptLoaded) {
-          return;
-        }
-  
-        if (scriptLoading) {
-          return;
-        }
-  
-        scriptLoading = true;
-  
-        var script = document.createElement('script');
-        if (typeof this.props.onScriptTagCreated === 'function') {
-          this.props.onScriptTagCreated(script);
-        }
-  
-        script.src = 'https://checkout.stripe.com/checkout.js';
-        script.async = 1;
-  
-        this.loadPromise = function () {
-          var canceled = false;
-          var promise = new Promise(function (resolve, reject) {
-            script.onload = function () {
-              scriptLoaded = true;
-              scriptLoading = false;
-              resolve();
-              _this2.onScriptLoaded();
-            };
-            script.onerror = function (event) {
-              scriptDidError = true;
-              scriptLoading = false;
-              reject(event);
-              _this2.onScriptError(event);
-            };
-          });
-          var wrappedPromise = new Promise(function (accept, cancel) {
-            promise.then(function () {
-              return canceled ? cancel({ isCanceled: true }) : accept();
-            }); // eslint-disable-line no-confusing-arrow
-            promise.catch(function (error) {
-              return canceled ? cancel({ isCanceled: true }) : cancel(error);
-            }); // eslint-disable-line no-confusing-arrow
-          });
-  
-          return {
-            promise: wrappedPromise,
-            cancel: function cancel() {
-              canceled = true;
-            }
-          };
-        }();
-  
-        this.loadPromise.promise.then(this.onScriptLoaded).catch(this.onScriptError);
-  
-        document.body.appendChild(script);
-      }
-    }, {
-      key: 'componentDidUpdate',
-      value: function componentDidUpdate() {
-        if (!scriptLoading) {
-          this.updateStripeHandler();
-        }
-      }
-    }, {
-      key: 'componentWillUnmount',
-      value: function componentWillUnmount() {
-        if (this.loadPromise) {
-          this.loadPromise.cancel();
-        }
-        if (ReactStripeCheckout.stripeHandler && this.state.open) {
-          ReactStripeCheckout.stripeHandler.close();
-        }
-      }
-    }, {
-      key: 'updateStripeHandler',
-      value: function updateStripeHandler() {
-        if (!ReactStripeCheckout.stripeHandler || this.props.reconfigureOnUpdate) {
-          ReactStripeCheckout.stripeHandler = StripeCheckout.configure({
-            key: this.props.stripeKey
-          });
-        }
-      }
-    }, {
-      key: 'showLoadingDialog',
-      value: function showLoadingDialog() {
-        if (this.props.showLoadingDialog) {
-          for (var _len4 = arguments.length, args = Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
-            args[_key4] = arguments[_key4];
-          }
-  
-          this.props.showLoadingDialog.apply(this, args);
-        }
-      }
-    }, {
-      key: 'hideLoadingDialog',
-      value: function hideLoadingDialog() {
-        if (this.props.hideLoadingDialog) {
-          for (var _len5 = arguments.length, args = Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
-            args[_key5] = arguments[_key5];
-          }
-  
-          this.props.hideLoadingDialog.apply(this, args);
-        }
-      }
-    }, {
-      key: 'showStripeDialog',
-      value: function showStripeDialog() {
-        this.hideLoadingDialog();
-        ReactStripeCheckout.stripeHandler.open(this.getConfig());
-      }
-    }, {
-      key: 'renderDefaultStripeButton',
-      value: function renderDefaultStripeButton() {
-        return _react2.default.createElement(
-          'button',
-          _extends({}, _defineProperty({}, this.props.triggerEvent, this.onClick), {
-            className: this.props.className,
-            onMouseDown: this.handleOnMouseDown,
-            onFocus: this.handleOnMouseDown,
-            onMouseUp: this.handleOnMouseUp,
-            onMouseOut: this.handleOnMouseUp,
-            onBlur: this.handleOnMouseUp,
-            style: _extends({}, {
-              overflow: 'hidden',
-              display: 'inline-block',
-              background: 'linear-gradient(#28a0e5,#015e94)',
-              border: 0,
-              padding: 1,
-              textDecoration: 'none',
-              borderRadius: 5,
-              boxShadow: '0 1px 0 rgba(0,0,0,0.2)',
-              cursor: 'pointer',
-              visibility: 'visible',
-              userSelect: 'none'
-            }, this.state.buttonActive && {
-              background: '#005d93'
-            }, this.props.style)
-          }),
-          _react2.default.createElement(
-            'span',
-            {
-              style: _extends({}, {
-                backgroundImage: 'linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4)',
-                fontFamily: '"Helvetica Neue",Helvetica,Arial,sans-serif',
-                fontSize: 14,
-                position: 'relative',
-                padding: '0 12px',
-                display: 'block',
-                height: 30,
-                lineHeight: '30px',
-                color: '#fff',
-                fontWeight: 'bold',
-                boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.25)',
-                textShadow: '0 -1px 0 rgba(0,0,0,0.25)',
-                borderRadius: 4
-              }, this.state.buttonActive && {
-                color: '#eee',
-                boxShadow: 'inset 0 1px 0 rgba(0,0,0,0.1)',
-                backgroundImage: 'linear-gradient(#008cdd,#008cdd 85%,#239adf)'
-              }, this.props.textStyle)
-            },
-            this.props.label
-          )
-        );
-      }
-    }, {
-      key: 'renderDisabledButton',
-      value: function renderDisabledButton() {
-        return _react2.default.createElement(
-          'button',
-          {
-            disabled: true,
-            style: {
-              background: 'rgba(0,0,0,0.2)',
-              overflow: 'hidden',
-              display: 'inline-block',
-              border: 0,
-              padding: 1,
-              textDecoration: 'none',
-              borderRadius: 5,
-              userSelect: 'none'
-            }
-          },
-          _react2.default.createElement(
-            'span',
-            {
-              style: {
-                boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.25)',
-                fontFamily: '"Helvetica Neue",Helvetica,Arial,sans-serif',
-                fontSize: 14,
-                position: 'relative',
-                padding: '0 12px',
-                display: 'block',
-                height: 30,
-                lineHeight: '30px',
-                borderRadius: 4,
-                color: '#999',
-                background: '#f8f9fa',
-                textShadow: '0 1px 0 rgba(255,255,255,0.5)'
-              }
-            },
-            this.props.label
-          )
-        );
-      }
-    }, {
-      key: 'render',
-      value: function render() {
-        if (this.props.desktopShowModal === true && !this.state.open) {
-          this.onClick();
-        } else if (this.props.desktopShowModal === false && this.state.open) {
-          ReactStripeCheckout.stripeHandler.close();
-        }
-  
-        var ComponentClass = this.props.ComponentClass;
-  
-        if (this.props.children) {
-          return _react2.default.createElement(ComponentClass, _extends({}, _defineProperty({}, this.props.triggerEvent, this.onClick), {
-            children: this.props.children
-          }));
-        }
-        return this.props.disabled ? this.renderDisabledButton() : this.renderDefaultStripeButton();
-      }
-    }]);
-  
-    return ReactStripeCheckout;
-  }(_react2.default.Component);
-  
-  ReactStripeCheckout.defaultProps = {
-    className: 'StripeCheckout',
-    label: 'Pay With Card',
-    locale: 'auto',
-    ComponentClass: 'span',
-    reconfigureOnUpdate: false,
-    triggerEvent: 'onClick'
-  };
-  ReactStripeCheckout.propTypes = {
-    // Opens / closes the checkout modal by value
-    // WARNING: does not work on mobile due to browser security restrictions
-    // NOTE: Must be set to false when receiving token to prevent modal from
-    //       opening automatically after closing
-    desktopShowModal: _react2.default.PropTypes.bool,
-  
-    triggerEvent: _react2.default.PropTypes.oneOf(['onClick', 'onTouchTap', 'onTouchStart']),
-  
-    // If included, will render the default blue button with label text.
-    // (Requires including stripe-checkout.css or adding the .styl file
-    // to your pipeline)
-    label: _react2.default.PropTypes.string,
-  
-    // Custom styling for default button
-    style: _react2.default.PropTypes.object,
-    // Custom styling for <span> tag inside default button
-    textStyle: _react2.default.PropTypes.object,
-  
-    // Prevents any events from opening the popup
-    // Adds the disabled prop to the button and adjusts the styling as well
-    disabled: _react2.default.PropTypes.bool,
-  
-    // Named component to wrap button (eg. div)
-    ComponentClass: _react2.default.PropTypes.string,
-  
-    // Show a loading indicator
-    showLoadingDialog: _react2.default.PropTypes.func,
-    // Hide the loading indicator
-    hideLoadingDialog: _react2.default.PropTypes.func,
-  
-    // Run this method when the scrupt fails to load. Will run if the internet
-    // connection is offline when attemting to load the script.
-    onScriptError: _react2.default.PropTypes.func,
-  
-    // Runs when the script tag is created, but before it is added to the DOM
-    onScriptTagCreated: _react2.default.PropTypes.func,
-  
-    // By default, any time the React component is updated, it will call
-    // StripeCheckout.configure, which may result in additional XHR calls to the
-    // stripe API.  If you know the first configuration is all you need, you
-    // can set this to false.  Subsequent updates will affect the StripeCheckout.open
-    // (e.g. different prices)
-    reconfigureOnUpdate: _react2.default.PropTypes.bool,
-  
-    // =====================================================
-    // Required by stripe
-    // see Stripe docs for more info:
-    //   https://stripe.com/docs/checkout#integration-custom
-    // =====================================================
-  
-    // Your publishable key (test or live).
-    // can't use "key" as a prop in react, so have to change the keyname
-    stripeKey: _react2.default.PropTypes.string.isRequired,
-  
-    // The callback to invoke when the Checkout process is complete.
-    //   function(token)
-    //     token is the token object created.
-    //     token.id can be used to create a charge or customer.
-    //     token.email contains the email address entered by the user.
-    token: _react2.default.PropTypes.func.isRequired,
-  
-    // ==========================
-    // Highly Recommended Options
-    // ==========================
-  
-    // Name of the company or website.
-    name: _react2.default.PropTypes.string,
-  
-    // A description of the product or service being purchased.
-    description: _react2.default.PropTypes.string,
-  
-    // A relative URL pointing to a square image of your brand or product. The
-    // recommended minimum size is 128x128px. The recommended image types are
-    // .gif, .jpeg, and .png.
-    image: _react2.default.PropTypes.string,
-  
-    // The amount (in cents) that's shown to the user. Note that you will still
-    // have to explicitly include it when you create a charge using the API.
-    amount: _react2.default.PropTypes.number,
-  
-    // Specify auto to display Checkout in the user's preferred language, if
-    // available. English will be used by default.
-    //
-    // https://support.stripe.com/questions/what-languages-does-stripe-checkout-support
-    // for more info.
-    locale: _react2.default.PropTypes.oneOf(['auto', // (Default) Automatically chosen by checkout
-    'zh', // Chinese
-    'nl', // Dutch
-    'en', // English
-    'fr', // French
-    'de', // German
-    'it', // Italian
-    'jp', // Japanease
-    'es']),
-  
-    // ==============
-    // Optional Props
-    // ==============
-  
-    // The currency of the amount (3-letter ISO code). The default is USD.
-    currency: _react2.default.PropTypes.oneOf(['AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN', 'BAM', 'BBD', // eslint-disable-line comma-spacing
-    'BDT', 'BGN', 'BIF', 'BMD', 'BND', 'BOB', 'BRL', 'BSD', 'BWP', 'BZD', 'CAD', 'CDF', // eslint-disable-line comma-spacing
-    'CHF', 'CLP', 'CNY', 'COP', 'CRC', 'CVE', 'CZK', 'DJF', 'DKK', 'DOP', 'DZD', 'EEK', // eslint-disable-line comma-spacing
-    'EGP', 'ETB', 'EUR', 'FJD', 'FKP', 'GBP', 'GEL', 'GIP', 'GMD', 'GNF', 'GTQ', 'GYD', // eslint-disable-line comma-spacing
-    'HKD', 'HNL', 'HRK', 'HTG', 'HUF', 'IDR', 'ILS', 'INR', 'ISK', 'JMD', 'JPY', 'KES', // eslint-disable-line comma-spacing
-    'KGS', 'KHR', 'KMF', 'KRW', 'KYD', 'KZT', 'LAK', 'LBP', 'LKR', 'LRD', 'LSL', 'LTL', // eslint-disable-line comma-spacing
-    'LVL', 'MAD', 'MDL', 'MGA', 'MKD', 'MNT', 'MOP', 'MRO', 'MUR', 'MVR', 'MWK', 'MXN', // eslint-disable-line comma-spacing
-    'MYR', 'MZN', 'NAD', 'NGN', 'NIO', 'NOK', 'NPR', 'NZD', 'PAB', 'PEN', 'PGK', 'PHP', // eslint-disable-line comma-spacing
-    'PKR', 'PLN', 'PYG', 'QAR', 'RON', 'RSD', 'RUB', 'RWF', 'SAR', 'SBD', 'SCR', 'SEK', // eslint-disable-line comma-spacing
-    'SGD', 'SHP', 'SLL', 'SOS', 'SRD', 'STD', 'SVC', 'SZL', 'THB', 'TJS', 'TOP', 'TRY', // eslint-disable-line comma-spacing
-    'TTD', 'TWD', 'TZS', 'UAH', 'UGX', 'USD', 'UYU', 'UZS', 'VND', 'VUV', 'WST', 'XAF', // eslint-disable-line comma-spacing
-    'XCD', 'XOF', 'XPF', 'YER', 'ZAR', 'ZMW']),
-  
-    // The label of the payment button in the Checkout form (e.g. “Subscribe”,
-    // “Pay {{amount}}”, etc.). If you include {{amount}}, it will be replaced
-    // by the provided amount. Otherwise, the amount will be appended to the
-    // end of your label.
-    panelLabel: _react2.default.PropTypes.string,
-  
-    // Specify whether Checkout should validate the billing ZIP code (true or
-    // false)
-    zipCode: _react2.default.PropTypes.bool,
-  
-    // Specify whether Checkout should collect the user's billing address
-    // (true or false). The default is false.
-    billingAddress: _react2.default.PropTypes.bool,
-  
-    // Specify whether Checkout should collect the user's shipping address
-    // (true or false). The default is false.
-    shippingAddress: _react2.default.PropTypes.bool,
-  
-    // Specify whether Checkout should validate the billing ZIP code (true or
-    // false). The default is false.
-    email: _react2.default.PropTypes.string,
-  
-    // Specify whether to include the option to "Remember Me" for future
-    // purchases (true or false). The default is true.
-    allowRememberMe: _react2.default.PropTypes.bool,
-  
-    // Specify whether to accept Bitcoin in Checkout. The default is false.
-    bitcoin: _react2.default.PropTypes.bool,
-  
-    // Specify whether to accept Alipay ('auto', true, or false). The default
-    // is false.
-    alipay: _react2.default.PropTypes.oneOf(['auto', true, false]),
-  
-    // Specify if you need reusable access to the customer's Alipay account
-    // (true or false). The default is false.
-    alipayReusable: _react2.default.PropTypes.bool,
-  
-    // function() The callback to invoke when Checkout is opened (not supported
-    // in IE6 and IE7).
-    opened: _react2.default.PropTypes.func,
-  
-    // function() The callback to invoke when Checkout is closed (not supported
-    // in IE6 and IE7).
-    closed: _react2.default.PropTypes.func
-  };
-  exports.default = ReactStripeCheckout;
-
-
-/***/ },
-
-/***/ 432:
+/***/ 415:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Hello!","desc":"I make wonderful things.","html":""};
@@ -3688,4 +1403,4 @@ webpackJsonp([0],{
 /***/ }
 
 });
-//# sourceMappingURL=0.js.map?ee9bc894ec88d3d13024
+//# sourceMappingURL=0.js.map?3f4bd3a34a5dd5de7d21
