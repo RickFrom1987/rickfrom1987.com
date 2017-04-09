@@ -1,6 +1,6 @@
 import React from 'react';
 import ArticleLayout from '../../components/Layout/ArticleLayout';
-import { title, html } from './Datablade.md';
+import { title, url, html } from './Datablade.md';
 
 class DatabladePage extends React.Component {
 
@@ -10,7 +10,7 @@ class DatabladePage extends React.Component {
 
   render() {
     return (
-      <ArticleLayout title={title}>
+      <ArticleLayout title={title} url={url}>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </ArticleLayout>
     );

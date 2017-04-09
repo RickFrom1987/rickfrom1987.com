@@ -1,6 +1,6 @@
 import React from 'react';
 import ArticleLayout from '../../components/Layout/ArticleLayout';
-import { title, html } from './MotionSocial.md';
+import { title, url, html } from './MotionSocial.md';
 
 class MotionSocialPage extends React.Component {
 
@@ -10,7 +10,7 @@ class MotionSocialPage extends React.Component {
 
   render() {
     return (
-      <ArticleLayout title={title}>
+      <ArticleLayout title={title} url={url}>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </ArticleLayout>
     );

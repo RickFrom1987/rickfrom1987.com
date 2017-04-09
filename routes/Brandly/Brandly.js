@@ -1,6 +1,6 @@
 import React from 'react';
 import ArticleLayout from '../../components/Layout/ArticleLayout';
-import { title, html } from './Brandly.md';
+import { title, url, html } from './Brandly.md';
 
 class BrandlyPage extends React.Component {
 
@@ -10,7 +10,7 @@ class BrandlyPage extends React.Component {
 
   render() {
     return (
-      <ArticleLayout title={title}>
+      <ArticleLayout title={title} url={url}>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </ArticleLayout>
     );

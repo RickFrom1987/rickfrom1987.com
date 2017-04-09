@@ -3,7 +3,7 @@ webpackJsonp([7],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(27), __esModule: true };
+  module.exports = { "default": __webpack_require__(26), __esModule: true };
 
 /***/ },
 
@@ -29,7 +29,7 @@ webpackJsonp([7],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(48);
+  var _defineProperty = __webpack_require__(46);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,15 +62,15 @@ webpackJsonp([7],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(26);
+  var _setPrototypeOf = __webpack_require__(24);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(47);
+  var _create = __webpack_require__(45);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(18);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([7],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(18);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -452,7 +452,7 @@ webpackJsonp([7],{
   });
   exports.default = undefined;
   
-  var _Link = __webpack_require__(25);
+  var _Link = __webpack_require__(23);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -490,7 +490,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 17:
+/***/ 16:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -614,7 +614,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 22:
+/***/ 20:
 /***/ function(module, exports) {
 
   'use strict';
@@ -626,7 +626,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 23:
+/***/ 21:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -659,7 +659,7 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Navigation = __webpack_require__(24);
+  var _Navigation = __webpack_require__(22);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -667,7 +667,7 @@ webpackJsonp([7],{
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _App = __webpack_require__(22);
+  var _App = __webpack_require__(20);
   
   var App = _interopRequireWildcard(_App);
   
@@ -732,7 +732,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 24:
+/***/ 22:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -745,7 +745,7 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(18);
+  var _history = __webpack_require__(17);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -753,7 +753,7 @@ webpackJsonp([7],{
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(35);
+  var _Navigation = __webpack_require__(34);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -789,7 +789,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 25:
+/***/ 23:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -798,7 +798,7 @@ webpackJsonp([7],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(20);
+  var _extends2 = __webpack_require__(25);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -830,7 +830,7 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(18);
+  var _history = __webpack_require__(17);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -910,10 +910,18 @@ webpackJsonp([7],{
 
 /***/ },
 
+/***/ 24:
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(27), __esModule: true };
+
+/***/ },
+
 /***/ 26:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(28), __esModule: true };
+  __webpack_require__(29);
+  module.exports = __webpack_require__(9).Object.getPrototypeOf;
 
 /***/ },
 
@@ -921,19 +929,11 @@ webpackJsonp([7],{
 /***/ function(module, exports, __webpack_require__) {
 
   __webpack_require__(30);
-  module.exports = __webpack_require__(9).Object.getPrototypeOf;
-
-/***/ },
-
-/***/ 28:
-/***/ function(module, exports, __webpack_require__) {
-
-  __webpack_require__(31);
   module.exports = __webpack_require__(9).Object.setPrototypeOf;
 
 /***/ },
 
-/***/ 29:
+/***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -948,7 +948,7 @@ webpackJsonp([7],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(39)(Function.call, __webpack_require__(49).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(39)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -964,14 +964,14 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 30:
+/***/ 29:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(41)
-    , $getPrototypeOf = __webpack_require__(50);
+  var toObject        = __webpack_require__(42)
+    , $getPrototypeOf = __webpack_require__(49);
   
-  __webpack_require__(51)('getPrototypeOf', function(){
+  __webpack_require__(50)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -979,16 +979,16 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 31:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
   var $export = __webpack_require__(37);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(29).set});
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(28).set});
 
 /***/ },
 
-/***/ 32:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(10)();
@@ -1005,7 +1005,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 33:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(10)();
@@ -1024,13 +1024,13 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 34:
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(32);
+  var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(11)(content, {});
@@ -1051,13 +1051,13 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 35:
+/***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(33);
+  var content = __webpack_require__(32);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(11)(content, {});
@@ -1078,7 +1078,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 42:
+/***/ 41:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1087,7 +1087,7 @@ webpackJsonp([7],{
     value: true
   });
   
-  var _assign = __webpack_require__(55);
+  var _assign = __webpack_require__(53);
   
   var _assign2 = _interopRequireDefault(_assign);
   
@@ -1119,15 +1119,15 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(17);
+  var _reactFlexbox = __webpack_require__(16);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _Header = __webpack_require__(23);
+  var _Header = __webpack_require__(21);
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Layout = __webpack_require__(34);
+  var _Layout = __webpack_require__(33);
   
   var _Layout2 = _interopRequireDefault(_Layout);
   
@@ -1242,17 +1242,17 @@ webpackJsonp([7],{
   });
   exports.default = undefined;
   
-  var _Energysavvy = __webpack_require__(217);
+  var _Haikudeck = __webpack_require__(218);
   
-  var _Energysavvy2 = _interopRequireDefault(_Energysavvy);
+  var _Haikudeck2 = _interopRequireDefault(_Haikudeck);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Energysavvy2.default;
+  exports.default = _Haikudeck2.default;
 
 /***/ },
 
-/***/ 217:
+/***/ 218:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1285,50 +1285,50 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(42);
+  var _ArticleLayout = __webpack_require__(41);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Energysavvy = __webpack_require__(417);
+  var _Haikudeck = __webpack_require__(419);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var EnergysavvyPage = function (_React$Component) {
-    (0, _inherits3.default)(EnergysavvyPage, _React$Component);
+  var HaikudeckPage = function (_React$Component) {
+    (0, _inherits3.default)(HaikudeckPage, _React$Component);
   
-    function EnergysavvyPage() {
-      (0, _classCallCheck3.default)(this, EnergysavvyPage);
-      return (0, _possibleConstructorReturn3.default)(this, (EnergysavvyPage.__proto__ || (0, _getPrototypeOf2.default)(EnergysavvyPage)).apply(this, arguments));
+    function HaikudeckPage() {
+      (0, _classCallCheck3.default)(this, HaikudeckPage);
+      return (0, _possibleConstructorReturn3.default)(this, (HaikudeckPage.__proto__ || (0, _getPrototypeOf2.default)(HaikudeckPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(EnergysavvyPage, [{
+    (0, _createClass3.default)(HaikudeckPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Energysavvy.title;
+        document.title = _Haikudeck.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Energysavvy.title },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Energysavvy.html } })
+          { title: _Haikudeck.title },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Haikudeck.html } })
         );
       }
     }]);
-    return EnergysavvyPage;
+    return HaikudeckPage;
   }(_react2.default.Component);
   
-  exports.default = EnergysavvyPage;
+  exports.default = HaikudeckPage;
 
 /***/ },
 
-/***/ 417:
+/***/ 419:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"EnergySavvy","subtitle":2015,"url":"//energysavvy.com","html":"<p>The engineers at <a href=\"//energysavvy.com\">EnergySavvy</a> are really good. Thats it for this paragraph.</p>\n<p>I spent some time working on some prototypes in React most notably a <a href=\"http://energysavvy.s3-website-us-east-1.amazonaws.com/react-solar-calculator/dist/index.html\">Solar Calculator</a>. The goal of solar calculator was to help my clients users to calculate thier energy and financial savings when using electric. The most difficult part of this project was working with thier math guys and wrapping some unit tests around complex financial and energy calculations. This was quite painful, but we got through it. This was my first React project so there was some not so polished code and wtf is this, but it was great learning experience and I am much more fluent and comfortable doing things the React way now. Working with Kalpana, Gabe and Graham was awesome, all around great company and smart guys and girls!</p>\n<p>Another story of sad to leave, hopefully we will cross paths again in the future!</p>\n"};
+  module.exports = {"title":"HaikuDeck","subtitle":2014,"url":"//haikudeck.com","html":"<p><a href=\"//haikudeck.com\">Haiku Deck</a> has a very special place in my workplace heart. It was the first ever startup I have worked with and it was awesome. I met some insipiring and amazing people. Learned how much I sucked at programming. Learned how to push through it and get better. I had great programmers around me: Kevin, Adam and Collin. Great leaders: Adam, Marc and Catherine, later on working with the co founder of CoinStar Dan! Great support staff Erin and Lisa MaMa. I worked on the web app and website, mainly in jQuery and Backbone.</p>\n<p>My main challenges here were adjusting to startup life, learning quickly and producing results. I always had help of more senior engineers to pick up the pieces, @ Haiku Deck I had to be more self reliant and try to figure stuff out on my own.</p>\n<p>We were lucky enough to get some media coverage on my project and work:</p>\n<ul>\n<li><a href=\"http://www.pcmag.com/article2/0,2817,2428803,00.asp\">PCMag Top 100 Web Apps of 2013</a></li>\n<li><a href=\"https://techcrunch.com/2013/11/21/haiku-deck-web-app/\">TechCrunch Article</a></li>\n<li><a href=\"http://thenextweb.com/apps/2013/11/21/haiku-deck-launches-free-web-based-version-simple-yet-elegant-ipad-presentation-app/\">TheNextWeb Article</a></li>\n<li><a href=\"http://allthingsd.com/20131121/haiku-deck-expands-its-anti-powerpoint-presentation-app-to-the-web/\">AllThingsD Article</a></li>\n</ul>\n"};
 
 /***/ }
 
 });
-//# sourceMappingURL=7.js.map?b8ba811cfa1eebfb8dc1
+//# sourceMappingURL=7.js.map?27259e5cda590a27a7c4

@@ -3,7 +3,7 @@ webpackJsonp([0],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(27), __esModule: true };
+  module.exports = { "default": __webpack_require__(26), __esModule: true };
 
 /***/ },
 
@@ -29,7 +29,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(48);
+  var _defineProperty = __webpack_require__(46);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,15 +62,15 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(26);
+  var _setPrototypeOf = __webpack_require__(24);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(47);
+  var _create = __webpack_require__(45);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(18);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(18);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -452,7 +452,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Link = __webpack_require__(25);
+  var _Link = __webpack_require__(23);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -490,7 +490,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 17:
+/***/ 16:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -614,7 +614,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 22:
+/***/ 20:
 /***/ function(module, exports) {
 
   'use strict';
@@ -626,7 +626,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 23:
+/***/ 21:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -659,7 +659,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Navigation = __webpack_require__(24);
+  var _Navigation = __webpack_require__(22);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -667,7 +667,7 @@ webpackJsonp([0],{
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _App = __webpack_require__(22);
+  var _App = __webpack_require__(20);
   
   var App = _interopRequireWildcard(_App);
   
@@ -732,7 +732,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 24:
+/***/ 22:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -745,7 +745,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(18);
+  var _history = __webpack_require__(17);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -753,7 +753,7 @@ webpackJsonp([0],{
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(35);
+  var _Navigation = __webpack_require__(34);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -789,7 +789,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 25:
+/***/ 23:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -798,7 +798,7 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(20);
+  var _extends2 = __webpack_require__(25);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -830,7 +830,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(18);
+  var _history = __webpack_require__(17);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -910,10 +910,18 @@ webpackJsonp([0],{
 
 /***/ },
 
+/***/ 24:
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(27), __esModule: true };
+
+/***/ },
+
 /***/ 26:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(28), __esModule: true };
+  __webpack_require__(29);
+  module.exports = __webpack_require__(9).Object.getPrototypeOf;
 
 /***/ },
 
@@ -921,19 +929,11 @@ webpackJsonp([0],{
 /***/ function(module, exports, __webpack_require__) {
 
   __webpack_require__(30);
-  module.exports = __webpack_require__(9).Object.getPrototypeOf;
-
-/***/ },
-
-/***/ 28:
-/***/ function(module, exports, __webpack_require__) {
-
-  __webpack_require__(31);
   module.exports = __webpack_require__(9).Object.setPrototypeOf;
 
 /***/ },
 
-/***/ 29:
+/***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -948,7 +948,7 @@ webpackJsonp([0],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(39)(Function.call, __webpack_require__(49).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(39)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -964,14 +964,14 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 30:
+/***/ 29:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(41)
-    , $getPrototypeOf = __webpack_require__(50);
+  var toObject        = __webpack_require__(42)
+    , $getPrototypeOf = __webpack_require__(49);
   
-  __webpack_require__(51)('getPrototypeOf', function(){
+  __webpack_require__(50)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -979,16 +979,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 31:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
   var $export = __webpack_require__(37);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(29).set});
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(28).set});
 
 /***/ },
 
-/***/ 32:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(10)();
@@ -1005,7 +1005,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 33:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(10)();
@@ -1024,13 +1024,13 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 34:
+/***/ 33:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(32);
+  var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(11)(content, {});
@@ -1051,13 +1051,13 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 35:
+/***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(33);
+  var content = __webpack_require__(32);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(11)(content, {});
@@ -1087,7 +1087,7 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(20);
+  var _extends2 = __webpack_require__(25);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -1119,15 +1119,15 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(17);
+  var _reactFlexbox = __webpack_require__(16);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _Header = __webpack_require__(23);
+  var _Header = __webpack_require__(21);
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Layout = __webpack_require__(34);
+  var _Layout = __webpack_require__(33);
   
   var _Layout2 = _interopRequireDefault(_Layout);
   
@@ -1203,7 +1203,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Home = __webpack_require__(215);
+  var _Home = __webpack_require__(219);
   
   var _Home2 = _interopRequireDefault(_Home);
   
@@ -1220,7 +1220,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 215:
+/***/ 219:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1253,7 +1253,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(17);
+  var _reactFlexbox = __webpack_require__(16);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
@@ -1265,11 +1265,11 @@ webpackJsonp([0],{
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Home = __webpack_require__(406);
+  var _Home = __webpack_require__(408);
   
   var _Home2 = _interopRequireDefault(_Home);
   
-  var _Home3 = __webpack_require__(415);
+  var _Home3 = __webpack_require__(420);
   
   var _Colors = __webpack_require__(12);
   
@@ -1351,7 +1351,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 272:
+/***/ 274:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(10)();
@@ -1368,13 +1368,13 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 406:
+/***/ 408:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(272);
+  var content = __webpack_require__(274);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(11)(content, {});
@@ -1395,7 +1395,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 415:
+/***/ 420:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Hello!","desc":"I make wonderful things.","html":""};
@@ -1403,4 +1403,4 @@ webpackJsonp([0],{
 /***/ }
 
 });
-//# sourceMappingURL=0.js.map?3f4bd3a34a5dd5de7d21
+//# sourceMappingURL=0.js.map?d96ca0dbc7fa459746f6

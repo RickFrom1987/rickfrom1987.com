@@ -1,8 +1,8 @@
 import React from 'react';
 import View from 'react-flexbox';
 import Header from './Header';
-import s from './Layout.css';
 import * as Colors from '../Constants/Colors';
+import s from './Article.css';
 
 class ArticleLayout extends React.Component {
 
@@ -19,46 +19,58 @@ class ArticleLayout extends React.Component {
   };
   
   render() {
-    const { title, subtitle, url, style, ...props } = this.props;
+    const { title, subtitle, url, style } = this.props;
     const baseStyle = {
-      height: '100%',
-    };
-    const headerStyle = {
+      paddingTop: 50,
+      minHeight: '100%',
       width: '100%',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: '50%',
-      minHeight: 320,
-      maxHeight: 580,
-      color: Colors.WHITE,
-      fontSize: 16,
-    };
-    const bodyStyle = {
-      alignItems: 'center',
-      justifyContent: 'center',
-      backgroundColor: 'white',
-    };
-    const contentStyle = {
-      width: '85%',
-      maxWidth: 1024,
-      minWidth: 248,
-      padding: '24px 0',
     };
     const linkStyle = {
-      fontSize: 24,
+      fontSize: 24
     };
+    let leftStyle;
+    let rightStyle;
+    if (window.innerWidth > 480) {
+      baseStyle.flexFlow = 'row';
+      leftStyle = {
+        flexShrink: 0,
+        flexGrow: 0,
+        height: '100%',
+        width: '100%',
+        width: 200,
+        color: Colors.WHITE,
+        alignItems: 'center',
+      };
+      rightStyle = {
+        marginLeft: 'auto',
+        flex: '0 1 auto',
+        padding: 24,
+        backgroundColor: 'white'
+      };
+    } else {
+      baseStyle.flexFlow = 'column';
+      leftStyle = {
+        color: Colors.WHITE,
+        alignItems: 'center',
+      };
+      rightStyle = {
+        backgroundColor: Colors.WHITE,
+        padding: 24,
+      };
+    }
     const articleLayoutStyle = Object.assign({}, baseStyle, style);
     return (
-      <View column style={articleLayoutStyle}>
+      <View row style={articleLayoutStyle}>
         <Header/>
-        <View column style={headerStyle}>
-          <h1>{title}</h1>
-          <h2>{subtitle}</h2>
-        </View>
-        <View row className={s.article} style={bodyStyle}>
-          <div style={contentStyle}>
-            { this.props.children }
+        <View column style={leftStyle}>
+          <div style={{ padding: 24 }}>
+            <h1 style={{ fontSize: 18 }}>{title}</h1>
+            <h2>{subtitle}</h2>
+            <p><a href={url}>View Project</a></p>
           </div>
+        </View>
+        <View column style={rightStyle} className={s.article}>
+            { this.props.children }
         </View>
       </View>
     );

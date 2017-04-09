@@ -1,6 +1,6 @@
 import React from 'react';
 import ArticleLayout from '../../components/Layout/ArticleLayout';
-import { title, html } from './Booking.md';
+import { title, url, html } from './Booking.md';
 
 class BookingPage extends React.Component {
 
@@ -10,7 +10,7 @@ class BookingPage extends React.Component {
 
   render() {
     return (
-      <ArticleLayout title={title}>
+      <ArticleLayout title={title} url={url}>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </ArticleLayout>
     );

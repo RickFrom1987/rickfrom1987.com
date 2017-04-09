@@ -1,7 +1,6 @@
 import React from 'react';
 import View from 'react-flexbox';
 import Header from './Header';
-import s from './Layout.css';
 
 import * as Colors from '../Constants/Colors';
 

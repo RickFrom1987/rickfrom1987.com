@@ -12,9 +12,10 @@ class Header extends React.Component {
       lineHeight: App.HEADER_HEIGHT,
       whiteSpace: 'nowrap',
       margin: '0 12px',
+      fontWeight: 300,
+      fontSize: 18
     };
     const headerStyle = {
-      fontFamily: 'Montserrat',
       textTransform: 'uppercase',
       position: 'fixed',
       top: 0,
@@ -28,7 +29,7 @@ class Header extends React.Component {
     return (
       <div className="container-fluid" style={headerStyle}>
         <div className="row">
-          <a href="/" style={logoStyle}>RickFrom1987</a>
+          <h1 style={logoStyle}><a href="/" style={{ color: Colors.WHITE }}>RickFrom1987</a></h1>
           <Navigation/>
         </div>
       </div>

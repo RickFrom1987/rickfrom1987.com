@@ -1,6 +1,6 @@
 import React from 'react';
 import ArticleLayout from '../../components/Layout/ArticleLayout';
-import { title, html } from './Energysavvy.md';
+import { title, url, html } from './Energysavvy.md';
 
 class EnergysavvyPage extends React.Component {
 
@@ -10,7 +10,7 @@ class EnergysavvyPage extends React.Component {
 
   render() {
     return (
-      <ArticleLayout title={title}>
+      <ArticleLayout title={title} url={url}>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </ArticleLayout>
     );

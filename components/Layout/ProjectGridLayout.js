@@ -86,7 +86,6 @@ class ProjectGridLayout extends React.Component {
         <View column key={i} style={itemStyle}>
           <BrowserMock pathname={item.url}>
             <h2>{item.company}</h2>
-            <h3>{item.position}</h3>
             <TagList tags={item.tags}/>
           </BrowserMock>
         </View>

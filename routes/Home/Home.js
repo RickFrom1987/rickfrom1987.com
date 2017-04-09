@@ -21,13 +21,13 @@ class HomePage extends React.Component {
       color: Colors.WHITE,
     };
     const linkStyle = {
-      fontSize: 24,
+      fontSize: 16,
       padding: 12,
     };
     return (
       <HeaderLayout centered>
         <View column style={homeStyle}>
-          <h1>{ title }</h1>
+          <h1 style={{ fontSize: 60 }}>{ title }</h1>
           <p>{ desc }</p>
           <p>
             <a href="//www.facebook.com/rickfrom1987" style={linkStyle}><i className="fa fa-facebook"></i></a>
