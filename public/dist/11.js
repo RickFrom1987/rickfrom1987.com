@@ -1350,9 +1350,9 @@ webpackJsonp([11],{
 /***/ 410:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"Booking.com","subtitle":2015,"url":"//suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"//suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine. I was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams. I really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim &lt;3</p>\n"};
+  module.exports = {"title":"Booking.com","subtitle":2015,"url":"http://suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"http://suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine. I was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams. I really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim &lt;3</p>\n"};
 
 /***/ }
 
 });
-//# sourceMappingURL=11.js.map?d71b22ce569c850521d4
+//# sourceMappingURL=11.js.map?9799f6ec883a312de63c
