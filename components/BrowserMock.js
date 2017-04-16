@@ -28,7 +28,7 @@ class BrowserMock extends React.Component {
       hover: false,
     });
   }
-  onMouseUp = () => {
+  onClick = () => {
     if (!this.props.pathname) {
       return;
     } else {
@@ -37,7 +37,7 @@ class BrowserMock extends React.Component {
         history.push({
           pathname: pathname
         });
-      }, 500);
+      }, 400);
     }
   }
   render() {
@@ -51,6 +51,7 @@ class BrowserMock extends React.Component {
       position: 'relative',
       borderRadius: '3px 3px 0 0',
       transition: 'all 0.4s ease-out',
+      cursor: 'pointer'
     };
     const browserDotsStyle = {
       display: 'block',
@@ -78,7 +79,6 @@ class BrowserMock extends React.Component {
     };
     if (this.state.hover) {
       browserMockStyle.backgroundColor = 'rgba(0,0,0,0.25)';
-      browserMockStyle.cursor = 'pointer';
     }
     const viewStyle = Object.assign({}, browserMockStyle, style);
     return (
@@ -88,7 +88,7 @@ class BrowserMock extends React.Component {
         style={viewStyle}
         onMouseOver={this.onMouseOver}
         onMouseLeave={this.onMouseLeave}
-        onMouseUp={this.onMouseUp}>
+        onClick={this.onClick}>
         <div style={browserDotsStyle}></div>
         <View column style={browserBodyStyle} className={s.ripple}>
           {this.props.children}
