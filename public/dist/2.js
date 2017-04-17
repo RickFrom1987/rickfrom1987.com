@@ -6205,7 +6205,7 @@ webpackJsonp([2],{
         });
       };
   
-      _this.onMouseUp = function () {
+      _this.onClick = function () {
         if (!_this.props.pathname) {
           return;
         } else {
@@ -6214,7 +6214,7 @@ webpackJsonp([2],{
             _history2.default.push({
               pathname: pathname
             });
-          }, 500);
+          }, 400);
         }
       };
   
@@ -6240,7 +6240,8 @@ webpackJsonp([2],{
           boxShadow: '0 0.1em 1em 0 rgba(0, 0, 0, 0.4)',
           position: 'relative',
           borderRadius: '3px 3px 0 0',
-          transition: 'all 0.4s ease-out'
+          transition: 'all 0.4s ease-out',
+          cursor: 'pointer'
         };
         var browserDotsStyle = {
           display: 'block',
@@ -6268,7 +6269,6 @@ webpackJsonp([2],{
         };
         if (this.state.hover) {
           browserMockStyle.backgroundColor = 'rgba(0,0,0,0.25)';
-          browserMockStyle.cursor = 'pointer';
         }
         var viewStyle = (0, _assign2.default)({}, browserMockStyle, style);
         return _react2.default.createElement(
@@ -6278,7 +6278,7 @@ webpackJsonp([2],{
             style: viewStyle,
             onMouseOver: this.onMouseOver,
             onMouseLeave: this.onMouseLeave,
-            onMouseUp: this.onMouseUp }),
+            onClick: this.onClick }),
           _react2.default.createElement('div', { style: browserDotsStyle }),
           _react2.default.createElement(
             _reactFlexbox2.default,
@@ -25040,4 +25040,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?e4528941e51af429fab2
+//# sourceMappingURL=2.js.map?6d82bb354f1eb89ab638

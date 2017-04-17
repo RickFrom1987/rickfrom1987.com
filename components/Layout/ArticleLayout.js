@@ -19,7 +19,7 @@ class ArticleLayout extends React.Component {
   };
   
   render() {
-    const { title, subtitle, url, style } = this.props;
+    const { title, subtitle, url, children, style } = this.props;
     const baseStyle = {
       paddingTop: 50,
       minHeight: '100%',
@@ -36,7 +36,6 @@ class ArticleLayout extends React.Component {
         flexShrink: 0,
         flexGrow: 0,
         height: '100%',
-        width: '100%',
         width: 200,
         color: Colors.WHITE,
         alignItems: 'center',
@@ -51,7 +50,7 @@ class ArticleLayout extends React.Component {
       baseStyle.flexFlow = 'column';
       leftStyle = {
         color: Colors.WHITE,
-        alignItems: 'center',
+        alignItems: 'flex-start',
       };
       rightStyle = {
         backgroundColor: Colors.WHITE,
@@ -64,13 +63,13 @@ class ArticleLayout extends React.Component {
         <Header/>
         <View column style={leftStyle}>
           <div style={{ padding: 24 }}>
-            <h1 style={{ fontSize: 18 }}>{title}</h1>
+            <h1 style={{ fontSize: 22 }}>{title}</h1>
             <h2>{subtitle}</h2>
             <p><a href={url}>View Project</a></p>
           </div>
         </View>
         <View column style={rightStyle} className={s.article}>
-            { this.props.children }
+            { children }
         </View>
       </View>
     );
