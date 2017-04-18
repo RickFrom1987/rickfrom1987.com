@@ -1039,7 +1039,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 72:
+/***/ 71:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1150,7 +1150,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 78:
+/***/ 77:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1181,7 +1181,7 @@ webpackJsonp([2],{
   exports.validateLayout = validateLayout;
   exports.autoBindHandlers = autoBindHandlers;
   
-  var _lodash = __webpack_require__(117);
+  var _lodash = __webpack_require__(116);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
@@ -1615,7 +1615,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 117:
+/***/ 116:
 /***/ function(module, exports, __webpack_require__) {
 
   /* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -3467,11 +3467,11 @@ webpackJsonp([2],{
   
   module.exports = isEqual;
   
-  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(214)(module)))
+  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(213)(module)))
 
 /***/ },
 
-/***/ 151:
+/***/ 150:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3504,11 +3504,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _HeaderLayout = __webpack_require__(72);
+  var _HeaderLayout = __webpack_require__(71);
   
   var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
   
-  var _ProjectGridLayout = __webpack_require__(217);
+  var _ProjectGridLayout = __webpack_require__(216);
   
   var _ProjectGridLayout2 = _interopRequireDefault(_ProjectGridLayout);
   
@@ -3558,12 +3558,12 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 176:
+/***/ 175:
 /***/ function(module, exports, __webpack_require__) {
 
   (function webpackUniversalModuleDefinition(root, factory) {
   	if(true)
-  		module.exports = factory(__webpack_require__(1), __webpack_require__(92));
+  		module.exports = factory(__webpack_require__(1), __webpack_require__(91));
   	else if(typeof define === 'function' && define.amd)
   		define(["react", "react-dom"], factory);
   	else if(typeof exports === 'object')
@@ -5171,7 +5171,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 177:
+/***/ 176:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5184,11 +5184,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _lodash = __webpack_require__(117);
+  var _lodash = __webpack_require__(116);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _utils = __webpack_require__(78);
+  var _utils = __webpack_require__(77);
   
   var _GridItem = __webpack_require__(318);
   
@@ -5713,7 +5713,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 178:
+/***/ 177:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5724,7 +5724,7 @@ webpackJsonp([2],{
   exports.findOrGenerateResponsiveLayout = findOrGenerateResponsiveLayout;
   exports.sortBreakpoints = sortBreakpoints;
   
-  var _utils = __webpack_require__(78);
+  var _utils = __webpack_require__(77);
   
   /**
    * Given a width, find the highest breakpoint that matches is valid for it (width > breakpoint).
@@ -5806,7 +5806,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 181:
+/***/ 180:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5819,7 +5819,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDraggable = __webpack_require__(176);
+  var _reactDraggable = __webpack_require__(175);
   
   var _cloneElement = __webpack_require__(328);
   
@@ -6107,7 +6107,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 214:
+/***/ 213:
 /***/ function(module, exports) {
 
   module.exports = function(module) {
@@ -6124,7 +6124,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 215:
+/***/ 214:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6300,7 +6300,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 216:
+/***/ 215:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6403,7 +6403,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 217:
+/***/ 216:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6448,19 +6448,19 @@ webpackJsonp([2],{
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _reactDom = __webpack_require__(92);
+  var _reactDom = __webpack_require__(91);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
-  var _GridLayout = __webpack_require__(216);
+  var _GridLayout = __webpack_require__(215);
   
   var _GridLayout2 = _interopRequireDefault(_GridLayout);
   
-  var _BrowserMock = __webpack_require__(215);
+  var _BrowserMock = __webpack_require__(214);
   
   var _BrowserMock2 = _interopRequireDefault(_BrowserMock);
   
-  var _TagList = __webpack_require__(218);
+  var _TagList = __webpack_require__(217);
   
   var _TagList2 = _interopRequireDefault(_TagList);
   
@@ -6589,7 +6589,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 218:
+/***/ 217:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -23990,7 +23990,7 @@ webpackJsonp([2],{
     }
   }.call(this));
   
-  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(214)(module)))
+  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(213)(module)))
 
 /***/ },
 
@@ -24007,11 +24007,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDraggable = __webpack_require__(176);
+  var _reactDraggable = __webpack_require__(175);
   
   var _reactResizable = __webpack_require__(329);
   
-  var _utils = __webpack_require__(78);
+  var _utils = __webpack_require__(77);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -24500,15 +24500,15 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _lodash = __webpack_require__(117);
+  var _lodash = __webpack_require__(116);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _utils = __webpack_require__(78);
+  var _utils = __webpack_require__(77);
   
-  var _responsiveUtils = __webpack_require__(178);
+  var _responsiveUtils = __webpack_require__(177);
   
-  var _ReactGridLayout = __webpack_require__(177);
+  var _ReactGridLayout = __webpack_require__(176);
   
   var _ReactGridLayout2 = _interopRequireDefault(_ReactGridLayout);
   
@@ -24729,7 +24729,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDom = __webpack_require__(92);
+  var _reactDom = __webpack_require__(91);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
@@ -24808,10 +24808,10 @@ webpackJsonp([2],{
 /***/ 321:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__(177).default;
-  module.exports.utils = __webpack_require__(78);
+  module.exports = __webpack_require__(176).default;
+  module.exports.utils = __webpack_require__(77);
   module.exports.Responsive = __webpack_require__(319).default;
-  module.exports.Responsive.utils = __webpack_require__(178);
+  module.exports.Responsive.utils = __webpack_require__(177);
   module.exports.WidthProvider = __webpack_require__(320).default;
 
 
@@ -24830,7 +24830,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Resizable = __webpack_require__(181);
+  var _Resizable = __webpack_require__(180);
   
   var _Resizable2 = _interopRequireDefault(_Resizable);
   
@@ -24979,7 +24979,7 @@ webpackJsonp([2],{
     throw new Error("Don't instantiate Resizable directly! Use require('react-resizable').Resizable");
   };
   
-  module.exports.Resizable = __webpack_require__(181).default;
+  module.exports.Resizable = __webpack_require__(180).default;
   module.exports.ResizableBox = __webpack_require__(327).default;
 
 
@@ -25040,4 +25040,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?6d82bb354f1eb89ab638
+//# sourceMappingURL=2.js.map?d09acb996cc2ef16f8e4

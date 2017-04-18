@@ -1039,7 +1039,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 72:
+/***/ 71:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1150,7 +1150,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 84:
+/***/ 83:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1160,7 +1160,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Home = __webpack_require__(228);
+  var _Home = __webpack_require__(227);
   
   var _Home2 = _interopRequireDefault(_Home);
   
@@ -1177,7 +1177,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 228:
+/***/ 227:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1214,7 +1214,7 @@ webpackJsonp([0],{
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _HeaderLayout = __webpack_require__(72);
+  var _HeaderLayout = __webpack_require__(71);
   
   var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
   
@@ -1360,4 +1360,4 @@ webpackJsonp([0],{
 /***/ }
 
 });
-//# sourceMappingURL=0.js.map?7c8052905605a82012b2
+//# sourceMappingURL=0.js.map?c4c72a82735e6ac41ba6

@@ -1,70 +1,5 @@
 [
   {
-    "company": "datablade.io",
-    "name": "datablade",
-    "thumbnail": "/datablade.jpg",
-    "position": "RickFrom1987",
-    "website": "http://datablade.io",
-    "url": "/datablade",
-    "tags": ["alt.js", "react", "coreOS", "aws", "npm", "node"],
-    "highlights": [
-      "TechStars 2015",
-      "Iterate very quickly in a fast paced environment",
-      "Used alt.js and React to build components"
-    ]
-  }, {
-    "company": "brandly.com",
-    "thumbnail": "/brandly.jpg",
-    "position": "RickFrom1987",
-    "website": "http://brandly.com",
-    "url": "/brandly",
-    "tags": ["angular", "jQuery", "django"],
-    "highlights": [
-      "Facelift an existing angularJS app",
-      "Refactored older SCSS",
-      "Unit tests in Jasmine",
-      "django templates",
-      "Small defensive changes to make progress"
-    ]
-  },  {
-    "company": "energysavvy.com",
-    "thumbnail": "/energysavvy.jpg",
-    "position": "RickFrom1987",
-    "website": "https://energysavvy.com",
-    "url": "/energysavvy",
-    "tags": ["react", "aws", "npm", "node"],
-    "highlights": [
-      "First react app",
-      "mocha + sinon",
-      "Financial calculations test coverage",
-      "Solar calculations test coverage"
-    ]
-  },
-  {
-    "company": "motion.social",
-    "name": "motion.social",
-    "thumbnail": "/placeholder.jpg",
-    "position": "RickFrom1987",
-    "website": "https://motion.social",
-    "url": "/motionsocial",
-    "tags": ["react", "go", "docker", "mocha", "sentry", "npm", "node"],
-    "highlights": [
-      "Built a suite of internal react UI components",
-      "Help grow user base and product 1000 users/groups",
-      "Worked with co-founder of PicMonkey"
-    ]
-  }, {
-    "company": "booking.com",
-    "position": "RickFrom1987",
-    "website": "http://suite.booking.com",
-    "url": "/booking",
-    "tags": ["javascript", "Google App Engine", "gulp", "npm", "node"],
-    "highlights": [
-      "Architected js management system",
-      "Deployment system for js across thousands of sites",
-      "Worked with legacy CMS"
-    ]
-  }, {
     "company": "momentlens.co",
     "position": "RickFrom1987",
     "website": "https://momentlens.co",
@@ -90,6 +25,71 @@
       "Worked with Parse",
       "Unit tests with Jasmine",
       "Lots of learning"
+    ]
+  },
+  {
+    "company": "datablade.io",
+    "name": "datablade",
+    "thumbnail": "/datablade.jpg",
+    "position": "RickFrom1987",
+    "website": "http://datablade.io",
+    "url": "/datablade",
+    "tags": ["alt.js", "react", "coreOS", "aws", "npm", "node"],
+    "highlights": [
+      "TechStars 2015",
+      "Iterate very quickly in a fast paced environment",
+      "Used alt.js and React to build components"
+    ]
+  },  {
+    "company": "energysavvy.com",
+    "thumbnail": "/energysavvy.jpg",
+    "position": "RickFrom1987",
+    "website": "https://energysavvy.com",
+    "url": "/energysavvy",
+    "tags": ["react", "aws", "npm", "node"],
+    "highlights": [
+      "First react app",
+      "mocha + sinon",
+      "Financial calculations test coverage",
+      "Solar calculations test coverage"
+    ]
+  }, {
+    "company": "motion.social",
+    "name": "motion.social",
+    "thumbnail": "/placeholder.jpg",
+    "position": "RickFrom1987",
+    "website": "https://motion.social",
+    "url": "/motionsocial",
+    "tags": ["react", "go", "docker", "mocha", "sentry", "npm", "node"],
+    "highlights": [
+      "Built a suite of internal react UI components",
+      "Help grow user base and product 1000 users/groups",
+      "Worked with co-founder of PicMonkey"
+    ]
+  }, {
+    "company": "brandly.com",
+    "thumbnail": "/brandly.jpg",
+    "position": "RickFrom1987",
+    "website": "http://brandly.com",
+    "url": "/brandly",
+    "tags": ["angular", "jQuery", "django"],
+    "highlights": [
+      "Facelift an existing angularJS app",
+      "Refactored older SCSS",
+      "Unit tests in Jasmine",
+      "django templates",
+      "Small defensive changes to make progress"
+    ]
+  }, {
+    "company": "booking.com",
+    "position": "RickFrom1987",
+    "website": "http://suite.booking.com",
+    "url": "/booking",
+    "tags": ["javascript", "Google App Engine", "gulp", "npm", "node"],
+    "highlights": [
+      "Architected js management system",
+      "Deployment system for js across thousands of sites",
+      "Worked with legacy CMS"
     ]
   }, {
     "company": "Yahoo!",

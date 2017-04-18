@@ -1052,10 +1052,6 @@ webpackJsonp([10],{
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _defineProperty2 = __webpack_require__(56);
-  
-  var _defineProperty3 = _interopRequireDefault(_defineProperty2);
-  
   var _getPrototypeOf = __webpack_require__(2);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -1119,6 +1115,7 @@ webpackJsonp([10],{
             title = _props.title,
             subtitle = _props.subtitle,
             url = _props.url,
+            children = _props.children,
             style = _props.style;
   
         var baseStyle = {
@@ -1132,15 +1129,15 @@ webpackJsonp([10],{
         var leftStyle = void 0;
         var rightStyle = void 0;
         if (window.innerWidth > 480) {
-          var _leftStyle;
-  
           baseStyle.flexFlow = 'row';
-          leftStyle = (_leftStyle = {
+          leftStyle = {
             flexShrink: 0,
             flexGrow: 0,
             height: '100%',
-            width: '100%'
-          }, (0, _defineProperty3.default)(_leftStyle, 'width', 200), (0, _defineProperty3.default)(_leftStyle, 'color', Colors.WHITE), (0, _defineProperty3.default)(_leftStyle, 'alignItems', 'center'), _leftStyle);
+            width: 200,
+            color: Colors.WHITE,
+            alignItems: 'center'
+          };
           rightStyle = {
             marginLeft: 'auto',
             flex: '0 1 auto',
@@ -1151,7 +1148,7 @@ webpackJsonp([10],{
           baseStyle.flexFlow = 'column';
           leftStyle = {
             color: Colors.WHITE,
-            alignItems: 'center'
+            alignItems: 'flex-start'
           };
           rightStyle = {
             backgroundColor: Colors.WHITE,
@@ -1171,7 +1168,7 @@ webpackJsonp([10],{
               { style: { padding: 24 } },
               _react2.default.createElement(
                 'h1',
-                { style: { fontSize: 18 } },
+                { style: { fontSize: 22 } },
                 title
               ),
               _react2.default.createElement(
@@ -1193,7 +1190,7 @@ webpackJsonp([10],{
           _react2.default.createElement(
             _reactFlexbox2.default,
             { column: true, style: rightStyle, className: _Article2.default.article },
-            this.props.children
+            children
           )
         );
       }
@@ -1256,7 +1253,7 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 144:
+/***/ 143:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1266,7 +1263,7 @@ webpackJsonp([10],{
   });
   exports.default = undefined;
   
-  var _Brandly = __webpack_require__(223);
+  var _Brandly = __webpack_require__(222);
   
   var _Brandly2 = _interopRequireDefault(_Brandly);
   
@@ -1276,7 +1273,7 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 223:
+/***/ 222:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1355,4 +1352,4 @@ webpackJsonp([10],{
 /***/ }
 
 });
-//# sourceMappingURL=10.js.map?2280f06903d93b94b95f
+//# sourceMappingURL=10.js.map?9034bcaef8fea17ad46b
