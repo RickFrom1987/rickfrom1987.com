@@ -29,7 +29,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(35);
+  var _defineProperty = __webpack_require__(36);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -66,7 +66,7 @@ webpackJsonp([0],{
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(34);
+  var _create = __webpack_require__(35);
   
   var _create2 = _interopRequireDefault(_create);
   
@@ -470,7 +470,7 @@ webpackJsonp([0],{
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(27)
+  var isObject = __webpack_require__(28)
     , anObject = __webpack_require__(23);
   var check = function(O, proto){
     anObject(O);
@@ -480,7 +480,7 @@ webpackJsonp([0],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(26)(Function.call, __webpack_require__(37).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(38).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -500,10 +500,10 @@ webpackJsonp([0],{
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(29)
-    , $getPrototypeOf = __webpack_require__(38);
+  var toObject        = __webpack_require__(30)
+    , $getPrototypeOf = __webpack_require__(39);
   
-  __webpack_require__(39)('getPrototypeOf', function(){
+  __webpack_require__(40)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -520,7 +520,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 40:
+/***/ 41:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -617,7 +617,7 @@ webpackJsonp([0],{
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(40);
+  var _Link = __webpack_require__(41);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -811,7 +811,7 @@ webpackJsonp([0],{
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(40);
+  var _Link = __webpack_require__(41);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -860,7 +860,7 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(46);
+  var _extends2 = __webpack_require__(25);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -1082,7 +1082,7 @@ webpackJsonp([0],{
   
   var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
   
-  var _Link = __webpack_require__(40);
+  var _Link = __webpack_require__(41);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -1162,7 +1162,7 @@ webpackJsonp([0],{
             _react2.default.createElement('img', { src: '/murphy.png', style: imgStyle }),
             _react2.default.createElement(
               'h1',
-              { style: { fontSize: 32 } },
+              { style: { fontSize: 70 } },
               _Home3.title
             ),
             _react2.default.createElement(
@@ -1233,4 +1233,4 @@ webpackJsonp([0],{
 /***/ }
 
 });
-//# sourceMappingURL=0.js.map?bed9293f70136138aa38
+//# sourceMappingURL=0.js.map?95a02da430623d53097d

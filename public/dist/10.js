@@ -29,7 +29,7 @@ webpackJsonp([10],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(35);
+  var _defineProperty = __webpack_require__(36);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -66,7 +66,7 @@ webpackJsonp([10],{
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(34);
+  var _create = __webpack_require__(35);
   
   var _create2 = _interopRequireDefault(_create);
   
@@ -470,7 +470,7 @@ webpackJsonp([10],{
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(27)
+  var isObject = __webpack_require__(28)
     , anObject = __webpack_require__(23);
   var check = function(O, proto){
     anObject(O);
@@ -480,7 +480,7 @@ webpackJsonp([10],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(26)(Function.call, __webpack_require__(37).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(38).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -500,10 +500,10 @@ webpackJsonp([10],{
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(29)
-    , $getPrototypeOf = __webpack_require__(38);
+  var toObject        = __webpack_require__(30)
+    , $getPrototypeOf = __webpack_require__(39);
   
-  __webpack_require__(39)('getPrototypeOf', function(){
+  __webpack_require__(40)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -520,7 +520,7 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 28:
+/***/ 29:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -529,9 +529,13 @@ webpackJsonp([10],{
     value: true
   });
   
-  var _assign = __webpack_require__(44);
+  var _assign = __webpack_require__(45);
   
   var _assign2 = _interopRequireDefault(_assign);
+  
+  var _extends2 = __webpack_require__(25);
+  
+  var _extends3 = _interopRequireDefault(_extends2);
   
   var _getPrototypeOf = __webpack_require__(2);
   
@@ -561,7 +565,7 @@ webpackJsonp([10],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(31);
+  var _Article = __webpack_require__(32);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -600,15 +604,27 @@ webpackJsonp([10],{
         var linkStyle = {
           fontSize: 24
         };
-        var bodyStyle = {
+        var sectionStyle = {
           position: 'relative',
-          padding: 36,
-          paddingTop: 0,
           margin: '0 auto',
-          maxWidth: 1024,
+          maxWidth: 768,
           width: '90%',
           backgroundColor: Colors.WHITE
         };
+        var headerStyle = (0, _extends3.default)({}, sectionStyle, {
+          marginTop: 60,
+          padding: 24,
+          paddingBottom: 0,
+          borderTopLeftRadius: 10,
+          borderTopRightRadius: 10
+        });
+        var bodyStyle = (0, _extends3.default)({}, sectionStyle, {
+          padding: 24,
+          padingTop: 0,
+          borderBottomLeftRadius: 10,
+          borderBottomRightRadius: 10,
+          marginBottom: 60
+        });
         var imgStyle = {
           width: 100,
           height: 100,
@@ -620,17 +636,7 @@ webpackJsonp([10],{
           { style: articleLayoutStyle },
           _react2.default.createElement(
             'div',
-            { style: {
-                position: 'relative',
-                padding: 36,
-                margin: '0 auto',
-                marginTop: 12,
-                maxWidth: 1024,
-                width: '90%',
-                backgroundColor: Colors.WHITE,
-                borderTopLeftRadius: 10,
-                borderTopRightRadius: 10
-              } },
+            { style: headerStyle },
             _react2.default.createElement(
               'a',
               { href: '/projects' },
@@ -676,7 +682,7 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 30:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(12)();
@@ -694,13 +700,13 @@ webpackJsonp([10],{
 
 /***/ },
 
-/***/ 31:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(30);
+  var content = __webpack_require__(31);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(14)(content, {});
@@ -774,7 +780,7 @@ webpackJsonp([10],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(28);
+  var _ArticleLayout = __webpack_require__(29);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
@@ -820,4 +826,4 @@ webpackJsonp([10],{
 /***/ }
 
 });
-//# sourceMappingURL=10.js.map?8e694b6564c835a6bc9d
+//# sourceMappingURL=10.js.map?9e0e6a2764820dbfd32e

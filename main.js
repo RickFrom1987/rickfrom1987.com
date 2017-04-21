@@ -12,6 +12,7 @@ const container = document.getElementById('root');
 
 function renderComponent(component) {
   ReactDOM.render(<Provider store={store}>{component}</Provider>, container);
+  window.scrollTo(0,0);
 }
 
 // Find and render a web page matching the current URL path,
