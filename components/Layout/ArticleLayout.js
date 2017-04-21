@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import * as Colors from '../Constants/Colors';
 import s from './Article.css';
 
@@ -21,7 +20,7 @@ class ArticleLayout extends React.Component {
     const { title, subtitle, url, children, style } = this.props;
 
     const baseStyle = {
-      paddingTop: 50,
+      paddingTop: 12,
       height: '100%',
       width: '100%',
     };
@@ -29,17 +28,35 @@ class ArticleLayout extends React.Component {
       fontSize: 24
     };
     const bodyStyle = {
-      padding: 24,
+      position: 'relative',
+      padding: 36,
+      paddingTop: 0,
       margin: '0 auto',
-      marginTop: 100,
       maxWidth: 1024,
       width: '90%',
       backgroundColor: Colors.WHITE,
     };
+    const imgStyle ={
+      width: 100,
+      height: 100,
+      margin: '0 auto'
+    };
     const articleLayoutStyle = Object.assign({}, baseStyle, style);
     return (
       <div style={articleLayoutStyle}>
-        <Header/>
+        <div style={{
+          position: 'relative',
+          padding: 36,
+          margin: '0 auto',
+          marginTop: 12,
+          maxWidth: 1024,
+          width: '90%',
+          backgroundColor: Colors.WHITE,
+          borderTopLeftRadius: 10,
+          borderTopRightRadius: 10,
+        }}>
+          <a href="/projects"><img src="/murphy.png" style={imgStyle}/></a>
+        </div>
         <div style={bodyStyle}>
           <div>
             <h1 style={{ fontSize: 22, marginBottom: 12 }}>{title}</h1>

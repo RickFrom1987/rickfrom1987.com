@@ -43,7 +43,6 @@ class HomePage extends React.Component {
           <img src="/murphy.png" style={imgStyle}/>
           <h1 style={{ fontSize: 32 }}>{ title }</h1>
           <p>{ desc }</p>
-
         </div>
       </HeaderLayout>
     );

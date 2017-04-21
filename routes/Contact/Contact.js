@@ -16,24 +16,29 @@ class ContactPage extends React.Component {
   }
 
   render() {
-    const homeStyle = {
+    const contactStyle = {
       textAlign: 'center',
       color: Colors.WHITE,
     };
+    const imgStyle = {
+      width: 200,
+      height: 200
+    };
     const itemStyle = {
-      fontSize: 14,
+      fontSize: 16,
     };
     return (
       <HeaderLayout centered>
-        <View column style={homeStyle}>
-          <h1>{ title }</h1>
+        <div style={contactStyle}>
+          <img src="/murphy.png" style={imgStyle}/>
+          <h1 style={{ fontSize: 32 }}>{ title }</h1>
           <p style={itemStyle}>
             <i className="fa fa-envelope-o"></i><span style={{ marginLeft: 12 }}>{ email }</span>
           </p>
           <p style={itemStyle}>
             <i className="fa fa-phone"></i><span style={{ marginLeft: 12 }}>{ phone }</span>
           </p>
-        </View>
+        </div>
       </HeaderLayout>
     );
   }
