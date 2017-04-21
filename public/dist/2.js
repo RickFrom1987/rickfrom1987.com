@@ -3,7 +3,7 @@ webpackJsonp([2],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(24), __esModule: true };
+  module.exports = { "default": __webpack_require__(17), __esModule: true };
 
 /***/ },
 
@@ -29,7 +29,7 @@ webpackJsonp([2],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(46);
+  var _defineProperty = __webpack_require__(35);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,15 +62,15 @@ webpackJsonp([2],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(23);
+  var _setPrototypeOf = __webpack_require__(16);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(45);
+  var _create = __webpack_require__(34);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(15);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([2],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(15);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -117,7 +117,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 10:
+/***/ 11:
 /***/ function(module, exports) {
 
   'use strict';
@@ -132,34 +132,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 11:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = undefined;
-  
-  var _Link = __webpack_require__(22);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = _Link2.default; /**
-                                     * React App SDK (https://github.com/kriasoft/react-app)
-                                     *
-                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-                                     *
-                                     * This source code is licensed under the MIT license found in the
-                                     * LICENSE.txt file in the root directory of this source tree.
-                                     */
-
-/***/ },
-
-/***/ 13:
+/***/ 12:
 /***/ function(module, exports) {
 
   /*
@@ -469,7 +442,112 @@ webpackJsonp([2],{
 
 /***/ },
 
+/***/ 16:
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(18), __esModule: true };
+
+/***/ },
+
 /***/ 17:
+/***/ function(module, exports, __webpack_require__) {
+
+  __webpack_require__(20);
+  module.exports = __webpack_require__(9).Object.getPrototypeOf;
+
+/***/ },
+
+/***/ 18:
+/***/ function(module, exports, __webpack_require__) {
+
+  __webpack_require__(21);
+  module.exports = __webpack_require__(9).Object.setPrototypeOf;
+
+/***/ },
+
+/***/ 19:
+/***/ function(module, exports, __webpack_require__) {
+
+  // Works with __proto__ only. Old v8 can't work with null proto objects.
+  /* eslint-disable no-proto */
+  var isObject = __webpack_require__(27)
+    , anObject = __webpack_require__(23);
+  var check = function(O, proto){
+    anObject(O);
+    if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
+  };
+  module.exports = {
+    set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
+      function(test, buggy, set){
+        try {
+          set = __webpack_require__(26)(Function.call, __webpack_require__(37).f(Object.prototype, '__proto__').set, 2);
+          set(test, []);
+          buggy = !(test instanceof Array);
+        } catch(e){ buggy = true; }
+        return function setPrototypeOf(O, proto){
+          check(O, proto);
+          if(buggy)O.__proto__ = proto;
+          else set(O, proto);
+          return O;
+        };
+      }({}, false) : undefined),
+    check: check
+  };
+
+/***/ },
+
+/***/ 20:
+/***/ function(module, exports, __webpack_require__) {
+
+  // 19.1.2.9 Object.getPrototypeOf(O)
+  var toObject        = __webpack_require__(29)
+    , $getPrototypeOf = __webpack_require__(38);
+  
+  __webpack_require__(39)('getPrototypeOf', function(){
+    return function getPrototypeOf(it){
+      return $getPrototypeOf(toObject(it));
+    };
+  });
+
+/***/ },
+
+/***/ 21:
+/***/ function(module, exports, __webpack_require__) {
+
+  // 19.1.3.19 Object.setPrototypeOf(O, proto)
+  var $export = __webpack_require__(24);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(19).set});
+
+/***/ },
+
+/***/ 40:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = undefined;
+  
+  var _Link = __webpack_require__(68);
+  
+  var _Link2 = _interopRequireDefault(_Link);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = _Link2.default; /**
+                                     * React App SDK (https://github.com/kriasoft/react-app)
+                                     *
+                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
+                                     *
+                                     * This source code is licensed under the MIT license found in the
+                                     * LICENSE.txt file in the root directory of this source tree.
+                                     */
+
+/***/ },
+
+/***/ 52:
 /***/ function(module, exports) {
 
   "use strict";
@@ -490,7 +568,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 19:
+/***/ 64:
 /***/ function(module, exports) {
 
   'use strict';
@@ -502,7 +580,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 20:
+/***/ 65:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -535,19 +613,19 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Navigation = __webpack_require__(21);
+  var _Navigation = __webpack_require__(67);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(11);
+  var _Link = __webpack_require__(40);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _App = __webpack_require__(19);
+  var _App = __webpack_require__(64);
   
   var App = _interopRequireWildcard(_App);
   
-  var _Colors = __webpack_require__(10);
+  var _Colors = __webpack_require__(11);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -613,7 +691,110 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 21:
+/***/ 66:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _getPrototypeOf = __webpack_require__(2);
+  
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  
+  var _classCallCheck2 = __webpack_require__(3);
+  
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  
+  var _createClass2 = __webpack_require__(4);
+  
+  var _createClass3 = _interopRequireDefault(_createClass2);
+  
+  var _possibleConstructorReturn2 = __webpack_require__(6);
+  
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+  
+  var _inherits2 = __webpack_require__(5);
+  
+  var _inherits3 = _interopRequireDefault(_inherits2);
+  
+  var _react = __webpack_require__(1);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _Header = __webpack_require__(65);
+  
+  var _Header2 = _interopRequireDefault(_Header);
+  
+  var _Colors = __webpack_require__(11);
+  
+  var Colors = _interopRequireWildcard(_Colors);
+  
+  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  var HeaderLayout = function (_React$Component) {
+    (0, _inherits3.default)(HeaderLayout, _React$Component);
+  
+    function HeaderLayout(props) {
+      (0, _classCallCheck3.default)(this, HeaderLayout);
+  
+      var _this = (0, _possibleConstructorReturn3.default)(this, (HeaderLayout.__proto__ || (0, _getPrototypeOf2.default)(HeaderLayout)).call(this, props));
+  
+      _this.state = {};
+      return _this;
+    }
+  
+    (0, _createClass3.default)(HeaderLayout, [{
+      key: 'render',
+      value: function render() {
+        var _props = this.props,
+            style = _props.style,
+            centered = _props.centered,
+            children = _props.children;
+  
+        var layoutStyle = {
+          paddingTop: 48
+        };
+  
+        var centerStyle = void 0;
+        if (centered) {
+          centerStyle = {
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%,-50%)',
+            minWidth: 300,
+            maxWidth: 768
+          };
+        }
+  
+        return _react2.default.createElement(
+          'div',
+          { style: layoutStyle },
+          _react2.default.createElement(_Header2.default, null),
+          _react2.default.createElement(
+            'div',
+            { style: centerStyle },
+            children
+          )
+        );
+      }
+    }]);
+    return HeaderLayout;
+  }(_react2.default.Component);
+  
+  HeaderLayout.propTypes = {
+    centered: _react2.default.PropTypes.bool
+  };
+  exports.default = HeaderLayout;
+
+/***/ },
+
+/***/ 67:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -626,15 +807,15 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(16);
+  var _history = __webpack_require__(51);
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(11);
+  var _Link = __webpack_require__(40);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(30);
+  var _Navigation = __webpack_require__(81);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -670,7 +851,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 22:
+/***/ 68:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -679,11 +860,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(35);
+  var _extends2 = __webpack_require__(46);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(17);
+  var _objectWithoutProperties2 = __webpack_require__(52);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -711,7 +892,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(16);
+  var _history = __webpack_require__(51);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -791,88 +972,10 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 23:
+/***/ 72:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(25), __esModule: true };
-
-/***/ },
-
-/***/ 24:
-/***/ function(module, exports, __webpack_require__) {
-
-  __webpack_require__(27);
-  module.exports = __webpack_require__(9).Object.getPrototypeOf;
-
-/***/ },
-
-/***/ 25:
-/***/ function(module, exports, __webpack_require__) {
-
-  __webpack_require__(28);
-  module.exports = __webpack_require__(9).Object.setPrototypeOf;
-
-/***/ },
-
-/***/ 26:
-/***/ function(module, exports, __webpack_require__) {
-
-  // Works with __proto__ only. Old v8 can't work with null proto objects.
-  /* eslint-disable no-proto */
-  var isObject = __webpack_require__(38)
-    , anObject = __webpack_require__(32);
-  var check = function(O, proto){
-    anObject(O);
-    if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
-  };
-  module.exports = {
-    set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-      function(test, buggy, set){
-        try {
-          set = __webpack_require__(37)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
-          set(test, []);
-          buggy = !(test instanceof Array);
-        } catch(e){ buggy = true; }
-        return function setPrototypeOf(O, proto){
-          check(O, proto);
-          if(buggy)O.__proto__ = proto;
-          else set(O, proto);
-          return O;
-        };
-      }({}, false) : undefined),
-    check: check
-  };
-
-/***/ },
-
-/***/ 27:
-/***/ function(module, exports, __webpack_require__) {
-
-  // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(40)
-    , $getPrototypeOf = __webpack_require__(49);
-  
-  __webpack_require__(50)('getPrototypeOf', function(){
-    return function getPrototypeOf(it){
-      return $getPrototypeOf(toObject(it));
-    };
-  });
-
-/***/ },
-
-/***/ 28:
-/***/ function(module, exports, __webpack_require__) {
-
-  // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(33);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(26).set});
-
-/***/ },
-
-/***/ 29:
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(13)();
+  exports = module.exports = __webpack_require__(12)();
   // imports
   
   
@@ -888,261 +991,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 30:
-/***/ function(module, exports, __webpack_require__) {
-
-  // style-loader: Adds some css to the DOM by adding a <style> tag
-  
-  // load the styles
-  var content = __webpack_require__(29);
-  if(typeof content === 'string') content = [[module.id, content, '']];
-  // add the styles to the DOM
-  var update = __webpack_require__(14)(content, {});
-  if(content.locals) module.exports = content.locals;
-  // Hot Module Replacement
-  if(false) {
-  	// When the styles change, update the <style> tags
-  	if(!content.locals) {
-  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css", function() {
-  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css");
-  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-  			update(newContent);
-  		});
-  	}
-  	// When the module is disposed, remove the <style> tags
-  	module.hot.dispose(function() { update(); });
-  }
-
-/***/ },
-
-/***/ 34:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-  
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-  
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-  
-  var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-  
-  function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-  
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-  
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var flexStyle = {
-    boxSizing: 'border-box',
-    display: 'flex',
-    flexWrap: 'nowrap',
-    flex: '1 0 auto',
-    justifyContent: 'space-between',
-    alignContent: 'space-between',
-    alignItems: 'stretch'
-  };
-  
-  var mixProps = function mixProps(style, props) {
-    var divStyle = {};
-  
-    if (props.row) {
-      divStyle.flexDirection = 'row';
-    } else if (props.column) {
-      divStyle.flexDirection = 'column';
-    }
-  
-    if (typeof props.width === 'number') {
-      divStyle.flexGrow = props.width;
-    } else if (props.width) {
-      divStyle.flexBasis = 'auto';
-      divStyle.flexGrow = 0;
-      divStyle.flexShrink = 0;
-      divStyle.width = props.width;
-    }
-  
-    if (props.height) {
-      divStyle.flexBasis = 'auto';
-      divStyle.flexGrow = 0;
-      divStyle.flexShrink = 0;
-      divStyle.height = props.height;
-    }
-  
-    if (props.style) {
-      return _extends({}, flexStyle, style, divStyle, props.style);
-    } else {
-      return _extends({}, flexStyle, style, divStyle);
-    }
-  };
-  
-  var View = (function (_Component) {
-    _inherits(View, _Component);
-  
-    function View() {
-      _classCallCheck(this, View);
-  
-      _get(Object.getPrototypeOf(View.prototype), 'constructor', this).apply(this, arguments);
-    }
-  
-    _createClass(View, [{
-      key: 'render',
-      value: function render() {
-        var style = mixProps({}, this.props);
-        if (this.props.auto) {
-          style.flex = '0 0 auto';
-        }
-  
-        // strip props that are invalid to set on a div.
-        // (prevents https://fb.me/react-unknown-prop)
-        var _props = this.props;
-        var row = _props.row;
-        var column = _props.column;
-        var auto = _props.auto;
-  
-        var divProps = _objectWithoutProperties(_props, ['row', 'column', 'auto']);
-  
-        return _react2['default'].createElement(
-          'div',
-          _extends({}, divProps, { style: style }),
-          this.props.children
-        );
-      }
-    }], [{
-      key: 'propTypes',
-      value: {
-        row: _react.PropTypes.bool,
-        column: _react.PropTypes.bool,
-        auto: _react.PropTypes.bool,
-        className: _react.PropTypes.string,
-        height: _react.PropTypes.string,
-        style: _react.PropTypes.object,
-        width: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.string])
-      },
-      enumerable: true
-    }]);
-  
-    return View;
-  })(_react.Component);
-  
-  exports['default'] = View;
-  module.exports = exports['default'];
-
-
-/***/ },
-
-/***/ 71:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(2);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(3);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(4);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(6);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(5);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Header = __webpack_require__(20);
-  
-  var _Header2 = _interopRequireDefault(_Header);
-  
-  var _Colors = __webpack_require__(10);
-  
-  var Colors = _interopRequireWildcard(_Colors);
-  
-  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var HeaderLayout = function (_React$Component) {
-    (0, _inherits3.default)(HeaderLayout, _React$Component);
-  
-    function HeaderLayout(props) {
-      (0, _classCallCheck3.default)(this, HeaderLayout);
-  
-      var _this = (0, _possibleConstructorReturn3.default)(this, (HeaderLayout.__proto__ || (0, _getPrototypeOf2.default)(HeaderLayout)).call(this, props));
-  
-      _this.state = {};
-      return _this;
-    }
-  
-    (0, _createClass3.default)(HeaderLayout, [{
-      key: 'render',
-      value: function render() {
-        var _props = this.props,
-            style = _props.style,
-            centered = _props.centered,
-            children = _props.children;
-  
-        var layoutStyle = {
-          paddingTop: 48
-        };
-  
-        var centerStyle = void 0;
-        if (centered) {
-          centerStyle = {
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%,-50%)',
-            minWidth: 300,
-            maxWidth: 768
-          };
-        }
-  
-        return _react2.default.createElement(
-          'div',
-          { style: layoutStyle },
-          _react2.default.createElement(_Header2.default, null),
-          _react2.default.createElement(
-            'div',
-            { style: centerStyle },
-            children
-          )
-        );
-      }
-    }]);
-    return HeaderLayout;
-  }(_react2.default.Component);
-  
-  HeaderLayout.propTypes = {
-    centered: _react2.default.PropTypes.bool
-  };
-  exports.default = HeaderLayout;
-
-/***/ },
-
-/***/ 77:
+/***/ 75:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1173,7 +1022,7 @@ webpackJsonp([2],{
   exports.validateLayout = validateLayout;
   exports.autoBindHandlers = autoBindHandlers;
   
-  var _lodash = __webpack_require__(116);
+  var _lodash = __webpack_require__(115);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
@@ -1607,7 +1456,34 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 116:
+/***/ 81:
+/***/ function(module, exports, __webpack_require__) {
+
+  // style-loader: Adds some css to the DOM by adding a <style> tag
+  
+  // load the styles
+  var content = __webpack_require__(72);
+  if(typeof content === 'string') content = [[module.id, content, '']];
+  // add the styles to the DOM
+  var update = __webpack_require__(14)(content, {});
+  if(content.locals) module.exports = content.locals;
+  // Hot Module Replacement
+  if(false) {
+  	// When the styles change, update the <style> tags
+  	if(!content.locals) {
+  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css", function() {
+  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css");
+  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+  			update(newContent);
+  		});
+  	}
+  	// When the module is disposed, remove the <style> tags
+  	module.hot.dispose(function() { update(); });
+  }
+
+/***/ },
+
+/***/ 115:
 /***/ function(module, exports, __webpack_require__) {
 
   /* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -3463,6 +3339,130 @@ webpackJsonp([2],{
 
 /***/ },
 
+/***/ 118:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+  
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+  
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  
+  var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+  
+  function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+  
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+  
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+  
+  var _react = __webpack_require__(1);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var flexStyle = {
+    boxSizing: 'border-box',
+    display: 'flex',
+    flexWrap: 'nowrap',
+    flex: '1 0 auto',
+    justifyContent: 'space-between',
+    alignContent: 'space-between',
+    alignItems: 'stretch'
+  };
+  
+  var mixProps = function mixProps(style, props) {
+    var divStyle = {};
+  
+    if (props.row) {
+      divStyle.flexDirection = 'row';
+    } else if (props.column) {
+      divStyle.flexDirection = 'column';
+    }
+  
+    if (typeof props.width === 'number') {
+      divStyle.flexGrow = props.width;
+    } else if (props.width) {
+      divStyle.flexBasis = 'auto';
+      divStyle.flexGrow = 0;
+      divStyle.flexShrink = 0;
+      divStyle.width = props.width;
+    }
+  
+    if (props.height) {
+      divStyle.flexBasis = 'auto';
+      divStyle.flexGrow = 0;
+      divStyle.flexShrink = 0;
+      divStyle.height = props.height;
+    }
+  
+    if (props.style) {
+      return _extends({}, flexStyle, style, divStyle, props.style);
+    } else {
+      return _extends({}, flexStyle, style, divStyle);
+    }
+  };
+  
+  var View = (function (_Component) {
+    _inherits(View, _Component);
+  
+    function View() {
+      _classCallCheck(this, View);
+  
+      _get(Object.getPrototypeOf(View.prototype), 'constructor', this).apply(this, arguments);
+    }
+  
+    _createClass(View, [{
+      key: 'render',
+      value: function render() {
+        var style = mixProps({}, this.props);
+        if (this.props.auto) {
+          style.flex = '0 0 auto';
+        }
+  
+        // strip props that are invalid to set on a div.
+        // (prevents https://fb.me/react-unknown-prop)
+        var _props = this.props;
+        var row = _props.row;
+        var column = _props.column;
+        var auto = _props.auto;
+  
+        var divProps = _objectWithoutProperties(_props, ['row', 'column', 'auto']);
+  
+        return _react2['default'].createElement(
+          'div',
+          _extends({}, divProps, { style: style }),
+          this.props.children
+        );
+      }
+    }], [{
+      key: 'propTypes',
+      value: {
+        row: _react.PropTypes.bool,
+        column: _react.PropTypes.bool,
+        auto: _react.PropTypes.bool,
+        className: _react.PropTypes.string,
+        height: _react.PropTypes.string,
+        style: _react.PropTypes.object,
+        width: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.string])
+      },
+      enumerable: true
+    }]);
+  
+    return View;
+  })(_react.Component);
+  
+  exports['default'] = View;
+  module.exports = exports['default'];
+
+
+/***/ },
+
 /***/ 150:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -3496,7 +3496,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _HeaderLayout = __webpack_require__(71);
+  var _HeaderLayout = __webpack_require__(66);
   
   var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
   
@@ -3504,7 +3504,7 @@ webpackJsonp([2],{
   
   var _ProjectGridLayout2 = _interopRequireDefault(_ProjectGridLayout);
   
-  var _Link = __webpack_require__(11);
+  var _Link = __webpack_require__(40);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -3555,7 +3555,7 @@ webpackJsonp([2],{
 
   (function webpackUniversalModuleDefinition(root, factory) {
   	if(true)
-  		module.exports = factory(__webpack_require__(1), __webpack_require__(91));
+  		module.exports = factory(__webpack_require__(1), __webpack_require__(90));
   	else if(typeof define === 'function' && define.amd)
   		define(["react", "react-dom"], factory);
   	else if(typeof exports === 'object')
@@ -5176,11 +5176,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _lodash = __webpack_require__(116);
+  var _lodash = __webpack_require__(115);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _utils = __webpack_require__(77);
+  var _utils = __webpack_require__(75);
   
   var _GridItem = __webpack_require__(318);
   
@@ -5716,7 +5716,7 @@ webpackJsonp([2],{
   exports.findOrGenerateResponsiveLayout = findOrGenerateResponsiveLayout;
   exports.sortBreakpoints = sortBreakpoints;
   
-  var _utils = __webpack_require__(77);
+  var _utils = __webpack_require__(75);
   
   /**
    * Given a width, find the highest breakpoint that matches is valid for it (width > breakpoint).
@@ -6125,11 +6125,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _assign = __webpack_require__(54);
+  var _assign = __webpack_require__(44);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _objectWithoutProperties2 = __webpack_require__(17);
+  var _objectWithoutProperties2 = __webpack_require__(52);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -6157,7 +6157,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(16);
+  var _history = __webpack_require__(51);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -6289,7 +6289,7 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(35);
+  var _extends2 = __webpack_require__(46);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -6392,11 +6392,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(35);
+  var _extends2 = __webpack_require__(46);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(17);
+  var _objectWithoutProperties2 = __webpack_require__(52);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -6424,11 +6424,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(34);
+  var _reactFlexbox = __webpack_require__(118);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _reactDom = __webpack_require__(91);
+  var _reactDom = __webpack_require__(90);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
@@ -6578,11 +6578,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(35);
+  var _extends2 = __webpack_require__(46);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(17);
+  var _objectWithoutProperties2 = __webpack_require__(52);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -6610,7 +6610,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Colors = __webpack_require__(10);
+  var _Colors = __webpack_require__(11);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -6692,7 +6692,7 @@ webpackJsonp([2],{
 /***/ 280:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(13)();
+  exports = module.exports = __webpack_require__(12)();
   // imports
   
   
@@ -6709,7 +6709,7 @@ webpackJsonp([2],{
 /***/ 283:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(13)();
+  exports = module.exports = __webpack_require__(12)();
   // imports
   
   
@@ -23991,7 +23991,7 @@ webpackJsonp([2],{
   
   var _reactResizable = __webpack_require__(329);
   
-  var _utils = __webpack_require__(77);
+  var _utils = __webpack_require__(75);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -24480,11 +24480,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _lodash = __webpack_require__(116);
+  var _lodash = __webpack_require__(115);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _utils = __webpack_require__(77);
+  var _utils = __webpack_require__(75);
   
   var _responsiveUtils = __webpack_require__(177);
   
@@ -24709,7 +24709,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDom = __webpack_require__(91);
+  var _reactDom = __webpack_require__(90);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
@@ -24789,7 +24789,7 @@ webpackJsonp([2],{
 /***/ function(module, exports, __webpack_require__) {
 
   module.exports = __webpack_require__(176).default;
-  module.exports.utils = __webpack_require__(77);
+  module.exports.utils = __webpack_require__(75);
   module.exports.Responsive = __webpack_require__(319).default;
   module.exports.Responsive.utils = __webpack_require__(177);
   module.exports.WidthProvider = __webpack_require__(320).default;
@@ -25020,4 +25020,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?f0303d7b77d7480e83cc
+//# sourceMappingURL=2.js.map?3fa7f147f43028e92873

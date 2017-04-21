@@ -27,14 +27,28 @@ class ArticleLayout extends React.Component {
     const linkStyle = {
       fontSize: 24
     };
-    const bodyStyle = {
+    const sectionStyle = {
       position: 'relative',
-      padding: 36,
-      paddingTop: 0,
       margin: '0 auto',
-      maxWidth: 1024,
+      maxWidth: 768,
       width: '90%',
-      backgroundColor: Colors.WHITE,
+      backgroundColor: Colors.WHITE 
+    };
+    const headerStyle = {
+      ...sectionStyle,
+      marginTop: 60,
+      padding: 24,
+      paddingBottom: 0,
+      borderTopLeftRadius: 10,
+      borderTopRightRadius: 10,
+    };
+    const bodyStyle = {
+      ...sectionStyle,
+      padding: 24,
+      padingTop: 0,
+      borderBottomLeftRadius: 10,
+      borderBottomRightRadius: 10,
+      marginBottom: 60,
     };
     const imgStyle ={
       width: 100,
@@ -44,17 +58,7 @@ class ArticleLayout extends React.Component {
     const articleLayoutStyle = Object.assign({}, baseStyle, style);
     return (
       <div style={articleLayoutStyle}>
-        <div style={{
-          position: 'relative',
-          padding: 36,
-          margin: '0 auto',
-          marginTop: 12,
-          maxWidth: 1024,
-          width: '90%',
-          backgroundColor: Colors.WHITE,
-          borderTopLeftRadius: 10,
-          borderTopRightRadius: 10,
-        }}>
+        <div style={headerStyle}>
           <a href="/projects"><img src="/murphy.png" style={imgStyle}/></a>
         </div>
         <div style={bodyStyle}>

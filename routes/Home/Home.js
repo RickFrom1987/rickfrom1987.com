@@ -41,7 +41,7 @@ class HomePage extends React.Component {
       <HeaderLayout centered>
         <div style={homeStyle}>
           <img src="/murphy.png" style={imgStyle}/>
-          <h1 style={{ fontSize: 32 }}>{ title }</h1>
+          <h1 style={{ fontSize: 70 }}>{ title }</h1>
           <p>{ desc }</p>
         </div>
       </HeaderLayout>

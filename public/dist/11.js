@@ -3,7 +3,7 @@ webpackJsonp([11],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(24), __esModule: true };
+  module.exports = { "default": __webpack_require__(17), __esModule: true };
 
 /***/ },
 
@@ -29,7 +29,7 @@ webpackJsonp([11],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(46);
+  var _defineProperty = __webpack_require__(35);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,15 +62,15 @@ webpackJsonp([11],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(23);
+  var _setPrototypeOf = __webpack_require__(16);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(45);
+  var _create = __webpack_require__(34);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(15);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([11],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(18);
+  var _typeof2 = __webpack_require__(15);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -117,7 +117,7 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 10:
+/***/ 11:
 /***/ function(module, exports) {
 
   'use strict';
@@ -132,34 +132,7 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 11:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = undefined;
-  
-  var _Link = __webpack_require__(22);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = _Link2.default; /**
-                                     * React App SDK (https://github.com/kriasoft/react-app)
-                                     *
-                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-                                     *
-                                     * This source code is licensed under the MIT license found in the
-                                     * LICENSE.txt file in the root directory of this source tree.
-                                     */
-
-/***/ },
-
-/***/ 13:
+/***/ 12:
 /***/ function(module, exports) {
 
   /*
@@ -469,358 +442,36 @@ webpackJsonp([11],{
 
 /***/ },
 
+/***/ 16:
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(18), __esModule: true };
+
+/***/ },
+
 /***/ 17:
-/***/ function(module, exports) {
-
-  "use strict";
-  
-  exports.__esModule = true;
-  
-  exports.default = function (obj, keys) {
-    var target = {};
-  
-    for (var i in obj) {
-      if (keys.indexOf(i) >= 0) continue;
-      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-      target[i] = obj[i];
-    }
-  
-    return target;
-  };
-
-/***/ },
-
-/***/ 19:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  var HEADER_HEIGHT = exports.HEADER_HEIGHT = '50px';
-
-/***/ },
-
-/***/ 20:
 /***/ function(module, exports, __webpack_require__) {
 
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(2);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(3);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(4);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(6);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(5);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Navigation = __webpack_require__(21);
-  
-  var _Navigation2 = _interopRequireDefault(_Navigation);
-  
-  var _Link = __webpack_require__(11);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  var _App = __webpack_require__(19);
-  
-  var App = _interopRequireWildcard(_App);
-  
-  var _Colors = __webpack_require__(10);
-  
-  var Colors = _interopRequireWildcard(_Colors);
-  
-  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var Header = function (_React$Component) {
-    (0, _inherits3.default)(Header, _React$Component);
-  
-    function Header() {
-      (0, _classCallCheck3.default)(this, Header);
-      return (0, _possibleConstructorReturn3.default)(this, (Header.__proto__ || (0, _getPrototypeOf2.default)(Header)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(Header, [{
-      key: 'render',
-      value: function render() {
-        var logoStyle = {
-          color: Colors.WHITE,
-          height: App.HEADER_HEIGHT,
-          lineHeight: App.HEADER_HEIGHT,
-          whiteSpace: 'nowrap',
-          margin: '0 12px',
-          fontWeight: 300,
-          fontSize: 18
-        };
-        var headerStyle = {
-          textTransform: 'uppercase',
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          zIndex: 1040,
-          width: '100%',
-          height: App.HEADER_HEIGHT,
-          color: Colors.WHITE,
-          backgroundColor: 'rgba(0,0,0, 0.5)'
-        };
-        return _react2.default.createElement(
-          'div',
-          { className: 'container-fluid', style: headerStyle },
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'h1',
-              { style: logoStyle },
-              _react2.default.createElement(
-                'a',
-                { href: '/', style: { color: Colors.WHITE } },
-                'RickFrom1987'
-              )
-            ),
-            _react2.default.createElement(_Navigation2.default, null)
-          )
-        );
-      }
-    }]);
-    return Header;
-  }(_react2.default.Component);
-  
-  exports.default = Header;
-
-/***/ },
-
-/***/ 21:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _history = __webpack_require__(16);
-  
-  var _history2 = _interopRequireDefault(_history);
-  
-  var _Link = __webpack_require__(11);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  var _Navigation = __webpack_require__(30);
-  
-  var _Navigation2 = _interopRequireDefault(_Navigation);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  function Navigation() {
-    var path = _history2.default.getCurrentLocation().pathname;
-    var linkClass = function linkClass(href) {
-      return '' + _Navigation2.default.link + (path === href ? ' ' + _Navigation2.default.active : '');
-    };
-    return _react2.default.createElement(
-      'nav',
-      { className: _Navigation2.default.nav },
-      _react2.default.createElement(
-        _Link2.default,
-        { className: linkClass('/contact'), to: '/contact' },
-        _react2.default.createElement('i', { className: 'fa fa-phone' })
-      ),
-      _react2.default.createElement(
-        _Link2.default,
-        { className: linkClass('/projects'), to: '/projects' },
-        _react2.default.createElement('i', { className: 'fa fa-desktop' })
-      ),
-      _react2.default.createElement(
-        'a',
-        { className: linkClass('/payment'), href: 'https://payments.rickfrom1987.com' },
-        _react2.default.createElement('i', { className: 'fa fa-credit-card' })
-      )
-    );
-  }
-  
-  exports.default = Navigation;
-
-/***/ },
-
-/***/ 22:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _extends2 = __webpack_require__(35);
-  
-  var _extends3 = _interopRequireDefault(_extends2);
-  
-  var _objectWithoutProperties2 = __webpack_require__(17);
-  
-  var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
-  
-  var _getPrototypeOf = __webpack_require__(2);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(3);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(4);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(6);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(5);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _history = __webpack_require__(16);
-  
-  var _history2 = _interopRequireDefault(_history);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  /**
-   * React App SDK (https://github.com/kriasoft/react-app)
-   *
-   * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
-  var Link = function (_React$Component) {
-    (0, _inherits3.default)(Link, _React$Component);
-  
-    function Link() {
-      var _ref;
-  
-      var _temp, _this, _ret;
-  
-      (0, _classCallCheck3.default)(this, Link);
-  
-      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
-  
-      return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Link.__proto__ || (0, _getPrototypeOf2.default)(Link)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function (event) {
-        if (_this.props.onClick) {
-          _this.props.onClick(event);
-        }
-  
-        if (event.button !== 0 /* left click */) {
-            return;
-          }
-  
-        if (event.metaKey || event.altKey || event.ctrlKey || event.shiftKey) {
-          return;
-        }
-  
-        if (event.defaultPrevented === true) {
-          return;
-        }
-  
-        event.preventDefault();
-  
-        if (_this.props.to) {
-          _history2.default.push(_this.props.to);
-        } else {
-          _history2.default.push({
-            pathname: event.currentTarget.pathname,
-            search: event.currentTarget.search
-          });
-        }
-      }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
-    }
-  
-    (0, _createClass3.default)(Link, [{
-      key: 'render',
-      value: function render() {
-        var _props = this.props,
-            to = _props.to,
-            props = (0, _objectWithoutProperties3.default)(_props, ['to']); // eslint-disable-line no-use-before-define
-  
-        return _react2.default.createElement('a', (0, _extends3.default)({ href: _history2.default.createHref(to) }, props, { onClick: this.handleClick }));
-      }
-    }]);
-    return Link;
-  }(_react2.default.Component);
-  
-  Link.propTypes = {
-    to: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]).isRequired,
-    onClick: _react.PropTypes.func
-  };
-  exports.default = Link;
-
-/***/ },
-
-/***/ 23:
-/***/ function(module, exports, __webpack_require__) {
-
-  module.exports = { "default": __webpack_require__(25), __esModule: true };
-
-/***/ },
-
-/***/ 24:
-/***/ function(module, exports, __webpack_require__) {
-
-  __webpack_require__(27);
+  __webpack_require__(20);
   module.exports = __webpack_require__(9).Object.getPrototypeOf;
 
 /***/ },
 
-/***/ 25:
+/***/ 18:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(28);
+  __webpack_require__(21);
   module.exports = __webpack_require__(9).Object.setPrototypeOf;
 
 /***/ },
 
-/***/ 26:
+/***/ 19:
 /***/ function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(38)
-    , anObject = __webpack_require__(32);
+  var isObject = __webpack_require__(27)
+    , anObject = __webpack_require__(23);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -829,7 +480,7 @@ webpackJsonp([11],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(37)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(26)(Function.call, __webpack_require__(37).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -845,14 +496,14 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 27:
+/***/ 20:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(40)
-    , $getPrototypeOf = __webpack_require__(49);
+  var toObject        = __webpack_require__(29)
+    , $getPrototypeOf = __webpack_require__(38);
   
-  __webpack_require__(50)('getPrototypeOf', function(){
+  __webpack_require__(39)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -860,186 +511,16 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 28:
+/***/ 21:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(33);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(26).set});
+  var $export = __webpack_require__(24);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(19).set});
 
 /***/ },
 
-/***/ 29:
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(13)();
-  // imports
-  
-  
-  // module
-  exports.push([module.id, ".Navigation_nav_3_J {\n\theight: 100%;\n\ttext-align: right;\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n  height: 50px;\n  width: 50px;\n  line-height: 50px;\n  text-align: center;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;CACC,aAAa;CACb,kBAAkB;CAClB;;AAED;EACE,sBAAsB;EACtB,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,mBAAmB;CACpB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":[".nav {\n\theight: 100%;\n\ttext-align: right;\n}\n\n.link {\n  display: inline-block;\n  height: 50px;\n  width: 50px;\n  line-height: 50px;\n  text-align: center;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
-  
-  // exports
-  exports.locals = {
-  	"nav": "Navigation_nav_3_J",
-  	"link": "Navigation_link_3F8",
-  	"active": "Navigation_active_1Xf"
-  };
-
-/***/ },
-
-/***/ 30:
-/***/ function(module, exports, __webpack_require__) {
-
-  // style-loader: Adds some css to the DOM by adding a <style> tag
-  
-  // load the styles
-  var content = __webpack_require__(29);
-  if(typeof content === 'string') content = [[module.id, content, '']];
-  // add the styles to the DOM
-  var update = __webpack_require__(14)(content, {});
-  if(content.locals) module.exports = content.locals;
-  // Hot Module Replacement
-  if(false) {
-  	// When the styles change, update the <style> tags
-  	if(!content.locals) {
-  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css", function() {
-  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css");
-  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-  			update(newContent);
-  		});
-  	}
-  	// When the module is disposed, remove the <style> tags
-  	module.hot.dispose(function() { update(); });
-  }
-
-/***/ },
-
-/***/ 34:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-  
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-  
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-  
-  var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-  
-  function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-  
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-  
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var flexStyle = {
-    boxSizing: 'border-box',
-    display: 'flex',
-    flexWrap: 'nowrap',
-    flex: '1 0 auto',
-    justifyContent: 'space-between',
-    alignContent: 'space-between',
-    alignItems: 'stretch'
-  };
-  
-  var mixProps = function mixProps(style, props) {
-    var divStyle = {};
-  
-    if (props.row) {
-      divStyle.flexDirection = 'row';
-    } else if (props.column) {
-      divStyle.flexDirection = 'column';
-    }
-  
-    if (typeof props.width === 'number') {
-      divStyle.flexGrow = props.width;
-    } else if (props.width) {
-      divStyle.flexBasis = 'auto';
-      divStyle.flexGrow = 0;
-      divStyle.flexShrink = 0;
-      divStyle.width = props.width;
-    }
-  
-    if (props.height) {
-      divStyle.flexBasis = 'auto';
-      divStyle.flexGrow = 0;
-      divStyle.flexShrink = 0;
-      divStyle.height = props.height;
-    }
-  
-    if (props.style) {
-      return _extends({}, flexStyle, style, divStyle, props.style);
-    } else {
-      return _extends({}, flexStyle, style, divStyle);
-    }
-  };
-  
-  var View = (function (_Component) {
-    _inherits(View, _Component);
-  
-    function View() {
-      _classCallCheck(this, View);
-  
-      _get(Object.getPrototypeOf(View.prototype), 'constructor', this).apply(this, arguments);
-    }
-  
-    _createClass(View, [{
-      key: 'render',
-      value: function render() {
-        var style = mixProps({}, this.props);
-        if (this.props.auto) {
-          style.flex = '0 0 auto';
-        }
-  
-        // strip props that are invalid to set on a div.
-        // (prevents https://fb.me/react-unknown-prop)
-        var _props = this.props;
-        var row = _props.row;
-        var column = _props.column;
-        var auto = _props.auto;
-  
-        var divProps = _objectWithoutProperties(_props, ['row', 'column', 'auto']);
-  
-        return _react2['default'].createElement(
-          'div',
-          _extends({}, divProps, { style: style }),
-          this.props.children
-        );
-      }
-    }], [{
-      key: 'propTypes',
-      value: {
-        row: _react.PropTypes.bool,
-        column: _react.PropTypes.bool,
-        auto: _react.PropTypes.bool,
-        className: _react.PropTypes.string,
-        height: _react.PropTypes.string,
-        style: _react.PropTypes.object,
-        width: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.string])
-      },
-      enumerable: true
-    }]);
-  
-    return View;
-  })(_react.Component);
-  
-  exports['default'] = View;
-  module.exports = exports['default'];
-
-
-/***/ },
-
-/***/ 39:
+/***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1048,7 +529,7 @@ webpackJsonp([11],{
     value: true
   });
   
-  var _assign = __webpack_require__(54);
+  var _assign = __webpack_require__(44);
   
   var _assign2 = _interopRequireDefault(_assign);
   
@@ -1076,19 +557,11 @@ webpackJsonp([11],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(34);
-  
-  var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
-  
-  var _Header = __webpack_require__(20);
-  
-  var _Header2 = _interopRequireDefault(_Header);
-  
-  var _Colors = __webpack_require__(10);
+  var _Colors = __webpack_require__(11);
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(42);
+  var _Article = __webpack_require__(31);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -1118,79 +591,74 @@ webpackJsonp([11],{
             children = _props.children,
             style = _props.style;
   
+  
         var baseStyle = {
-          paddingTop: 50,
-          minHeight: '100%',
+          paddingTop: 12,
+          height: '100%',
           width: '100%'
         };
         var linkStyle = {
           fontSize: 24
         };
-        var leftStyle = void 0;
-        var rightStyle = void 0;
-        if (window.innerWidth > 480) {
-          baseStyle.flexFlow = 'row';
-          leftStyle = {
-            flexShrink: 0,
-            flexGrow: 0,
-            height: '100%',
-            width: 200,
-            color: Colors.WHITE,
-            alignItems: 'center'
-          };
-          rightStyle = {
-            marginLeft: 'auto',
-            flex: '0 1 auto',
-            padding: 24,
-            backgroundColor: 'white'
-          };
-        } else {
-          baseStyle.flexFlow = 'column';
-          leftStyle = {
-            color: Colors.WHITE,
-            alignItems: 'flex-start'
-          };
-          rightStyle = {
-            backgroundColor: Colors.WHITE,
-            padding: 24
-          };
-        }
+        var bodyStyle = {
+          position: 'relative',
+          padding: 36,
+          paddingTop: 0,
+          margin: '0 auto',
+          maxWidth: 1024,
+          width: '90%',
+          backgroundColor: Colors.WHITE
+        };
+        var imgStyle = {
+          width: 100,
+          height: 100,
+          margin: '0 auto'
+        };
         var articleLayoutStyle = (0, _assign2.default)({}, baseStyle, style);
         return _react2.default.createElement(
-          _reactFlexbox2.default,
-          { row: true, style: articleLayoutStyle },
-          _react2.default.createElement(_Header2.default, null),
+          'div',
+          { style: articleLayoutStyle },
           _react2.default.createElement(
-            _reactFlexbox2.default,
-            { column: true, style: leftStyle },
+            'div',
+            { style: {
+                position: 'relative',
+                padding: 36,
+                margin: '0 auto',
+                marginTop: 12,
+                maxWidth: 1024,
+                width: '90%',
+                backgroundColor: Colors.WHITE,
+                borderTopLeftRadius: 10,
+                borderTopRightRadius: 10
+              } },
+            _react2.default.createElement(
+              'a',
+              { href: '/projects' },
+              _react2.default.createElement('img', { src: '/murphy.png', style: imgStyle })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { style: bodyStyle },
             _react2.default.createElement(
               'div',
-              { style: { padding: 24 } },
+              null,
               _react2.default.createElement(
                 'h1',
-                { style: { fontSize: 22 } },
+                { style: { fontSize: 22, marginBottom: 12 } },
                 title
               ),
               _react2.default.createElement(
                 'h2',
                 null,
                 subtitle
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: url },
-                  'View Project'
-                )
               )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: _Article2.default.article },
+              children
             )
-          ),
-          _react2.default.createElement(
-            _reactFlexbox2.default,
-            { column: true, style: rightStyle, className: _Article2.default.article },
-            children
           )
         );
       }
@@ -1208,15 +676,15 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 41:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(13)();
+  exports = module.exports = __webpack_require__(12)();
   // imports
   
   
   // module
-  exports.push([module.id, ".Article_article_2_j a {\n  text-decoration: underline;\n  font-weight: 500;\n}\n\n.Article_article_2_j a:link, .Article_article_2_j a:visited {\n  color: #0099e5;\n}\n\n.Article_article_2_j p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .Article_layout_1WS {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-flow: column;\n          flex-flow: column;\n }\n}", "", {"version":3,"sources":["/./components/Layout/Article.css"],"names":[],"mappings":"AAAA;EACE,2BAA2B;EAC3B,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB;;AAED;EACE,oBAAoB;CACrB;;AAED;CACC;EACC,6BAAkB;EAAlB,8BAAkB;MAAlB,sBAAkB;UAAlB,kBAAkB;EAClB;CACD","file":"Article.css","sourcesContent":[".article a {\n  text-decoration: underline;\n  font-weight: 500;\n}\n\n.article a:link, .article a:visited {\n  color: #0099e5;\n}\n\n.article p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .layout {\n  flex-flow: column;\n }\n}"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".Article_article_2_j a {\n  text-decoration: none;\n  font-weight: 500;\n}\n\n.Article_article_2_j a:link, .Article_article_2_j a:visited {\n  color: #0099e5;\n}\n\n.Article_article_2_j p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .Article_layout_1WS {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-flow: column;\n          flex-flow: column;\n }\n}", "", {"version":3,"sources":["/./components/Layout/Article.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB;;AAED;EACE,oBAAoB;CACrB;;AAED;CACC;EACC,6BAAkB;EAAlB,8BAAkB;MAAlB,sBAAkB;UAAlB,kBAAkB;EAClB;CACD","file":"Article.css","sourcesContent":[".article a {\n  text-decoration: none;\n  font-weight: 500;\n}\n\n.article a:link, .article a:visited {\n  color: #0099e5;\n}\n\n.article p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .layout {\n  flex-flow: column;\n }\n}"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -1226,13 +694,13 @@ webpackJsonp([11],{
 
 /***/ },
 
-/***/ 42:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(41);
+  var content = __webpack_require__(30);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(14)(content, {});
@@ -1306,7 +774,7 @@ webpackJsonp([11],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(39);
+  var _ArticleLayout = __webpack_require__(28);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
@@ -1347,9 +815,9 @@ webpackJsonp([11],{
 /***/ 410:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"Booking.com","subtitle":2015,"url":"http://suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"http://suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine. I was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams. I really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim &lt;3</p>\n"};
+  module.exports = {"title":"Booking.com","subtitle":2015,"url":"http://suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"http://suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine.</p>\n<p><b>Challenges</b></p>\n<p>\nI was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams.\n</p>\n<p><b>Growing</b></p>\n<p>\nThis was one of my first gigs working as a contractor and I have to admit I made some mistakes on the business and coding side of things. I learned a ton about what the right/wrong way to approach problems both with code and with people. A  ton of lessons learned and I grew so much and matured as a person by the end of the journey!\n</p>\n<p>\nI really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim <3\n</p>"};
 
 /***/ }
 
 });
-//# sourceMappingURL=11.js.map?3a923f9638cd663936f2
+//# sourceMappingURL=11.js.map?6fbbab5d471568691379
