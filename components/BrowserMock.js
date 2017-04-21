@@ -42,8 +42,6 @@ class BrowserMock extends React.Component {
   render() {
     const { pathname, style, ...props } = this.props;
     const browserMockStyle = {
-      alignItems: 'center',
-      justifyContent: 'center',
       height: '100%',
       borderTop: '2em solid rgba(230, 230, 230, 0.7)',
       boxShadow: '0 0.1em 1em 0 rgba(0, 0, 0, 0.4)',
@@ -82,9 +80,10 @@ class BrowserMock extends React.Component {
         style={viewStyle}
         onMouseOver={this.onMouseOver}
         onMouseLeave={this.onMouseLeave}
-        onClick={this.onClick}>
+        onClick={this.onClick}
+        className={s.ripple}>
         <div style={browserDotsStyle}></div>
-        <div style={browserBodyStyle} className={s.ripple}>
+        <div style={browserBodyStyle}>
           {this.props.children}
         </div>
       </div>

@@ -18,9 +18,8 @@ class ArticleLayout extends React.Component {
   
   render() {
     const { title, subtitle, url, children, style } = this.props;
-
     const baseStyle = {
-      paddingTop: 12,
+      padding: 12,
       height: '100%',
       width: '100%',
     };
@@ -36,7 +35,6 @@ class ArticleLayout extends React.Component {
     };
     const headerStyle = {
       ...sectionStyle,
-      marginTop: 60,
       padding: 24,
       paddingBottom: 0,
       borderTopLeftRadius: 10,
@@ -55,6 +53,11 @@ class ArticleLayout extends React.Component {
       height: 100,
       margin: '0 auto'
     };
+    if (parseInt(window.innerWidth, 10) < 768) {
+      headerStyle.marginTop = 12;
+    } else {
+      headerStyle.marginTop = 60;
+    }
     const articleLayoutStyle = Object.assign({}, baseStyle, style);
     return (
       <div style={articleLayoutStyle}>
