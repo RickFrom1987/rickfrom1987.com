@@ -22,6 +22,7 @@ class ArticleLayout extends React.Component {
       padding: 12,
       height: '100%',
       width: '100%',
+      marginBottom: 60
     };
     const linkStyle = {
       fontSize: 24
@@ -30,7 +31,7 @@ class ArticleLayout extends React.Component {
       position: 'relative',
       margin: '0 auto',
       maxWidth: 768,
-      width: '90%',
+      width: '95%',
       backgroundColor: Colors.WHITE 
     };
     const headerStyle = {
@@ -46,7 +47,6 @@ class ArticleLayout extends React.Component {
       padingTop: 0,
       borderBottomLeftRadius: 10,
       borderBottomRightRadius: 10,
-      marginBottom: 60,
     };
     const imgStyle ={
       width: 100,

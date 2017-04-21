@@ -595,11 +595,11 @@ webpackJsonp([7],{
             children = _props.children,
             style = _props.style;
   
-  
         var baseStyle = {
-          paddingTop: 12,
+          padding: 12,
           height: '100%',
-          width: '100%'
+          width: '100%',
+          marginBottom: 60
         };
         var linkStyle = {
           fontSize: 24
@@ -608,11 +608,10 @@ webpackJsonp([7],{
           position: 'relative',
           margin: '0 auto',
           maxWidth: 768,
-          width: '90%',
+          width: '95%',
           backgroundColor: Colors.WHITE
         };
         var headerStyle = (0, _extends3.default)({}, sectionStyle, {
-          marginTop: 60,
           padding: 24,
           paddingBottom: 0,
           borderTopLeftRadius: 10,
@@ -622,14 +621,18 @@ webpackJsonp([7],{
           padding: 24,
           padingTop: 0,
           borderBottomLeftRadius: 10,
-          borderBottomRightRadius: 10,
-          marginBottom: 60
+          borderBottomRightRadius: 10
         });
         var imgStyle = {
           width: 100,
           height: 100,
           margin: '0 auto'
         };
+        if (parseInt(window.innerWidth, 10) < 768) {
+          headerStyle.marginTop = 12;
+        } else {
+          headerStyle.marginTop = 60;
+        }
         var articleLayoutStyle = (0, _assign2.default)({}, baseStyle, style);
         return _react2.default.createElement(
           'div',
@@ -826,4 +829,4 @@ webpackJsonp([7],{
 /***/ }
 
 });
-//# sourceMappingURL=7.js.map?763a2066ac285daaf3c9
+//# sourceMappingURL=7.js.map?1066ad84dee095909d6c
