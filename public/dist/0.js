@@ -3,7 +3,7 @@ webpackJsonp([0],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(26), __esModule: true };
+  module.exports = { "default": __webpack_require__(24), __esModule: true };
 
 /***/ },
 
@@ -62,7 +62,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(24);
+  var _setPrototypeOf = __webpack_require__(23);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
@@ -70,7 +70,7 @@ webpackJsonp([0],{
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(18);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(18);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -142,7 +142,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Link = __webpack_require__(23);
+  var _Link = __webpack_require__(22);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -469,7 +469,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 15:
+/***/ 17:
 /***/ function(module, exports) {
 
   "use strict";
@@ -490,131 +490,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 17:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-  
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-  
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-  
-  var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-  
-  function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-  
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-  
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var flexStyle = {
-    boxSizing: 'border-box',
-    display: 'flex',
-    flexWrap: 'nowrap',
-    flex: '1 0 auto',
-    justifyContent: 'space-between',
-    alignContent: 'space-between',
-    alignItems: 'stretch'
-  };
-  
-  var mixProps = function mixProps(style, props) {
-    var divStyle = {};
-  
-    if (props.row) {
-      divStyle.flexDirection = 'row';
-    } else if (props.column) {
-      divStyle.flexDirection = 'column';
-    }
-  
-    if (typeof props.width === 'number') {
-      divStyle.flexGrow = props.width;
-    } else if (props.width) {
-      divStyle.flexBasis = 'auto';
-      divStyle.flexGrow = 0;
-      divStyle.flexShrink = 0;
-      divStyle.width = props.width;
-    }
-  
-    if (props.height) {
-      divStyle.flexBasis = 'auto';
-      divStyle.flexGrow = 0;
-      divStyle.flexShrink = 0;
-      divStyle.height = props.height;
-    }
-  
-    if (props.style) {
-      return _extends({}, flexStyle, style, divStyle, props.style);
-    } else {
-      return _extends({}, flexStyle, style, divStyle);
-    }
-  };
-  
-  var View = (function (_Component) {
-    _inherits(View, _Component);
-  
-    function View() {
-      _classCallCheck(this, View);
-  
-      _get(Object.getPrototypeOf(View.prototype), 'constructor', this).apply(this, arguments);
-    }
-  
-    _createClass(View, [{
-      key: 'render',
-      value: function render() {
-        var style = mixProps({}, this.props);
-        if (this.props.auto) {
-          style.flex = '0 0 auto';
-        }
-  
-        // strip props that are invalid to set on a div.
-        // (prevents https://fb.me/react-unknown-prop)
-        var _props = this.props;
-        var row = _props.row;
-        var column = _props.column;
-        var auto = _props.auto;
-  
-        var divProps = _objectWithoutProperties(_props, ['row', 'column', 'auto']);
-  
-        return _react2['default'].createElement(
-          'div',
-          _extends({}, divProps, { style: style }),
-          this.props.children
-        );
-      }
-    }], [{
-      key: 'propTypes',
-      value: {
-        row: _react.PropTypes.bool,
-        column: _react.PropTypes.bool,
-        auto: _react.PropTypes.bool,
-        className: _react.PropTypes.string,
-        height: _react.PropTypes.string,
-        style: _react.PropTypes.object,
-        width: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.string])
-      },
-      enumerable: true
-    }]);
-  
-    return View;
-  })(_react.Component);
-  
-  exports['default'] = View;
-  module.exports = exports['default'];
-
-
-/***/ },
-
-/***/ 20:
+/***/ 19:
 /***/ function(module, exports) {
 
   'use strict';
@@ -626,7 +502,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 21:
+/***/ 20:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -659,7 +535,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Navigation = __webpack_require__(22);
+  var _Navigation = __webpack_require__(21);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -667,7 +543,7 @@ webpackJsonp([0],{
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _App = __webpack_require__(20);
+  var _App = __webpack_require__(19);
   
   var App = _interopRequireWildcard(_App);
   
@@ -737,7 +613,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 22:
+/***/ 21:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -750,7 +626,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(18);
+  var _history = __webpack_require__(16);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -758,7 +634,7 @@ webpackJsonp([0],{
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(32);
+  var _Navigation = __webpack_require__(30);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -794,7 +670,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 23:
+/***/ 22:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -803,11 +679,11 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(25);
+  var _extends2 = __webpack_require__(35);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(15);
+  var _objectWithoutProperties2 = __webpack_require__(17);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -835,7 +711,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(18);
+  var _history = __webpack_require__(16);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -915,36 +791,36 @@ webpackJsonp([0],{
 
 /***/ },
 
+/***/ 23:
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(25), __esModule: true };
+
+/***/ },
+
 /***/ 24:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(27), __esModule: true };
+  __webpack_require__(27);
+  module.exports = __webpack_require__(9).Object.getPrototypeOf;
+
+/***/ },
+
+/***/ 25:
+/***/ function(module, exports, __webpack_require__) {
+
+  __webpack_require__(28);
+  module.exports = __webpack_require__(9).Object.setPrototypeOf;
 
 /***/ },
 
 /***/ 26:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(29);
-  module.exports = __webpack_require__(9).Object.getPrototypeOf;
-
-/***/ },
-
-/***/ 27:
-/***/ function(module, exports, __webpack_require__) {
-
-  __webpack_require__(30);
-  module.exports = __webpack_require__(9).Object.setPrototypeOf;
-
-/***/ },
-
-/***/ 28:
-/***/ function(module, exports, __webpack_require__) {
-
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
   var isObject = __webpack_require__(38)
-    , anObject = __webpack_require__(34);
+    , anObject = __webpack_require__(32);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -969,7 +845,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 29:
+/***/ 27:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
@@ -984,16 +860,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 30:
+/***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(35);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(28).set});
+  var $export = __webpack_require__(33);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(26).set});
 
 /***/ },
 
-/***/ 31:
+/***/ 29:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(13)();
@@ -1012,13 +888,13 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 32:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(31);
+  var content = __webpack_require__(29);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(14)(content, {});
@@ -1048,14 +924,6 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(25);
-  
-  var _extends3 = _interopRequireDefault(_extends2);
-  
-  var _objectWithoutProperties2 = __webpack_require__(15);
-  
-  var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
-  
   var _getPrototypeOf = __webpack_require__(2);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -1080,11 +948,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(17);
-  
-  var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
-  
-  var _Header = __webpack_require__(21);
+  var _Header = __webpack_require__(20);
   
   var _Header2 = _interopRequireDefault(_Header);
   
@@ -1114,7 +978,7 @@ webpackJsonp([0],{
         var _props = this.props,
             style = _props.style,
             centered = _props.centered,
-            props = (0, _objectWithoutProperties3.default)(_props, ['style', 'centered']);
+            children = _props.children;
   
         var layoutStyle = {
           paddingTop: 48
@@ -1133,10 +997,14 @@ webpackJsonp([0],{
         }
   
         return _react2.default.createElement(
-          _reactFlexbox2.default,
-          { column: true, style: layoutStyle },
+          'div',
+          { style: layoutStyle },
           _react2.default.createElement(_Header2.default, null),
-          _react2.default.createElement(_reactFlexbox2.default, (0, _extends3.default)({ column: true }, props, { style: centerStyle }))
+          _react2.default.createElement(
+            'div',
+            { style: centerStyle },
+            children
+          )
         );
       }
     }]);
@@ -1210,10 +1078,6 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(17);
-  
-  var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
-  
   var _HeaderLayout = __webpack_require__(71);
   
   var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
@@ -1252,50 +1116,59 @@ webpackJsonp([0],{
         document.title = documentTitle;
       }
     }, {
+      key: '_renderFooter',
+      value: function _renderFooter() {
+        return _react2.default.createElement(
+          'p',
+          null,
+          _react2.default.createElement(
+            'a',
+            { href: '//www.facebook.com/rickfrom1987', style: linkStyle },
+            _react2.default.createElement('i', { className: 'fa fa-facebook' })
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: '//www.linkedin.com/in/rickfrom1987', style: linkStyle },
+            _react2.default.createElement('i', { className: 'fa fa-linkedin' })
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: '//github.com/rickfrom1987', style: linkStyle },
+            _react2.default.createElement('i', { className: 'fa fa-github' })
+          )
+        );
+      }
+    }, {
       key: 'render',
       value: function render() {
         var homeStyle = {
           textAlign: 'center',
           color: Colors.WHITE
         };
+        var imgStyle = {
+          width: 200,
+          height: 200
+        };
         var linkStyle = {
-          fontSize: 16,
+          fontSize: 18,
           padding: 12
         };
         return _react2.default.createElement(
           _HeaderLayout2.default,
           { centered: true },
           _react2.default.createElement(
-            _reactFlexbox2.default,
-            { column: true, style: homeStyle },
+            'div',
+            { style: homeStyle },
+            _react2.default.createElement('img', { src: '/murphy.png', style: imgStyle }),
             _react2.default.createElement(
               'h1',
-              { style: { fontSize: 60 } },
+              { style: { fontSize: 32 } },
               _Home3.title
             ),
             _react2.default.createElement(
               'p',
               null,
               _Home3.desc
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: '//www.facebook.com/rickfrom1987', style: linkStyle },
-                _react2.default.createElement('i', { className: 'fa fa-facebook' })
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '//www.linkedin.com/in/rickfrom1987', style: linkStyle },
-                _react2.default.createElement('i', { className: 'fa fa-linkedin' })
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '//github.com/rickfrom1987', style: linkStyle },
-                _react2.default.createElement('i', { className: 'fa fa-github' })
-              )
             )
           )
         );
@@ -1355,9 +1228,9 @@ webpackJsonp([0],{
 /***/ 416:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"Hello.","desc":"I make wonderful things.","html":""};
+  module.exports = {"title":"Hello","desc":"I make wonderful things online.","html":""};
 
 /***/ }
 
 });
-//# sourceMappingURL=0.js.map?c4c72a82735e6ac41ba6
+//# sourceMappingURL=0.js.map?7505521bbcfed3f1579a

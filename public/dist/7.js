@@ -3,7 +3,7 @@ webpackJsonp([7],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(26), __esModule: true };
+  module.exports = { "default": __webpack_require__(24), __esModule: true };
 
 /***/ },
 
@@ -62,7 +62,7 @@ webpackJsonp([7],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(24);
+  var _setPrototypeOf = __webpack_require__(23);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
@@ -70,7 +70,7 @@ webpackJsonp([7],{
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(18);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([7],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(19);
+  var _typeof2 = __webpack_require__(18);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -142,7 +142,7 @@ webpackJsonp([7],{
   });
   exports.default = undefined;
   
-  var _Link = __webpack_require__(23);
+  var _Link = __webpack_require__(22);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -469,7 +469,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 15:
+/***/ 17:
 /***/ function(module, exports) {
 
   "use strict";
@@ -490,7 +490,432 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 17:
+/***/ 19:
+/***/ function(module, exports) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  var HEADER_HEIGHT = exports.HEADER_HEIGHT = '50px';
+
+/***/ },
+
+/***/ 20:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _getPrototypeOf = __webpack_require__(2);
+  
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  
+  var _classCallCheck2 = __webpack_require__(3);
+  
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  
+  var _createClass2 = __webpack_require__(4);
+  
+  var _createClass3 = _interopRequireDefault(_createClass2);
+  
+  var _possibleConstructorReturn2 = __webpack_require__(6);
+  
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+  
+  var _inherits2 = __webpack_require__(5);
+  
+  var _inherits3 = _interopRequireDefault(_inherits2);
+  
+  var _react = __webpack_require__(1);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _Navigation = __webpack_require__(21);
+  
+  var _Navigation2 = _interopRequireDefault(_Navigation);
+  
+  var _Link = __webpack_require__(11);
+  
+  var _Link2 = _interopRequireDefault(_Link);
+  
+  var _App = __webpack_require__(19);
+  
+  var App = _interopRequireWildcard(_App);
+  
+  var _Colors = __webpack_require__(10);
+  
+  var Colors = _interopRequireWildcard(_Colors);
+  
+  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  var Header = function (_React$Component) {
+    (0, _inherits3.default)(Header, _React$Component);
+  
+    function Header() {
+      (0, _classCallCheck3.default)(this, Header);
+      return (0, _possibleConstructorReturn3.default)(this, (Header.__proto__ || (0, _getPrototypeOf2.default)(Header)).apply(this, arguments));
+    }
+  
+    (0, _createClass3.default)(Header, [{
+      key: 'render',
+      value: function render() {
+        var logoStyle = {
+          color: Colors.WHITE,
+          height: App.HEADER_HEIGHT,
+          lineHeight: App.HEADER_HEIGHT,
+          whiteSpace: 'nowrap',
+          margin: '0 12px',
+          fontWeight: 300,
+          fontSize: 18
+        };
+        var headerStyle = {
+          textTransform: 'uppercase',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          zIndex: 1040,
+          width: '100%',
+          height: App.HEADER_HEIGHT,
+          color: Colors.WHITE,
+          backgroundColor: 'rgba(0,0,0, 0.5)'
+        };
+        return _react2.default.createElement(
+          'div',
+          { className: 'container-fluid', style: headerStyle },
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'h1',
+              { style: logoStyle },
+              _react2.default.createElement(
+                'a',
+                { href: '/', style: { color: Colors.WHITE } },
+                'RickFrom1987'
+              )
+            ),
+            _react2.default.createElement(_Navigation2.default, null)
+          )
+        );
+      }
+    }]);
+    return Header;
+  }(_react2.default.Component);
+  
+  exports.default = Header;
+
+/***/ },
+
+/***/ 21:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _react = __webpack_require__(1);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _history = __webpack_require__(16);
+  
+  var _history2 = _interopRequireDefault(_history);
+  
+  var _Link = __webpack_require__(11);
+  
+  var _Link2 = _interopRequireDefault(_Link);
+  
+  var _Navigation = __webpack_require__(30);
+  
+  var _Navigation2 = _interopRequireDefault(_Navigation);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  function Navigation() {
+    var path = _history2.default.getCurrentLocation().pathname;
+    var linkClass = function linkClass(href) {
+      return '' + _Navigation2.default.link + (path === href ? ' ' + _Navigation2.default.active : '');
+    };
+    return _react2.default.createElement(
+      'nav',
+      { className: _Navigation2.default.nav },
+      _react2.default.createElement(
+        _Link2.default,
+        { className: linkClass('/contact'), to: '/contact' },
+        _react2.default.createElement('i', { className: 'fa fa-phone' })
+      ),
+      _react2.default.createElement(
+        _Link2.default,
+        { className: linkClass('/projects'), to: '/projects' },
+        _react2.default.createElement('i', { className: 'fa fa-desktop' })
+      ),
+      _react2.default.createElement(
+        'a',
+        { className: linkClass('/payment'), href: 'https://payments.rickfrom1987.com' },
+        _react2.default.createElement('i', { className: 'fa fa-credit-card' })
+      )
+    );
+  }
+  
+  exports.default = Navigation;
+
+/***/ },
+
+/***/ 22:
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _extends2 = __webpack_require__(35);
+  
+  var _extends3 = _interopRequireDefault(_extends2);
+  
+  var _objectWithoutProperties2 = __webpack_require__(17);
+  
+  var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+  
+  var _getPrototypeOf = __webpack_require__(2);
+  
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  
+  var _classCallCheck2 = __webpack_require__(3);
+  
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  
+  var _createClass2 = __webpack_require__(4);
+  
+  var _createClass3 = _interopRequireDefault(_createClass2);
+  
+  var _possibleConstructorReturn2 = __webpack_require__(6);
+  
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+  
+  var _inherits2 = __webpack_require__(5);
+  
+  var _inherits3 = _interopRequireDefault(_inherits2);
+  
+  var _react = __webpack_require__(1);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _history = __webpack_require__(16);
+  
+  var _history2 = _interopRequireDefault(_history);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  /**
+   * React App SDK (https://github.com/kriasoft/react-app)
+   *
+   * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE.txt file in the root directory of this source tree.
+   */
+  
+  var Link = function (_React$Component) {
+    (0, _inherits3.default)(Link, _React$Component);
+  
+    function Link() {
+      var _ref;
+  
+      var _temp, _this, _ret;
+  
+      (0, _classCallCheck3.default)(this, Link);
+  
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+  
+      return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Link.__proto__ || (0, _getPrototypeOf2.default)(Link)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function (event) {
+        if (_this.props.onClick) {
+          _this.props.onClick(event);
+        }
+  
+        if (event.button !== 0 /* left click */) {
+            return;
+          }
+  
+        if (event.metaKey || event.altKey || event.ctrlKey || event.shiftKey) {
+          return;
+        }
+  
+        if (event.defaultPrevented === true) {
+          return;
+        }
+  
+        event.preventDefault();
+  
+        if (_this.props.to) {
+          _history2.default.push(_this.props.to);
+        } else {
+          _history2.default.push({
+            pathname: event.currentTarget.pathname,
+            search: event.currentTarget.search
+          });
+        }
+      }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+    }
+  
+    (0, _createClass3.default)(Link, [{
+      key: 'render',
+      value: function render() {
+        var _props = this.props,
+            to = _props.to,
+            props = (0, _objectWithoutProperties3.default)(_props, ['to']); // eslint-disable-line no-use-before-define
+  
+        return _react2.default.createElement('a', (0, _extends3.default)({ href: _history2.default.createHref(to) }, props, { onClick: this.handleClick }));
+      }
+    }]);
+    return Link;
+  }(_react2.default.Component);
+  
+  Link.propTypes = {
+    to: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]).isRequired,
+    onClick: _react.PropTypes.func
+  };
+  exports.default = Link;
+
+/***/ },
+
+/***/ 23:
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(25), __esModule: true };
+
+/***/ },
+
+/***/ 24:
+/***/ function(module, exports, __webpack_require__) {
+
+  __webpack_require__(27);
+  module.exports = __webpack_require__(9).Object.getPrototypeOf;
+
+/***/ },
+
+/***/ 25:
+/***/ function(module, exports, __webpack_require__) {
+
+  __webpack_require__(28);
+  module.exports = __webpack_require__(9).Object.setPrototypeOf;
+
+/***/ },
+
+/***/ 26:
+/***/ function(module, exports, __webpack_require__) {
+
+  // Works with __proto__ only. Old v8 can't work with null proto objects.
+  /* eslint-disable no-proto */
+  var isObject = __webpack_require__(38)
+    , anObject = __webpack_require__(32);
+  var check = function(O, proto){
+    anObject(O);
+    if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
+  };
+  module.exports = {
+    set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
+      function(test, buggy, set){
+        try {
+          set = __webpack_require__(37)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
+          set(test, []);
+          buggy = !(test instanceof Array);
+        } catch(e){ buggy = true; }
+        return function setPrototypeOf(O, proto){
+          check(O, proto);
+          if(buggy)O.__proto__ = proto;
+          else set(O, proto);
+          return O;
+        };
+      }({}, false) : undefined),
+    check: check
+  };
+
+/***/ },
+
+/***/ 27:
+/***/ function(module, exports, __webpack_require__) {
+
+  // 19.1.2.9 Object.getPrototypeOf(O)
+  var toObject        = __webpack_require__(40)
+    , $getPrototypeOf = __webpack_require__(49);
+  
+  __webpack_require__(50)('getPrototypeOf', function(){
+    return function getPrototypeOf(it){
+      return $getPrototypeOf(toObject(it));
+    };
+  });
+
+/***/ },
+
+/***/ 28:
+/***/ function(module, exports, __webpack_require__) {
+
+  // 19.1.3.19 Object.setPrototypeOf(O, proto)
+  var $export = __webpack_require__(33);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(26).set});
+
+/***/ },
+
+/***/ 29:
+/***/ function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(13)();
+  // imports
+  
+  
+  // module
+  exports.push([module.id, ".Navigation_nav_3_J {\n\theight: 100%;\n\ttext-align: right;\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n  height: 50px;\n  width: 50px;\n  line-height: 50px;\n  text-align: center;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;CACC,aAAa;CACb,kBAAkB;CAClB;;AAED;EACE,sBAAsB;EACtB,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,mBAAmB;CACpB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":[".nav {\n\theight: 100%;\n\ttext-align: right;\n}\n\n.link {\n  display: inline-block;\n  height: 50px;\n  width: 50px;\n  line-height: 50px;\n  text-align: center;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
+  
+  // exports
+  exports.locals = {
+  	"nav": "Navigation_nav_3_J",
+  	"link": "Navigation_link_3F8",
+  	"active": "Navigation_active_1Xf"
+  };
+
+/***/ },
+
+/***/ 30:
+/***/ function(module, exports, __webpack_require__) {
+
+  // style-loader: Adds some css to the DOM by adding a <style> tag
+  
+  // load the styles
+  var content = __webpack_require__(29);
+  if(typeof content === 'string') content = [[module.id, content, '']];
+  // add the styles to the DOM
+  var update = __webpack_require__(14)(content, {});
+  if(content.locals) module.exports = content.locals;
+  // Hot Module Replacement
+  if(false) {
+  	// When the styles change, update the <style> tags
+  	if(!content.locals) {
+  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css", function() {
+  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css");
+  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+  			update(newContent);
+  		});
+  	}
+  	// When the module is disposed, remove the <style> tags
+  	module.hot.dispose(function() { update(); });
+  }
+
+/***/ },
+
+/***/ 34:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -614,431 +1039,6 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 20:
-/***/ function(module, exports) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  var HEADER_HEIGHT = exports.HEADER_HEIGHT = '50px';
-
-/***/ },
-
-/***/ 21:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(2);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(3);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(4);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(6);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(5);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Navigation = __webpack_require__(22);
-  
-  var _Navigation2 = _interopRequireDefault(_Navigation);
-  
-  var _Link = __webpack_require__(11);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  var _App = __webpack_require__(20);
-  
-  var App = _interopRequireWildcard(_App);
-  
-  var _Colors = __webpack_require__(10);
-  
-  var Colors = _interopRequireWildcard(_Colors);
-  
-  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var Header = function (_React$Component) {
-    (0, _inherits3.default)(Header, _React$Component);
-  
-    function Header() {
-      (0, _classCallCheck3.default)(this, Header);
-      return (0, _possibleConstructorReturn3.default)(this, (Header.__proto__ || (0, _getPrototypeOf2.default)(Header)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(Header, [{
-      key: 'render',
-      value: function render() {
-        var logoStyle = {
-          color: Colors.WHITE,
-          height: App.HEADER_HEIGHT,
-          lineHeight: App.HEADER_HEIGHT,
-          whiteSpace: 'nowrap',
-          margin: '0 12px',
-          fontWeight: 300,
-          fontSize: 18
-        };
-        var headerStyle = {
-          textTransform: 'uppercase',
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          zIndex: 1040,
-          width: '100%',
-          height: App.HEADER_HEIGHT,
-          color: Colors.WHITE,
-          backgroundColor: 'rgba(0,0,0, 0.5)'
-        };
-        return _react2.default.createElement(
-          'div',
-          { className: 'container-fluid', style: headerStyle },
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'h1',
-              { style: logoStyle },
-              _react2.default.createElement(
-                'a',
-                { href: '/', style: { color: Colors.WHITE } },
-                'RickFrom1987'
-              )
-            ),
-            _react2.default.createElement(_Navigation2.default, null)
-          )
-        );
-      }
-    }]);
-    return Header;
-  }(_react2.default.Component);
-  
-  exports.default = Header;
-
-/***/ },
-
-/***/ 22:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _history = __webpack_require__(18);
-  
-  var _history2 = _interopRequireDefault(_history);
-  
-  var _Link = __webpack_require__(11);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  var _Navigation = __webpack_require__(32);
-  
-  var _Navigation2 = _interopRequireDefault(_Navigation);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  function Navigation() {
-    var path = _history2.default.getCurrentLocation().pathname;
-    var linkClass = function linkClass(href) {
-      return '' + _Navigation2.default.link + (path === href ? ' ' + _Navigation2.default.active : '');
-    };
-    return _react2.default.createElement(
-      'nav',
-      { className: _Navigation2.default.nav },
-      _react2.default.createElement(
-        _Link2.default,
-        { className: linkClass('/contact'), to: '/contact' },
-        _react2.default.createElement('i', { className: 'fa fa-phone' })
-      ),
-      _react2.default.createElement(
-        _Link2.default,
-        { className: linkClass('/projects'), to: '/projects' },
-        _react2.default.createElement('i', { className: 'fa fa-desktop' })
-      ),
-      _react2.default.createElement(
-        'a',
-        { className: linkClass('/payment'), href: 'https://payments.rickfrom1987.com' },
-        _react2.default.createElement('i', { className: 'fa fa-credit-card' })
-      )
-    );
-  }
-  
-  exports.default = Navigation;
-
-/***/ },
-
-/***/ 23:
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _extends2 = __webpack_require__(25);
-  
-  var _extends3 = _interopRequireDefault(_extends2);
-  
-  var _objectWithoutProperties2 = __webpack_require__(15);
-  
-  var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
-  
-  var _getPrototypeOf = __webpack_require__(2);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(3);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(4);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(6);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(5);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(1);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _history = __webpack_require__(18);
-  
-  var _history2 = _interopRequireDefault(_history);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  /**
-   * React App SDK (https://github.com/kriasoft/react-app)
-   *
-   * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
-  var Link = function (_React$Component) {
-    (0, _inherits3.default)(Link, _React$Component);
-  
-    function Link() {
-      var _ref;
-  
-      var _temp, _this, _ret;
-  
-      (0, _classCallCheck3.default)(this, Link);
-  
-      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
-  
-      return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Link.__proto__ || (0, _getPrototypeOf2.default)(Link)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function (event) {
-        if (_this.props.onClick) {
-          _this.props.onClick(event);
-        }
-  
-        if (event.button !== 0 /* left click */) {
-            return;
-          }
-  
-        if (event.metaKey || event.altKey || event.ctrlKey || event.shiftKey) {
-          return;
-        }
-  
-        if (event.defaultPrevented === true) {
-          return;
-        }
-  
-        event.preventDefault();
-  
-        if (_this.props.to) {
-          _history2.default.push(_this.props.to);
-        } else {
-          _history2.default.push({
-            pathname: event.currentTarget.pathname,
-            search: event.currentTarget.search
-          });
-        }
-      }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
-    }
-  
-    (0, _createClass3.default)(Link, [{
-      key: 'render',
-      value: function render() {
-        var _props = this.props,
-            to = _props.to,
-            props = (0, _objectWithoutProperties3.default)(_props, ['to']); // eslint-disable-line no-use-before-define
-  
-        return _react2.default.createElement('a', (0, _extends3.default)({ href: _history2.default.createHref(to) }, props, { onClick: this.handleClick }));
-      }
-    }]);
-    return Link;
-  }(_react2.default.Component);
-  
-  Link.propTypes = {
-    to: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]).isRequired,
-    onClick: _react.PropTypes.func
-  };
-  exports.default = Link;
-
-/***/ },
-
-/***/ 24:
-/***/ function(module, exports, __webpack_require__) {
-
-  module.exports = { "default": __webpack_require__(27), __esModule: true };
-
-/***/ },
-
-/***/ 26:
-/***/ function(module, exports, __webpack_require__) {
-
-  __webpack_require__(29);
-  module.exports = __webpack_require__(9).Object.getPrototypeOf;
-
-/***/ },
-
-/***/ 27:
-/***/ function(module, exports, __webpack_require__) {
-
-  __webpack_require__(30);
-  module.exports = __webpack_require__(9).Object.setPrototypeOf;
-
-/***/ },
-
-/***/ 28:
-/***/ function(module, exports, __webpack_require__) {
-
-  // Works with __proto__ only. Old v8 can't work with null proto objects.
-  /* eslint-disable no-proto */
-  var isObject = __webpack_require__(38)
-    , anObject = __webpack_require__(34);
-  var check = function(O, proto){
-    anObject(O);
-    if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
-  };
-  module.exports = {
-    set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-      function(test, buggy, set){
-        try {
-          set = __webpack_require__(37)(Function.call, __webpack_require__(48).f(Object.prototype, '__proto__').set, 2);
-          set(test, []);
-          buggy = !(test instanceof Array);
-        } catch(e){ buggy = true; }
-        return function setPrototypeOf(O, proto){
-          check(O, proto);
-          if(buggy)O.__proto__ = proto;
-          else set(O, proto);
-          return O;
-        };
-      }({}, false) : undefined),
-    check: check
-  };
-
-/***/ },
-
-/***/ 29:
-/***/ function(module, exports, __webpack_require__) {
-
-  // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(40)
-    , $getPrototypeOf = __webpack_require__(49);
-  
-  __webpack_require__(50)('getPrototypeOf', function(){
-    return function getPrototypeOf(it){
-      return $getPrototypeOf(toObject(it));
-    };
-  });
-
-/***/ },
-
-/***/ 30:
-/***/ function(module, exports, __webpack_require__) {
-
-  // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(35);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(28).set});
-
-/***/ },
-
-/***/ 31:
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(13)();
-  // imports
-  
-  
-  // module
-  exports.push([module.id, ".Navigation_nav_3_J {\n\theight: 100%;\n\ttext-align: right;\n}\n\n.Navigation_link_3F8 {\n  display: inline-block;\n  height: 50px;\n  width: 50px;\n  line-height: 50px;\n  text-align: center;\n}\n\n.Navigation_active_1Xf {\n\n}\n", "", {"version":3,"sources":["/./components/Layout/Navigation.css"],"names":[],"mappings":"AAAA;CACC,aAAa;CACb,kBAAkB;CAClB;;AAED;EACE,sBAAsB;EACtB,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,mBAAmB;CACpB;;AAED;;CAEC","file":"Navigation.css","sourcesContent":[".nav {\n\theight: 100%;\n\ttext-align: right;\n}\n\n.link {\n  display: inline-block;\n  height: 50px;\n  width: 50px;\n  line-height: 50px;\n  text-align: center;\n}\n\n.active {\n\n}\n"],"sourceRoot":"webpack://"}]);
-  
-  // exports
-  exports.locals = {
-  	"nav": "Navigation_nav_3_J",
-  	"link": "Navigation_link_3F8",
-  	"active": "Navigation_active_1Xf"
-  };
-
-/***/ },
-
-/***/ 32:
-/***/ function(module, exports, __webpack_require__) {
-
-  // style-loader: Adds some css to the DOM by adding a <style> tag
-  
-  // load the styles
-  var content = __webpack_require__(31);
-  if(typeof content === 'string') content = [[module.id, content, '']];
-  // add the styles to the DOM
-  var update = __webpack_require__(14)(content, {});
-  if(content.locals) module.exports = content.locals;
-  // Hot Module Replacement
-  if(false) {
-  	// When the styles change, update the <style> tags
-  	if(!content.locals) {
-  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css", function() {
-  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Navigation.css");
-  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-  			update(newContent);
-  		});
-  	}
-  	// When the module is disposed, remove the <style> tags
-  	module.hot.dispose(function() { update(); });
-  }
-
-/***/ },
-
 /***/ 39:
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1076,11 +1076,11 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(17);
+  var _reactFlexbox = __webpack_require__(34);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _Header = __webpack_require__(21);
+  var _Header = __webpack_require__(20);
   
   var _Header2 = _interopRequireDefault(_Header);
   
@@ -1352,4 +1352,4 @@ webpackJsonp([7],{
 /***/ }
 
 });
-//# sourceMappingURL=7.js.map?b8690d080581872604cb
+//# sourceMappingURL=7.js.map?1b439c0a703991bf945c

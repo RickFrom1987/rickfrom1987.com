@@ -4,7 +4,7 @@ subtitle: 2015
 url: https://momentlens.co
 ---
 
-Working with friends @ [MomentLens](//momentlens.co) was a once in a lifetime opportunity. It was the first hardware startup I have worked for and it was so insanely fun and exciting! I was able to learn a ton from Marc, Erik and Wes (the man behind the hardware of Moment Case!) about so many aspects of business, design and hardware. I was lucky enough to be onboard during which our team was able to raise money on [Kickstarter for the Moment Case](https://www.kickstarter.com/projects/584288471/moment-case-worlds-best-iphone-case-for-mobile-pho). I was brought in to work on whatever needed to be worked on:
+Working with friends @ [momentlens.co](//momentlens.co) was a once in a lifetime opportunity. It was the first hardware startup I have worked for and it was so insanely fun and exciting! I was able to learn a ton from Marc, Erik and Wes (the man behind the hardware of Moment Case!) about so many aspects of business, design and hardware. I was lucky enough to be onboard during which our team was able to raise money on [Kickstarter for the Moment Case](https://www.kickstarter.com/projects/584288471/moment-case-worlds-best-iphone-case-for-mobile-pho). I was brought in to work on whatever needed to be worked on:
 
 <b>Basic Infrastructure.</b>
 <p>
