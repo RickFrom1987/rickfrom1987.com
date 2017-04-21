@@ -83,12 +83,12 @@ class ProjectGridLayout extends React.Component {
     };
     return projects.map((item, i) => {
       return (
-        <View column key={i} style={itemStyle}>
+        <div key={i} style={itemStyle}>
           <BrowserMock pathname={item.url}>
             <h2>{item.company}</h2>
             <TagList tags={item.tags}/>
           </BrowserMock>
-        </View>
+        </div>
       );
     });
   }

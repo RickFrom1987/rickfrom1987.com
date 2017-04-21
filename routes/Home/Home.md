@@ -1,4 +1,4 @@
 ---
-title: Hello.
-desc: I make wonderful things.
+title: Hello
+desc: I make wonderful things online.
 ---

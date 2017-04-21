@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import View from 'react-flexbox';
 import HeaderLayout from '../../components/Layout/HeaderLayout';
 import Link from '../../components/Link';
 import s from './Home.css';
@@ -15,26 +14,37 @@ class HomePage extends React.Component {
     document.title = documentTitle;
   }
 
+  _renderFooter() {
+    return (
+      <p>
+        <a href="//www.facebook.com/rickfrom1987" style={linkStyle}><i className="fa fa-facebook"></i></a>
+        <a href="//www.linkedin.com/in/rickfrom1987" style={linkStyle}><i className="fa fa-linkedin"></i></a>
+        <a href="//github.com/rickfrom1987" style={linkStyle}><i className="fa fa-github"></i></a>
+      </p>
+    );
+  }
+
   render() {
     const homeStyle = {
       textAlign: 'center',
       color: Colors.WHITE,
     };
+    const imgStyle = {
+      width: 200,
+      height: 200
+    };
     const linkStyle = {
-      fontSize: 16,
+      fontSize: 18,
       padding: 12,
     };
     return (
       <HeaderLayout centered>
-        <View column style={homeStyle}>
-          <h1 style={{ fontSize: 60 }}>{ title }</h1>
+        <div style={homeStyle}>
+          <img src="/murphy.png" style={imgStyle}/>
+          <h1 style={{ fontSize: 32 }}>{ title }</h1>
           <p>{ desc }</p>
-          <p>
-            <a href="//www.facebook.com/rickfrom1987" style={linkStyle}><i className="fa fa-facebook"></i></a>
-            <a href="//www.linkedin.com/in/rickfrom1987" style={linkStyle}><i className="fa fa-linkedin"></i></a>
-            <a href="//github.com/rickfrom1987" style={linkStyle}><i className="fa fa-github"></i></a>
-          </p>
-        </View>
+
+        </div>
       </HeaderLayout>
     );
   }

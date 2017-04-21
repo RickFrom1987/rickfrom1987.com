@@ -1,5 +1,4 @@
 import React from 'react';
-import View from 'react-flexbox';
 import history from '../core/history';
 
 import s from './BrowserMock.css';
@@ -66,15 +65,12 @@ class BrowserMock extends React.Component {
       boxShadow: '0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5',
     };
     const browserBodyStyle = {
-      position: 'relative',
-      height: '100%',
-      minWidth: 200,
-      overflowY: 'hidden',
-      justifyContent: 'center',
-      alignSelf: 'center',
-      alignItems: 'center',
       textAlign: 'center',
-      width: '100%',
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      minWidth: 200,
       zIndex: 1000,
     };
     if (this.state.hover) {
@@ -82,18 +78,16 @@ class BrowserMock extends React.Component {
     }
     const viewStyle = Object.assign({}, browserMockStyle, style);
     return (
-      <View 
-        {...props}
-        column
+      <div
         style={viewStyle}
         onMouseOver={this.onMouseOver}
         onMouseLeave={this.onMouseLeave}
         onClick={this.onClick}>
         <div style={browserDotsStyle}></div>
-        <View column style={browserBodyStyle} className={s.ripple}>
+        <div style={browserBodyStyle} className={s.ripple}>
           {this.props.children}
-        </View>
-      </View>
+        </div>
+      </div>
     );
   }
 }

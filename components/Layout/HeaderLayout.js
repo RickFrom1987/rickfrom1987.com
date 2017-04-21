@@ -1,5 +1,4 @@
 import React from 'react';
-import View from 'react-flexbox';
 import Header from './Header';
 
 import * as Colors from '../Constants/Colors';
@@ -14,7 +13,7 @@ class HeaderLayout extends React.Component {
   };
 
   render() {
-    const { style, centered, ...props } = this.props;
+    const { style, centered, children } = this.props;
     const layoutStyle = {
       paddingTop: 48
     };
@@ -32,10 +31,12 @@ class HeaderLayout extends React.Component {
     }
 
     return (
-      <View column style={layoutStyle}>
+      <div style={layoutStyle}>
         <Header />
-        <View column {...props} style={centerStyle}/>
-      </View>
+        <div style={centerStyle}>
+          {children}
+        </div>
+      </div>
     );
   }
 }
