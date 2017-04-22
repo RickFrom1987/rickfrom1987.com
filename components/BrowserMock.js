@@ -60,7 +60,7 @@ class BrowserMock extends React.Component {
       height: '0.5em',
       borderRadius: '50%',
       backgroundColor: '#f44',
-      boxShadow: '0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5',
+      boxShadow: '0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5'
     };
     const browserBodyStyle = {
       textAlign: 'center',
@@ -69,7 +69,7 @@ class BrowserMock extends React.Component {
       left: '50%',
       transform: 'translate(-50%, -50%)',
       minWidth: 200,
-      zIndex: 1000,
+      zIndex: 1000
     };
     if (this.state.hover) {
       browserMockStyle.backgroundColor = 'rgba(0,0,0,0.25)';
@@ -80,9 +80,9 @@ class BrowserMock extends React.Component {
         style={viewStyle}
         onMouseOver={this.onMouseOver}
         onMouseLeave={this.onMouseLeave}
-        onClick={this.onClick}
-        className={s.ripple}>
+        onClick={this.onClick}>
         <div style={browserDotsStyle}></div>
+        <div className={s.ripple} style={{ width: '100%', height: '100%' }}></div>
         <div style={browserBodyStyle}>
           {this.props.children}
         </div>
