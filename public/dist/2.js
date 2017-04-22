@@ -6256,9 +6256,9 @@ webpackJsonp([2],{
             style: viewStyle,
             onMouseOver: this.onMouseOver,
             onMouseLeave: this.onMouseLeave,
-            onClick: this.onClick,
-            className: _BrowserMock2.default.ripple },
+            onClick: this.onClick },
           _react2.default.createElement('div', { style: browserDotsStyle }),
+          _react2.default.createElement('div', { className: _BrowserMock2.default.ripple, style: { width: '100%', height: '100%' } }),
           _react2.default.createElement(
             'div',
             { style: browserBodyStyle },
@@ -25019,4 +25019,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?eef2d37a7570f3210157
+//# sourceMappingURL=2.js.map?645dae9e40fd3759867e
