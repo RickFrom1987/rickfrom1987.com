@@ -20,5 +20,7 @@ Working with and getting to know RJ, David and JJHuff was something I will alway
 
 <b>Media</b>
 <p>
-Here is an article about the project on [Seattle PI](http://blog.seattlepi.com/velocity/2016/11/04/introducing-motion-social/).
+Here is an article about the project on the Seattle PI:
+
+[motion.social on Seattle PI](http://blog.seattlepi.com/velocity/2016/11/04/introducing-motion-social/)
 </p>

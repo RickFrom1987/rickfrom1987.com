@@ -766,7 +766,9 @@ webpackJsonp([3],{
             position: 'absolute',
             top: '50%',
             left: '50%',
-            transform: 'translate(-50%,-50%)',
+            transform: 'translate(-50%, -50%)',
+            msTransform: 'translate(-50%, -50%)', /* IE 9 */
+            webkitTransform: 'translate(-50%, -50%)', /* Chrome, Safari, Opera */
             minWidth: 300,
             maxWidth: 768
           };
@@ -1345,4 +1347,4 @@ webpackJsonp([3],{
 /***/ }
 
 });
-//# sourceMappingURL=3.js.map?82f503da10bc9a8158a7
+//# sourceMappingURL=3.js.map?f60b55993096cbd1acc2

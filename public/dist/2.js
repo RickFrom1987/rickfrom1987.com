@@ -766,7 +766,9 @@ webpackJsonp([2],{
             position: 'absolute',
             top: '50%',
             left: '50%',
-            transform: 'translate(-50%,-50%)',
+            transform: 'translate(-50%, -50%)',
+            msTransform: 'translate(-50%, -50%)', /* IE 9 */
+            webkitTransform: 'translate(-50%, -50%)', /* Chrome, Safari, Opera */
             minWidth: 300,
             maxWidth: 768
           };
@@ -6243,6 +6245,8 @@ webpackJsonp([2],{
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
+          msTransform: 'translate(-50%, -50%)', /* IE 9 */
+          webkitTransform: 'translate(-50%, -50%)', /* Chrome, Safari, Opera */
           minWidth: 200,
           zIndex: 1000
         };
@@ -25019,4 +25023,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?645dae9e40fd3759867e
+//# sourceMappingURL=2.js.map?25807be2a88dda0bfc9d
