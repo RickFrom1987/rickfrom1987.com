@@ -21,8 +21,7 @@ class ArticleLayout extends React.Component {
     const baseStyle = {
       padding: 12,
       height: '100%',
-      width: '100%',
-      marginBottom: 60
+      width: '100%'
     };
     const linkStyle = {
       fontSize: 24
