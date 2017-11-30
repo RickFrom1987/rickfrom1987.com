@@ -613,7 +613,7 @@ webpackJsonp([6],{
           padding: '12px 24px'
         });
         var bodyStyle = (0, _extends3.default)({}, sectionStyle, {
-          padding: '0 36px', s: _Article2.default
+          padding: '0 24px'
         });
         var imgStyle = {
           width: 100,
@@ -816,4 +816,4 @@ webpackJsonp([6],{
 /***/ }
 
 });
-//# sourceMappingURL=6.js.map?c3887b14daefc41d27b7
+//# sourceMappingURL=6.js.map?f89ecbe8f11c2467bba3

@@ -34,7 +34,7 @@ class ArticleLayout extends React.Component {
     };
     const headerStyle = {
       ...sectionStyle,
-      padding: '12px 24px',
+      padding: 12,
     };
     const bodyStyle = {
       ...sectionStyle,
