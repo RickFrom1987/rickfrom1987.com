@@ -38,7 +38,7 @@ class ArticleLayout extends React.Component {
     };
     const bodyStyle = {
       ...sectionStyle,
-      padding: '0 36px',s
+      padding: '0 24px',
     };
     const imgStyle ={
       width: 100,

@@ -768,7 +768,7 @@ webpackJsonp([2],{
             left: '50%',
             transform: 'translate(-50%, -50%)',
             msTransform: 'translate(-50%, -50%)', /* IE 9 */
-            webkitTransform: 'translate(-50%, -50%)', /* Chrome, Safari, Opera */
+            WebkitTransform: 'translate(-50%, -50%)', /* Chrome, Safari, Opera */
             minWidth: 300,
             maxWidth: 768
           };
@@ -6200,7 +6200,7 @@ webpackJsonp([2],{
             _history2.default.push({
               pathname: pathname
             });
-          }, 400);
+          }, 100);
         }
       };
   
@@ -25047,4 +25047,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?5f15357e3264c3e5a5f8
+//# sourceMappingURL=2.js.map?c9c6df5dd250bb0b5f48
