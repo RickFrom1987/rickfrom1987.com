@@ -19,9 +19,10 @@ class ArticleLayout extends React.Component {
   render() {
     const { title, subtitle, url, children, style } = this.props;
     const baseStyle = {
-      padding: 12,
       height: '100%',
-      width: '100%'
+      width: '100%',
+      backgroundColor: Colors.WHITE,
+      overflow: 'scroll',
     };
     const linkStyle = {
       fontSize: 24
@@ -29,34 +30,21 @@ class ArticleLayout extends React.Component {
     const sectionStyle = {
       position: 'relative',
       margin: '0 auto',
-      maxWidth: 768,
       width: '95%',
-      backgroundColor: Colors.WHITE 
     };
     const headerStyle = {
       ...sectionStyle,
-      padding: 24,
-      paddingBottom: 0,
-      borderTopLeftRadius: 10,
-      borderTopRightRadius: 10,
+      padding: '12px 24px',
     };
     const bodyStyle = {
       ...sectionStyle,
-      padding: 24,
-      padingTop: 0,
-      borderBottomLeftRadius: 10,
-      borderBottomRightRadius: 10,
+      padding: '0 36px',s
     };
     const imgStyle ={
       width: 100,
       height: 100,
       margin: '0 auto'
     };
-    if (parseInt(window.innerWidth, 10) < 768) {
-      headerStyle.marginTop = 12;
-    } else {
-      headerStyle.marginTop = 60;
-    }
     const articleLayoutStyle = Object.assign({}, baseStyle, style);
     return (
       <div style={articleLayoutStyle}>
