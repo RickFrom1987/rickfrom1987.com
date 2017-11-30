@@ -16,6 +16,10 @@
     "component": "./routes/MotionSocial"
   },
   {
+    "path": "/appuri",
+    "component": "./routes/Appuri"
+  },
+  {
     "path": "/booking",
     "component": "./routes/Booking"
   },
@@ -38,6 +42,10 @@
   {
     "path": "/moment",
     "component": "./routes/Moment"
+  },
+  {
+    "path": "/textnow",
+    "component": "./routes/Textnow"
   },
   {
     "path": "/yahoo",

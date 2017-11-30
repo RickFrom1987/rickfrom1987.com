@@ -1,5 +1,21 @@
 [
   {
+    "company": "appuri.com",
+    "position": "RickFrom1987",
+    "website": "https://appuri.com",
+    "url": "/appuri",
+    "tags": ["javasscript", "salesforce", "knockout", "mocha"],
+    "highlights": []
+  },
+  {
+    "company": "textnow.com",
+    "position": "RickFrom1987",
+    "website": "https://textnow.com",
+    "url": "/textnow",
+    "tags": ["backbone", "javascript"],
+    "highlights": []
+  },
+  {
     "company": "momentlens.co",
     "position": "RickFrom1987",
     "website": "https://momentlens.co",

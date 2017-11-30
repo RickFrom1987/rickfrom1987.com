@@ -598,8 +598,7 @@ webpackJsonp([9],{
         var baseStyle = {
           padding: 12,
           height: '100%',
-          width: '100%',
-          marginBottom: 60
+          width: '100%'
         };
         var linkStyle = {
           fontSize: 24
@@ -829,4 +828,4 @@ webpackJsonp([9],{
 /***/ }
 
 });
-//# sourceMappingURL=9.js.map?0464c003ddfe4659aede
+//# sourceMappingURL=9.js.map?49e0c1d67af0ed212263
