@@ -1,4 +1,4 @@
-webpackJsonp([7],{
+webpackJsonp([12],{
 
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
@@ -717,7 +717,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 149:
+/***/ 143:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -727,17 +727,17 @@ webpackJsonp([7],{
   });
   exports.default = undefined;
   
-  var _Moment = __webpack_require__(231);
+  var _Booking = __webpack_require__(224);
   
-  var _Moment2 = _interopRequireDefault(_Moment);
+  var _Booking2 = _interopRequireDefault(_Booking);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Moment2.default;
+  exports.default = _Booking2.default;
 
 /***/ },
 
-/***/ 231:
+/***/ 224:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -774,46 +774,46 @@ webpackJsonp([7],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Moment = __webpack_require__(422);
+  var _Booking = __webpack_require__(415);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var MomentPage = function (_React$Component) {
-    (0, _inherits3.default)(MomentPage, _React$Component);
+  var BookingPage = function (_React$Component) {
+    (0, _inherits3.default)(BookingPage, _React$Component);
   
-    function MomentPage() {
-      (0, _classCallCheck3.default)(this, MomentPage);
-      return (0, _possibleConstructorReturn3.default)(this, (MomentPage.__proto__ || (0, _getPrototypeOf2.default)(MomentPage)).apply(this, arguments));
+    function BookingPage() {
+      (0, _classCallCheck3.default)(this, BookingPage);
+      return (0, _possibleConstructorReturn3.default)(this, (BookingPage.__proto__ || (0, _getPrototypeOf2.default)(BookingPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(MomentPage, [{
+    (0, _createClass3.default)(BookingPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Moment.title;
+        document.title = _Booking.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Moment.title, url: _Moment.url },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Moment.html } })
+          { title: _Booking.title, url: _Booking.url },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Booking.html } })
         );
       }
     }]);
-    return MomentPage;
+    return BookingPage;
   }(_react2.default.Component);
   
-  exports.default = MomentPage;
+  exports.default = BookingPage;
 
 /***/ },
 
-/***/ 422:
+/***/ 415:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"MomentLens","subtitle":2015,"url":"https://momentlens.co","html":"<p>Working with friends @ <a href=\"//momentlens.co\">momentlens.co</a> was a once in a lifetime opportunity. It was the first hardware startup I have worked for and it was so insanely fun and exciting! I was able to learn a ton from Marc, Erik and Wes (the man behind the hardware of Moment Case!) about so many aspects of business, design and hardware. I was lucky enough to be onboard during which our team was able to raise money on <a href=\"https://www.kickstarter.com/projects/584288471/moment-case-worlds-best-iphone-case-for-mobile-pho\">Kickstarter for the Moment Case</a>. I was brought in to work on whatever needed to be worked on:</p>\n<p><b>Basic Infrastructure.</b></p>\n<p>\nTheir online shop and website was standing up and operating fairly well, but they wanted features, design changes and stability with little infrastructure to support it. I started by moving them onto version control and getting everything into Github asap, before editing a single line of code. I also setup some basic tests and pingdom monitoring so we could make small steps forward. Lessons here is to think about removing code before adding more!\n</p>\n<p><b>Wordpress Plugin Hell.</b></p>\n<p>\nThey didn’t have a full time dev on the site prior to my arrival so they were able to get what they needed by adding a ton of Wordpress and Woocommerce plugins. The problem here is that they are constantly needing updates and can cause issues when doing theme or feature development. Also it is hell on page load time (this affected the site on mobile heavily). Before writing any more code I sat down with the team and went through every plugin to decide whether we actually needed them or not and defensively patched and removed plugins that we didn’t need to help make our codebase smaller and less of a headache.\n</p>\n<p><b>Streamlining Monotonous Tasks.</b></p>\n<p>\nMy first major contribution was to help streamline their ordering process within WooCommerce. They had a manual process that took our customer support gal hours to complete. I hacked together a Woocommerce plugin that took away this task. The code is not ideal as I had zero experience writing Woocommerce plugins, but it worked and we moved forward.\n</p>\n<p><b>Data and Analytics.</b></p>\n<p>\nTurns out it is really important to understand your users and their buying behaviors. The learning in this area has been immense for me. I have always just setup Google analytics and that was the end of that. I am now using Google analytics a bit more carefully now. Working here has taught me that thinking carefully about where and when to hook into google analytics actions and events can make a world of difference in understanding a user base!\n</p>\n<p>I faced many challenges during my time at moment. The site handled hundreds of orders a day, processing in the tens of thousands per month. I helped streamline the project management on the business side as well as some python scripts to help automate business processes. I also was able to train and help the tech intern Eli! Who is now on his way to working on great things, really proud of my time with him and helping him along.</p>\n"};
+  module.exports = {"title":"Booking.com","subtitle":2015,"url":"http://suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"http://suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine.</p>\n<p><b>Challenges</b></p>\n<p>\nI was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams.\n</p>\n<p><b>Growing</b></p>\n<p>\nThis was one of my first gigs working as a contractor and I have to admit I made some mistakes on the business and coding side of things. I learned a ton about what the right/wrong way to approach problems both with code and with people. A  ton of lessons learned and I grew so much and matured as a person by the end of the journey!\n</p>\n<p>\nI really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim <3\n</p>"};
 
 /***/ }
 
 });
-//# sourceMappingURL=7.js.map?ed44f19f7ebd9c3e809b
+//# sourceMappingURL=12.js.map?a858c7c5618ae5c58236

@@ -3,7 +3,7 @@ webpackJsonp([0],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(17), __esModule: true };
+  module.exports = { "default": __webpack_require__(16), __esModule: true };
 
 /***/ },
 
@@ -29,7 +29,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(36);
+  var _defineProperty = __webpack_require__(34);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,15 +62,15 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(16);
+  var _setPrototypeOf = __webpack_require__(15);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(35);
+  var _create = __webpack_require__(33);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(15);
+  var _typeof2 = __webpack_require__(14);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([0],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(15);
+  var _typeof2 = __webpack_require__(14);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -189,7 +189,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 14:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -442,10 +442,18 @@ webpackJsonp([0],{
 
 /***/ },
 
+/***/ 15:
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(17), __esModule: true };
+
+/***/ },
+
 /***/ 16:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(18), __esModule: true };
+  __webpack_require__(19);
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
 /***/ },
 
@@ -453,25 +461,17 @@ webpackJsonp([0],{
 /***/ function(module, exports, __webpack_require__) {
 
   __webpack_require__(20);
-  module.exports = __webpack_require__(9).Object.getPrototypeOf;
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
 /***/ },
 
 /***/ 18:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(21);
-  module.exports = __webpack_require__(9).Object.setPrototypeOf;
-
-/***/ },
-
-/***/ 19:
-/***/ function(module, exports, __webpack_require__) {
-
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(28)
-    , anObject = __webpack_require__(23);
+  var isObject = __webpack_require__(30)
+    , anObject = __webpack_require__(22);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -480,7 +480,7 @@ webpackJsonp([0],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(27)(Function.call, __webpack_require__(38).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(29)(Function.call, __webpack_require__(35).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -496,14 +496,14 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 20:
+/***/ 19:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(30)
-    , $getPrototypeOf = __webpack_require__(39);
+  var toObject        = __webpack_require__(31)
+    , $getPrototypeOf = __webpack_require__(36);
   
-  __webpack_require__(40)('getPrototypeOf', function(){
+  __webpack_require__(37)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -511,16 +511,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 21:
+/***/ 20:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(24);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(19).set});
+  var $export = __webpack_require__(23);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(18).set});
 
 /***/ },
 
-/***/ 41:
+/***/ 42:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -617,7 +617,7 @@ webpackJsonp([0],{
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(41);
+  var _Link = __webpack_require__(42);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -813,7 +813,7 @@ webpackJsonp([0],{
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(41);
+  var _Link = __webpack_require__(42);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -862,7 +862,7 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(25);
+  var _extends2 = __webpack_require__(26);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -1002,7 +1002,7 @@ webpackJsonp([0],{
   var content = __webpack_require__(72);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(14)(content, {});
+  var update = __webpack_require__(13)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1030,7 +1030,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Home = __webpack_require__(227);
+  var _Home = __webpack_require__(230);
   
   var _Home2 = _interopRequireDefault(_Home);
   
@@ -1047,7 +1047,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 227:
+/***/ 230:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1084,15 +1084,15 @@ webpackJsonp([0],{
   
   var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
   
-  var _Link = __webpack_require__(41);
+  var _Link = __webpack_require__(42);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Home = __webpack_require__(405);
+  var _Home = __webpack_require__(409);
   
   var _Home2 = _interopRequireDefault(_Home);
   
-  var _Home3 = __webpack_require__(416);
+  var _Home3 = __webpack_require__(421);
   
   var _Colors = __webpack_require__(11);
   
@@ -1183,7 +1183,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 282:
+/***/ 286:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(12)();
@@ -1200,16 +1200,16 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 405:
+/***/ 409:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(282);
+  var content = __webpack_require__(286);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(14)(content, {});
+  var update = __webpack_require__(13)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1227,7 +1227,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 416:
+/***/ 421:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Hello","desc":"I make wonderful things online.","html":""};
@@ -1235,4 +1235,4 @@ webpackJsonp([0],{
 /***/ }
 
 });
-//# sourceMappingURL=0.js.map?525f4339e941bbfe4d10
+//# sourceMappingURL=0.js.map?5da0c7e10da6fdeddcee

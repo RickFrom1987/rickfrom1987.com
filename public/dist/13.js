@@ -1,4 +1,4 @@
-webpackJsonp([7],{
+webpackJsonp([13],{
 
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
@@ -717,7 +717,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 149:
+/***/ 142:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -727,17 +727,17 @@ webpackJsonp([7],{
   });
   exports.default = undefined;
   
-  var _Moment = __webpack_require__(231);
+  var _Appuri = __webpack_require__(223);
   
-  var _Moment2 = _interopRequireDefault(_Moment);
+  var _Appuri2 = _interopRequireDefault(_Appuri);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Moment2.default;
+  exports.default = _Appuri2.default;
 
 /***/ },
 
-/***/ 231:
+/***/ 223:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -774,46 +774,46 @@ webpackJsonp([7],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Moment = __webpack_require__(422);
+  var _Appuri = __webpack_require__(414);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var MomentPage = function (_React$Component) {
-    (0, _inherits3.default)(MomentPage, _React$Component);
+  var AppuriPage = function (_React$Component) {
+    (0, _inherits3.default)(AppuriPage, _React$Component);
   
-    function MomentPage() {
-      (0, _classCallCheck3.default)(this, MomentPage);
-      return (0, _possibleConstructorReturn3.default)(this, (MomentPage.__proto__ || (0, _getPrototypeOf2.default)(MomentPage)).apply(this, arguments));
+    function AppuriPage() {
+      (0, _classCallCheck3.default)(this, AppuriPage);
+      return (0, _possibleConstructorReturn3.default)(this, (AppuriPage.__proto__ || (0, _getPrototypeOf2.default)(AppuriPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(MomentPage, [{
+    (0, _createClass3.default)(AppuriPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Moment.title;
+        document.title = _Appuri.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Moment.title, url: _Moment.url },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Moment.html } })
+          { title: _Appuri.title, url: _Appuri.url },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Appuri.html } })
         );
       }
     }]);
-    return MomentPage;
+    return AppuriPage;
   }(_react2.default.Component);
   
-  exports.default = MomentPage;
+  exports.default = AppuriPage;
 
 /***/ },
 
-/***/ 422:
+/***/ 414:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"MomentLens","subtitle":2015,"url":"https://momentlens.co","html":"<p>Working with friends @ <a href=\"//momentlens.co\">momentlens.co</a> was a once in a lifetime opportunity. It was the first hardware startup I have worked for and it was so insanely fun and exciting! I was able to learn a ton from Marc, Erik and Wes (the man behind the hardware of Moment Case!) about so many aspects of business, design and hardware. I was lucky enough to be onboard during which our team was able to raise money on <a href=\"https://www.kickstarter.com/projects/584288471/moment-case-worlds-best-iphone-case-for-mobile-pho\">Kickstarter for the Moment Case</a>. I was brought in to work on whatever needed to be worked on:</p>\n<p><b>Basic Infrastructure.</b></p>\n<p>\nTheir online shop and website was standing up and operating fairly well, but they wanted features, design changes and stability with little infrastructure to support it. I started by moving them onto version control and getting everything into Github asap, before editing a single line of code. I also setup some basic tests and pingdom monitoring so we could make small steps forward. Lessons here is to think about removing code before adding more!\n</p>\n<p><b>Wordpress Plugin Hell.</b></p>\n<p>\nThey didn’t have a full time dev on the site prior to my arrival so they were able to get what they needed by adding a ton of Wordpress and Woocommerce plugins. The problem here is that they are constantly needing updates and can cause issues when doing theme or feature development. Also it is hell on page load time (this affected the site on mobile heavily). Before writing any more code I sat down with the team and went through every plugin to decide whether we actually needed them or not and defensively patched and removed plugins that we didn’t need to help make our codebase smaller and less of a headache.\n</p>\n<p><b>Streamlining Monotonous Tasks.</b></p>\n<p>\nMy first major contribution was to help streamline their ordering process within WooCommerce. They had a manual process that took our customer support gal hours to complete. I hacked together a Woocommerce plugin that took away this task. The code is not ideal as I had zero experience writing Woocommerce plugins, but it worked and we moved forward.\n</p>\n<p><b>Data and Analytics.</b></p>\n<p>\nTurns out it is really important to understand your users and their buying behaviors. The learning in this area has been immense for me. I have always just setup Google analytics and that was the end of that. I am now using Google analytics a bit more carefully now. Working here has taught me that thinking carefully about where and when to hook into google analytics actions and events can make a world of difference in understanding a user base!\n</p>\n<p>I faced many challenges during my time at moment. The site handled hundreds of orders a day, processing in the tens of thousands per month. I helped streamline the project management on the business side as well as some python scripts to help automate business processes. I also was able to train and help the tech intern Eli! Who is now on his way to working on great things, really proud of my time with him and helping him along.</p>\n"};
+  module.exports = {"title":"appuri.com","subtitle":2017,"url":"https://appuri.com","html":"<p>The team at <a href=\"//appuri.com\">Appuri</a> was awesome, so awesome that they are now part of <a href=\"//docusign.com\">DocuSign</a>!</p>\n<p>My time working with Appuri was rewarding and challenging. Feel absolutely humbled and honored to be a part of their story. I would describe my role with the company as a solutions engineer. I was tasked with working closely with different vendors/contractors to deliver solutions to our customers. Dealt with managing a lot of network calls and authentication issues, while connecting to different data sources.</p>\n<p><b>Salesforce Challenges</b></p>\n<p>\nI knew nothing about Salesforce going into this role and was presented with some tasks and features that needed to live within the Salesforce ecosystem. If you have ever even opened up the Salesforce dashboard, it is insanity. So many tabs and options. I had to quickly learn the interface, and the semantics of the Salesforce ecosystem (had to ask questiosn and get some help here) while also delivering Appuri features. The importance of isolating and creating a proper test harness was crucial here.\n</p>\n<p><b>Defensive Coding</b></p>\n<p>\nWorking with an older and slighlty \"under documented\" codebase written by engineers who had previously left the company is inherently very difficult. I needed to understand how to add features and make an impact without trashing everything in my wake. My experience with defensive coding came in very handy, starting with removing code and breaking up files in smaller more understandable components was one of the first things I did which allowed me to move forward! I was also able to do some work to clean up and improve our CI with CircleCI to make test run faster and more accurately.\n</p>\n<p>\nWorking at Appuri brought back fantastic memories from the very first startup I worked for. The hustle and drive everyday was great to see and be a part of.\n</p>\n"};
 
 /***/ }
 
 });
-//# sourceMappingURL=7.js.map?ed44f19f7ebd9c3e809b
+//# sourceMappingURL=13.js.map?023159196002dff3bca3

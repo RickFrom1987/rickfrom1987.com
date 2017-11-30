@@ -36,7 +36,7 @@ class BrowserMock extends React.Component {
         history.push({
           pathname: pathname
         });
-      }, 400);
+      }, 100);
     }
   }
   render() {

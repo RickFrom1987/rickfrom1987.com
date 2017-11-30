@@ -3,7 +3,7 @@ webpackJsonp([5],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(17), __esModule: true };
+  module.exports = { "default": __webpack_require__(16), __esModule: true };
 
 /***/ },
 
@@ -29,7 +29,7 @@ webpackJsonp([5],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(36);
+  var _defineProperty = __webpack_require__(34);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,15 +62,15 @@ webpackJsonp([5],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(16);
+  var _setPrototypeOf = __webpack_require__(15);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(35);
+  var _create = __webpack_require__(33);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(15);
+  var _typeof2 = __webpack_require__(14);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([5],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(15);
+  var _typeof2 = __webpack_require__(14);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -189,7 +189,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 14:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -442,10 +442,18 @@ webpackJsonp([5],{
 
 /***/ },
 
+/***/ 15:
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(17), __esModule: true };
+
+/***/ },
+
 /***/ 16:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(18), __esModule: true };
+  __webpack_require__(19);
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
 /***/ },
 
@@ -453,25 +461,17 @@ webpackJsonp([5],{
 /***/ function(module, exports, __webpack_require__) {
 
   __webpack_require__(20);
-  module.exports = __webpack_require__(9).Object.getPrototypeOf;
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
 /***/ },
 
 /***/ 18:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(21);
-  module.exports = __webpack_require__(9).Object.setPrototypeOf;
-
-/***/ },
-
-/***/ 19:
-/***/ function(module, exports, __webpack_require__) {
-
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(28)
-    , anObject = __webpack_require__(23);
+  var isObject = __webpack_require__(30)
+    , anObject = __webpack_require__(22);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -480,7 +480,7 @@ webpackJsonp([5],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(27)(Function.call, __webpack_require__(38).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(29)(Function.call, __webpack_require__(35).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -496,14 +496,14 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 20:
+/***/ 19:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(30)
-    , $getPrototypeOf = __webpack_require__(39);
+  var toObject        = __webpack_require__(31)
+    , $getPrototypeOf = __webpack_require__(36);
   
-  __webpack_require__(40)('getPrototypeOf', function(){
+  __webpack_require__(37)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -511,16 +511,16 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 21:
+/***/ 20:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(24);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(19).set});
+  var $export = __webpack_require__(23);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(18).set});
 
 /***/ },
 
-/***/ 29:
+/***/ 25:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -529,11 +529,11 @@ webpackJsonp([5],{
     value: true
   });
   
-  var _assign = __webpack_require__(45);
+  var _assign = __webpack_require__(40);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(25);
+  var _extends2 = __webpack_require__(26);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -565,7 +565,7 @@ webpackJsonp([5],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(32);
+  var _Article = __webpack_require__(28);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -596,9 +596,10 @@ webpackJsonp([5],{
             style = _props.style;
   
         var baseStyle = {
-          padding: 12,
           height: '100%',
-          width: '100%'
+          width: '100%',
+          backgroundColor: Colors.WHITE,
+          overflow: 'scroll'
         };
         var linkStyle = {
           fontSize: 24
@@ -606,32 +607,19 @@ webpackJsonp([5],{
         var sectionStyle = {
           position: 'relative',
           margin: '0 auto',
-          maxWidth: 768,
-          width: '95%',
-          backgroundColor: Colors.WHITE
+          width: '95%'
         };
         var headerStyle = (0, _extends3.default)({}, sectionStyle, {
-          padding: 24,
-          paddingBottom: 0,
-          borderTopLeftRadius: 10,
-          borderTopRightRadius: 10
+          padding: '12px 24px'
         });
         var bodyStyle = (0, _extends3.default)({}, sectionStyle, {
-          padding: 24,
-          padingTop: 0,
-          borderBottomLeftRadius: 10,
-          borderBottomRightRadius: 10
+          padding: '0 36px', s: _Article2.default
         });
         var imgStyle = {
           width: 100,
           height: 100,
           margin: '0 auto'
         };
-        if (parseInt(window.innerWidth, 10) < 768) {
-          headerStyle.marginTop = 12;
-        } else {
-          headerStyle.marginTop = 60;
-        }
         var articleLayoutStyle = (0, _assign2.default)({}, baseStyle, style);
         return _react2.default.createElement(
           'div',
@@ -684,7 +672,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 31:
+/***/ 27:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(12)();
@@ -702,16 +690,16 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 32:
+/***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(31);
+  var content = __webpack_require__(27);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(14)(content, {});
+  var update = __webpack_require__(13)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -729,7 +717,7 @@ webpackJsonp([5],{
 
 /***/ },
 
-/***/ 149:
+/***/ 152:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -739,17 +727,17 @@ webpackJsonp([5],{
   });
   exports.default = undefined;
   
-  var _MotionSocial = __webpack_require__(229);
+  var _TextNow = __webpack_require__(233);
   
-  var _MotionSocial2 = _interopRequireDefault(_MotionSocial);
+  var _TextNow2 = _interopRequireDefault(_TextNow);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _MotionSocial2.default;
+  exports.default = _TextNow2.default;
 
 /***/ },
 
-/***/ 229:
+/***/ 233:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -782,50 +770,50 @@ webpackJsonp([5],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(29);
+  var _ArticleLayout = __webpack_require__(25);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _MotionSocial = __webpack_require__(418);
+  var _TextNow = __webpack_require__(424);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var MotionSocialPage = function (_React$Component) {
-    (0, _inherits3.default)(MotionSocialPage, _React$Component);
+  var TextNowPage = function (_React$Component) {
+    (0, _inherits3.default)(TextNowPage, _React$Component);
   
-    function MotionSocialPage() {
-      (0, _classCallCheck3.default)(this, MotionSocialPage);
-      return (0, _possibleConstructorReturn3.default)(this, (MotionSocialPage.__proto__ || (0, _getPrototypeOf2.default)(MotionSocialPage)).apply(this, arguments));
+    function TextNowPage() {
+      (0, _classCallCheck3.default)(this, TextNowPage);
+      return (0, _possibleConstructorReturn3.default)(this, (TextNowPage.__proto__ || (0, _getPrototypeOf2.default)(TextNowPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(MotionSocialPage, [{
+    (0, _createClass3.default)(TextNowPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _MotionSocial.title;
+        document.title = _TextNow.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _MotionSocial.title, url: _MotionSocial.url },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _MotionSocial.html } })
+          { title: _TextNow.title, url: _TextNow.url },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _TextNow.html } })
         );
       }
     }]);
-    return MotionSocialPage;
+    return TextNowPage;
   }(_react2.default.Component);
   
-  exports.default = MotionSocialPage;
+  exports.default = TextNowPage;
 
 /***/ },
 
-/***/ 418:
+/***/ 424:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"motion.social","subtitle":2016,"url":"https://motion.social","html":"<p>I had the opportunity to pair program with one of the co-founders of Picnik/PicMonkey and one of the best developers I have ever worked with. I was brought in to help build a set of internal UI components in React, that could be customized to thier liking. I also had some fun times building out some tests and basic utils to help with image processing and galleries.</p>\n<p><b>Challenges</b></p>\n<p>We wrestled with the insanity that is webpack/babel and getting my macOS/docker setup to play nicely with his Linux setup. Making sure the custom react components rendered accurately across all browsers desktop/mobile was quite the daunting as well!\n</p>\n<p><b>Looking Back</b></p>\n<p>\nWorking with someone who sees solutions so clearly was a wonderful experience for me. I was pushed to write more readable and concise code and always thinking about how to do so, a skill that will carry with me forever! I learned to slow down my thought process and refine, refine, refine.\n</p>\n<p>\nWorking with and getting to know RJ, David and JJHuff was something I will always look back on and have so many great memories, hopefully we'll team up again soon! \n</p>\n<p><b>Media</b></p>\n<p>\nHere is an article about the project on the Seattle PI:\n<p><a href=\"http://blog.seattlepi.com/velocity/2016/11/04/introducing-motion-social/\">motion.social on Seattle PI</a></p>\n</p>"};
+  module.exports = {"title":"textnow.com","subtitle":2017,"url":"https://textnow.com","html":"<p>TextNow reached out to me to help them develop, test and deploy experiments that test user purchasing behavior. I was tasked with implementing features on thier webstore gated behind different flags for different variations. Our goal was to see which variant produced the most optimal purchasing behavior. You can checkout the <a href=\"https://textnow.com/wireless\">Textnow webstore</a>.</p>\n<p><b>Challenges</b></p>\n<p>\nA challenge I faced here was simply understanding business requirements as the store is a crucial part of thier business and before touching the codebase, I needed to make sure I understood the checkout workflow and how each product and product options affected that process.\n</p>\n<p>\nThe textnow engineering team is probably one of the best organized teams I have worked with. Communication is clear and concise and reasons behind doing something was purely based on results and most effective code/fix, not just to simply add code and push features blindly. Really enjoy working with Derek, Ajay, Jason and Justin! Canadian rockstars. Calling it right now, Textnow will be huge!\n</p>\n"};
 
 /***/ }
 
 });
-//# sourceMappingURL=5.js.map?4cc730acad970b9803e7
+//# sourceMappingURL=5.js.map?55a8fabd7d10fb35489f

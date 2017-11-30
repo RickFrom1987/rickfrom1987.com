@@ -3,7 +3,7 @@ webpackJsonp([8],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(17), __esModule: true };
+  module.exports = { "default": __webpack_require__(16), __esModule: true };
 
 /***/ },
 
@@ -29,7 +29,7 @@ webpackJsonp([8],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(36);
+  var _defineProperty = __webpack_require__(34);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,15 +62,15 @@ webpackJsonp([8],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(16);
+  var _setPrototypeOf = __webpack_require__(15);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(35);
+  var _create = __webpack_require__(33);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(15);
+  var _typeof2 = __webpack_require__(14);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([8],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(15);
+  var _typeof2 = __webpack_require__(14);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -189,7 +189,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 14:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -442,10 +442,18 @@ webpackJsonp([8],{
 
 /***/ },
 
+/***/ 15:
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(17), __esModule: true };
+
+/***/ },
+
 /***/ 16:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(18), __esModule: true };
+  __webpack_require__(19);
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
 /***/ },
 
@@ -453,25 +461,17 @@ webpackJsonp([8],{
 /***/ function(module, exports, __webpack_require__) {
 
   __webpack_require__(20);
-  module.exports = __webpack_require__(9).Object.getPrototypeOf;
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
 /***/ },
 
 /***/ 18:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(21);
-  module.exports = __webpack_require__(9).Object.setPrototypeOf;
-
-/***/ },
-
-/***/ 19:
-/***/ function(module, exports, __webpack_require__) {
-
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(28)
-    , anObject = __webpack_require__(23);
+  var isObject = __webpack_require__(30)
+    , anObject = __webpack_require__(22);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -480,7 +480,7 @@ webpackJsonp([8],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(27)(Function.call, __webpack_require__(38).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(29)(Function.call, __webpack_require__(35).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -496,14 +496,14 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 20:
+/***/ 19:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(30)
-    , $getPrototypeOf = __webpack_require__(39);
+  var toObject        = __webpack_require__(31)
+    , $getPrototypeOf = __webpack_require__(36);
   
-  __webpack_require__(40)('getPrototypeOf', function(){
+  __webpack_require__(37)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -511,16 +511,16 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 21:
+/***/ 20:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(24);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(19).set});
+  var $export = __webpack_require__(23);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(18).set});
 
 /***/ },
 
-/***/ 29:
+/***/ 25:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -529,11 +529,11 @@ webpackJsonp([8],{
     value: true
   });
   
-  var _assign = __webpack_require__(45);
+  var _assign = __webpack_require__(40);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(25);
+  var _extends2 = __webpack_require__(26);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -565,7 +565,7 @@ webpackJsonp([8],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(32);
+  var _Article = __webpack_require__(28);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -596,9 +596,10 @@ webpackJsonp([8],{
             style = _props.style;
   
         var baseStyle = {
-          padding: 12,
           height: '100%',
-          width: '100%'
+          width: '100%',
+          backgroundColor: Colors.WHITE,
+          overflow: 'scroll'
         };
         var linkStyle = {
           fontSize: 24
@@ -606,32 +607,19 @@ webpackJsonp([8],{
         var sectionStyle = {
           position: 'relative',
           margin: '0 auto',
-          maxWidth: 768,
-          width: '95%',
-          backgroundColor: Colors.WHITE
+          width: '95%'
         };
         var headerStyle = (0, _extends3.default)({}, sectionStyle, {
-          padding: 24,
-          paddingBottom: 0,
-          borderTopLeftRadius: 10,
-          borderTopRightRadius: 10
+          padding: '12px 24px'
         });
         var bodyStyle = (0, _extends3.default)({}, sectionStyle, {
-          padding: 24,
-          padingTop: 0,
-          borderBottomLeftRadius: 10,
-          borderBottomRightRadius: 10
+          padding: '0 36px', s: _Article2.default
         });
         var imgStyle = {
           width: 100,
           height: 100,
           margin: '0 auto'
         };
-        if (parseInt(window.innerWidth, 10) < 768) {
-          headerStyle.marginTop = 12;
-        } else {
-          headerStyle.marginTop = 60;
-        }
         var articleLayoutStyle = (0, _assign2.default)({}, baseStyle, style);
         return _react2.default.createElement(
           'div',
@@ -684,7 +672,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 31:
+/***/ 27:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(12)();
@@ -702,16 +690,16 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 32:
+/***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(31);
+  var content = __webpack_require__(27);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(14)(content, {});
+  var update = __webpack_require__(13)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -729,7 +717,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 146:
+/***/ 148:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -739,17 +727,17 @@ webpackJsonp([8],{
   });
   exports.default = undefined;
   
-  var _Energysavvy = __webpack_require__(225);
+  var _Haikudeck = __webpack_require__(229);
   
-  var _Energysavvy2 = _interopRequireDefault(_Energysavvy);
+  var _Haikudeck2 = _interopRequireDefault(_Haikudeck);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Energysavvy2.default;
+  exports.default = _Haikudeck2.default;
 
 /***/ },
 
-/***/ 225:
+/***/ 229:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -782,50 +770,50 @@ webpackJsonp([8],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(29);
+  var _ArticleLayout = __webpack_require__(25);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Energysavvy = __webpack_require__(414);
+  var _Haikudeck = __webpack_require__(420);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var EnergysavvyPage = function (_React$Component) {
-    (0, _inherits3.default)(EnergysavvyPage, _React$Component);
+  var HaikudeckPage = function (_React$Component) {
+    (0, _inherits3.default)(HaikudeckPage, _React$Component);
   
-    function EnergysavvyPage() {
-      (0, _classCallCheck3.default)(this, EnergysavvyPage);
-      return (0, _possibleConstructorReturn3.default)(this, (EnergysavvyPage.__proto__ || (0, _getPrototypeOf2.default)(EnergysavvyPage)).apply(this, arguments));
+    function HaikudeckPage() {
+      (0, _classCallCheck3.default)(this, HaikudeckPage);
+      return (0, _possibleConstructorReturn3.default)(this, (HaikudeckPage.__proto__ || (0, _getPrototypeOf2.default)(HaikudeckPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(EnergysavvyPage, [{
+    (0, _createClass3.default)(HaikudeckPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Energysavvy.title;
+        document.title = _Haikudeck.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Energysavvy.title, url: _Energysavvy.url },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Energysavvy.html } })
+          { title: _Haikudeck.title, url: _Haikudeck.url },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Haikudeck.html } })
         );
       }
     }]);
-    return EnergysavvyPage;
+    return HaikudeckPage;
   }(_react2.default.Component);
   
-  exports.default = EnergysavvyPage;
+  exports.default = HaikudeckPage;
 
 /***/ },
 
-/***/ 414:
+/***/ 420:
 /***/ function(module, exports) {
 
-  module.exports = {"title":"EnergySavvy","subtitle":2015,"url":"//energysavvy.com","html":"<p>The engineers at <a href=\"//energysavvy.com\">EnergySavvy</a> are awesome and I enjoyed working with them.</p>\n<p>I spent some time working on the main <a href=\"//energysavvy.com\">marketing site</a>, <a href=\"//blog.energysavvy.com\">blog</a> and some prototypes in React. Here is a standalone version of the <a href=\"https://solar-calculator.rickfrom1987.com\">Solar Calculator</a> that I wrote. The goal of solar calculator was to help my clients users to calculate thier energy and financial savings when using electric.</p>\n<p><b>Challenges</b></p>\n<p>\nThe most difficult part of this project was working with thier math guy and wrapping some unit tests around complex financial and energy calculations. This was quite painful, but we got through it. This was my first real world React project so there was some not so polished code and wtf is this, but it was great learning experience. Working with Kalpana, Gabe and Graham was awesome, all around great company and smart guys and girls!\n</p>\n<p>Hopefully we will cross paths again in the future!</p>\n"};
+  module.exports = {"title":"HaikuDeck","subtitle":2014,"url":"//haikudeck.com","html":"<p><a href=\"//haikudeck.com\">Haiku Deck</a> has a very special place in my workplace heart. It was the first ever startup I have worked with and it was awesome. I met some insipiring and amazing people. Learned how much I sucked at programming. Learned how to push through it and get better. I had great programmers around me: Kevin, Adam and Collin. Great leaders: Adam, Marc and Catherine, later on working with the co founder of CoinStar Dan! Great support staff Erin and Lisa MaMa. I worked on the web app and website, mainly in jQuery and Backbone.</p>\n<p><b>Challenges</b></p>\n<p>\nMy main challenges here were adjusting to startup life, learning quickly and producing results. I always had help of more senior engineers to pick up the pieces, @ Haiku Deck I had to be more self reliant and try to figure stuff out on my own.\n</p>\n<p><b>Media</b></p>\n<p>\nWe were lucky enough to get some media coverage on my project and work:\n<ul>\n<li>\n<p><a href=\"http://www.pcmag.com/article2/0,2817,2428803,00.asp\">PCMag Top 100 Web Apps of 2013</a></p>\n</li>\n<li>\n<p><a href=\"https://techcrunch.com/2013/11/21/haiku-deck-web-app/\">TechCrunch Article</a></p>\n</li>\n<li>\n<p><a href=\"http://thenextweb.com/apps/2013/11/21/haiku-deck-launches-free-web-based-version-simple-yet-elegant-ipad-presentation-app/\">TheNextWeb Article</a></p>\n</li>\n<li>\n<p><a href=\"http://allthingsd.com/20131121/haiku-deck-expands-its-anti-powerpoint-presentation-app-to-the-web/\">AllThingsD Article</a></p>\n</li>\n</ul>\n</p>"};
 
 /***/ }
 
 });
-//# sourceMappingURL=8.js.map?843756f9fb096dbfef11
+//# sourceMappingURL=8.js.map?2e9e8a6a112e49a2be6f

@@ -3,7 +3,7 @@ webpackJsonp([4],{
 /***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(17), __esModule: true };
+  module.exports = { "default": __webpack_require__(16), __esModule: true };
 
 /***/ },
 
@@ -29,7 +29,7 @@ webpackJsonp([4],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(36);
+  var _defineProperty = __webpack_require__(34);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,15 +62,15 @@ webpackJsonp([4],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(16);
+  var _setPrototypeOf = __webpack_require__(15);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(35);
+  var _create = __webpack_require__(33);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(15);
+  var _typeof2 = __webpack_require__(14);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -101,7 +101,7 @@ webpackJsonp([4],{
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(15);
+  var _typeof2 = __webpack_require__(14);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -189,7 +189,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 14:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
   /*
@@ -442,10 +442,18 @@ webpackJsonp([4],{
 
 /***/ },
 
+/***/ 15:
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(17), __esModule: true };
+
+/***/ },
+
 /***/ 16:
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(18), __esModule: true };
+  __webpack_require__(19);
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
 /***/ },
 
@@ -453,25 +461,17 @@ webpackJsonp([4],{
 /***/ function(module, exports, __webpack_require__) {
 
   __webpack_require__(20);
-  module.exports = __webpack_require__(9).Object.getPrototypeOf;
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
 /***/ },
 
 /***/ 18:
 /***/ function(module, exports, __webpack_require__) {
 
-  __webpack_require__(21);
-  module.exports = __webpack_require__(9).Object.setPrototypeOf;
-
-/***/ },
-
-/***/ 19:
-/***/ function(module, exports, __webpack_require__) {
-
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(28)
-    , anObject = __webpack_require__(23);
+  var isObject = __webpack_require__(30)
+    , anObject = __webpack_require__(22);
   var check = function(O, proto){
     anObject(O);
     if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
@@ -480,7 +480,7 @@ webpackJsonp([4],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function(test, buggy, set){
         try {
-          set = __webpack_require__(27)(Function.call, __webpack_require__(38).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(29)(Function.call, __webpack_require__(35).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch(e){ buggy = true; }
@@ -496,14 +496,14 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 20:
+/***/ 19:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(30)
-    , $getPrototypeOf = __webpack_require__(39);
+  var toObject        = __webpack_require__(31)
+    , $getPrototypeOf = __webpack_require__(36);
   
-  __webpack_require__(40)('getPrototypeOf', function(){
+  __webpack_require__(37)('getPrototypeOf', function(){
     return function getPrototypeOf(it){
       return $getPrototypeOf(toObject(it));
     };
@@ -511,16 +511,16 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 21:
+/***/ 20:
 /***/ function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(24);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(19).set});
+  var $export = __webpack_require__(23);
+  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(18).set});
 
 /***/ },
 
-/***/ 29:
+/***/ 25:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -529,11 +529,11 @@ webpackJsonp([4],{
     value: true
   });
   
-  var _assign = __webpack_require__(45);
+  var _assign = __webpack_require__(40);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(25);
+  var _extends2 = __webpack_require__(26);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -565,7 +565,7 @@ webpackJsonp([4],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(32);
+  var _Article = __webpack_require__(28);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -596,9 +596,10 @@ webpackJsonp([4],{
             style = _props.style;
   
         var baseStyle = {
-          padding: 12,
           height: '100%',
-          width: '100%'
+          width: '100%',
+          backgroundColor: Colors.WHITE,
+          overflow: 'scroll'
         };
         var linkStyle = {
           fontSize: 24
@@ -606,32 +607,19 @@ webpackJsonp([4],{
         var sectionStyle = {
           position: 'relative',
           margin: '0 auto',
-          maxWidth: 768,
-          width: '95%',
-          backgroundColor: Colors.WHITE
+          width: '95%'
         };
         var headerStyle = (0, _extends3.default)({}, sectionStyle, {
-          padding: 24,
-          paddingBottom: 0,
-          borderTopLeftRadius: 10,
-          borderTopRightRadius: 10
+          padding: '12px 24px'
         });
         var bodyStyle = (0, _extends3.default)({}, sectionStyle, {
-          padding: 24,
-          padingTop: 0,
-          borderBottomLeftRadius: 10,
-          borderBottomRightRadius: 10
+          padding: '0 36px', s: _Article2.default
         });
         var imgStyle = {
           width: 100,
           height: 100,
           margin: '0 auto'
         };
-        if (parseInt(window.innerWidth, 10) < 768) {
-          headerStyle.marginTop = 12;
-        } else {
-          headerStyle.marginTop = 60;
-        }
         var articleLayoutStyle = (0, _assign2.default)({}, baseStyle, style);
         return _react2.default.createElement(
           'div',
@@ -684,7 +672,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 31:
+/***/ 27:
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(12)();
@@ -702,16 +690,16 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 32:
+/***/ 28:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(31);
+  var content = __webpack_require__(27);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(14)(content, {});
+  var update = __webpack_require__(13)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -729,7 +717,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 151:
+/***/ 153:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -739,7 +727,7 @@ webpackJsonp([4],{
   });
   exports.default = undefined;
   
-  var _Yahoo = __webpack_require__(230);
+  var _Yahoo = __webpack_require__(234);
   
   var _Yahoo2 = _interopRequireDefault(_Yahoo);
   
@@ -749,7 +737,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 230:
+/***/ 234:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -782,11 +770,11 @@ webpackJsonp([4],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(29);
+  var _ArticleLayout = __webpack_require__(25);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Yahoo = __webpack_require__(419);
+  var _Yahoo = __webpack_require__(425);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -820,7 +808,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 419:
+/***/ 425:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Yahoo!","subtitle":2009,"url":"https://yahoo.com","html":"<p><b>First job</b></p>\n<p>\nMy first job ever was at Yahoo! It feels like forever ago. I met great people and lifelong friends here. Yahoo! was one of the best places I have ever worked. Lots of perks and working with really fun and smart people.\n</p>\n<p><b>Goals</b></p>\n<p>\nMy main goal was to learn from others and do the best that I could as I didn't know much about life or programming. I just kind of dove head first into anything they would let me work on.\n</p>\n<p>\nMet some great engineers / friends like Naveen, Rohith, Nat and Steven Ramkumar, who have all moved on to do freaking amazing things. I got to work with a great team. Special thanks to everyone on Yahoo! Local who helped me grow as a developer and person, I will never have enough good things to say about my time there.\n</p>"};
@@ -828,4 +816,4 @@ webpackJsonp([4],{
 /***/ }
 
 });
-//# sourceMappingURL=4.js.map?e2b68b0d7ef275c0e8fb
+//# sourceMappingURL=4.js.map?272e7ade4ebf07735c56
