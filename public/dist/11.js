@@ -610,7 +610,7 @@ webpackJsonp([11],{
           width: '95%'
         };
         var headerStyle = (0, _extends3.default)({}, sectionStyle, {
-          padding: '12px 24px'
+          padding: 12
         });
         var bodyStyle = (0, _extends3.default)({}, sectionStyle, {
           padding: '0 24px'
@@ -816,4 +816,4 @@ webpackJsonp([11],{
 /***/ }
 
 });
-//# sourceMappingURL=11.js.map?def54fdf9927ed9f251e
+//# sourceMappingURL=11.js.map?5fcddae8b88b401e09f9

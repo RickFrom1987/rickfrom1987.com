@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import HeaderLayout from '../../components/Layout/HeaderLayout';
 import Link from '../../components/Link';
+import Dog from '../../components/Dog';
 import s from './Home.css';
 import { title, desc } from './Home.md';
 
@@ -40,7 +41,7 @@ class HomePage extends React.Component {
     return (
       <HeaderLayout centered>
         <div style={homeStyle}>
-          <img src="/murphy.png" style={imgStyle}/>
+          <Dog/>
           <h1 style={{ fontSize: 70 }}>{ title }</h1>
           <p>{ desc }</p>
         </div>

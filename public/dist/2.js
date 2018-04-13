@@ -6200,7 +6200,7 @@ webpackJsonp([2],{
             _history2.default.push({
               pathname: pathname
             });
-          }, 300);
+          }, 250);
         }
       };
   
@@ -25047,4 +25047,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?4e5924cff1443bfac598
+//# sourceMappingURL=2.js.map?6ae1f88cb10530c9e048
