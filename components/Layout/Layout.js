@@ -4,8 +4,8 @@ import Header from './Header';
 function Layout(props) {
   return (
     <div>
-      <Header />
-		<div {...props}/>
+      <Header/>
+      <div {...props}/>
     </div>
   );
 }

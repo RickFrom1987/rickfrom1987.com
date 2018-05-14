@@ -34,7 +34,7 @@ class HeaderLayout extends React.Component {
 
     return (
       <div style={layoutStyle}>
-        <Header />
+        <Header/>
         <div style={centerStyle}>
           {children}
         </div>

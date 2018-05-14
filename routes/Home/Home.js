@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import HeaderLayout from '../../components/Layout/HeaderLayout';
+import MenuLayout from '../../components/Layout/MenuLayout';
 import Link from '../../components/Link';
 import Dog from '../../components/Dog';
 import s from './Home.css';
@@ -31,21 +31,20 @@ class HomePage extends React.Component {
       color: Colors.WHITE,
     };
     const imgStyle = {
-      width: 200,
-      height: 200
+      width: 300,
+      height: 300
     };
     const linkStyle = {
       fontSize: 18,
       padding: 12,
     };
     return (
-      <HeaderLayout centered>
+      <MenuLayout>
         <div style={homeStyle}>
           <Dog/>
           <h1 style={{ fontSize: 70 }}>{ title }</h1>
-          <p>{ desc }</p>
         </div>
-      </HeaderLayout>
+      </MenuLayout>
     );
   }
 

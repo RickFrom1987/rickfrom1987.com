@@ -1,0 +1,145 @@
+.menu {
+  top: 40px;
+  left: 40px;
+}
+
+.toggler {
+  display: block;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggler:hover + label, .menu-toggler:hover + label:before, .menu-toggler:hover + label:after {
+  background: white;
+}
+
+.toggler:checked + label {
+  background: transparent;
+}
+
+.toggler:checked + label:before, .toggler:checked + label:after {
+  top: 0;
+  width: 40px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.toggler:checked + label:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.toggler:checked + label:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.toggler:checked ~ ul .item {
+  opacity: 1;
+}
+
+.toggler:checked ~ ul .item:nth-child(1) {
+  transform: translateX(75px);
+}
+
+.toggler:checked ~ ul .item:nth-child(2) {
+  transform: translateX(175px);
+}
+
+.toggler:checked ~ ul .item:nth-child(3) {
+  transform: translateX(275px);
+}
+
+.toggler:checked ~ ul .item a {
+  pointer-events: auto;
+}
+
+.toggler + label {
+  width: 40px;
+  height: 5px;
+  display: block;
+  z-index: 1;
+  border-radius: 2.5px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-transition: top 0.5s, -webkit-transform 0.5s;
+  transition: top 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, top 0.5s;
+  transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.toggler + label:before, .toggler + label:after {
+  width: 40px;
+  height: 5px;
+  display: block;
+  z-index: 1;
+  border-radius: 2.5px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-transition: top 0.5s, -webkit-transform 0.5s;
+  transition: top 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, top 0.5s;
+  transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.toggler + label:before {
+  top: 10px;
+}
+
+.toggler + label:after {
+  top: -10px;
+}
+
+.item {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  display: block;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.item a {
+  display: block;
+  width: inherit;
+  height: inherit;
+  line-height: 80px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  pointer-events: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.item a:hover {
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 44px;
+}
