@@ -16,10 +16,6 @@ class MenuLayout extends React.Component {
 
   render() {
     const { style, centered, children } = this.props;
-    const layoutStyle = {
-      paddingTop: 48
-    };
-
     let centerStyle = {
       position: 'absolute',
       top: '50%',
@@ -30,9 +26,8 @@ class MenuLayout extends React.Component {
       minWidth: 300,
       maxWidth: 768,
     }
-
     return (
-      <div style={layoutStyle}>
+      <div>
         <div style={centerStyle}>
           {children}
         </div>

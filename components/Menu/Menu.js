@@ -7,12 +7,10 @@ export class Menu extends Component {
   render() {
     return (
       <nav className={s.menu}>
-        <input defaultChecked="checked" className={s.toggler} id="menu-toggler" type="checkbox" />
-        <label htmlFor="menu-toggler"/>
         <ul>
           <li className={s.item}>
-            <Link to="/contact">
-              <i className="fa fa-phone"></i>
+            <Link to="/">
+              <i className="fa fa-home"></i>
             </Link>
           </li>
           <li className={s.item}>
