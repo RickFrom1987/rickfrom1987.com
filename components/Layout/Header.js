@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from './Navigation';
 import Link from '../Link';
+import Dog from '../Dog';
 import * as App from '../Constants/App';
 import * as Colors from '../Constants/Colors';
 
@@ -29,7 +30,6 @@ class Header extends React.Component {
     return (
       <div className="container-fluid" style={headerStyle}>
         <div className="row">
-          <h1 style={logoStyle}><a href="/" style={{ color: Colors.WHITE }}>RickFrom1987</a></h1>
           <Navigation/>
         </div>
       </div>

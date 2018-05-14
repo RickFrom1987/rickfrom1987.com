@@ -1,4 +1,5 @@
 import React from 'react';
+import Dog from '../Dog';
 import * as Colors from '../Constants/Colors';
 import s from './Article.css';
 
@@ -40,16 +41,18 @@ class ArticleLayout extends React.Component {
       ...sectionStyle,
       padding: '0 24px',
     };
-    const imgStyle ={
+    const iconStyle = {
       width: 100,
-      height: 100,
-      margin: '0 auto'
     };
     const articleLayoutStyle = Object.assign({}, baseStyle, style);
     return (
       <div style={articleLayoutStyle}>
         <div style={headerStyle}>
-          <a href="/projects"><img src="/murphy.png" style={imgStyle}/></a>
+          <div style={iconStyle}>
+            <a href="/projects">
+              <Dog/>
+            </a>
+          </div>
         </div>
         <div style={bodyStyle}>
           <div>
