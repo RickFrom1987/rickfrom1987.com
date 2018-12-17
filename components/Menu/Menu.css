@@ -2,12 +2,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 18px;
+  padding: 12px;
 }
 
 .menu ul {
   margin: 0;
   padding: 0;
+}
+
+.menu ul li {
+  float: left;
+  margin-right: 12px;
 }
 
 .toggler {
@@ -96,9 +101,8 @@
 
 .item {
   display: block;
-  margin-bottom: 18px;
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -107,13 +111,13 @@
   display: block;
   width: inherit;
   height: inherit;
-  line-height: 80px;
+  line-height: 40px;
   color: rgba(255, 255, 255, 0.7);
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   text-align: center;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 18px;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -123,5 +127,5 @@
           box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
   color: white;
   background: rgba(255, 255, 255, 0.3);
-  font-size: 44px;
+  font-size: 24px;
 }
