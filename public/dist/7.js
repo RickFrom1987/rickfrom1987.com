@@ -3,7 +3,7 @@ webpackJsonp([7],{
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(14), __esModule: true };
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
 
 /***/ }),
 
@@ -29,7 +29,7 @@ webpackJsonp([7],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(29);
+  var _defineProperty = __webpack_require__(30);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,11 +62,11 @@ webpackJsonp([7],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(13);
+  var _setPrototypeOf = __webpack_require__(14);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(28);
+  var _create = __webpack_require__(29);
   
   var _create2 = _interopRequireDefault(_create);
   
@@ -442,7 +442,7 @@ webpackJsonp([7],{
 
 /***/ }),
 
-/***/ 12:
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -501,19 +501,10 @@ webpackJsonp([7],{
 
 /***/ }),
 
-/***/ 13:
-/***/ (function(module, exports, __webpack_require__) {
-
-  module.exports = { "default": __webpack_require__(15), __esModule: true };
-
-/***/ }),
-
 /***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(17);
-  module.exports = __webpack_require__(7).Object.getPrototypeOf;
-
+  module.exports = { "default": __webpack_require__(16), __esModule: true };
 
 /***/ }),
 
@@ -521,7 +512,7 @@ webpackJsonp([7],{
 /***/ (function(module, exports, __webpack_require__) {
 
   __webpack_require__(18);
-  module.exports = __webpack_require__(7).Object.setPrototypeOf;
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
 
 /***/ }),
@@ -529,10 +520,19 @@ webpackJsonp([7],{
 /***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
+  __webpack_require__(19);
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
+
+
+/***/ }),
+
+/***/ 17:
+/***/ (function(module, exports, __webpack_require__) {
+
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(21);
-  var anObject = __webpack_require__(20);
+  var isObject = __webpack_require__(22);
+  var anObject = __webpack_require__(21);
   var check = function (O, proto) {
     anObject(O);
     if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
@@ -541,7 +541,7 @@ webpackJsonp([7],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function (test, buggy, set) {
         try {
-          set = __webpack_require__(26)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(32).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch (e) { buggy = true; }
@@ -558,14 +558,14 @@ webpackJsonp([7],{
 
 /***/ }),
 
-/***/ 17:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject = __webpack_require__(27);
-  var $getPrototypeOf = __webpack_require__(32);
+  var toObject = __webpack_require__(28);
+  var $getPrototypeOf = __webpack_require__(33);
   
-  __webpack_require__(33)('getPrototypeOf', function () {
+  __webpack_require__(34)('getPrototypeOf', function () {
     return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
@@ -574,17 +574,17 @@ webpackJsonp([7],{
 
 /***/ }),
 
-/***/ 18:
+/***/ 19:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(19);
-  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
+  var $export = __webpack_require__(20);
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(17).set });
 
 
 /***/ }),
 
-/***/ 22:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -593,11 +593,11 @@ webpackJsonp([7],{
     value: true
   });
   
-  var _assign = __webpack_require__(35);
+  var _assign = __webpack_require__(36);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(23);
+  var _extends2 = __webpack_require__(24);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -625,7 +625,11 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Dog = __webpack_require__(12);
+  var _propTypes = __webpack_require__(12);
+  
+  var _propTypes2 = _interopRequireDefault(_propTypes);
+  
+  var _Dog = __webpack_require__(13);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
@@ -633,7 +637,7 @@ webpackJsonp([7],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(25);
+  var _Article = __webpack_require__(26);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -733,16 +737,16 @@ webpackJsonp([7],{
   }(_react2.default.Component);
   
   ArticleLayout.propTypes = {
-    style: _react2.default.PropTypes.object,
-    title: _react2.default.PropTypes.node,
-    subtitle: _react2.default.PropTypes.node,
-    url: _react2.default.PropTypes.node
+    style: _propTypes2.default.object,
+    title: _propTypes2.default.node,
+    subtitle: _propTypes2.default.node,
+    url: _propTypes2.default.node
   };
   exports.default = ArticleLayout;
 
 /***/ }),
 
-/***/ 24:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(9)();
@@ -760,13 +764,13 @@ webpackJsonp([7],{
 
 /***/ }),
 
-/***/ 25:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(24);
+  var content = __webpack_require__(25);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(10)(content, {});
@@ -797,7 +801,7 @@ webpackJsonp([7],{
   });
   exports.default = undefined;
   
-  var _Moment = __webpack_require__(160);
+  var _Moment = __webpack_require__(161);
   
   var _Moment2 = _interopRequireDefault(_Moment);
   
@@ -807,7 +811,7 @@ webpackJsonp([7],{
 
 /***/ }),
 
-/***/ 160:
+/***/ 161:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -840,11 +844,11 @@ webpackJsonp([7],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(22);
+  var _ArticleLayout = __webpack_require__(23);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Moment = __webpack_require__(272);
+  var _Moment = __webpack_require__(273);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -878,7 +882,7 @@ webpackJsonp([7],{
 
 /***/ }),
 
-/***/ 272:
+/***/ 273:
 /***/ (function(module, exports) {
 
   module.exports = {"title":"MomentLens","subtitle":2015,"url":"https://momentlens.co","html":"<p>Working with friends @ <a href=\"//momentlens.co\">momentlens.co</a> was a once in a lifetime opportunity. It was the first hardware startup I have worked for and it was so insanely fun and exciting! I was able to learn a ton from Marc, Erik and Wes (the man behind the hardware of Moment Case!) about so many aspects of business, design and hardware. I was lucky enough to be onboard during which our team was able to raise money on <a href=\"https://www.kickstarter.com/projects/584288471/moment-case-worlds-best-iphone-case-for-mobile-pho\">Kickstarter for the Moment Case</a>. I was brought in to work on whatever needed to be worked on:</p>\n<p><b>Basic Infrastructure.</b></p>\n<p>\nTheir online shop and website was standing up and operating fairly well, but they wanted features, design changes and stability with little infrastructure to support it. I started by moving them onto version control and getting everything into Github asap, before editing a single line of code. I also setup some basic tests and pingdom monitoring so we could make small steps forward. Lessons here is to think about removing code before adding more!\n</p>\n<p><b>Wordpress Plugin Hell.</b></p>\n<p>\nThey didn’t have a full time dev on the site prior to my arrival so they were able to get what they needed by adding a ton of Wordpress and Woocommerce plugins. The problem here is that they are constantly needing updates and can cause issues when doing theme or feature development. Also it is hell on page load time (this affected the site on mobile heavily). Before writing any more code I sat down with the team and went through every plugin to decide whether we actually needed them or not and defensively patched and removed plugins that we didn’t need to help make our codebase smaller and less of a headache.\n</p>\n<p><b>Streamlining Monotonous Tasks.</b></p>\n<p>\nMy first major contribution was to help streamline their ordering process within WooCommerce. They had a manual process that took our customer support gal hours to complete. I hacked together a Woocommerce plugin that took away this task. The code is not ideal as I had zero experience writing Woocommerce plugins, but it worked and we moved forward.\n</p>\n<p><b>Data and Analytics.</b></p>\n<p>\nTurns out it is really important to understand your users and their buying behaviors. The learning in this area has been immense for me. I have always just setup Google analytics and that was the end of that. I am now using Google analytics a bit more carefully now. Working here has taught me that thinking carefully about where and when to hook into google analytics actions and events can make a world of difference in understanding a user base!\n</p>\n<p>I faced many challenges during my time at moment. The site handled hundreds of orders a day, processing in the tens of thousands per month. I helped streamline the project management on the business side as well as some python scripts to help automate business processes. I also was able to train and help the tech intern Eli! Who is now on his way to working on great things, really proud of my time with him and helping him along.</p>\n"};
@@ -886,4 +890,4 @@ webpackJsonp([7],{
 /***/ })
 
 });
-//# sourceMappingURL=7.js.map?a3476b15fb755dca9a30
+//# sourceMappingURL=7.js.map?b6f1b0f7097470f1a455

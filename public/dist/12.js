@@ -3,7 +3,7 @@ webpackJsonp([12],{
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(14), __esModule: true };
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
 
 /***/ }),
 
@@ -29,7 +29,7 @@ webpackJsonp([12],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(29);
+  var _defineProperty = __webpack_require__(30);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,11 +62,11 @@ webpackJsonp([12],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(13);
+  var _setPrototypeOf = __webpack_require__(14);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(28);
+  var _create = __webpack_require__(29);
   
   var _create2 = _interopRequireDefault(_create);
   
@@ -442,7 +442,7 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 12:
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -501,19 +501,10 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 13:
-/***/ (function(module, exports, __webpack_require__) {
-
-  module.exports = { "default": __webpack_require__(15), __esModule: true };
-
-/***/ }),
-
 /***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(17);
-  module.exports = __webpack_require__(7).Object.getPrototypeOf;
-
+  module.exports = { "default": __webpack_require__(16), __esModule: true };
 
 /***/ }),
 
@@ -521,7 +512,7 @@ webpackJsonp([12],{
 /***/ (function(module, exports, __webpack_require__) {
 
   __webpack_require__(18);
-  module.exports = __webpack_require__(7).Object.setPrototypeOf;
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
 
 /***/ }),
@@ -529,10 +520,19 @@ webpackJsonp([12],{
 /***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
+  __webpack_require__(19);
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
+
+
+/***/ }),
+
+/***/ 17:
+/***/ (function(module, exports, __webpack_require__) {
+
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(21);
-  var anObject = __webpack_require__(20);
+  var isObject = __webpack_require__(22);
+  var anObject = __webpack_require__(21);
   var check = function (O, proto) {
     anObject(O);
     if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
@@ -541,7 +541,7 @@ webpackJsonp([12],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function (test, buggy, set) {
         try {
-          set = __webpack_require__(26)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(32).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch (e) { buggy = true; }
@@ -558,14 +558,14 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 17:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject = __webpack_require__(27);
-  var $getPrototypeOf = __webpack_require__(32);
+  var toObject = __webpack_require__(28);
+  var $getPrototypeOf = __webpack_require__(33);
   
-  __webpack_require__(33)('getPrototypeOf', function () {
+  __webpack_require__(34)('getPrototypeOf', function () {
     return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
@@ -574,17 +574,17 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 18:
+/***/ 19:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(19);
-  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
+  var $export = __webpack_require__(20);
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(17).set });
 
 
 /***/ }),
 
-/***/ 22:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -593,11 +593,11 @@ webpackJsonp([12],{
     value: true
   });
   
-  var _assign = __webpack_require__(35);
+  var _assign = __webpack_require__(36);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(23);
+  var _extends2 = __webpack_require__(24);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -625,7 +625,11 @@ webpackJsonp([12],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Dog = __webpack_require__(12);
+  var _propTypes = __webpack_require__(12);
+  
+  var _propTypes2 = _interopRequireDefault(_propTypes);
+  
+  var _Dog = __webpack_require__(13);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
@@ -633,7 +637,7 @@ webpackJsonp([12],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(25);
+  var _Article = __webpack_require__(26);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -733,16 +737,16 @@ webpackJsonp([12],{
   }(_react2.default.Component);
   
   ArticleLayout.propTypes = {
-    style: _react2.default.PropTypes.object,
-    title: _react2.default.PropTypes.node,
-    subtitle: _react2.default.PropTypes.node,
-    url: _react2.default.PropTypes.node
+    style: _propTypes2.default.object,
+    title: _propTypes2.default.node,
+    subtitle: _propTypes2.default.node,
+    url: _propTypes2.default.node
   };
   exports.default = ArticleLayout;
 
 /***/ }),
 
-/***/ 24:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(9)();
@@ -760,13 +764,13 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 25:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(24);
+  var content = __webpack_require__(25);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(10)(content, {});
@@ -797,7 +801,7 @@ webpackJsonp([12],{
   });
   exports.default = undefined;
   
-  var _Booking = __webpack_require__(153);
+  var _Booking = __webpack_require__(154);
   
   var _Booking2 = _interopRequireDefault(_Booking);
   
@@ -807,7 +811,7 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 153:
+/***/ 154:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -840,11 +844,11 @@ webpackJsonp([12],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(22);
+  var _ArticleLayout = __webpack_require__(23);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Booking = __webpack_require__(265);
+  var _Booking = __webpack_require__(266);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -878,7 +882,7 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 265:
+/***/ 266:
 /***/ (function(module, exports) {
 
   module.exports = {"title":"Booking.com","subtitle":2015,"url":"http://suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"http://suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine.</p>\n<p><b>Challenges</b></p>\n<p>\nI was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams.\n</p>\n<p><b>Growing</b></p>\n<p>\nThis was one of my first gigs working as a contractor and I have to admit I made some mistakes on the business and coding side of things. I learned a ton about what the right/wrong way to approach problems both with code and with people. A  ton of lessons learned and I grew so much and matured as a person by the end of the journey!\n</p>\n<p>\nI really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim <3\n</p>"};
@@ -886,4 +890,4 @@ webpackJsonp([12],{
 /***/ })
 
 });
-//# sourceMappingURL=12.js.map?43c8b767020ff9db999b
+//# sourceMappingURL=12.js.map?f300d49d1bf497575fbf

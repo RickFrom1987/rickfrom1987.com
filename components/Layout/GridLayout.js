@@ -7,7 +7,6 @@ const ResponsiveReactGridLayout = WidthProvider(Responsive);
 class GridLayout extends React.Component {
 
   static propTypes = {
-    onLayoutChange: PropTypes.func.isRequired,
     items: PropTypes.object,
     children: PropTypes.node,
   };

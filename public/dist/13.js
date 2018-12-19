@@ -3,7 +3,7 @@ webpackJsonp([13],{
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(14), __esModule: true };
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
 
 /***/ }),
 
@@ -29,7 +29,7 @@ webpackJsonp([13],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(29);
+  var _defineProperty = __webpack_require__(30);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,11 +62,11 @@ webpackJsonp([13],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(13);
+  var _setPrototypeOf = __webpack_require__(14);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(28);
+  var _create = __webpack_require__(29);
   
   var _create2 = _interopRequireDefault(_create);
   
@@ -442,7 +442,7 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 12:
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -501,19 +501,10 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 13:
-/***/ (function(module, exports, __webpack_require__) {
-
-  module.exports = { "default": __webpack_require__(15), __esModule: true };
-
-/***/ }),
-
 /***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(17);
-  module.exports = __webpack_require__(7).Object.getPrototypeOf;
-
+  module.exports = { "default": __webpack_require__(16), __esModule: true };
 
 /***/ }),
 
@@ -521,7 +512,7 @@ webpackJsonp([13],{
 /***/ (function(module, exports, __webpack_require__) {
 
   __webpack_require__(18);
-  module.exports = __webpack_require__(7).Object.setPrototypeOf;
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
 
 /***/ }),
@@ -529,10 +520,19 @@ webpackJsonp([13],{
 /***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
+  __webpack_require__(19);
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
+
+
+/***/ }),
+
+/***/ 17:
+/***/ (function(module, exports, __webpack_require__) {
+
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(21);
-  var anObject = __webpack_require__(20);
+  var isObject = __webpack_require__(22);
+  var anObject = __webpack_require__(21);
   var check = function (O, proto) {
     anObject(O);
     if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
@@ -541,7 +541,7 @@ webpackJsonp([13],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function (test, buggy, set) {
         try {
-          set = __webpack_require__(26)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(32).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch (e) { buggy = true; }
@@ -558,14 +558,14 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 17:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject = __webpack_require__(27);
-  var $getPrototypeOf = __webpack_require__(32);
+  var toObject = __webpack_require__(28);
+  var $getPrototypeOf = __webpack_require__(33);
   
-  __webpack_require__(33)('getPrototypeOf', function () {
+  __webpack_require__(34)('getPrototypeOf', function () {
     return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
@@ -574,17 +574,17 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 18:
+/***/ 19:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(19);
-  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
+  var $export = __webpack_require__(20);
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(17).set });
 
 
 /***/ }),
 
-/***/ 22:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -593,11 +593,11 @@ webpackJsonp([13],{
     value: true
   });
   
-  var _assign = __webpack_require__(35);
+  var _assign = __webpack_require__(36);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(23);
+  var _extends2 = __webpack_require__(24);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -625,7 +625,11 @@ webpackJsonp([13],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Dog = __webpack_require__(12);
+  var _propTypes = __webpack_require__(12);
+  
+  var _propTypes2 = _interopRequireDefault(_propTypes);
+  
+  var _Dog = __webpack_require__(13);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
@@ -633,7 +637,7 @@ webpackJsonp([13],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(25);
+  var _Article = __webpack_require__(26);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -733,16 +737,16 @@ webpackJsonp([13],{
   }(_react2.default.Component);
   
   ArticleLayout.propTypes = {
-    style: _react2.default.PropTypes.object,
-    title: _react2.default.PropTypes.node,
-    subtitle: _react2.default.PropTypes.node,
-    url: _react2.default.PropTypes.node
+    style: _propTypes2.default.object,
+    title: _propTypes2.default.node,
+    subtitle: _propTypes2.default.node,
+    url: _propTypes2.default.node
   };
   exports.default = ArticleLayout;
 
 /***/ }),
 
-/***/ 24:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(9)();
@@ -760,13 +764,13 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 25:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(24);
+  var content = __webpack_require__(25);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(10)(content, {});
@@ -797,7 +801,7 @@ webpackJsonp([13],{
   });
   exports.default = undefined;
   
-  var _Appuri = __webpack_require__(152);
+  var _Appuri = __webpack_require__(153);
   
   var _Appuri2 = _interopRequireDefault(_Appuri);
   
@@ -807,7 +811,7 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 152:
+/***/ 153:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -840,11 +844,11 @@ webpackJsonp([13],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(22);
+  var _ArticleLayout = __webpack_require__(23);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Appuri = __webpack_require__(264);
+  var _Appuri = __webpack_require__(265);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -878,7 +882,7 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 264:
+/***/ 265:
 /***/ (function(module, exports) {
 
   module.exports = {"title":"appuri.com","subtitle":2017,"url":"https://appuri.com","html":"<p>The team at <a href=\"//appuri.com\">Appuri</a> was awesome, so awesome that they are now part of <a href=\"//docusign.com\">DocuSign</a>!</p>\n<p>My time working with Appuri was rewarding and challenging. Feel absolutely humbled and honored to be a part of their story. I would describe my role with the company as a solutions engineer. I was tasked with working closely with different vendors/contractors to deliver solutions to our customers. Dealt with managing a lot of network calls and authentication issues, while connecting to different data sources.</p>\n<p><b>Salesforce Challenges</b></p>\n<p>\nI knew nothing about Salesforce going into this role and was presented with some tasks and features that needed to live within the Salesforce ecosystem. If you have ever even opened up the Salesforce dashboard, it is insanity. So many tabs and options. I had to quickly learn the interface, and the semantics of the Salesforce ecosystem (had to ask questiosn and get some help here) while also delivering Appuri features. The importance of isolating and creating a proper test harness was crucial here.\n</p>\n<p><b>Defensive Coding</b></p>\n<p>\nWorking with an older and slighlty \"under documented\" codebase written by engineers who had previously left the company is inherently very difficult. I needed to understand how to add features and make an impact without trashing everything in my wake. My experience with defensive coding came in very handy, starting with removing code and breaking up files in smaller more understandable components was one of the first things I did which allowed me to move forward! I was also able to do some work to clean up and improve our CI with CircleCI to make test run faster and more accurately.\n</p>\n<p>\nWorking at Appuri brought back fantastic memories from the very first startup I worked for. The hustle and drive everyday was great to see and be a part of.\n</p>\n"};
@@ -886,4 +890,4 @@ webpackJsonp([13],{
 /***/ })
 
 });
-//# sourceMappingURL=13.js.map?d4adfa37e9463697b18f
+//# sourceMappingURL=13.js.map?eaacd027d3e4deabd986

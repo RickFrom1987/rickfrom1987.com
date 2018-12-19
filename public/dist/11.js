@@ -3,7 +3,7 @@ webpackJsonp([11],{
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(14), __esModule: true };
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
 
 /***/ }),
 
@@ -29,7 +29,7 @@ webpackJsonp([11],{
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(29);
+  var _defineProperty = __webpack_require__(30);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -62,11 +62,11 @@ webpackJsonp([11],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(13);
+  var _setPrototypeOf = __webpack_require__(14);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(28);
+  var _create = __webpack_require__(29);
   
   var _create2 = _interopRequireDefault(_create);
   
@@ -442,7 +442,7 @@ webpackJsonp([11],{
 
 /***/ }),
 
-/***/ 12:
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -501,19 +501,10 @@ webpackJsonp([11],{
 
 /***/ }),
 
-/***/ 13:
-/***/ (function(module, exports, __webpack_require__) {
-
-  module.exports = { "default": __webpack_require__(15), __esModule: true };
-
-/***/ }),
-
 /***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(17);
-  module.exports = __webpack_require__(7).Object.getPrototypeOf;
-
+  module.exports = { "default": __webpack_require__(16), __esModule: true };
 
 /***/ }),
 
@@ -521,7 +512,7 @@ webpackJsonp([11],{
 /***/ (function(module, exports, __webpack_require__) {
 
   __webpack_require__(18);
-  module.exports = __webpack_require__(7).Object.setPrototypeOf;
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
 
 /***/ }),
@@ -529,10 +520,19 @@ webpackJsonp([11],{
 /***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
+  __webpack_require__(19);
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
+
+
+/***/ }),
+
+/***/ 17:
+/***/ (function(module, exports, __webpack_require__) {
+
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(21);
-  var anObject = __webpack_require__(20);
+  var isObject = __webpack_require__(22);
+  var anObject = __webpack_require__(21);
   var check = function (O, proto) {
     anObject(O);
     if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
@@ -541,7 +541,7 @@ webpackJsonp([11],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function (test, buggy, set) {
         try {
-          set = __webpack_require__(26)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(32).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch (e) { buggy = true; }
@@ -558,14 +558,14 @@ webpackJsonp([11],{
 
 /***/ }),
 
-/***/ 17:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject = __webpack_require__(27);
-  var $getPrototypeOf = __webpack_require__(32);
+  var toObject = __webpack_require__(28);
+  var $getPrototypeOf = __webpack_require__(33);
   
-  __webpack_require__(33)('getPrototypeOf', function () {
+  __webpack_require__(34)('getPrototypeOf', function () {
     return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
@@ -574,17 +574,17 @@ webpackJsonp([11],{
 
 /***/ }),
 
-/***/ 18:
+/***/ 19:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(19);
-  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
+  var $export = __webpack_require__(20);
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(17).set });
 
 
 /***/ }),
 
-/***/ 22:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -593,11 +593,11 @@ webpackJsonp([11],{
     value: true
   });
   
-  var _assign = __webpack_require__(35);
+  var _assign = __webpack_require__(36);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(23);
+  var _extends2 = __webpack_require__(24);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -625,7 +625,11 @@ webpackJsonp([11],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Dog = __webpack_require__(12);
+  var _propTypes = __webpack_require__(12);
+  
+  var _propTypes2 = _interopRequireDefault(_propTypes);
+  
+  var _Dog = __webpack_require__(13);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
@@ -633,7 +637,7 @@ webpackJsonp([11],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(25);
+  var _Article = __webpack_require__(26);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -733,16 +737,16 @@ webpackJsonp([11],{
   }(_react2.default.Component);
   
   ArticleLayout.propTypes = {
-    style: _react2.default.PropTypes.object,
-    title: _react2.default.PropTypes.node,
-    subtitle: _react2.default.PropTypes.node,
-    url: _react2.default.PropTypes.node
+    style: _propTypes2.default.object,
+    title: _propTypes2.default.node,
+    subtitle: _propTypes2.default.node,
+    url: _propTypes2.default.node
   };
   exports.default = ArticleLayout;
 
 /***/ }),
 
-/***/ 24:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(9)();
@@ -760,13 +764,13 @@ webpackJsonp([11],{
 
 /***/ }),
 
-/***/ 25:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(24);
+  var content = __webpack_require__(25);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(10)(content, {});
@@ -797,7 +801,7 @@ webpackJsonp([11],{
   });
   exports.default = undefined;
   
-  var _Brandly = __webpack_require__(154);
+  var _Brandly = __webpack_require__(155);
   
   var _Brandly2 = _interopRequireDefault(_Brandly);
   
@@ -807,7 +811,7 @@ webpackJsonp([11],{
 
 /***/ }),
 
-/***/ 154:
+/***/ 155:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -840,11 +844,11 @@ webpackJsonp([11],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(22);
+  var _ArticleLayout = __webpack_require__(23);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Brandly = __webpack_require__(266);
+  var _Brandly = __webpack_require__(267);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -878,7 +882,7 @@ webpackJsonp([11],{
 
 /***/ }),
 
-/***/ 266:
+/***/ 267:
 /***/ (function(module, exports) {
 
   module.exports = {"title":"Brandly.com","subtitle":2015,"url":"//brandly.com","html":"<p><a href=\"//brandly.com\">Brandly</a> is a small startup in Seattle that wants to make ordering business cards easier. They needed some frontend love to bring an existing angular app up to date. I was brought in to help give the app a facelift and make the user experience better. I enjoyed working with Doug, Reed, Saaj and Tony. The team was passionate about what they were doing and it really makes a huge difference when you go in everyday.</p>\n<p><b>Challenges</b></p>\n<p>\nIn this job the first challenge I faced was making small unbreaking changes to a complex frontend. The original author had since moved on and there was not much documentation or solid patterns to follow. I wanted to show the business progress, by making a ton of changes quickly, but I had to control myself and ensure the app still worked as expected with small controlled changes and testing before moving on.\n</p>"};
@@ -886,4 +890,4 @@ webpackJsonp([11],{
 /***/ })
 
 });
-//# sourceMappingURL=11.js.map?9fc7fac700a961cdf83c
+//# sourceMappingURL=11.js.map?2a3327fffeda8e9cfd80

@@ -70,7 +70,7 @@ class BrowserMock extends React.Component {
       left: '50%',
       transform: 'translate(-50%, -50%)',
       msTransform: 'translate(-50%, -50%)', /* IE 9 */
-      webkitTransform: 'translate(-50%, -50%)', /* Chrome, Safari, Opera */
+      WebkitTransform: 'translate(-50%, -50%)', /* Chrome, Safari, Opera */
       minWidth: 200,
       zIndex: 1000
     };

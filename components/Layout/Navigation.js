@@ -9,7 +9,7 @@ function Navigation() {
   return (
     <nav className={s.nav}>
       <Link className={linkClass('/')} to="/">
-        <i className="fa fa-home"></i>
+        <i className="fa fa-igloo"></i>
       </Link>
       <Link className={linkClass('/projects')} to="/projects">
         <i className="fa fa-desktop"></i>

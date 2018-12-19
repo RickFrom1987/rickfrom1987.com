@@ -10,7 +10,7 @@ export class Menu extends Component {
         <ul>
           <li className={s.item}>
             <Link to="/">
-              <i className="fa fa-home"></i>
+              <i className="fa fa-igloo"></i>
             </Link>
           </li>
           <li className={s.item}>
