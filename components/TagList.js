@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import * as Colors from './Constants/Colors';
 
 class TagList extends React.Component {
@@ -8,8 +9,8 @@ class TagList extends React.Component {
   }
   
   static propTypes = {
-    style: React.PropTypes.object,
-    tags: React.PropTypes.array,
+    style: PropTypes.object,
+    tags: PropTypes.array,
   }
 
   _randomColor = () => {

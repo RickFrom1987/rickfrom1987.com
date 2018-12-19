@@ -1,5 +1,23 @@
 {
   "main": {
-    "js": "/dist/main.js?bc8ce2424a2e6f6a9d4f"
+    "js": "/dist/main.js?2a59fc512e6f76862f26"
+  },
+  "": {
+    "js": [
+      "/dist/0.js?04bd0fc532d9c29ffb59",
+      "/dist/2.js?05dc1a7ea55f0bb89ee0",
+      "/dist/3.js?e82f75a35d3c1f945b44",
+      "/dist/4.js?5723423a948d09719459",
+      "/dist/5.js?1a150b4dc5adf2cea9f4",
+      "/dist/6.js?5f1c6b380700a0d78a33",
+      "/dist/7.js?c49efca0baf63176de7e",
+      "/dist/8.js?d76393fd001e3a0bd7ef",
+      "/dist/9.js?b4d8e96e3ec1d9bdc778",
+      "/dist/10.js?b6a3733af1d5804bac90",
+      "/dist/11.js?a65efa56c286c1f92c0f",
+      "/dist/12.js?eb00f40acbbb1120d9e8",
+      "/dist/13.js?5a352c9ab5919113eb23"
+    ],
+    "json": "/dist/68399ac0c7e0a7f2256c.hot-update.json"
   }
 }

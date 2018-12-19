@@ -1,14 +1,14 @@
 webpackJsonp([2],{
 
 /***/ 2:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(17), __esModule: true };
+  module.exports = { "default": __webpack_require__(14), __esModule: true };
 
-/***/ },
+/***/ }),
 
 /***/ 3:
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
   "use strict";
   
@@ -20,16 +20,16 @@ webpackJsonp([2],{
     }
   };
 
-/***/ },
+/***/ }),
 
 /***/ 4:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(35);
+  var _defineProperty = __webpack_require__(29);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -53,24 +53,24 @@ webpackJsonp([2],{
     };
   }();
 
-/***/ },
+/***/ }),
 
 /***/ 5:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(16);
+  var _setPrototypeOf = __webpack_require__(13);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(34);
+  var _create = __webpack_require__(28);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(14);
+  var _typeof2 = __webpack_require__(11);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -92,16 +92,16 @@ webpackJsonp([2],{
     if (superClass) _setPrototypeOf2.default ? (0, _setPrototypeOf2.default)(subClass, superClass) : subClass.__proto__ = superClass;
   };
 
-/***/ },
+/***/ }),
 
 /***/ 6:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(14);
+  var _typeof2 = __webpack_require__(11);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -115,10 +115,10 @@ webpackJsonp([2],{
     return call && ((typeof call === "undefined" ? "undefined" : (0, _typeof3.default)(call)) === "object" || typeof call === "function") ? call : self;
   };
 
-/***/ },
+/***/ }),
 
-/***/ 11:
-/***/ function(module, exports) {
+/***/ 8:
+/***/ (function(module, exports) {
 
   'use strict';
   
@@ -130,10 +130,10 @@ webpackJsonp([2],{
   var BLUE = exports.BLUE = '#2986BE';
   var GRADIENT_BG = exports.GRADIENT_BG = 'linear-gradient(-150deg, #00C1B6 0%, #136EB5 97%)';
 
-/***/ },
+/***/ }),
 
-/***/ 12:
-/***/ function(module, exports) {
+/***/ 9:
+/***/ (function(module, exports) {
 
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -187,10 +187,10 @@ webpackJsonp([2],{
   };
 
 
-/***/ },
+/***/ }),
 
-/***/ 13:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 10:
+/***/ (function(module, exports, __webpack_require__) {
 
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -440,10 +440,10 @@ webpackJsonp([2],{
   }
 
 
-/***/ },
+/***/ }),
 
-/***/ 15:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 12:
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
@@ -499,53 +499,55 @@ webpackJsonp([2],{
   
   exports.default = Dog;
 
-/***/ },
+/***/ }),
 
-/***/ 16:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 13:
+/***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(18), __esModule: true };
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
 
-/***/ },
+/***/ }),
 
-/***/ 17:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 14:
+/***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(20);
+  __webpack_require__(17);
   module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
-/***/ },
 
-/***/ 18:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
 
-  __webpack_require__(21);
+/***/ 15:
+/***/ (function(module, exports, __webpack_require__) {
+
+  __webpack_require__(18);
   module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
-/***/ },
 
-/***/ 19:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 16:
+/***/ (function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(31)
-    , anObject = __webpack_require__(23);
-  var check = function(O, proto){
+  var isObject = __webpack_require__(21);
+  var anObject = __webpack_require__(20);
+  var check = function (O, proto) {
     anObject(O);
-    if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
+    if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
   };
   module.exports = {
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-      function(test, buggy, set){
+      function (test, buggy, set) {
         try {
-          set = __webpack_require__(30)(Function.call, __webpack_require__(36).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(26)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
-        } catch(e){ buggy = true; }
-        return function setPrototypeOf(O, proto){
+        } catch (e) { buggy = true; }
+        return function setPrototypeOf(O, proto) {
           check(O, proto);
-          if(buggy)O.__proto__ = proto;
+          if (buggy) O.__proto__ = proto;
           else set(O, proto);
           return O;
         };
@@ -553,34 +555,37 @@ webpackJsonp([2],{
     check: check
   };
 
-/***/ },
 
-/***/ 20:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 17:
+/***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(32)
-    , $getPrototypeOf = __webpack_require__(37);
+  var toObject = __webpack_require__(27);
+  var $getPrototypeOf = __webpack_require__(32);
   
-  __webpack_require__(38)('getPrototypeOf', function(){
-    return function getPrototypeOf(it){
+  __webpack_require__(33)('getPrototypeOf', function () {
+    return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
   });
 
-/***/ },
 
-/***/ 21:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 18:
+/***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(24);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(19).set});
+  var $export = __webpack_require__(19);
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
 
-/***/ },
 
-/***/ 47:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 37:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -589,7 +594,7 @@ webpackJsonp([2],{
   });
   exports.default = undefined;
   
-  var _Link = __webpack_require__(65);
+  var _Link = __webpack_require__(46);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -604,10 +609,10 @@ webpackJsonp([2],{
                                      * LICENSE.txt file in the root directory of this source tree.
                                      */
 
-/***/ },
+/***/ }),
 
-/***/ 52:
-/***/ function(module, exports) {
+/***/ 39:
+/***/ (function(module, exports) {
 
   "use strict";
   
@@ -625,10 +630,10 @@ webpackJsonp([2],{
     return target;
   };
 
-/***/ },
+/***/ }),
 
-/***/ 65:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 46:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -636,11 +641,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(27);
+  var _extends2 = __webpack_require__(23);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(52);
+  var _objectWithoutProperties2 = __webpack_require__(39);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -668,7 +673,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(60);
+  var _history = __webpack_require__(43);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -746,10 +751,10 @@ webpackJsonp([2],{
   };
   exports.default = Link;
 
-/***/ },
+/***/ }),
 
-/***/ 71:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 53:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -779,7 +784,7 @@ webpackJsonp([2],{
   exports.validateLayout = validateLayout;
   exports.autoBindHandlers = autoBindHandlers;
   
-  var _lodash = __webpack_require__(114);
+  var _lodash = __webpack_require__(85);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
@@ -1211,10 +1216,10 @@ webpackJsonp([2],{
     });
   }
 
-/***/ },
+/***/ }),
 
-/***/ 114:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 85:
+/***/ (function(module, exports, __webpack_require__) {
 
   /* WEBPACK VAR INJECTION */(function(global, module) {/**
    * Lodash (Custom Build) <https://lodash.com/>
@@ -3065,12 +3070,12 @@ webpackJsonp([2],{
   
   module.exports = isEqual;
   
-  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(215)(module)))
+  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(92)(module)))
 
-/***/ },
+/***/ }),
 
-/***/ 117:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 88:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -3191,10 +3196,10 @@ webpackJsonp([2],{
   module.exports = exports['default'];
 
 
-/***/ },
+/***/ }),
 
-/***/ 151:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 104:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -3226,23 +3231,23 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _HeaderLayout = __webpack_require__(220);
+  var _HeaderLayout = __webpack_require__(145);
   
   var _HeaderLayout2 = _interopRequireDefault(_HeaderLayout);
   
-  var _ProjectGridLayout = __webpack_require__(222);
+  var _ProjectGridLayout = __webpack_require__(147);
   
   var _ProjectGridLayout2 = _interopRequireDefault(_ProjectGridLayout);
   
-  var _Link = __webpack_require__(47);
+  var _Link = __webpack_require__(37);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Projects = __webpack_require__(416);
+  var _Projects = __webpack_require__(260);
   
   var _Projects2 = _interopRequireDefault(_Projects);
   
-  var _projects = __webpack_require__(316);
+  var _projects = __webpack_require__(227);
   
   var _projects2 = _interopRequireDefault(_projects);
   
@@ -3278,21 +3283,21 @@ webpackJsonp([2],{
   
   exports.default = ProjectsPage;
 
-/***/ },
+/***/ }),
 
-/***/ 177:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 130:
+/***/ (function(module, exports, __webpack_require__) {
 
   (function webpackUniversalModuleDefinition(root, factory) {
   	if(true)
-  		module.exports = factory(__webpack_require__(1), __webpack_require__(85));
+  		module.exports = factory(__webpack_require__(1), __webpack_require__(62));
   	else if(typeof define === 'function' && define.amd)
   		define(["react", "react-dom"], factory);
   	else if(typeof exports === 'object')
   		exports["ReactDraggable"] = factory(require("react"), require("react-dom"));
   	else
   		root["ReactDraggable"] = factory(root["React"], root["ReactDOM"]);
-  })(this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_3__) {
+  })(this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_11__) {
   return /******/ (function(modules) { // webpackBootstrap
   /******/ 	// The module cache
   /******/ 	var installedModules = {};
@@ -3342,7 +3347,7 @@ webpackJsonp([2],{
   	'use strict';
   	
   	module.exports = __webpack_require__(1).default;
-  	module.exports.DraggableCore = __webpack_require__(9).default;
+  	module.exports.DraggableCore = __webpack_require__(17).default;
   
   /***/ },
   /* 1 */
@@ -3364,25 +3369,29 @@ webpackJsonp([2],{
   	
   	var _react2 = _interopRequireDefault(_react);
   	
-  	var _reactDom = __webpack_require__(3);
+  	var _propTypes = __webpack_require__(3);
+  	
+  	var _propTypes2 = _interopRequireDefault(_propTypes);
+  	
+  	var _reactDom = __webpack_require__(11);
   	
   	var _reactDom2 = _interopRequireDefault(_reactDom);
   	
-  	var _classnames = __webpack_require__(4);
+  	var _classnames = __webpack_require__(12);
   	
   	var _classnames2 = _interopRequireDefault(_classnames);
   	
-  	var _domFns = __webpack_require__(5);
+  	var _domFns = __webpack_require__(13);
   	
-  	var _positionFns = __webpack_require__(8);
+  	var _positionFns = __webpack_require__(16);
   	
-  	var _shims = __webpack_require__(6);
+  	var _shims = __webpack_require__(14);
   	
-  	var _DraggableCore = __webpack_require__(9);
+  	var _DraggableCore = __webpack_require__(17);
   	
   	var _DraggableCore2 = _interopRequireDefault(_DraggableCore);
   	
-  	var _log = __webpack_require__(11);
+  	var _log = __webpack_require__(19);
   	
   	var _log2 = _interopRequireDefault(_log);
   	
@@ -3640,7 +3649,7 @@ webpackJsonp([2],{
   	   *
   	   * Defaults to 'both'.
   	   */
-  	  axis: _react.PropTypes.oneOf(['both', 'x', 'y', 'none']),
+  	  axis: _propTypes2.default.oneOf(['both', 'x', 'y', 'none']),
   	
   	  /**
   	   * `bounds` determines the range of movement available to the element.
@@ -3668,16 +3677,16 @@ webpackJsonp([2],{
   	   *   });
   	   * ```
   	   */
-  	  bounds: _react.PropTypes.oneOfType([_react.PropTypes.shape({
-  	    left: _react.PropTypes.number,
-  	    right: _react.PropTypes.number,
-  	    top: _react.PropTypes.number,
-  	    bottom: _react.PropTypes.number
-  	  }), _react.PropTypes.string, _react.PropTypes.oneOf([false])]),
+  	  bounds: _propTypes2.default.oneOfType([_propTypes2.default.shape({
+  	    left: _propTypes2.default.number,
+  	    right: _propTypes2.default.number,
+  	    top: _propTypes2.default.number,
+  	    bottom: _propTypes2.default.number
+  	  }), _propTypes2.default.string, _propTypes2.default.oneOf([false])]),
   	
-  	  defaultClassName: _react.PropTypes.string,
-  	  defaultClassNameDragging: _react.PropTypes.string,
-  	  defaultClassNameDragged: _react.PropTypes.string,
+  	  defaultClassName: _propTypes2.default.string,
+  	  defaultClassNameDragging: _propTypes2.default.string,
+  	  defaultClassNameDragged: _propTypes2.default.string,
   	
   	  /**
   	   * `defaultPosition` specifies the x and y that the dragged item should start at
@@ -3696,9 +3705,9 @@ webpackJsonp([2],{
   	   *      });
   	   * ```
   	   */
-  	  defaultPosition: _react.PropTypes.shape({
-  	    x: _react.PropTypes.number,
-  	    y: _react.PropTypes.number
+  	  defaultPosition: _propTypes2.default.shape({
+  	    x: _propTypes2.default.number,
+  	    y: _propTypes2.default.number
   	  }),
   	
   	  /**
@@ -3721,9 +3730,9 @@ webpackJsonp([2],{
   	   *      });
   	   * ```
   	   */
-  	  position: _react.PropTypes.shape({
-  	    x: _react.PropTypes.number,
-  	    y: _react.PropTypes.number
+  	  position: _propTypes2.default.shape({
+  	    x: _propTypes2.default.number,
+  	    y: _propTypes2.default.number
   	  }),
   	
   	  /**
@@ -3752,12 +3761,853 @@ webpackJsonp([2],{
   
   /***/ },
   /* 3 */
-  /***/ function(module, exports) {
+  /***/ function(module, exports, __webpack_require__) {
   
-  	module.exports = __WEBPACK_EXTERNAL_MODULE_3__;
+  	/**
+  	 * Copyright 2013-present, Facebook, Inc.
+  	 * All rights reserved.
+  	 *
+  	 * This source code is licensed under the BSD-style license found in the
+  	 * LICENSE file in the root directory of this source tree. An additional grant
+  	 * of patent rights can be found in the PATENTS file in the same directory.
+  	 */
+  	
+  	if (({"DRAGGABLE_DEBUG":undefined}).NODE_ENV !== 'production') {
+  	  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+  	    Symbol.for &&
+  	    Symbol.for('react.element')) ||
+  	    0xeac7;
+  	
+  	  var isValidElement = function(object) {
+  	    return typeof object === 'object' &&
+  	      object !== null &&
+  	      object.$$typeof === REACT_ELEMENT_TYPE;
+  	  };
+  	
+  	  // By explicitly using `prop-types` you are opting into new development behavior.
+  	  // http://fb.me/prop-types-in-prod
+  	  var throwOnDirectAccess = true;
+  	  module.exports = __webpack_require__(4)(isValidElement, throwOnDirectAccess);
+  	} else {
+  	  // By explicitly using `prop-types` you are opting into new production behavior.
+  	  // http://fb.me/prop-types-in-prod
+  	  module.exports = __webpack_require__(10)();
+  	}
+  
   
   /***/ },
   /* 4 */
+  /***/ function(module, exports, __webpack_require__) {
+  
+  	/**
+  	 * Copyright 2013-present, Facebook, Inc.
+  	 * All rights reserved.
+  	 *
+  	 * This source code is licensed under the BSD-style license found in the
+  	 * LICENSE file in the root directory of this source tree. An additional grant
+  	 * of patent rights can be found in the PATENTS file in the same directory.
+  	 */
+  	
+  	'use strict';
+  	
+  	var emptyFunction = __webpack_require__(5);
+  	var invariant = __webpack_require__(6);
+  	var warning = __webpack_require__(7);
+  	
+  	var ReactPropTypesSecret = __webpack_require__(8);
+  	var checkPropTypes = __webpack_require__(9);
+  	
+  	module.exports = function(isValidElement, throwOnDirectAccess) {
+  	  /* global Symbol */
+  	  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+  	  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+  	
+  	  /**
+  	   * Returns the iterator method function contained on the iterable object.
+  	   *
+  	   * Be sure to invoke the function with the iterable as context:
+  	   *
+  	   *     var iteratorFn = getIteratorFn(myIterable);
+  	   *     if (iteratorFn) {
+  	   *       var iterator = iteratorFn.call(myIterable);
+  	   *       ...
+  	   *     }
+  	   *
+  	   * @param {?object} maybeIterable
+  	   * @return {?function}
+  	   */
+  	  function getIteratorFn(maybeIterable) {
+  	    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+  	    if (typeof iteratorFn === 'function') {
+  	      return iteratorFn;
+  	    }
+  	  }
+  	
+  	  /**
+  	   * Collection of methods that allow declaration and validation of props that are
+  	   * supplied to React components. Example usage:
+  	   *
+  	   *   var Props = require('ReactPropTypes');
+  	   *   var MyArticle = React.createClass({
+  	   *     propTypes: {
+  	   *       // An optional string prop named "description".
+  	   *       description: Props.string,
+  	   *
+  	   *       // A required enum prop named "category".
+  	   *       category: Props.oneOf(['News','Photos']).isRequired,
+  	   *
+  	   *       // A prop named "dialog" that requires an instance of Dialog.
+  	   *       dialog: Props.instanceOf(Dialog).isRequired
+  	   *     },
+  	   *     render: function() { ... }
+  	   *   });
+  	   *
+  	   * A more formal specification of how these methods are used:
+  	   *
+  	   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+  	   *   decl := ReactPropTypes.{type}(.isRequired)?
+  	   *
+  	   * Each and every declaration produces a function with the same signature. This
+  	   * allows the creation of custom validation functions. For example:
+  	   *
+  	   *  var MyLink = React.createClass({
+  	   *    propTypes: {
+  	   *      // An optional string or URI prop named "href".
+  	   *      href: function(props, propName, componentName) {
+  	   *        var propValue = props[propName];
+  	   *        if (propValue != null && typeof propValue !== 'string' &&
+  	   *            !(propValue instanceof URI)) {
+  	   *          return new Error(
+  	   *            'Expected a string or an URI for ' + propName + ' in ' +
+  	   *            componentName
+  	   *          );
+  	   *        }
+  	   *      }
+  	   *    },
+  	   *    render: function() {...}
+  	   *  });
+  	   *
+  	   * @internal
+  	   */
+  	
+  	  var ANONYMOUS = '<<anonymous>>';
+  	
+  	  // Important!
+  	  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+  	  var ReactPropTypes = {
+  	    array: createPrimitiveTypeChecker('array'),
+  	    bool: createPrimitiveTypeChecker('boolean'),
+  	    func: createPrimitiveTypeChecker('function'),
+  	    number: createPrimitiveTypeChecker('number'),
+  	    object: createPrimitiveTypeChecker('object'),
+  	    string: createPrimitiveTypeChecker('string'),
+  	    symbol: createPrimitiveTypeChecker('symbol'),
+  	
+  	    any: createAnyTypeChecker(),
+  	    arrayOf: createArrayOfTypeChecker,
+  	    element: createElementTypeChecker(),
+  	    instanceOf: createInstanceTypeChecker,
+  	    node: createNodeChecker(),
+  	    objectOf: createObjectOfTypeChecker,
+  	    oneOf: createEnumTypeChecker,
+  	    oneOfType: createUnionTypeChecker,
+  	    shape: createShapeTypeChecker
+  	  };
+  	
+  	  /**
+  	   * inlined Object.is polyfill to avoid requiring consumers ship their own
+  	   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+  	   */
+  	  /*eslint-disable no-self-compare*/
+  	  function is(x, y) {
+  	    // SameValue algorithm
+  	    if (x === y) {
+  	      // Steps 1-5, 7-10
+  	      // Steps 6.b-6.e: +0 != -0
+  	      return x !== 0 || 1 / x === 1 / y;
+  	    } else {
+  	      // Step 6.a: NaN == NaN
+  	      return x !== x && y !== y;
+  	    }
+  	  }
+  	  /*eslint-enable no-self-compare*/
+  	
+  	  /**
+  	   * We use an Error-like object for backward compatibility as people may call
+  	   * PropTypes directly and inspect their output. However, we don't use real
+  	   * Errors anymore. We don't inspect their stack anyway, and creating them
+  	   * is prohibitively expensive if they are created too often, such as what
+  	   * happens in oneOfType() for any type before the one that matched.
+  	   */
+  	  function PropTypeError(message) {
+  	    this.message = message;
+  	    this.stack = '';
+  	  }
+  	  // Make `instanceof Error` still work for returned errors.
+  	  PropTypeError.prototype = Error.prototype;
+  	
+  	  function createChainableTypeChecker(validate) {
+  	    if (({"DRAGGABLE_DEBUG":undefined}).NODE_ENV !== 'production') {
+  	      var manualPropTypeCallCache = {};
+  	      var manualPropTypeWarningCount = 0;
+  	    }
+  	    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+  	      componentName = componentName || ANONYMOUS;
+  	      propFullName = propFullName || propName;
+  	
+  	      if (secret !== ReactPropTypesSecret) {
+  	        if (throwOnDirectAccess) {
+  	          // New behavior only for users of `prop-types` package
+  	          invariant(
+  	            false,
+  	            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+  	            'Use `PropTypes.checkPropTypes()` to call them. ' +
+  	            'Read more at http://fb.me/use-check-prop-types'
+  	          );
+  	        } else if (({"DRAGGABLE_DEBUG":undefined}).NODE_ENV !== 'production' && typeof console !== 'undefined') {
+  	          // Old behavior for people using React.PropTypes
+  	          var cacheKey = componentName + ':' + propName;
+  	          if (
+  	            !manualPropTypeCallCache[cacheKey] &&
+  	            // Avoid spamming the console because they are often not actionable except for lib authors
+  	            manualPropTypeWarningCount < 3
+  	          ) {
+  	            warning(
+  	              false,
+  	              'You are manually calling a React.PropTypes validation ' +
+  	              'function for the `%s` prop on `%s`. This is deprecated ' +
+  	              'and will throw in the standalone `prop-types` package. ' +
+  	              'You may be seeing this warning due to a third-party PropTypes ' +
+  	              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.',
+  	              propFullName,
+  	              componentName
+  	            );
+  	            manualPropTypeCallCache[cacheKey] = true;
+  	            manualPropTypeWarningCount++;
+  	          }
+  	        }
+  	      }
+  	      if (props[propName] == null) {
+  	        if (isRequired) {
+  	          if (props[propName] === null) {
+  	            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+  	          }
+  	          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+  	        }
+  	        return null;
+  	      } else {
+  	        return validate(props, propName, componentName, location, propFullName);
+  	      }
+  	    }
+  	
+  	    var chainedCheckType = checkType.bind(null, false);
+  	    chainedCheckType.isRequired = checkType.bind(null, true);
+  	
+  	    return chainedCheckType;
+  	  }
+  	
+  	  function createPrimitiveTypeChecker(expectedType) {
+  	    function validate(props, propName, componentName, location, propFullName, secret) {
+  	      var propValue = props[propName];
+  	      var propType = getPropType(propValue);
+  	      if (propType !== expectedType) {
+  	        // `propValue` being instance of, say, date/regexp, pass the 'object'
+  	        // check, but we can offer a more precise error message here rather than
+  	        // 'of type `object`'.
+  	        var preciseType = getPreciseType(propValue);
+  	
+  	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+  	      }
+  	      return null;
+  	    }
+  	    return createChainableTypeChecker(validate);
+  	  }
+  	
+  	  function createAnyTypeChecker() {
+  	    return createChainableTypeChecker(emptyFunction.thatReturnsNull);
+  	  }
+  	
+  	  function createArrayOfTypeChecker(typeChecker) {
+  	    function validate(props, propName, componentName, location, propFullName) {
+  	      if (typeof typeChecker !== 'function') {
+  	        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+  	      }
+  	      var propValue = props[propName];
+  	      if (!Array.isArray(propValue)) {
+  	        var propType = getPropType(propValue);
+  	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+  	      }
+  	      for (var i = 0; i < propValue.length; i++) {
+  	        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+  	        if (error instanceof Error) {
+  	          return error;
+  	        }
+  	      }
+  	      return null;
+  	    }
+  	    return createChainableTypeChecker(validate);
+  	  }
+  	
+  	  function createElementTypeChecker() {
+  	    function validate(props, propName, componentName, location, propFullName) {
+  	      var propValue = props[propName];
+  	      if (!isValidElement(propValue)) {
+  	        var propType = getPropType(propValue);
+  	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+  	      }
+  	      return null;
+  	    }
+  	    return createChainableTypeChecker(validate);
+  	  }
+  	
+  	  function createInstanceTypeChecker(expectedClass) {
+  	    function validate(props, propName, componentName, location, propFullName) {
+  	      if (!(props[propName] instanceof expectedClass)) {
+  	        var expectedClassName = expectedClass.name || ANONYMOUS;
+  	        var actualClassName = getClassName(props[propName]);
+  	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+  	      }
+  	      return null;
+  	    }
+  	    return createChainableTypeChecker(validate);
+  	  }
+  	
+  	  function createEnumTypeChecker(expectedValues) {
+  	    if (!Array.isArray(expectedValues)) {
+  	      ({"DRAGGABLE_DEBUG":undefined}).NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOf, expected an instance of array.') : void 0;
+  	      return emptyFunction.thatReturnsNull;
+  	    }
+  	
+  	    function validate(props, propName, componentName, location, propFullName) {
+  	      var propValue = props[propName];
+  	      for (var i = 0; i < expectedValues.length; i++) {
+  	        if (is(propValue, expectedValues[i])) {
+  	          return null;
+  	        }
+  	      }
+  	
+  	      var valuesString = JSON.stringify(expectedValues);
+  	      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+  	    }
+  	    return createChainableTypeChecker(validate);
+  	  }
+  	
+  	  function createObjectOfTypeChecker(typeChecker) {
+  	    function validate(props, propName, componentName, location, propFullName) {
+  	      if (typeof typeChecker !== 'function') {
+  	        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+  	      }
+  	      var propValue = props[propName];
+  	      var propType = getPropType(propValue);
+  	      if (propType !== 'object') {
+  	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+  	      }
+  	      for (var key in propValue) {
+  	        if (propValue.hasOwnProperty(key)) {
+  	          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+  	          if (error instanceof Error) {
+  	            return error;
+  	          }
+  	        }
+  	      }
+  	      return null;
+  	    }
+  	    return createChainableTypeChecker(validate);
+  	  }
+  	
+  	  function createUnionTypeChecker(arrayOfTypeCheckers) {
+  	    if (!Array.isArray(arrayOfTypeCheckers)) {
+  	      ({"DRAGGABLE_DEBUG":undefined}).NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
+  	      return emptyFunction.thatReturnsNull;
+  	    }
+  	
+  	    function validate(props, propName, componentName, location, propFullName) {
+  	      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+  	        var checker = arrayOfTypeCheckers[i];
+  	        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+  	          return null;
+  	        }
+  	      }
+  	
+  	      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+  	    }
+  	    return createChainableTypeChecker(validate);
+  	  }
+  	
+  	  function createNodeChecker() {
+  	    function validate(props, propName, componentName, location, propFullName) {
+  	      if (!isNode(props[propName])) {
+  	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+  	      }
+  	      return null;
+  	    }
+  	    return createChainableTypeChecker(validate);
+  	  }
+  	
+  	  function createShapeTypeChecker(shapeTypes) {
+  	    function validate(props, propName, componentName, location, propFullName) {
+  	      var propValue = props[propName];
+  	      var propType = getPropType(propValue);
+  	      if (propType !== 'object') {
+  	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+  	      }
+  	      for (var key in shapeTypes) {
+  	        var checker = shapeTypes[key];
+  	        if (!checker) {
+  	          continue;
+  	        }
+  	        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+  	        if (error) {
+  	          return error;
+  	        }
+  	      }
+  	      return null;
+  	    }
+  	    return createChainableTypeChecker(validate);
+  	  }
+  	
+  	  function isNode(propValue) {
+  	    switch (typeof propValue) {
+  	      case 'number':
+  	      case 'string':
+  	      case 'undefined':
+  	        return true;
+  	      case 'boolean':
+  	        return !propValue;
+  	      case 'object':
+  	        if (Array.isArray(propValue)) {
+  	          return propValue.every(isNode);
+  	        }
+  	        if (propValue === null || isValidElement(propValue)) {
+  	          return true;
+  	        }
+  	
+  	        var iteratorFn = getIteratorFn(propValue);
+  	        if (iteratorFn) {
+  	          var iterator = iteratorFn.call(propValue);
+  	          var step;
+  	          if (iteratorFn !== propValue.entries) {
+  	            while (!(step = iterator.next()).done) {
+  	              if (!isNode(step.value)) {
+  	                return false;
+  	              }
+  	            }
+  	          } else {
+  	            // Iterator will provide entry [k,v] tuples rather than values.
+  	            while (!(step = iterator.next()).done) {
+  	              var entry = step.value;
+  	              if (entry) {
+  	                if (!isNode(entry[1])) {
+  	                  return false;
+  	                }
+  	              }
+  	            }
+  	          }
+  	        } else {
+  	          return false;
+  	        }
+  	
+  	        return true;
+  	      default:
+  	        return false;
+  	    }
+  	  }
+  	
+  	  function isSymbol(propType, propValue) {
+  	    // Native Symbol.
+  	    if (propType === 'symbol') {
+  	      return true;
+  	    }
+  	
+  	    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+  	    if (propValue['@@toStringTag'] === 'Symbol') {
+  	      return true;
+  	    }
+  	
+  	    // Fallback for non-spec compliant Symbols which are polyfilled.
+  	    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+  	      return true;
+  	    }
+  	
+  	    return false;
+  	  }
+  	
+  	  // Equivalent of `typeof` but with special handling for array and regexp.
+  	  function getPropType(propValue) {
+  	    var propType = typeof propValue;
+  	    if (Array.isArray(propValue)) {
+  	      return 'array';
+  	    }
+  	    if (propValue instanceof RegExp) {
+  	      // Old webkits (at least until Android 4.0) return 'function' rather than
+  	      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+  	      // passes PropTypes.object.
+  	      return 'object';
+  	    }
+  	    if (isSymbol(propType, propValue)) {
+  	      return 'symbol';
+  	    }
+  	    return propType;
+  	  }
+  	
+  	  // This handles more types than `getPropType`. Only used for error messages.
+  	  // See `createPrimitiveTypeChecker`.
+  	  function getPreciseType(propValue) {
+  	    var propType = getPropType(propValue);
+  	    if (propType === 'object') {
+  	      if (propValue instanceof Date) {
+  	        return 'date';
+  	      } else if (propValue instanceof RegExp) {
+  	        return 'regexp';
+  	      }
+  	    }
+  	    return propType;
+  	  }
+  	
+  	  // Returns class name of the object, if any.
+  	  function getClassName(propValue) {
+  	    if (!propValue.constructor || !propValue.constructor.name) {
+  	      return ANONYMOUS;
+  	    }
+  	    return propValue.constructor.name;
+  	  }
+  	
+  	  ReactPropTypes.checkPropTypes = checkPropTypes;
+  	  ReactPropTypes.PropTypes = ReactPropTypes;
+  	
+  	  return ReactPropTypes;
+  	};
+  
+  
+  /***/ },
+  /* 5 */
+  /***/ function(module, exports) {
+  
+  	"use strict";
+  	
+  	/**
+  	 * Copyright (c) 2013-present, Facebook, Inc.
+  	 * All rights reserved.
+  	 *
+  	 * This source code is licensed under the BSD-style license found in the
+  	 * LICENSE file in the root directory of this source tree. An additional grant
+  	 * of patent rights can be found in the PATENTS file in the same directory.
+  	 *
+  	 * 
+  	 */
+  	
+  	function makeEmptyFunction(arg) {
+  	  return function () {
+  	    return arg;
+  	  };
+  	}
+  	
+  	/**
+  	 * This function accepts and discards inputs; it has no side effects. This is
+  	 * primarily useful idiomatically for overridable function endpoints which
+  	 * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+  	 */
+  	var emptyFunction = function emptyFunction() {};
+  	
+  	emptyFunction.thatReturns = makeEmptyFunction;
+  	emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+  	emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+  	emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+  	emptyFunction.thatReturnsThis = function () {
+  	  return this;
+  	};
+  	emptyFunction.thatReturnsArgument = function (arg) {
+  	  return arg;
+  	};
+  	
+  	module.exports = emptyFunction;
+  
+  /***/ },
+  /* 6 */
+  /***/ function(module, exports, __webpack_require__) {
+  
+  	/**
+  	 * Copyright (c) 2013-present, Facebook, Inc.
+  	 * All rights reserved.
+  	 *
+  	 * This source code is licensed under the BSD-style license found in the
+  	 * LICENSE file in the root directory of this source tree. An additional grant
+  	 * of patent rights can be found in the PATENTS file in the same directory.
+  	 *
+  	 */
+  	
+  	'use strict';
+  	
+  	/**
+  	 * Use invariant() to assert state which your program assumes to be true.
+  	 *
+  	 * Provide sprintf-style format (only %s is supported) and arguments
+  	 * to provide information about what broke and what you were
+  	 * expecting.
+  	 *
+  	 * The invariant message will be stripped in production, but the invariant
+  	 * will remain to ensure logic does not differ in production.
+  	 */
+  	
+  	var validateFormat = function validateFormat(format) {};
+  	
+  	if (({"DRAGGABLE_DEBUG":undefined}).NODE_ENV !== 'production') {
+  	  validateFormat = function validateFormat(format) {
+  	    if (format === undefined) {
+  	      throw new Error('invariant requires an error message argument');
+  	    }
+  	  };
+  	}
+  	
+  	function invariant(condition, format, a, b, c, d, e, f) {
+  	  validateFormat(format);
+  	
+  	  if (!condition) {
+  	    var error;
+  	    if (format === undefined) {
+  	      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+  	    } else {
+  	      var args = [a, b, c, d, e, f];
+  	      var argIndex = 0;
+  	      error = new Error(format.replace(/%s/g, function () {
+  	        return args[argIndex++];
+  	      }));
+  	      error.name = 'Invariant Violation';
+  	    }
+  	
+  	    error.framesToPop = 1; // we don't care about invariant's own frame
+  	    throw error;
+  	  }
+  	}
+  	
+  	module.exports = invariant;
+  
+  /***/ },
+  /* 7 */
+  /***/ function(module, exports, __webpack_require__) {
+  
+  	/**
+  	 * Copyright 2014-2015, Facebook, Inc.
+  	 * All rights reserved.
+  	 *
+  	 * This source code is licensed under the BSD-style license found in the
+  	 * LICENSE file in the root directory of this source tree. An additional grant
+  	 * of patent rights can be found in the PATENTS file in the same directory.
+  	 *
+  	 */
+  	
+  	'use strict';
+  	
+  	var emptyFunction = __webpack_require__(5);
+  	
+  	/**
+  	 * Similar to invariant but only logs a warning if the condition is not met.
+  	 * This can be used to log issues in development environments in critical
+  	 * paths. Removing the logging code for production environments will keep the
+  	 * same logic and follow the same code paths.
+  	 */
+  	
+  	var warning = emptyFunction;
+  	
+  	if (({"DRAGGABLE_DEBUG":undefined}).NODE_ENV !== 'production') {
+  	  (function () {
+  	    var printWarning = function printWarning(format) {
+  	      for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+  	        args[_key - 1] = arguments[_key];
+  	      }
+  	
+  	      var argIndex = 0;
+  	      var message = 'Warning: ' + format.replace(/%s/g, function () {
+  	        return args[argIndex++];
+  	      });
+  	      if (typeof console !== 'undefined') {
+  	        console.error(message);
+  	      }
+  	      try {
+  	        // --- Welcome to debugging React ---
+  	        // This error was thrown as a convenience so that you can use this stack
+  	        // to find the callsite that caused this warning to fire.
+  	        throw new Error(message);
+  	      } catch (x) {}
+  	    };
+  	
+  	    warning = function warning(condition, format) {
+  	      if (format === undefined) {
+  	        throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
+  	      }
+  	
+  	      if (format.indexOf('Failed Composite propType: ') === 0) {
+  	        return; // Ignore CompositeComponent proptype check.
+  	      }
+  	
+  	      if (!condition) {
+  	        for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+  	          args[_key2 - 2] = arguments[_key2];
+  	        }
+  	
+  	        printWarning.apply(undefined, [format].concat(args));
+  	      }
+  	    };
+  	  })();
+  	}
+  	
+  	module.exports = warning;
+  
+  /***/ },
+  /* 8 */
+  /***/ function(module, exports) {
+  
+  	/**
+  	 * Copyright 2013-present, Facebook, Inc.
+  	 * All rights reserved.
+  	 *
+  	 * This source code is licensed under the BSD-style license found in the
+  	 * LICENSE file in the root directory of this source tree. An additional grant
+  	 * of patent rights can be found in the PATENTS file in the same directory.
+  	 */
+  	
+  	'use strict';
+  	
+  	var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+  	
+  	module.exports = ReactPropTypesSecret;
+  
+  
+  /***/ },
+  /* 9 */
+  /***/ function(module, exports, __webpack_require__) {
+  
+  	/**
+  	 * Copyright 2013-present, Facebook, Inc.
+  	 * All rights reserved.
+  	 *
+  	 * This source code is licensed under the BSD-style license found in the
+  	 * LICENSE file in the root directory of this source tree. An additional grant
+  	 * of patent rights can be found in the PATENTS file in the same directory.
+  	 */
+  	
+  	'use strict';
+  	
+  	if (({"DRAGGABLE_DEBUG":undefined}).NODE_ENV !== 'production') {
+  	  var invariant = __webpack_require__(6);
+  	  var warning = __webpack_require__(7);
+  	  var ReactPropTypesSecret = __webpack_require__(8);
+  	  var loggedTypeFailures = {};
+  	}
+  	
+  	/**
+  	 * Assert that the values match with the type specs.
+  	 * Error messages are memorized and will only be shown once.
+  	 *
+  	 * @param {object} typeSpecs Map of name to a ReactPropType
+  	 * @param {object} values Runtime values that need to be type-checked
+  	 * @param {string} location e.g. "prop", "context", "child context"
+  	 * @param {string} componentName Name of the component for error messages.
+  	 * @param {?Function} getStack Returns the component stack.
+  	 * @private
+  	 */
+  	function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+  	  if (({"DRAGGABLE_DEBUG":undefined}).NODE_ENV !== 'production') {
+  	    for (var typeSpecName in typeSpecs) {
+  	      if (typeSpecs.hasOwnProperty(typeSpecName)) {
+  	        var error;
+  	        // Prop type validation may throw. In case they do, we don't want to
+  	        // fail the render phase where it didn't fail before. So we log it.
+  	        // After these have been cleaned up, we'll let them throw.
+  	        try {
+  	          // This is intentionally an invariant that gets caught. It's the same
+  	          // behavior as without this statement except with a better message.
+  	          invariant(typeof typeSpecs[typeSpecName] === 'function', '%s: %s type `%s` is invalid; it must be a function, usually from ' + 'React.PropTypes.', componentName || 'React class', location, typeSpecName);
+  	          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+  	        } catch (ex) {
+  	          error = ex;
+  	        }
+  	        warning(!error || error instanceof Error, '%s: type specification of %s `%s` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a %s. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).', componentName || 'React class', location, typeSpecName, typeof error);
+  	        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+  	          // Only monitor this failure once because there tends to be a lot of the
+  	          // same error.
+  	          loggedTypeFailures[error.message] = true;
+  	
+  	          var stack = getStack ? getStack() : '';
+  	
+  	          warning(false, 'Failed %s type: %s%s', location, error.message, stack != null ? stack : '');
+  	        }
+  	      }
+  	    }
+  	  }
+  	}
+  	
+  	module.exports = checkPropTypes;
+  
+  
+  /***/ },
+  /* 10 */
+  /***/ function(module, exports, __webpack_require__) {
+  
+  	/**
+  	 * Copyright 2013-present, Facebook, Inc.
+  	 * All rights reserved.
+  	 *
+  	 * This source code is licensed under the BSD-style license found in the
+  	 * LICENSE file in the root directory of this source tree. An additional grant
+  	 * of patent rights can be found in the PATENTS file in the same directory.
+  	 */
+  	
+  	'use strict';
+  	
+  	var emptyFunction = __webpack_require__(5);
+  	var invariant = __webpack_require__(6);
+  	
+  	module.exports = function() {
+  	  // Important!
+  	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+  	  function shim() {
+  	    invariant(
+  	      false,
+  	      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+  	      'Use PropTypes.checkPropTypes() to call them. ' +
+  	      'Read more at http://fb.me/use-check-prop-types'
+  	    );
+  	  };
+  	  shim.isRequired = shim;
+  	  function getShim() {
+  	    return shim;
+  	  };
+  	  var ReactPropTypes = {
+  	    array: shim,
+  	    bool: shim,
+  	    func: shim,
+  	    number: shim,
+  	    object: shim,
+  	    string: shim,
+  	    symbol: shim,
+  	
+  	    any: shim,
+  	    arrayOf: getShim,
+  	    element: shim,
+  	    instanceOf: getShim,
+  	    node: shim,
+  	    objectOf: getShim,
+  	    oneOf: getShim,
+  	    oneOfType: getShim,
+  	    shape: getShim
+  	  };
+  	
+  	  ReactPropTypes.checkPropTypes = emptyFunction;
+  	  ReactPropTypes.PropTypes = ReactPropTypes;
+  	
+  	  return ReactPropTypes;
+  	};
+  
+  
+  /***/ },
+  /* 11 */
+  /***/ function(module, exports) {
+  
+  	module.exports = __WEBPACK_EXTERNAL_MODULE_11__;
+  
+  /***/ },
+  /* 12 */
   /***/ function(module, exports, __webpack_require__) {
   
   	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -3811,7 +4661,7 @@ webpackJsonp([2],{
   
   
   /***/ },
-  /* 5 */
+  /* 13 */
   /***/ function(module, exports, __webpack_require__) {
   
   	'use strict';
@@ -3839,9 +4689,9 @@ webpackJsonp([2],{
   	exports.removeUserSelectStyles = removeUserSelectStyles;
   	exports.styleHacks = styleHacks;
   	
-  	var _shims = __webpack_require__(6);
+  	var _shims = __webpack_require__(14);
   	
-  	var _getPrefix = __webpack_require__(7);
+  	var _getPrefix = __webpack_require__(15);
   	
   	var _getPrefix2 = _interopRequireDefault(_getPrefix);
   	
@@ -3990,6 +4840,7 @@ webpackJsonp([2],{
   	// Note we're passing `document` b/c we could be iframed
   	function addUserSelectStyles(body /*: HTMLElement*/) {
   	  var style = body.getAttribute('style') || '';
+  	  if (userSelectReplaceRegExp.test(style)) return; // don't add twice
   	  body.setAttribute('style', style + userSelectStyle);
   	}
   	
@@ -4009,7 +4860,7 @@ webpackJsonp([2],{
   	}
   
   /***/ },
-  /* 6 */
+  /* 14 */
   /***/ function(module, exports) {
   
   	'use strict';
@@ -4049,7 +4900,7 @@ webpackJsonp([2],{
   	}
   
   /***/ },
-  /* 7 */
+  /* 15 */
   /***/ function(module, exports) {
   
   	'use strict';
@@ -4110,7 +4961,7 @@ webpackJsonp([2],{
   	exports.default = getPrefix();
   
   /***/ },
-  /* 8 */
+  /* 16 */
   /***/ function(module, exports, __webpack_require__) {
   
   	'use strict';
@@ -4126,13 +4977,13 @@ webpackJsonp([2],{
   	exports.createCoreData = createCoreData;
   	exports.createDraggableData = createDraggableData;
   	
-  	var _shims = __webpack_require__(6);
+  	var _shims = __webpack_require__(14);
   	
-  	var _reactDom = __webpack_require__(3);
+  	var _reactDom = __webpack_require__(11);
   	
   	var _reactDom2 = _interopRequireDefault(_reactDom);
   	
-  	var _domFns = __webpack_require__(5);
+  	var _domFns = __webpack_require__(13);
   	
   	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   	
@@ -4164,10 +5015,10 @@ webpackJsonp([2],{
   	    var boundNodeStyle = ownerWindow.getComputedStyle(boundNode);
   	    // Compute bounds. This is a pain with padding and offsets but this gets it exactly right.
   	    bounds = {
-  	      left: -node.offsetLeft + (0, _shims.int)(boundNodeStyle.paddingLeft) + (0, _shims.int)(nodeStyle.borderLeftWidth) + (0, _shims.int)(nodeStyle.marginLeft),
-  	      top: -node.offsetTop + (0, _shims.int)(boundNodeStyle.paddingTop) + (0, _shims.int)(nodeStyle.borderTopWidth) + (0, _shims.int)(nodeStyle.marginTop),
-  	      right: (0, _domFns.innerWidth)(boundNode) - (0, _domFns.outerWidth)(node) - node.offsetLeft,
-  	      bottom: (0, _domFns.innerHeight)(boundNode) - (0, _domFns.outerHeight)(node) - node.offsetTop
+  	      left: -node.offsetLeft + (0, _shims.int)(boundNodeStyle.paddingLeft) + (0, _shims.int)(nodeStyle.marginLeft),
+  	      top: -node.offsetTop + (0, _shims.int)(boundNodeStyle.paddingTop) + (0, _shims.int)(nodeStyle.marginTop),
+  	      right: (0, _domFns.innerWidth)(boundNode) - (0, _domFns.outerWidth)(node) - node.offsetLeft + (0, _shims.int)(boundNodeStyle.paddingRight) - (0, _shims.int)(nodeStyle.marginRight),
+  	      bottom: (0, _domFns.innerHeight)(boundNode) - (0, _domFns.outerHeight)(node) - node.offsetTop + (0, _shims.int)(boundNodeStyle.paddingBottom) - (0, _shims.int)(nodeStyle.marginBottom)
   	    };
   	  }
   	
@@ -4254,7 +5105,7 @@ webpackJsonp([2],{
   	}
   
   /***/ },
-  /* 9 */
+  /* 17 */
   /***/ function(module, exports, __webpack_require__) {
   
   	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -4271,17 +5122,21 @@ webpackJsonp([2],{
   	
   	var _react2 = _interopRequireDefault(_react);
   	
-  	var _reactDom = __webpack_require__(3);
+  	var _propTypes = __webpack_require__(3);
+  	
+  	var _propTypes2 = _interopRequireDefault(_propTypes);
+  	
+  	var _reactDom = __webpack_require__(11);
   	
   	var _reactDom2 = _interopRequireDefault(_reactDom);
   	
-  	var _domFns = __webpack_require__(5);
+  	var _domFns = __webpack_require__(13);
   	
-  	var _positionFns = __webpack_require__(8);
+  	var _positionFns = __webpack_require__(16);
   	
-  	var _shims = __webpack_require__(6);
+  	var _shims = __webpack_require__(14);
   	
-  	var _log = __webpack_require__(11);
+  	var _log = __webpack_require__(19);
   	
   	var _log2 = _interopRequireDefault(_log);
   	
@@ -4415,8 +5270,6 @@ webpackJsonp([2],{
   	          y = position.y;
   	
   	      // Snap to grid if prop has been provided
-  	
-  	      if (x !== x) debugger;
   	
   	      if (Array.isArray(_this.props.grid)) {
   	        var deltaX = x - _this.state.lastX,
@@ -4559,20 +5412,20 @@ webpackJsonp([2],{
   	   *
   	   * Defaults to `false`.
   	   */
-  	  allowAnyClick: _react.PropTypes.bool,
+  	  allowAnyClick: _propTypes2.default.bool,
   	
   	  /**
   	   * `disabled`, if true, stops the <Draggable> from dragging. All handlers,
   	   * with the exception of `onMouseDown`, will not fire.
   	   */
-  	  disabled: _react.PropTypes.bool,
+  	  disabled: _propTypes2.default.bool,
   	
   	  /**
   	   * By default, we add 'user-select:none' attributes to the document body
   	   * to prevent ugly text selection during drag. If this is causing problems
   	   * for your app, set this to `false`.
   	   */
-  	  enableUserSelectHack: _react.PropTypes.bool,
+  	  enableUserSelectHack: _propTypes2.default.bool,
   	
   	  /**
   	   * `offsetParent`, if set, uses the passed DOM node to compute drag offsets
@@ -4587,7 +5440,7 @@ webpackJsonp([2],{
   	  /**
   	   * `grid` specifies the x and y that dragging should snap to.
   	   */
-  	  grid: _react.PropTypes.arrayOf(_react.PropTypes.number),
+  	  grid: _propTypes2.default.arrayOf(_propTypes2.default.number),
   	
   	  /**
   	   * `handle` specifies a selector to be used as the handle that initiates drag.
@@ -4609,7 +5462,7 @@ webpackJsonp([2],{
   	   *   });
   	   * ```
   	   */
-  	  handle: _react.PropTypes.string,
+  	  handle: _propTypes2.default.string,
   	
   	  /**
   	   * `cancel` specifies a selector to be used to prevent drag initialization.
@@ -4631,31 +5484,31 @@ webpackJsonp([2],{
   	   *   });
   	   * ```
   	   */
-  	  cancel: _react.PropTypes.string,
+  	  cancel: _propTypes2.default.string,
   	
   	  /**
   	   * Called when dragging starts.
   	   * If this function returns the boolean false, dragging will be canceled.
   	   */
-  	  onStart: _react.PropTypes.func,
+  	  onStart: _propTypes2.default.func,
   	
   	  /**
   	   * Called while dragging.
   	   * If this function returns the boolean false, dragging will be canceled.
   	   */
-  	  onDrag: _react.PropTypes.func,
+  	  onDrag: _propTypes2.default.func,
   	
   	  /**
   	   * Called when dragging stops.
   	   * If this function returns the boolean false, the drag will remain active.
   	   */
-  	  onStop: _react.PropTypes.func,
+  	  onStop: _propTypes2.default.func,
   	
   	  /**
   	   * A workaround option which can be passed if onMouseDown needs to be accessed,
   	   * since it'll always be blocked (as there is internal use of onMouseDown)
   	   */
-  	  onMouseDown: _react.PropTypes.func,
+  	  onMouseDown: _propTypes2.default.func,
   	
   	  /**
   	   * These properties should be defined on the child, not here.
@@ -4679,10 +5532,10 @@ webpackJsonp([2],{
   	  onMouseDown: function onMouseDown() {}
   	};
   	exports.default = DraggableCore;
-  	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
+  	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
   
   /***/ },
-  /* 10 */
+  /* 18 */
   /***/ function(module, exports) {
   
   	// shim for using process in browser
@@ -4868,7 +5721,7 @@ webpackJsonp([2],{
   
   
   /***/ },
-  /* 11 */
+  /* 19 */
   /***/ function(module, exports, __webpack_require__) {
   
   	"use strict";
@@ -4891,10 +5744,10 @@ webpackJsonp([2],{
   ;
   //# sourceMappingURL=react-draggable.js.map
 
-/***/ },
+/***/ }),
 
-/***/ 178:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 131:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -4906,13 +5759,13 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _lodash = __webpack_require__(114);
+  var _lodash = __webpack_require__(85);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _utils = __webpack_require__(71);
+  var _utils = __webpack_require__(53);
   
-  var _GridItem = __webpack_require__(327);
+  var _GridItem = __webpack_require__(236);
   
   var _GridItem2 = _interopRequireDefault(_GridItem);
   
@@ -5433,10 +6286,10 @@ webpackJsonp([2],{
   
   exports.default = ReactGridLayout;
 
-/***/ },
+/***/ }),
 
-/***/ 179:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 132:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -5446,7 +6299,7 @@ webpackJsonp([2],{
   exports.findOrGenerateResponsiveLayout = findOrGenerateResponsiveLayout;
   exports.sortBreakpoints = sortBreakpoints;
   
-  var _utils = __webpack_require__(71);
+  var _utils = __webpack_require__(53);
   
   /**
    * Given a width, find the highest breakpoint that matches is valid for it (width > breakpoint).
@@ -5526,10 +6379,10 @@ webpackJsonp([2],{
     });
   }
 
-/***/ },
+/***/ }),
 
-/***/ 182:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 138:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -5541,9 +6394,13 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDraggable = __webpack_require__(177);
+  var _propTypes = __webpack_require__(87);
   
-  var _cloneElement = __webpack_require__(337);
+  var _propTypes2 = _interopRequireDefault(_propTypes);
+  
+  var _reactDraggable = __webpack_require__(130);
+  
+  var _cloneElement = __webpack_require__(252);
   
   var _cloneElement2 = _interopRequireDefault(_cloneElement);
   
@@ -5556,40 +6413,6 @@ webpackJsonp([2],{
   function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
   
   function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-  
-  /*:: export type Props = {
-    children: React.Element<any>,
-    width: number,
-    height: number,
-    handleSize: [number, number],
-    lockAspectRatio: boolean,
-    axis: Axis,
-    minConstraints: [number, number],
-    maxConstraints: [number, number],
-    onResizeStop?: ?(e: SyntheticEvent, data: ResizeCallbackData) => any,
-    onResizeStart?: ?(e: SyntheticEvent, data: ResizeCallbackData) => any,
-    onResize?: ?(e: SyntheticEvent, data: ResizeCallbackData) => any,
-    draggableOpts?: ?Object
-  };*/
-  /*:: type Axis = 'both' | 'x' | 'y' | 'none';*/
-  /*:: type Position = {
-  
-  };*/
-  /*:: type State = {
-    resizing: boolean,
-    width: number, height: number,
-    slackW: number, slackH: number
-  };*/
-  /*:: type DragCallbackData = {
-    node: HTMLElement,
-    x: number, y: number,
-    deltaX: number, deltaY: number,
-    lastX: number, lastY: number
-  };*/
-  /*:: type ResizeCallbackData = {
-    node: HTMLElement,
-    size: {width: number, height: number}
-  };*/
   
   var Resizable = function (_React$Component) {
     _inherits(Resizable, _React$Component);
@@ -5610,7 +6433,7 @@ webpackJsonp([2],{
       }, _temp), _possibleConstructorReturn(_this, _ret);
     }
   
-    Resizable.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps /*: Object*/) {
+    Resizable.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
       // If parent changes height/width, set that in our state.
       if (!this.state.resizing && (nextProps.width !== this.props.width || nextProps.height !== this.props.height)) {
         this.setState({
@@ -5620,7 +6443,7 @@ webpackJsonp([2],{
       }
     };
   
-    Resizable.prototype.lockAspectRatio = function lockAspectRatio(width /*: number*/, height /*: number*/, aspectRatio /*: number*/) /*: [number, number]*/ {
+    Resizable.prototype.lockAspectRatio = function lockAspectRatio(width, height, aspectRatio) {
       height = width / aspectRatio;
       width = height * aspectRatio;
       return [width, height];
@@ -5629,7 +6452,7 @@ webpackJsonp([2],{
     // If you do this, be careful of constraints
   
   
-    Resizable.prototype.runConstraints = function runConstraints(width /*: number*/, height /*: number*/) /*: [number, number]*/ {
+    Resizable.prototype.runConstraints = function runConstraints(width, height) {
       var _ref = [this.props.minConstraints, this.props.maxConstraints],
           min = _ref[0],
           max = _ref[1];
@@ -5684,10 +6507,10 @@ webpackJsonp([2],{
      */
   
   
-    Resizable.prototype.resizeHandler = function resizeHandler(handlerName /*: string*/) /*: Function*/ {
+    Resizable.prototype.resizeHandler = function resizeHandler(handlerName) {
       var _this2 = this;
   
-      return function (e /*: SyntheticEvent | MouseEvent*/, _ref2) {
+      return function (e, _ref2) {
         var node = _ref2.node,
             deltaX = _ref2.deltaX,
             deltaY = _ref2.deltaY;
@@ -5736,7 +6559,7 @@ webpackJsonp([2],{
       };
     };
   
-    Resizable.prototype.render = function render() /*: React.Element<any>*/ {
+    Resizable.prototype.render = function render() {
       // eslint-disable-next-line no-unused-vars
       var _props = this.props,
           children = _props.children,
@@ -5783,40 +6606,40 @@ webpackJsonp([2],{
     //
   
     // Require that one and only one child be present.
-    children: _react.PropTypes.element.isRequired,
+    children: _propTypes2.default.element.isRequired,
   
     // Initial w/h
-    width: _react.PropTypes.number.isRequired,
-    height: _react.PropTypes.number.isRequired,
+    width: _propTypes2.default.number.isRequired,
+    height: _propTypes2.default.number.isRequired,
   
     //
     // Optional props
     //
   
     // If you change this, be sure to update your css
-    handleSize: _react.PropTypes.array,
+    handleSize: _propTypes2.default.array,
   
     // If true, will only allow width/height to move in lockstep
-    lockAspectRatio: _react.PropTypes.bool,
+    lockAspectRatio: _propTypes2.default.bool,
   
     // Restricts resizing to a particular axis (default: 'both')
     // 'both' - allows resizing by width or height
     // 'x' - only allows the width to be changed
     // 'y' - only allows the height to be changed
     // 'none' - disables resizing altogether
-    axis: _react.PropTypes.oneOf(['both', 'x', 'y', 'none']),
+    axis: _propTypes2.default.oneOf(['both', 'x', 'y', 'none']),
   
     // Min/max size
-    minConstraints: _react.PropTypes.arrayOf(_react.PropTypes.number),
-    maxConstraints: _react.PropTypes.arrayOf(_react.PropTypes.number),
+    minConstraints: _propTypes2.default.arrayOf(_propTypes2.default.number),
+    maxConstraints: _propTypes2.default.arrayOf(_propTypes2.default.number),
   
     // Callbacks
-    onResizeStop: _react.PropTypes.func,
-    onResizeStart: _react.PropTypes.func,
-    onResize: _react.PropTypes.func,
+    onResizeStop: _propTypes2.default.func,
+    onResizeStart: _propTypes2.default.func,
+    onResize: _propTypes2.default.func,
   
     // These will be passed wholesale to react-draggable's DraggableCore
-    draggableOpts: _react.PropTypes.object
+    draggableOpts: _propTypes2.default.object
   };
   Resizable.defaultProps = {
     handleSize: [20, 20],
@@ -5827,27 +6650,10 @@ webpackJsonp([2],{
   };
   exports.default = Resizable;
 
-/***/ },
+/***/ }),
 
-/***/ 215:
-/***/ function(module, exports) {
-
-  module.exports = function(module) {
-  	if(!module.webpackPolyfill) {
-  		module.deprecate = function() {};
-  		module.paths = [];
-  		// module.parent = undefined by default
-  		module.children = [];
-  		module.webpackPolyfill = 1;
-  	}
-  	return module;
-  }
-
-
-/***/ },
-
-/***/ 216:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 141:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -5855,11 +6661,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _assign = __webpack_require__(41);
+  var _assign = __webpack_require__(35);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _objectWithoutProperties2 = __webpack_require__(52);
+  var _objectWithoutProperties2 = __webpack_require__(39);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -5887,11 +6693,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(60);
+  var _history = __webpack_require__(43);
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _BrowserMock = __webpack_require__(412);
+  var _BrowserMock = __webpack_require__(256);
   
   var _BrowserMock2 = _interopRequireDefault(_BrowserMock);
   
@@ -6009,10 +6815,10 @@ webpackJsonp([2],{
   };
   exports.default = BrowserMock;
 
-/***/ },
+/***/ }),
 
-/***/ 217:
-/***/ function(module, exports) {
+/***/ 142:
+/***/ (function(module, exports) {
 
   'use strict';
   
@@ -6021,10 +6827,10 @@ webpackJsonp([2],{
   });
   var HEADER_HEIGHT = exports.HEADER_HEIGHT = '50px';
 
-/***/ },
+/***/ }),
 
-/***/ 218:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 143:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -6032,7 +6838,7 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(27);
+  var _extends2 = __webpack_require__(23);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -6060,11 +6866,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _lodash = __webpack_require__(325);
+  var _lodash = __webpack_require__(228);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _reactGridLayout = __webpack_require__(330);
+  var _reactGridLayout = __webpack_require__(239);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -6124,10 +6930,10 @@ webpackJsonp([2],{
   
   exports.default = GridLayout;
 
-/***/ },
+/***/ }),
 
-/***/ 219:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 144:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -6159,23 +6965,23 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Navigation = __webpack_require__(221);
+  var _Navigation = __webpack_require__(146);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
-  var _Link = __webpack_require__(47);
+  var _Link = __webpack_require__(37);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Dog = __webpack_require__(15);
+  var _Dog = __webpack_require__(12);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
-  var _App = __webpack_require__(217);
+  var _App = __webpack_require__(142);
   
   var App = _interopRequireWildcard(_App);
   
-  var _Colors = __webpack_require__(11);
+  var _Colors = __webpack_require__(8);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -6230,10 +7036,10 @@ webpackJsonp([2],{
   
   exports.default = Header;
 
-/***/ },
+/***/ }),
 
-/***/ 220:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 145:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -6265,11 +7071,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Header = __webpack_require__(219);
+  var _Header = __webpack_require__(144);
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Colors = __webpack_require__(11);
+  var _Colors = __webpack_require__(8);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -6335,10 +7141,10 @@ webpackJsonp([2],{
   };
   exports.default = HeaderLayout;
 
-/***/ },
+/***/ }),
 
-/***/ 221:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 146:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -6350,15 +7156,15 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(60);
+  var _history = __webpack_require__(43);
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _Link = __webpack_require__(47);
+  var _Link = __webpack_require__(37);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Navigation = __webpack_require__(413);
+  var _Navigation = __webpack_require__(257);
   
   var _Navigation2 = _interopRequireDefault(_Navigation);
   
@@ -6392,10 +7198,10 @@ webpackJsonp([2],{
   
   exports.default = Navigation;
 
-/***/ },
+/***/ }),
 
-/***/ 222:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 147:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -6403,11 +7209,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(27);
+  var _extends2 = __webpack_require__(23);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(52);
+  var _objectWithoutProperties2 = __webpack_require__(39);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -6435,23 +7241,23 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactFlexbox = __webpack_require__(117);
+  var _reactFlexbox = __webpack_require__(88);
   
   var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
   
-  var _reactDom = __webpack_require__(85);
+  var _reactDom = __webpack_require__(62);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
-  var _GridLayout = __webpack_require__(218);
+  var _GridLayout = __webpack_require__(143);
   
   var _GridLayout2 = _interopRequireDefault(_GridLayout);
   
-  var _BrowserMock = __webpack_require__(216);
+  var _BrowserMock = __webpack_require__(141);
   
   var _BrowserMock2 = _interopRequireDefault(_BrowserMock);
   
-  var _TagList = __webpack_require__(223);
+  var _TagList = __webpack_require__(148);
   
   var _TagList2 = _interopRequireDefault(_TagList);
   
@@ -6578,10 +7384,10 @@ webpackJsonp([2],{
   
   exports.default = ProjectGridLayout;
 
-/***/ },
+/***/ }),
 
-/***/ 223:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 148:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -6589,11 +7395,11 @@ webpackJsonp([2],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(27);
+  var _extends2 = __webpack_require__(23);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(52);
+  var _objectWithoutProperties2 = __webpack_require__(39);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -6621,7 +7427,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Colors = __webpack_require__(11);
+  var _Colors = __webpack_require__(8);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -6698,29 +7504,29 @@ webpackJsonp([2],{
   };
   exports.default = TagList;
 
-/***/ },
+/***/ }),
 
-/***/ 288:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 214:
+/***/ (function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(9)();
   // imports
   
   
   // module
-  exports.push([module.id, ".BrowserMock_ripple_1Kt {\n  position: relative;\n  overflow: hidden;\n}\n.BrowserMock_ripple_1Kt:after {\n  content: \"\";\n  background: rgba(255, 255, 255, 0.3);\n  display: block;\n  position: absolute;\n  top: -50%;\n  left: -50%;\n  border-radius: 50%;\n  padding-top: 200%;\n  padding-left: 200%;\n  opacity: 0;\n  -webkit-transition: all 0.5s;\n  transition: all 0.5s\n}\n.BrowserMock_ripple_1Kt:active:after {\n  padding-top: 0;\n  padding-left: 0;\n  opacity: 1;\n  -webkit-transition: 0s;\n  transition: 0s\n}", "", {"version":3,"sources":["/./components/BrowserMock.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,iBAAiB;CAClB;AACD;EACE,YAAY;EACZ,qCAAqC;EACrC,eAAe;EACf,mBAAmB;EACnB,UAAU;EACV,WAAW;EACX,mBAAmB;EACnB,kBAAkB;EAClB,mBAAmB;EACnB,WAAW;EACX,6BAAoB;EAApB,oBAAoB;CACrB;AACD;EACE,eAAe;EACf,gBAAgB;EAChB,WAAW;EACX,uBAAc;EAAd,cAAc;CACf","file":"BrowserMock.css","sourcesContent":[".ripple {\n  position: relative;\n  overflow: hidden;\n}\n.ripple:after {\n  content: \"\";\n  background: rgba(255, 255, 255, 0.3);\n  display: block;\n  position: absolute;\n  top: -50%;\n  left: -50%;\n  border-radius: 50%;\n  padding-top: 200%;\n  padding-left: 200%;\n  opacity: 0;\n  transition: all 0.5s\n}\n.ripple:active:after {\n  padding-top: 0;\n  padding-left: 0;\n  opacity: 1;\n  transition: 0s\n}"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".BrowserMock_ripple_1Kt {\n  position: relative;\n  overflow: hidden;\n}\n.BrowserMock_ripple_1Kt:after {\n  content: \"\";\n  background: rgba(255, 255, 255, 0.3);\n  display: block;\n  position: absolute;\n  top: -50%;\n  left: -50%;\n  border-radius: 50%;\n  padding-top: 200%;\n  padding-left: 200%;\n  opacity: 0;\n  transition: all 0.5s\n}\n.BrowserMock_ripple_1Kt:active:after {\n  padding-top: 0;\n  padding-left: 0;\n  opacity: 1;\n  transition: 0s\n}", "", {"version":3,"sources":["/./components/BrowserMock.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,iBAAiB;CAClB;AACD;EACE,YAAY;EACZ,qCAAqC;EACrC,eAAe;EACf,mBAAmB;EACnB,UAAU;EACV,WAAW;EACX,mBAAmB;EACnB,kBAAkB;EAClB,mBAAmB;EACnB,WAAW;EACX,oBAAoB;CACrB;AACD;EACE,eAAe;EACf,gBAAgB;EAChB,WAAW;EACX,cAAc;CACf","file":"BrowserMock.css","sourcesContent":[".ripple {\n  position: relative;\n  overflow: hidden;\n}\n.ripple:after {\n  content: \"\";\n  background: rgba(255, 255, 255, 0.3);\n  display: block;\n  position: absolute;\n  top: -50%;\n  left: -50%;\n  border-radius: 50%;\n  padding-top: 200%;\n  padding-left: 200%;\n  opacity: 0;\n  transition: all 0.5s\n}\n.ripple:active:after {\n  padding-top: 0;\n  padding-left: 0;\n  opacity: 1;\n  transition: 0s\n}"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
   	"ripple": "BrowserMock_ripple_1Kt"
   };
 
-/***/ },
+/***/ }),
 
-/***/ 289:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 215:
+/***/ (function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(9)();
   // imports
   
   
@@ -6734,12 +7540,12 @@ webpackJsonp([2],{
   	"active": "Navigation_active_1Xf"
   };
 
-/***/ },
+/***/ }),
 
-/***/ 292:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 218:
+/***/ (function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(9)();
   // imports
   
   
@@ -6749,195 +7555,17 @@ webpackJsonp([2],{
   // exports
 
 
-/***/ },
+/***/ }),
 
-/***/ 316:
-/***/ function(module, exports) {
+/***/ 227:
+/***/ (function(module, exports) {
 
-  module.exports = [
-  	{
-  		"company": "appuri.com",
-  		"position": "RickFrom1987",
-  		"website": "https://appuri.com",
-  		"url": "/appuri",
-  		"tags": [
-  			"javasscript",
-  			"salesforce",
-  			"knockout",
-  			"mocha"
-  		],
-  		"highlights": []
-  	},
-  	{
-  		"company": "textnow.com",
-  		"position": "RickFrom1987",
-  		"website": "https://textnow.com",
-  		"url": "/textnow",
-  		"tags": [
-  			"backbone",
-  			"javascript"
-  		],
-  		"highlights": []
-  	},
-  	{
-  		"company": "momentlens.co",
-  		"position": "RickFrom1987",
-  		"website": "https://momentlens.co",
-  		"url": "/moment",
-  		"tags": [
-  			"javascript",
-  			"python",
-  			"wordpress"
-  		],
-  		"highlights": [
-  			"Version control for web properties",
-  			"Monitoring and project management",
-  			"Python scripts for order processing",
-  			"Wordpress theme/plugin management and development",
-  			"Helped launch Moment Case"
-  		]
-  	},
-  	{
-  		"company": "haikudeck.com",
-  		"position": "Front End Engineer",
-  		"website": "https://haikudeck.com",
-  		"url": "/haikudeck",
-  		"tags": [
-  			"node.js",
-  			"knockout.js",
-  			"backbone"
-  		],
-  		"highlights": [
-  			"First startup job!",
-  			"Website and webapp development",
-  			"Knockout.js and Backbone frontend",
-  			"Worked with Parse",
-  			"Unit tests with Jasmine",
-  			"Lots of learning"
-  		]
-  	},
-  	{
-  		"company": "datablade.io",
-  		"name": "datablade",
-  		"thumbnail": "/datablade.jpg",
-  		"position": "RickFrom1987",
-  		"website": "http://datablade.io",
-  		"url": "/datablade",
-  		"tags": [
-  			"alt.js",
-  			"react",
-  			"coreOS",
-  			"aws",
-  			"npm",
-  			"node"
-  		],
-  		"highlights": [
-  			"TechStars 2015",
-  			"Iterate very quickly in a fast paced environment",
-  			"Used alt.js and React to build components"
-  		]
-  	},
-  	{
-  		"company": "energysavvy.com",
-  		"thumbnail": "/energysavvy.jpg",
-  		"position": "RickFrom1987",
-  		"website": "https://energysavvy.com",
-  		"url": "/energysavvy",
-  		"tags": [
-  			"react",
-  			"aws",
-  			"npm",
-  			"node"
-  		],
-  		"highlights": [
-  			"First react app",
-  			"mocha + sinon",
-  			"Financial calculations test coverage",
-  			"Solar calculations test coverage"
-  		]
-  	},
-  	{
-  		"company": "motion.social",
-  		"name": "motion.social",
-  		"thumbnail": "/placeholder.jpg",
-  		"position": "RickFrom1987",
-  		"website": "https://motion.social",
-  		"url": "/motionsocial",
-  		"tags": [
-  			"react",
-  			"go",
-  			"docker",
-  			"mocha",
-  			"sentry",
-  			"npm",
-  			"node"
-  		],
-  		"highlights": [
-  			"Built a suite of internal react UI components",
-  			"Help grow user base and product 1000 users/groups",
-  			"Worked with co-founder of PicMonkey"
-  		]
-  	},
-  	{
-  		"company": "brandly.com",
-  		"thumbnail": "/brandly.jpg",
-  		"position": "RickFrom1987",
-  		"website": "http://brandly.com",
-  		"url": "/brandly",
-  		"tags": [
-  			"angular",
-  			"jQuery",
-  			"django"
-  		],
-  		"highlights": [
-  			"Facelift an existing angularJS app",
-  			"Refactored older SCSS",
-  			"Unit tests in Jasmine",
-  			"django templates",
-  			"Small defensive changes to make progress"
-  		]
-  	},
-  	{
-  		"company": "booking.com",
-  		"position": "RickFrom1987",
-  		"website": "http://suite.booking.com",
-  		"url": "/booking",
-  		"tags": [
-  			"javascript",
-  			"Google App Engine",
-  			"gulp",
-  			"npm",
-  			"node"
-  		],
-  		"highlights": [
-  			"Architected js management system",
-  			"Deployment system for js across thousands of sites",
-  			"Worked with legacy CMS"
-  		]
-  	},
-  	{
-  		"company": "Yahoo!",
-  		"position": "Front End Engineer",
-  		"website": "https://yahoo.com",
-  		"url": "/yahoo",
-  		"tags": [
-  			"javascript",
-  			"php",
-  			"YUI"
-  		],
-  		"highlights": [
-  			"First engineering job!",
-  			"Yahoo! Local",
-  			"Fixed bugs",
-  			"Feature development"
-  		]
-  	}
-  ];
+  module.exports = [{"company":"appuri.com","position":"RickFrom1987","website":"https://appuri.com","url":"/appuri","tags":["javasscript","salesforce","knockout","mocha"],"highlights":[]},{"company":"textnow.com","position":"RickFrom1987","website":"https://textnow.com","url":"/textnow","tags":["backbone","javascript"],"highlights":[]},{"company":"momentlens.co","position":"RickFrom1987","website":"https://momentlens.co","url":"/moment","tags":["javascript","python","wordpress"],"highlights":["Version control for web properties","Monitoring and project management","Python scripts for order processing","Wordpress theme/plugin management and development","Helped launch Moment Case"]},{"company":"haikudeck.com","position":"Front End Engineer","website":"https://haikudeck.com","url":"/haikudeck","tags":["node.js","knockout.js","backbone"],"highlights":["First startup job!","Website and webapp development","Knockout.js and Backbone frontend","Worked with Parse","Unit tests with Jasmine","Lots of learning"]},{"company":"datablade.io","name":"datablade","thumbnail":"/datablade.jpg","position":"RickFrom1987","website":"http://datablade.io","url":"/datablade","tags":["alt.js","react","coreOS","aws","npm","node"],"highlights":["TechStars 2015","Iterate very quickly in a fast paced environment","Used alt.js and React to build components"]},{"company":"energysavvy.com","thumbnail":"/energysavvy.jpg","position":"RickFrom1987","website":"https://energysavvy.com","url":"/energysavvy","tags":["react","aws","npm","node"],"highlights":["First react app","mocha + sinon","Financial calculations test coverage","Solar calculations test coverage"]},{"company":"motion.social","name":"motion.social","thumbnail":"/placeholder.jpg","position":"RickFrom1987","website":"https://motion.social","url":"/motionsocial","tags":["react","go","docker","mocha","sentry","npm","node"],"highlights":["Built a suite of internal react UI components","Help grow user base and product 1000 users/groups","Worked with co-founder of PicMonkey"]},{"company":"brandly.com","thumbnail":"/brandly.jpg","position":"RickFrom1987","website":"http://brandly.com","url":"/brandly","tags":["angular","jQuery","django"],"highlights":["Facelift an existing angularJS app","Refactored older SCSS","Unit tests in Jasmine","django templates","Small defensive changes to make progress"]},{"company":"booking.com","position":"RickFrom1987","website":"http://suite.booking.com","url":"/booking","tags":["javascript","Google App Engine","gulp","npm","node"],"highlights":["Architected js management system","Deployment system for js across thousands of sites","Worked with legacy CMS"]},{"company":"Yahoo!","position":"Front End Engineer","website":"https://yahoo.com","url":"/yahoo","tags":["javascript","php","YUI"],"highlights":["First engineering job!","Yahoo! Local","Fixed bugs","Feature development"]}]
 
-/***/ },
+/***/ }),
 
-/***/ 325:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 228:
+/***/ (function(module, exports, __webpack_require__) {
 
   var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, module) {/**
    * @license
@@ -24047,12 +24675,12 @@ webpackJsonp([2],{
     }
   }.call(this));
   
-  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(215)(module)))
+  /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(92)(module)))
 
-/***/ },
+/***/ }),
 
-/***/ 327:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 236:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -24064,11 +24692,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDraggable = __webpack_require__(177);
+  var _reactDraggable = __webpack_require__(130);
   
-  var _reactResizable = __webpack_require__(338);
+  var _reactResizable = __webpack_require__(253);
   
-  var _utils = __webpack_require__(71);
+  var _utils = __webpack_require__(53);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -24542,10 +25170,10 @@ webpackJsonp([2],{
   };
   exports.default = GridItem;
 
-/***/ },
+/***/ }),
 
-/***/ 328:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 237:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -24557,15 +25185,15 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _lodash = __webpack_require__(114);
+  var _lodash = __webpack_require__(85);
   
   var _lodash2 = _interopRequireDefault(_lodash);
   
-  var _utils = __webpack_require__(71);
+  var _utils = __webpack_require__(53);
   
-  var _responsiveUtils = __webpack_require__(179);
+  var _responsiveUtils = __webpack_require__(132);
   
-  var _ReactGridLayout = __webpack_require__(178);
+  var _ReactGridLayout = __webpack_require__(131);
   
   var _ReactGridLayout2 = _interopRequireDefault(_ReactGridLayout);
   
@@ -24771,10 +25399,10 @@ webpackJsonp([2],{
   };
   exports.default = ResponsiveReactGridLayout;
 
-/***/ },
+/***/ }),
 
-/***/ 329:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 238:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -24786,7 +25414,7 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDom = __webpack_require__(85);
+  var _reactDom = __webpack_require__(62);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
@@ -24860,22 +25488,22 @@ webpackJsonp([2],{
   
   exports.default = WidthProvider;
 
-/***/ },
+/***/ }),
 
-/***/ 330:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 239:
+/***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__(178).default;
-  module.exports.utils = __webpack_require__(71);
-  module.exports.Responsive = __webpack_require__(328).default;
-  module.exports.Responsive.utils = __webpack_require__(179);
-  module.exports.WidthProvider = __webpack_require__(329).default;
+  module.exports = __webpack_require__(131).default;
+  module.exports.utils = __webpack_require__(53);
+  module.exports.Responsive = __webpack_require__(237).default;
+  module.exports.Responsive.utils = __webpack_require__(132);
+  module.exports.WidthProvider = __webpack_require__(238).default;
 
 
-/***/ },
+/***/ }),
 
-/***/ 336:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 251:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -24887,7 +25515,11 @@ webpackJsonp([2],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Resizable = __webpack_require__(182);
+  var _propTypes = __webpack_require__(87);
+  
+  var _propTypes2 = _interopRequireDefault(_propTypes);
+  
+  var _Resizable = __webpack_require__(138);
   
   var _Resizable2 = _interopRequireDefault(_Resizable);
   
@@ -24901,14 +25533,7 @@ webpackJsonp([2],{
   
   function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
   
-  /*:: import type {Props as ResizableProps} from './Resizable';*/
-  /*:: type State = {width: number, height: number};*/
-  /*:: type Size = {width: number, height: number};*/
-  
-  
   // An example use of Resizable.
-  /*:: type ResizeData = {element: Element, size: Size};*/
-  
   var ResizableBox = function (_React$Component) {
     _inherits(ResizableBox, _React$Component);
   
@@ -24924,9 +25549,8 @@ webpackJsonp([2],{
       return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
         width: _this.props.width,
         height: _this.props.height
-      }, _this.onResize = function (e /*: Event*/, _ref) {
-        var element = _ref.element,
-            size = _ref.size;
+      }, _this.onResize = function (e, data) {
+        var size = data.size;
         var width = size.width,
             height = size.height;
   
@@ -24934,7 +25558,7 @@ webpackJsonp([2],{
         if (_this.props.onResize) {
           e.persist && e.persist();
           _this.setState(size, function () {
-            return _this.props.onResize(e, { element: element, size: size });
+            return _this.props.onResize && _this.props.onResize(e, data);
           });
         } else {
           _this.setState(size);
@@ -24942,7 +25566,7 @@ webpackJsonp([2],{
       }, _temp), _possibleConstructorReturn(_this, _ret);
     }
   
-    ResizableBox.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps /*: ResizableProps*/) {
+    ResizableBox.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
       if (nextProps.width !== this.props.width || nextProps.height !== this.props.height) {
         this.setState({
           width: nextProps.width,
@@ -24951,7 +25575,7 @@ webpackJsonp([2],{
       }
     };
   
-    ResizableBox.prototype.render = function render() /*: React.Element<any>*/ {
+    ResizableBox.prototype.render = function render() {
       // Basic wrapper around a Resizable instance.
       // If you use Resizable directly, you are responsible for updating the child component
       // with a new width and height.
@@ -24992,18 +25616,18 @@ webpackJsonp([2],{
   }(_react2.default.Component);
   
   ResizableBox.propTypes = {
-    height: _react.PropTypes.number,
-    width: _react.PropTypes.number
+    height: _propTypes2.default.number,
+    width: _propTypes2.default.number
   };
   ResizableBox.defaultProps = {
     handleSize: [20, 20]
   };
   exports.default = ResizableBox;
 
-/***/ },
+/***/ }),
 
-/***/ 337:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 252:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -25016,7 +25640,7 @@ webpackJsonp([2],{
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
   // React.addons.cloneWithProps look-alike that merges style & className.
-  module.exports = function cloneElement(element /*: React.Element<any>*/, props /*: Object*/) /*: React.Element<any>*/ {
+  module.exports = function cloneElement(element, props) {
     if (props.style && element.props.style) {
       props.style = _extends({}, element.props.style, props.style);
     }
@@ -25026,32 +25650,32 @@ webpackJsonp([2],{
     return _react2.default.cloneElement(element, props);
   };
 
-/***/ },
+/***/ }),
 
-/***/ 338:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 253:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   module.exports = function() {
     throw new Error("Don't instantiate Resizable directly! Use require('react-resizable').Resizable");
   };
   
-  module.exports.Resizable = __webpack_require__(182).default;
-  module.exports.ResizableBox = __webpack_require__(336).default;
+  module.exports.Resizable = __webpack_require__(138).default;
+  module.exports.ResizableBox = __webpack_require__(251).default;
 
 
-/***/ },
+/***/ }),
 
-/***/ 412:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 256:
+/***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(288);
+  var content = __webpack_require__(214);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(10)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -25067,18 +25691,18 @@ webpackJsonp([2],{
   	module.hot.dispose(function() { update(); });
   }
 
-/***/ },
+/***/ }),
 
-/***/ 413:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 257:
+/***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(289);
+  var content = __webpack_require__(215);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(10)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -25094,18 +25718,18 @@ webpackJsonp([2],{
   	module.hot.dispose(function() { update(); });
   }
 
-/***/ },
+/***/ }),
 
-/***/ 416:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 260:
+/***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(292);
+  var content = __webpack_require__(218);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(10)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -25121,7 +25745,7 @@ webpackJsonp([2],{
   	module.hot.dispose(function() { update(); });
   }
 
-/***/ }
+/***/ })
 
 });
-//# sourceMappingURL=2.js.map?559cd119c73a4ceaef23
+//# sourceMappingURL=2.js.map?443bed4f0e9ce5984fa9

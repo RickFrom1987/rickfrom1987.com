@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { Responsive, WidthProvider } from 'react-grid-layout';
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
@@ -6,8 +7,9 @@ const ResponsiveReactGridLayout = WidthProvider(Responsive);
 class GridLayout extends React.Component {
 
   static propTypes = {
-    onLayoutChange: React.PropTypes.func.isRequired,
-    items: React.PropTypes.object
+    onLayoutChange: PropTypes.func.isRequired,
+    items: PropTypes.object,
+    children: PropTypes.node,
   };
 
   static defaultProps = {
@@ -42,9 +44,5 @@ class GridLayout extends React.Component {
     );
   }
 }
-
-GridLayout.propTypes = {
-  children: React.PropTypes.node,
-};
 
 export default GridLayout;

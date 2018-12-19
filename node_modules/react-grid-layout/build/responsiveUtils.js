@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 exports.__esModule = true;
 exports.getBreakpointFromWidth = getBreakpointFromWidth;
@@ -6,7 +6,7 @@ exports.getColsFromBreakpoint = getColsFromBreakpoint;
 exports.findOrGenerateResponsiveLayout = findOrGenerateResponsiveLayout;
 exports.sortBreakpoints = sortBreakpoints;
 
-var _utils = require('./utils');
+var _utils = require("./utils");
 
 /**
  * Given a width, find the highest breakpoint that matches is valid for it (width > breakpoint).
@@ -54,7 +54,7 @@ function getColsFromBreakpoint(breakpoint, cols) {
  *   vertically.
  * @return {Array}             New layout.
  */
-function findOrGenerateResponsiveLayout(layouts, breakpoints, breakpoint, lastBreakpoint, cols, verticalCompact) {
+function findOrGenerateResponsiveLayout(layouts, breakpoints, breakpoint, lastBreakpoint, cols, compactType) {
   // If it already exists, just return it.
   if (layouts[breakpoint]) return (0, _utils.cloneLayout)(layouts[breakpoint]);
   // Find or generate the next layout
@@ -69,7 +69,7 @@ function findOrGenerateResponsiveLayout(layouts, breakpoints, breakpoint, lastBr
     }
   }
   layout = (0, _utils.cloneLayout)(layout || []); // clone layout so we don't modify existing items
-  return (0, _utils.compact)((0, _utils.correctBounds)(layout, { cols: cols }), verticalCompact);
+  return (0, _utils.compact)((0, _utils.correctBounds)(layout, { cols: cols }), compactType, cols);
 }
 
 /**

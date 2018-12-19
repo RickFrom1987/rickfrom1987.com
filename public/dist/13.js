@@ -1,14 +1,14 @@
 webpackJsonp([13],{
 
 /***/ 2:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(17), __esModule: true };
+  module.exports = { "default": __webpack_require__(14), __esModule: true };
 
-/***/ },
+/***/ }),
 
 /***/ 3:
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
   "use strict";
   
@@ -20,16 +20,16 @@ webpackJsonp([13],{
     }
   };
 
-/***/ },
+/***/ }),
 
 /***/ 4:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(35);
+  var _defineProperty = __webpack_require__(29);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -53,24 +53,24 @@ webpackJsonp([13],{
     };
   }();
 
-/***/ },
+/***/ }),
 
 /***/ 5:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(16);
+  var _setPrototypeOf = __webpack_require__(13);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(34);
+  var _create = __webpack_require__(28);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(14);
+  var _typeof2 = __webpack_require__(11);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -92,16 +92,16 @@ webpackJsonp([13],{
     if (superClass) _setPrototypeOf2.default ? (0, _setPrototypeOf2.default)(subClass, superClass) : subClass.__proto__ = superClass;
   };
 
-/***/ },
+/***/ }),
 
 /***/ 6:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(14);
+  var _typeof2 = __webpack_require__(11);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -115,10 +115,10 @@ webpackJsonp([13],{
     return call && ((typeof call === "undefined" ? "undefined" : (0, _typeof3.default)(call)) === "object" || typeof call === "function") ? call : self;
   };
 
-/***/ },
+/***/ }),
 
-/***/ 11:
-/***/ function(module, exports) {
+/***/ 8:
+/***/ (function(module, exports) {
 
   'use strict';
   
@@ -130,10 +130,10 @@ webpackJsonp([13],{
   var BLUE = exports.BLUE = '#2986BE';
   var GRADIENT_BG = exports.GRADIENT_BG = 'linear-gradient(-150deg, #00C1B6 0%, #136EB5 97%)';
 
-/***/ },
+/***/ }),
 
-/***/ 12:
-/***/ function(module, exports) {
+/***/ 9:
+/***/ (function(module, exports) {
 
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -187,10 +187,10 @@ webpackJsonp([13],{
   };
 
 
-/***/ },
+/***/ }),
 
-/***/ 13:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 10:
+/***/ (function(module, exports, __webpack_require__) {
 
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -440,10 +440,10 @@ webpackJsonp([13],{
   }
 
 
-/***/ },
+/***/ }),
 
-/***/ 15:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 12:
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
@@ -499,53 +499,55 @@ webpackJsonp([13],{
   
   exports.default = Dog;
 
-/***/ },
+/***/ }),
 
-/***/ 16:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 13:
+/***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(18), __esModule: true };
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
 
-/***/ },
+/***/ }),
 
-/***/ 17:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 14:
+/***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(20);
+  __webpack_require__(17);
   module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
-/***/ },
 
-/***/ 18:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
 
-  __webpack_require__(21);
+/***/ 15:
+/***/ (function(module, exports, __webpack_require__) {
+
+  __webpack_require__(18);
   module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
-/***/ },
 
-/***/ 19:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 16:
+/***/ (function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(31)
-    , anObject = __webpack_require__(23);
-  var check = function(O, proto){
+  var isObject = __webpack_require__(21);
+  var anObject = __webpack_require__(20);
+  var check = function (O, proto) {
     anObject(O);
-    if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
+    if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
   };
   module.exports = {
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-      function(test, buggy, set){
+      function (test, buggy, set) {
         try {
-          set = __webpack_require__(30)(Function.call, __webpack_require__(36).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(26)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
-        } catch(e){ buggy = true; }
-        return function setPrototypeOf(O, proto){
+        } catch (e) { buggy = true; }
+        return function setPrototypeOf(O, proto) {
           check(O, proto);
-          if(buggy)O.__proto__ = proto;
+          if (buggy) O.__proto__ = proto;
           else set(O, proto);
           return O;
         };
@@ -553,34 +555,37 @@ webpackJsonp([13],{
     check: check
   };
 
-/***/ },
 
-/***/ 20:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 17:
+/***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(32)
-    , $getPrototypeOf = __webpack_require__(37);
+  var toObject = __webpack_require__(27);
+  var $getPrototypeOf = __webpack_require__(32);
   
-  __webpack_require__(38)('getPrototypeOf', function(){
-    return function getPrototypeOf(it){
+  __webpack_require__(33)('getPrototypeOf', function () {
+    return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
   });
 
-/***/ },
 
-/***/ 21:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 18:
+/***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(24);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(19).set});
+  var $export = __webpack_require__(19);
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
 
-/***/ },
 
-/***/ 26:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 22:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -588,11 +593,11 @@ webpackJsonp([13],{
     value: true
   });
   
-  var _assign = __webpack_require__(41);
+  var _assign = __webpack_require__(35);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(27);
+  var _extends2 = __webpack_require__(23);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -620,15 +625,15 @@ webpackJsonp([13],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Dog = __webpack_require__(15);
+  var _Dog = __webpack_require__(12);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
-  var _Colors = __webpack_require__(11);
+  var _Colors = __webpack_require__(8);
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(29);
+  var _Article = __webpack_require__(25);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -735,17 +740,17 @@ webpackJsonp([13],{
   };
   exports.default = ArticleLayout;
 
-/***/ },
+/***/ }),
 
-/***/ 28:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 24:
+/***/ (function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(9)();
   // imports
   
   
   // module
-  exports.push([module.id, ".Article_article_2_j a {\n  text-decoration: none;\n  font-weight: 500;\n}\n\n.Article_article_2_j a:link, .Article_article_2_j a:visited {\n  color: #0099e5;\n}\n\n.Article_article_2_j p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .Article_layout_1WS {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-flow: column;\n          flex-flow: column;\n }\n}", "", {"version":3,"sources":["/./components/Layout/Article.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB;;AAED;EACE,oBAAoB;CACrB;;AAED;CACC;EACC,6BAAkB;EAAlB,8BAAkB;MAAlB,sBAAkB;UAAlB,kBAAkB;EAClB;CACD","file":"Article.css","sourcesContent":[".article a {\n  text-decoration: none;\n  font-weight: 500;\n}\n\n.article a:link, .article a:visited {\n  color: #0099e5;\n}\n\n.article p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .layout {\n  flex-flow: column;\n }\n}"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".Article_article_2_j a {\n  text-decoration: none;\n  font-weight: 500;\n}\n\n.Article_article_2_j a:link, .Article_article_2_j a:visited {\n  color: #0099e5;\n}\n\n.Article_article_2_j p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .Article_layout_1WS {\n  -ms-flex-flow: column;\n      flex-flow: column;\n }\n}", "", {"version":3,"sources":["/./components/Layout/Article.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB;;AAED;EACE,oBAAoB;CACrB;;AAED;CACC;EACC,sBAAkB;MAAlB,kBAAkB;EAClB;CACD","file":"Article.css","sourcesContent":[".article a {\n  text-decoration: none;\n  font-weight: 500;\n}\n\n.article a:link, .article a:visited {\n  color: #0099e5;\n}\n\n.article p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .layout {\n  flex-flow: column;\n }\n}"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -753,18 +758,18 @@ webpackJsonp([13],{
   	"layout": "Article_layout_1WS"
   };
 
-/***/ },
+/***/ }),
 
-/***/ 29:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 25:
+/***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(28);
+  var content = __webpack_require__(24);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(10)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -780,10 +785,10 @@ webpackJsonp([13],{
   	module.hot.dispose(function() { update(); });
   }
 
-/***/ },
+/***/ }),
 
-/***/ 142:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 95:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -792,7 +797,7 @@ webpackJsonp([13],{
   });
   exports.default = undefined;
   
-  var _Appuri = __webpack_require__(227);
+  var _Appuri = __webpack_require__(152);
   
   var _Appuri2 = _interopRequireDefault(_Appuri);
   
@@ -800,10 +805,10 @@ webpackJsonp([13],{
   
   exports.default = _Appuri2.default;
 
-/***/ },
+/***/ }),
 
-/***/ 227:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 152:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -835,11 +840,11 @@ webpackJsonp([13],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(26);
+  var _ArticleLayout = __webpack_require__(22);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Appuri = __webpack_require__(420);
+  var _Appuri = __webpack_require__(264);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -871,14 +876,14 @@ webpackJsonp([13],{
   
   exports.default = AppuriPage;
 
-/***/ },
+/***/ }),
 
-/***/ 420:
-/***/ function(module, exports) {
+/***/ 264:
+/***/ (function(module, exports) {
 
   module.exports = {"title":"appuri.com","subtitle":2017,"url":"https://appuri.com","html":"<p>The team at <a href=\"//appuri.com\">Appuri</a> was awesome, so awesome that they are now part of <a href=\"//docusign.com\">DocuSign</a>!</p>\n<p>My time working with Appuri was rewarding and challenging. Feel absolutely humbled and honored to be a part of their story. I would describe my role with the company as a solutions engineer. I was tasked with working closely with different vendors/contractors to deliver solutions to our customers. Dealt with managing a lot of network calls and authentication issues, while connecting to different data sources.</p>\n<p><b>Salesforce Challenges</b></p>\n<p>\nI knew nothing about Salesforce going into this role and was presented with some tasks and features that needed to live within the Salesforce ecosystem. If you have ever even opened up the Salesforce dashboard, it is insanity. So many tabs and options. I had to quickly learn the interface, and the semantics of the Salesforce ecosystem (had to ask questiosn and get some help here) while also delivering Appuri features. The importance of isolating and creating a proper test harness was crucial here.\n</p>\n<p><b>Defensive Coding</b></p>\n<p>\nWorking with an older and slighlty \"under documented\" codebase written by engineers who had previously left the company is inherently very difficult. I needed to understand how to add features and make an impact without trashing everything in my wake. My experience with defensive coding came in very handy, starting with removing code and breaking up files in smaller more understandable components was one of the first things I did which allowed me to move forward! I was also able to do some work to clean up and improve our CI with CircleCI to make test run faster and more accurately.\n</p>\n<p>\nWorking at Appuri brought back fantastic memories from the very first startup I worked for. The hustle and drive everyday was great to see and be a part of.\n</p>\n"};
 
-/***/ }
+/***/ })
 
 });
-//# sourceMappingURL=13.js.map?f40749e74cf347e2280c
+//# sourceMappingURL=13.js.map?d4adfa37e9463697b18f

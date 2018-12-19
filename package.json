@@ -6,15 +6,16 @@
   },
   "dependencies": {
     "history": "3.0.0",
-    "react": "15.3.0",
+    "prop-types": "^15.6.2",
+    "react": "16.6.0",
     "react-app": "1.1.2",
-    "react-dom": "15.3.0",
-    "react-flexbox": "3.1.1",
-    "react-grid-layout": "0.13.7",
-    "react-redux": "4.4.5",
-    "redux": "3.5.2",
+    "react-dom": "16.6.3",
+    "react-flexbox": "3.1.4",
+    "react-grid-layout": "0.16.6",
+    "react-redux": "6.0.0",
+    "redux": "4.0.1",
     "s3": "4.4.0",
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "3.0.0"
   },
   "devDependencies": {
     "react-app-tools": "1.1.2"

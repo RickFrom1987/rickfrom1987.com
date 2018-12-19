@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
 /***/ 2:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(17), __esModule: true };
+  module.exports = { "default": __webpack_require__(14), __esModule: true };
 
-/***/ },
+/***/ }),
 
 /***/ 3:
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
   "use strict";
   
@@ -20,16 +20,16 @@ webpackJsonp([0],{
     }
   };
 
-/***/ },
+/***/ }),
 
 /***/ 4:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(35);
+  var _defineProperty = __webpack_require__(29);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -53,24 +53,24 @@ webpackJsonp([0],{
     };
   }();
 
-/***/ },
+/***/ }),
 
 /***/ 5:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(16);
+  var _setPrototypeOf = __webpack_require__(13);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(34);
+  var _create = __webpack_require__(28);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(14);
+  var _typeof2 = __webpack_require__(11);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -92,16 +92,16 @@ webpackJsonp([0],{
     if (superClass) _setPrototypeOf2.default ? (0, _setPrototypeOf2.default)(subClass, superClass) : subClass.__proto__ = superClass;
   };
 
-/***/ },
+/***/ }),
 
 /***/ 6:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(14);
+  var _typeof2 = __webpack_require__(11);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -115,10 +115,10 @@ webpackJsonp([0],{
     return call && ((typeof call === "undefined" ? "undefined" : (0, _typeof3.default)(call)) === "object" || typeof call === "function") ? call : self;
   };
 
-/***/ },
+/***/ }),
 
-/***/ 11:
-/***/ function(module, exports) {
+/***/ 8:
+/***/ (function(module, exports) {
 
   'use strict';
   
@@ -130,10 +130,10 @@ webpackJsonp([0],{
   var BLUE = exports.BLUE = '#2986BE';
   var GRADIENT_BG = exports.GRADIENT_BG = 'linear-gradient(-150deg, #00C1B6 0%, #136EB5 97%)';
 
-/***/ },
+/***/ }),
 
-/***/ 12:
-/***/ function(module, exports) {
+/***/ 9:
+/***/ (function(module, exports) {
 
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -187,10 +187,10 @@ webpackJsonp([0],{
   };
 
 
-/***/ },
+/***/ }),
 
-/***/ 13:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 10:
+/***/ (function(module, exports, __webpack_require__) {
 
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -440,10 +440,10 @@ webpackJsonp([0],{
   }
 
 
-/***/ },
+/***/ }),
 
-/***/ 15:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 12:
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
@@ -499,53 +499,55 @@ webpackJsonp([0],{
   
   exports.default = Dog;
 
-/***/ },
+/***/ }),
 
-/***/ 16:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 13:
+/***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(18), __esModule: true };
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
 
-/***/ },
+/***/ }),
 
-/***/ 17:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 14:
+/***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(20);
+  __webpack_require__(17);
   module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
-/***/ },
 
-/***/ 18:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
 
-  __webpack_require__(21);
+/***/ 15:
+/***/ (function(module, exports, __webpack_require__) {
+
+  __webpack_require__(18);
   module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
-/***/ },
 
-/***/ 19:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 16:
+/***/ (function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(31)
-    , anObject = __webpack_require__(23);
-  var check = function(O, proto){
+  var isObject = __webpack_require__(21);
+  var anObject = __webpack_require__(20);
+  var check = function (O, proto) {
     anObject(O);
-    if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
+    if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
   };
   module.exports = {
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-      function(test, buggy, set){
+      function (test, buggy, set) {
         try {
-          set = __webpack_require__(30)(Function.call, __webpack_require__(36).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(26)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
-        } catch(e){ buggy = true; }
-        return function setPrototypeOf(O, proto){
+        } catch (e) { buggy = true; }
+        return function setPrototypeOf(O, proto) {
           check(O, proto);
-          if(buggy)O.__proto__ = proto;
+          if (buggy) O.__proto__ = proto;
           else set(O, proto);
           return O;
         };
@@ -553,34 +555,37 @@ webpackJsonp([0],{
     check: check
   };
 
-/***/ },
 
-/***/ 20:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 17:
+/***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(32)
-    , $getPrototypeOf = __webpack_require__(37);
+  var toObject = __webpack_require__(27);
+  var $getPrototypeOf = __webpack_require__(32);
   
-  __webpack_require__(38)('getPrototypeOf', function(){
-    return function getPrototypeOf(it){
+  __webpack_require__(33)('getPrototypeOf', function () {
+    return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
   });
 
-/***/ },
 
-/***/ 21:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 18:
+/***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(24);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(19).set});
+  var $export = __webpack_require__(19);
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
 
-/***/ },
 
-/***/ 47:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 37:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -589,7 +594,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Link = __webpack_require__(65);
+  var _Link = __webpack_require__(46);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -604,10 +609,10 @@ webpackJsonp([0],{
                                      * LICENSE.txt file in the root directory of this source tree.
                                      */
 
-/***/ },
+/***/ }),
 
-/***/ 52:
-/***/ function(module, exports) {
+/***/ 39:
+/***/ (function(module, exports) {
 
   "use strict";
   
@@ -625,10 +630,10 @@ webpackJsonp([0],{
     return target;
   };
 
-/***/ },
+/***/ }),
 
-/***/ 65:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 46:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -636,11 +641,11 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(27);
+  var _extends2 = __webpack_require__(23);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(52);
+  var _objectWithoutProperties2 = __webpack_require__(39);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
@@ -668,7 +673,7 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _history = __webpack_require__(60);
+  var _history = __webpack_require__(43);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -746,10 +751,10 @@ webpackJsonp([0],{
   };
   exports.default = Link;
 
-/***/ },
+/***/ }),
 
-/***/ 77:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 54:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -758,7 +763,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Home = __webpack_require__(234);
+  var _Home = __webpack_require__(159);
   
   var _Home2 = _interopRequireDefault(_Home);
   
@@ -773,10 +778,10 @@ webpackJsonp([0],{
                                      * LICENSE.txt file in the root directory of this source tree.
                                      */
 
-/***/ },
+/***/ }),
 
-/***/ 93:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 65:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -808,11 +813,11 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Menu = __webpack_require__(95);
+  var _Menu = __webpack_require__(67);
   
   var _Menu2 = _interopRequireDefault(_Menu);
   
-  var _Colors = __webpack_require__(11);
+  var _Colors = __webpack_require__(8);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -870,10 +875,10 @@ webpackJsonp([0],{
   };
   exports.default = MenuLayout;
 
-/***/ },
+/***/ }),
 
-/***/ 94:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 66:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -906,11 +911,11 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Link = __webpack_require__(47);
+  var _Link = __webpack_require__(37);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Menu = __webpack_require__(140);
+  var _Menu = __webpack_require__(90);
   
   var _Menu2 = _interopRequireDefault(_Menu);
   
@@ -969,10 +974,10 @@ webpackJsonp([0],{
   
   exports.default = Menu;
 
-/***/ },
+/***/ }),
 
-/***/ 95:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 67:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -981,7 +986,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Menu = __webpack_require__(94);
+  var _Menu = __webpack_require__(66);
   
   var _Menu2 = _interopRequireDefault(_Menu);
   
@@ -989,17 +994,17 @@ webpackJsonp([0],{
   
   exports.default = _Menu2.default;
 
-/***/ },
+/***/ }),
 
-/***/ 111:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 83:
+/***/ (function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(9)();
   // imports
   
   
   // module
-  exports.push([module.id, ".Menu_menu_2SV {\n  position: absolute;\n  top: 0;\n  left: 0;\n  padding: 18px;\n}\n\n.Menu_menu_2SV ul {\n  margin: 0;\n  padding: 0;\n}\n\n.Menu_toggler_3TT {\n  display: block;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  width: 40px;\n  height: 40px;\n  z-index: 2;\n  opacity: 0;\n  cursor: pointer;\n}\n\n.Menu_toggler_3TT:hover + label, .Menu_menu-toggler_M4l:hover + label:before, .Menu_menu-toggler_M4l:hover + label:after {\n  background: white;\n}\n\n.Menu_toggler_3TT:checked + label {\n  background: transparent;\n}\n\n.Menu_toggler_3TT:checked + label:before, .Menu_toggler_3TT:checked + label:after {\n  top: 0;\n  width: 40px;\n  -webkit-transform-origin: 50% 50%;\n          transform-origin: 50% 50%;\n}\n\n.Menu_toggler_3TT:checked + label:before {\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n\n.Menu_toggler_3TT:checked + label:after {\n  -webkit-transform: rotate(-45deg);\n          transform: rotate(-45deg);\n}\n\n.Menu_toggler_3TT:checked ~ ul .Menu_item_14h {\n  opacity: 1;\n}\n\n.Menu_toggler_3TT + label {\n  width: 40px;\n  height: 5px;\n  display: block;\n  z-index: 1;\n  border-radius: 2.5px;\n  background: rgba(255, 255, 255, 0.7);\n  -webkit-transition: top 0.5s, -webkit-transform 0.5s;\n  transition: top 0.5s, -webkit-transform 0.5s;\n  transition: transform 0.5s, top 0.5s;\n  transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  margin: auto;\n}\n\n.Menu_toggler_3TT + label:before, .Menu_toggler_3TT + label:after {\n  width: 40px;\n  height: 5px;\n  display: block;\n  z-index: 1;\n  border-radius: 2.5px;\n  background: rgba(255, 255, 255, 0.7);\n  -webkit-transition: top 0.5s, -webkit-transform 0.5s;\n  transition: top 0.5s, -webkit-transform 0.5s;\n  transition: transform 0.5s, top 0.5s;\n  transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;\n  content: \"\";\n  position: absolute;\n  left: 0;\n}\n\n.Menu_toggler_3TT + label:before {\n  top: 10px;\n}\n\n.Menu_toggler_3TT + label:after {\n  top: -10px;\n}\n\n.Menu_item_14h {\n  display: block;\n  margin-bottom: 18px;\n  width: 80px;\n  height: 80px;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n}\n\n.Menu_item_14h a {\n  display: block;\n  width: inherit;\n  height: inherit;\n  line-height: 80px;\n  color: rgba(255, 255, 255, 0.7);\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 50%;\n  text-align: center;\n  text-decoration: none;\n  font-size: 40px;\n  -webkit-transition: .2s;\n  transition: .2s;\n}\n\n.Menu_item_14h a:hover {\n  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);\n  color: white;\n  background: rgba(255, 255, 255, 0.3);\n  font-size: 44px;\n}", "", {"version":3,"sources":["/./components/Menu/Menu.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,OAAO;EACP,QAAQ;EACR,cAAc;CACf;;AAED;EACE,UAAU;EACV,WAAW;CACZ;;AAED;EACE,eAAe;EACf,UAAU;EACV,SAAS;EACT,aAAa;EACb,YAAY;EACZ,aAAa;EACb,WAAW;EACX,WAAW;EACX,gBAAgB;CACjB;;AAED;EACE,kBAAkB;CACnB;;AAED;EACE,wBAAwB;CACzB;;AAED;EACE,OAAO;EACP,YAAY;EACZ,kCAAkC;UAC1B,0BAA0B;CACnC;;AAED;EACE,iCAAiC;UACzB,yBAAyB;CAClC;;AAED;EACE,kCAAkC;UAC1B,0BAA0B;CACnC;;AAED;EACE,WAAW;CACZ;;AAED;EACE,YAAY;EACZ,YAAY;EACZ,eAAe;EACf,WAAW;EACX,qBAAqB;EACrB,qCAAqC;EACrC,qDAAqD;EACrD,6CAA6C;EAC7C,qCAAqC;EACrC,6DAA6D;EAC7D,mBAAmB;EACnB,OAAO;EACP,UAAU;EACV,SAAS;EACT,QAAQ;EACR,aAAa;CACd;;AAED;EACE,YAAY;EACZ,YAAY;EACZ,eAAe;EACf,WAAW;EACX,qBAAqB;EACrB,qCAAqC;EACrC,qDAAqD;EACrD,6CAA6C;EAC7C,qCAAqC;EACrC,6DAA6D;EAC7D,YAAY;EACZ,mBAAmB;EACnB,QAAQ;CACT;;AAED;EACE,UAAU;CACX;;AAED;EACE,WAAW;CACZ;;AAED;EACE,eAAe;EACf,oBAAoB;EACpB,YAAY;EACZ,aAAa;EACb,yBAAyB;EACzB,iBAAiB;CAClB;;AAED;EACE,eAAe;EACf,eAAe;EACf,gBAAgB;EAChB,kBAAkB;EAClB,gCAAgC;EAChC,qCAAqC;EACrC,mBAAmB;EACnB,mBAAmB;EACnB,sBAAsB;EACtB,gBAAgB;EAChB,wBAAwB;EACxB,gBAAgB;CACjB;;AAED;EAEU,+CAA+C;EACvD,aAAa;EACb,qCAAqC;EACrC,gBAAgB;CACjB","file":"Menu.css","sourcesContent":[".menu {\n  position: absolute;\n  top: 0;\n  left: 0;\n  padding: 18px;\n}\n\n.menu ul {\n  margin: 0;\n  padding: 0;\n}\n\n.toggler {\n  display: block;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  width: 40px;\n  height: 40px;\n  z-index: 2;\n  opacity: 0;\n  cursor: pointer;\n}\n\n.toggler:hover + label, .menu-toggler:hover + label:before, .menu-toggler:hover + label:after {\n  background: white;\n}\n\n.toggler:checked + label {\n  background: transparent;\n}\n\n.toggler:checked + label:before, .toggler:checked + label:after {\n  top: 0;\n  width: 40px;\n  -webkit-transform-origin: 50% 50%;\n          transform-origin: 50% 50%;\n}\n\n.toggler:checked + label:before {\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n\n.toggler:checked + label:after {\n  -webkit-transform: rotate(-45deg);\n          transform: rotate(-45deg);\n}\n\n.toggler:checked ~ ul .item {\n  opacity: 1;\n}\n\n.toggler + label {\n  width: 40px;\n  height: 5px;\n  display: block;\n  z-index: 1;\n  border-radius: 2.5px;\n  background: rgba(255, 255, 255, 0.7);\n  -webkit-transition: top 0.5s, -webkit-transform 0.5s;\n  transition: top 0.5s, -webkit-transform 0.5s;\n  transition: transform 0.5s, top 0.5s;\n  transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  margin: auto;\n}\n\n.toggler + label:before, .toggler + label:after {\n  width: 40px;\n  height: 5px;\n  display: block;\n  z-index: 1;\n  border-radius: 2.5px;\n  background: rgba(255, 255, 255, 0.7);\n  -webkit-transition: top 0.5s, -webkit-transform 0.5s;\n  transition: top 0.5s, -webkit-transform 0.5s;\n  transition: transform 0.5s, top 0.5s;\n  transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;\n  content: \"\";\n  position: absolute;\n  left: 0;\n}\n\n.toggler + label:before {\n  top: 10px;\n}\n\n.toggler + label:after {\n  top: -10px;\n}\n\n.item {\n  display: block;\n  margin-bottom: 18px;\n  width: 80px;\n  height: 80px;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n}\n\n.item a {\n  display: block;\n  width: inherit;\n  height: inherit;\n  line-height: 80px;\n  color: rgba(255, 255, 255, 0.7);\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 50%;\n  text-align: center;\n  text-decoration: none;\n  font-size: 40px;\n  -webkit-transition: .2s;\n  transition: .2s;\n}\n\n.item a:hover {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);\n          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);\n  color: white;\n  background: rgba(255, 255, 255, 0.3);\n  font-size: 44px;\n}"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".Menu_menu_2SV {\n  position: absolute;\n  top: 0;\n  left: 0;\n  padding: 12px;\n}\n\n.Menu_menu_2SV ul {\n  margin: 0;\n  padding: 0;\n}\n\n.Menu_menu_2SV ul li {\n  float: left;\n  margin-right: 12px;\n}\n\n.Menu_toggler_3TT {\n  display: block;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  width: 40px;\n  height: 40px;\n  z-index: 2;\n  opacity: 0;\n  cursor: pointer;\n}\n\n.Menu_toggler_3TT:hover + label, .Menu_menu-toggler_M4l:hover + label:before, .Menu_menu-toggler_M4l:hover + label:after {\n  background: white;\n}\n\n.Menu_toggler_3TT:checked + label {\n  background: transparent;\n}\n\n.Menu_toggler_3TT:checked + label:before, .Menu_toggler_3TT:checked + label:after {\n  top: 0;\n  width: 40px;\n  transform-origin: 50% 50%;\n}\n\n.Menu_toggler_3TT:checked + label:before {\n  transform: rotate(45deg);\n}\n\n.Menu_toggler_3TT:checked + label:after {\n  transform: rotate(-45deg);\n}\n\n.Menu_toggler_3TT:checked ~ ul .Menu_item_14h {\n  opacity: 1;\n}\n\n.Menu_toggler_3TT + label {\n  width: 40px;\n  height: 5px;\n  display: block;\n  z-index: 1;\n  border-radius: 2.5px;\n  background: rgba(255, 255, 255, 0.7);\n  transition: transform 0.5s, top 0.5s;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  margin: auto;\n}\n\n.Menu_toggler_3TT + label:before, .Menu_toggler_3TT + label:after {\n  width: 40px;\n  height: 5px;\n  display: block;\n  z-index: 1;\n  border-radius: 2.5px;\n  background: rgba(255, 255, 255, 0.7);\n  transition: transform 0.5s, top 0.5s;\n  content: \"\";\n  position: absolute;\n  left: 0;\n}\n\n.Menu_toggler_3TT + label:before {\n  top: 10px;\n}\n\n.Menu_toggler_3TT + label:after {\n  top: -10px;\n}\n\n.Menu_item_14h {\n  display: block;\n  width: 40px;\n  height: 40px;\n  transition: 0.5s;\n}\n\n.Menu_item_14h a {\n  display: block;\n  width: inherit;\n  height: inherit;\n  line-height: 40px;\n  color: rgba(255, 255, 255, 0.7);\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 50%;\n  text-align: center;\n  text-decoration: none;\n  font-size: 18px;\n  transition: .2s;\n}\n\n.Menu_item_14h a:hover {\n  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);\n  color: white;\n  background: rgba(255, 255, 255, 0.3);\n  font-size: 24px;\n}", "", {"version":3,"sources":["/./components/Menu/Menu.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,OAAO;EACP,QAAQ;EACR,cAAc;CACf;;AAED;EACE,UAAU;EACV,WAAW;CACZ;;AAED;EACE,YAAY;EACZ,mBAAmB;CACpB;;AAED;EACE,eAAe;EACf,UAAU;EACV,SAAS;EACT,aAAa;EACb,YAAY;EACZ,aAAa;EACb,WAAW;EACX,WAAW;EACX,gBAAgB;CACjB;;AAED;EACE,kBAAkB;CACnB;;AAED;EACE,wBAAwB;CACzB;;AAED;EACE,OAAO;EACP,YAAY;EAEJ,0BAA0B;CACnC;;AAED;EAEU,yBAAyB;CAClC;;AAED;EAEU,0BAA0B;CACnC;;AAED;EACE,WAAW;CACZ;;AAED;EACE,YAAY;EACZ,YAAY;EACZ,eAAe;EACf,WAAW;EACX,qBAAqB;EACrB,qCAAqC;EAGrC,qCAAqC;EAErC,mBAAmB;EACnB,OAAO;EACP,UAAU;EACV,SAAS;EACT,QAAQ;EACR,aAAa;CACd;;AAED;EACE,YAAY;EACZ,YAAY;EACZ,eAAe;EACf,WAAW;EACX,qBAAqB;EACrB,qCAAqC;EAGrC,qCAAqC;EAErC,YAAY;EACZ,mBAAmB;EACnB,QAAQ;CACT;;AAED;EACE,UAAU;CACX;;AAED;EACE,WAAW;CACZ;;AAED;EACE,eAAe;EACf,YAAY;EACZ,aAAa;EAEb,iBAAiB;CAClB;;AAED;EACE,eAAe;EACf,eAAe;EACf,gBAAgB;EAChB,kBAAkB;EAClB,gCAAgC;EAChC,qCAAqC;EACrC,mBAAmB;EACnB,mBAAmB;EACnB,sBAAsB;EACtB,gBAAgB;EAEhB,gBAAgB;CACjB;;AAED;EAEU,+CAA+C;EACvD,aAAa;EACb,qCAAqC;EACrC,gBAAgB;CACjB","file":"Menu.css","sourcesContent":[".menu {\n  position: absolute;\n  top: 0;\n  left: 0;\n  padding: 12px;\n}\n\n.menu ul {\n  margin: 0;\n  padding: 0;\n}\n\n.menu ul li {\n  float: left;\n  margin-right: 12px;\n}\n\n.toggler {\n  display: block;\n  bottom: 0;\n  right: 0;\n  margin: auto;\n  width: 40px;\n  height: 40px;\n  z-index: 2;\n  opacity: 0;\n  cursor: pointer;\n}\n\n.toggler:hover + label, .menu-toggler:hover + label:before, .menu-toggler:hover + label:after {\n  background: white;\n}\n\n.toggler:checked + label {\n  background: transparent;\n}\n\n.toggler:checked + label:before, .toggler:checked + label:after {\n  top: 0;\n  width: 40px;\n  -webkit-transform-origin: 50% 50%;\n          transform-origin: 50% 50%;\n}\n\n.toggler:checked + label:before {\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n\n.toggler:checked + label:after {\n  -webkit-transform: rotate(-45deg);\n          transform: rotate(-45deg);\n}\n\n.toggler:checked ~ ul .item {\n  opacity: 1;\n}\n\n.toggler + label {\n  width: 40px;\n  height: 5px;\n  display: block;\n  z-index: 1;\n  border-radius: 2.5px;\n  background: rgba(255, 255, 255, 0.7);\n  -webkit-transition: top 0.5s, -webkit-transform 0.5s;\n  transition: top 0.5s, -webkit-transform 0.5s;\n  transition: transform 0.5s, top 0.5s;\n  transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  margin: auto;\n}\n\n.toggler + label:before, .toggler + label:after {\n  width: 40px;\n  height: 5px;\n  display: block;\n  z-index: 1;\n  border-radius: 2.5px;\n  background: rgba(255, 255, 255, 0.7);\n  -webkit-transition: top 0.5s, -webkit-transform 0.5s;\n  transition: top 0.5s, -webkit-transform 0.5s;\n  transition: transform 0.5s, top 0.5s;\n  transition: transform 0.5s, top 0.5s, -webkit-transform 0.5s;\n  content: \"\";\n  position: absolute;\n  left: 0;\n}\n\n.toggler + label:before {\n  top: 10px;\n}\n\n.toggler + label:after {\n  top: -10px;\n}\n\n.item {\n  display: block;\n  width: 40px;\n  height: 40px;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n}\n\n.item a {\n  display: block;\n  width: inherit;\n  height: inherit;\n  line-height: 40px;\n  color: rgba(255, 255, 255, 0.7);\n  background: rgba(255, 255, 255, 0.2);\n  border-radius: 50%;\n  text-align: center;\n  text-decoration: none;\n  font-size: 18px;\n  -webkit-transition: .2s;\n  transition: .2s;\n}\n\n.item a:hover {\n  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);\n          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);\n  color: white;\n  background: rgba(255, 255, 255, 0.3);\n  font-size: 24px;\n}"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -1009,18 +1014,18 @@ webpackJsonp([0],{
   	"item": "Menu_item_14h"
   };
 
-/***/ },
+/***/ }),
 
-/***/ 140:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 90:
+/***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(111);
+  var content = __webpack_require__(83);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(10)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1036,10 +1041,10 @@ webpackJsonp([0],{
   	module.hot.dispose(function() { update(); });
   }
 
-/***/ },
+/***/ }),
 
-/***/ 234:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 159:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -1071,25 +1076,25 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _MenuLayout = __webpack_require__(93);
+  var _MenuLayout = __webpack_require__(65);
   
   var _MenuLayout2 = _interopRequireDefault(_MenuLayout);
   
-  var _Link = __webpack_require__(47);
+  var _Link = __webpack_require__(37);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Dog = __webpack_require__(15);
+  var _Dog = __webpack_require__(12);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
-  var _Home = __webpack_require__(415);
+  var _Home = __webpack_require__(259);
   
   var _Home2 = _interopRequireDefault(_Home);
   
-  var _Home3 = __webpack_require__(427);
+  var _Home3 = __webpack_require__(271);
   
-  var _Colors = __webpack_require__(11);
+  var _Colors = __webpack_require__(8);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -1162,17 +1167,17 @@ webpackJsonp([0],{
   
   exports.default = HomePage;
 
-/***/ },
+/***/ }),
 
-/***/ 291:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 217:
+/***/ (function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(9)();
   // imports
   
   
   // module
-  exports.push([module.id, ".Home_dog_3l_ {\n  -webkit-animation: Home_shake_2qM 7s cubic-bezier(.36,.07,.19,.97) both;\n          animation: Home_shake_2qM 7s cubic-bezier(.36,.07,.19,.97) both;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n}\n\n@-webkit-keyframes Home_shake_2qM {\n  10% {\n    -webkit-transform: rotate(3deg);\n            transform: rotate(3deg);\n  }\n  \n  20% {\n    -webkit-transform: rotate(-2deg);\n            transform: rotate(-2deg);\n  }\n\n  30%, 50% {\n    -webkit-transform: rotate(1deg);\n            transform: rotate(1deg);\n  }\n\n  40% {\n    -webkit-transform: rotate(-2deg);\n            transform: rotate(-2deg);\n  }\n\n  50% {\n  \t-webkit-transform: rotate(0deg);\n  \t        transform: rotate(0deg);\n  }\n}\n\n@keyframes Home_shake_2qM {\n  10% {\n    -webkit-transform: rotate(3deg);\n            transform: rotate(3deg);\n  }\n  \n  20% {\n    -webkit-transform: rotate(-2deg);\n            transform: rotate(-2deg);\n  }\n\n  30%, 50% {\n    -webkit-transform: rotate(1deg);\n            transform: rotate(1deg);\n  }\n\n  40% {\n    -webkit-transform: rotate(-2deg);\n            transform: rotate(-2deg);\n  }\n\n  50% {\n  \t-webkit-transform: rotate(0deg);\n  \t        transform: rotate(0deg);\n  }\n}\n\n@media screen and (max-width: 1024px) {\n\n  .Home_content_3u8 {\n    padding: 0 16px;\n  }\n\n}\n", "", {"version":3,"sources":["/./routes/Home/Home.css"],"names":[],"mappings":"AAAA;EACE,wEAAuD;UAAvD,gEAAuD;EACvD,oCAA4B;UAA5B,4BAA4B;EAC5B,4CAAoC;UAApC,oCAAoC;CACrC;;AAED;EACE;IACE,gCAAwB;YAAxB,wBAAwB;GACzB;;EAED;IACE,iCAAyB;YAAzB,yBAAyB;GAC1B;;EAED;IACE,gCAAwB;YAAxB,wBAAwB;GACzB;;EAED;IACE,iCAAyB;YAAzB,yBAAyB;GAC1B;;EAED;GACC,gCAAwB;WAAxB,wBAAwB;GACxB;CACF;;AApBD;EACE;IACE,gCAAwB;YAAxB,wBAAwB;GACzB;;EAED;IACE,iCAAyB;YAAzB,yBAAyB;GAC1B;;EAED;IACE,gCAAwB;YAAxB,wBAAwB;GACzB;;EAED;IACE,iCAAyB;YAAzB,yBAAyB;GAC1B;;EAED;GACC,gCAAwB;WAAxB,wBAAwB;GACxB;CACF;;AAED;;EAEE;IACE,gBAAgB;GACjB;;CAEF","file":"Home.css","sourcesContent":[".dog {\n  animation: shake 7s cubic-bezier(.36,.07,.19,.97) both;\n  backface-visibility: hidden;\n  animation-iteration-count: infinite;\n}\n\n@keyframes shake {\n  10% {\n    transform: rotate(3deg);\n  }\n  \n  20% {\n    transform: rotate(-2deg);\n  }\n\n  30%, 50% {\n    transform: rotate(1deg);\n  }\n\n  40% {\n    transform: rotate(-2deg);\n  }\n\n  50% {\n  \ttransform: rotate(0deg);\n  }\n}\n\n@media screen and (max-width: 1024px) {\n\n  .content {\n    padding: 0 16px;\n  }\n\n}\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".Home_dog_3l_ {\n  animation: Home_shake_2qM 7s cubic-bezier(.36,.07,.19,.97) both;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  animation-iteration-count: infinite;\n}\n\n@keyframes Home_shake_2qM {\n  10% {\n    transform: rotate(3deg);\n  }\n  \n  20% {\n    transform: rotate(-2deg);\n  }\n\n  30%, 50% {\n    transform: rotate(1deg);\n  }\n\n  40% {\n    transform: rotate(-2deg);\n  }\n\n  50% {\n  \ttransform: rotate(0deg);\n  }\n}\n\n@media screen and (max-width: 1024px) {\n\n  .Home_content_3u8 {\n    padding: 0 16px;\n  }\n\n}\n", "", {"version":3,"sources":["/./routes/Home/Home.css"],"names":[],"mappings":"AAAA;EACE,gEAAuD;EACvD,oCAA4B;UAA5B,4BAA4B;EAC5B,oCAAoC;CACrC;;AAED;EACE;IACE,wBAAwB;GACzB;;EAED;IACE,yBAAyB;GAC1B;;EAED;IACE,wBAAwB;GACzB;;EAED;IACE,yBAAyB;GAC1B;;EAED;GACC,wBAAwB;GACxB;CACF;;AAED;;EAEE;IACE,gBAAgB;GACjB;;CAEF","file":"Home.css","sourcesContent":[".dog {\n  animation: shake 7s cubic-bezier(.36,.07,.19,.97) both;\n  backface-visibility: hidden;\n  animation-iteration-count: infinite;\n}\n\n@keyframes shake {\n  10% {\n    transform: rotate(3deg);\n  }\n  \n  20% {\n    transform: rotate(-2deg);\n  }\n\n  30%, 50% {\n    transform: rotate(1deg);\n  }\n\n  40% {\n    transform: rotate(-2deg);\n  }\n\n  50% {\n  \ttransform: rotate(0deg);\n  }\n}\n\n@media screen and (max-width: 1024px) {\n\n  .content {\n    padding: 0 16px;\n  }\n\n}\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -1181,18 +1186,18 @@ webpackJsonp([0],{
   	"content": "Home_content_3u8"
   };
 
-/***/ },
+/***/ }),
 
-/***/ 415:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 259:
+/***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(291);
+  var content = __webpack_require__(217);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(10)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1208,14 +1213,14 @@ webpackJsonp([0],{
   	module.hot.dispose(function() { update(); });
   }
 
-/***/ },
+/***/ }),
 
-/***/ 427:
-/***/ function(module, exports) {
+/***/ 271:
+/***/ (function(module, exports) {
 
   module.exports = {"title":"Hello","desc":"I make wonderful things online.","html":""};
 
-/***/ }
+/***/ })
 
 });
-//# sourceMappingURL=0.js.map?124ccdef2f209c20c739
+//# sourceMappingURL=0.js.map?97990d3ed98bd26b33ba

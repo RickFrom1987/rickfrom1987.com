@@ -1,14 +1,14 @@
 webpackJsonp([12],{
 
 /***/ 2:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(17), __esModule: true };
+  module.exports = { "default": __webpack_require__(14), __esModule: true };
 
-/***/ },
+/***/ }),
 
 /***/ 3:
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
   "use strict";
   
@@ -20,16 +20,16 @@ webpackJsonp([12],{
     }
   };
 
-/***/ },
+/***/ }),
 
 /***/ 4:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(35);
+  var _defineProperty = __webpack_require__(29);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -53,24 +53,24 @@ webpackJsonp([12],{
     };
   }();
 
-/***/ },
+/***/ }),
 
 /***/ 5:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(16);
+  var _setPrototypeOf = __webpack_require__(13);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(34);
+  var _create = __webpack_require__(28);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(14);
+  var _typeof2 = __webpack_require__(11);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -92,16 +92,16 @@ webpackJsonp([12],{
     if (superClass) _setPrototypeOf2.default ? (0, _setPrototypeOf2.default)(subClass, superClass) : subClass.__proto__ = superClass;
   };
 
-/***/ },
+/***/ }),
 
 /***/ 6:
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(14);
+  var _typeof2 = __webpack_require__(11);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -115,10 +115,10 @@ webpackJsonp([12],{
     return call && ((typeof call === "undefined" ? "undefined" : (0, _typeof3.default)(call)) === "object" || typeof call === "function") ? call : self;
   };
 
-/***/ },
+/***/ }),
 
-/***/ 11:
-/***/ function(module, exports) {
+/***/ 8:
+/***/ (function(module, exports) {
 
   'use strict';
   
@@ -130,10 +130,10 @@ webpackJsonp([12],{
   var BLUE = exports.BLUE = '#2986BE';
   var GRADIENT_BG = exports.GRADIENT_BG = 'linear-gradient(-150deg, #00C1B6 0%, #136EB5 97%)';
 
-/***/ },
+/***/ }),
 
-/***/ 12:
-/***/ function(module, exports) {
+/***/ 9:
+/***/ (function(module, exports) {
 
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -187,10 +187,10 @@ webpackJsonp([12],{
   };
 
 
-/***/ },
+/***/ }),
 
-/***/ 13:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 10:
+/***/ (function(module, exports, __webpack_require__) {
 
   /*
   	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -440,10 +440,10 @@ webpackJsonp([12],{
   }
 
 
-/***/ },
+/***/ }),
 
-/***/ 15:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 12:
+/***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
@@ -499,53 +499,55 @@ webpackJsonp([12],{
   
   exports.default = Dog;
 
-/***/ },
+/***/ }),
 
-/***/ 16:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 13:
+/***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(18), __esModule: true };
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
 
-/***/ },
+/***/ }),
 
-/***/ 17:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 14:
+/***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(20);
+  __webpack_require__(17);
   module.exports = __webpack_require__(7).Object.getPrototypeOf;
 
-/***/ },
 
-/***/ 18:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
 
-  __webpack_require__(21);
+/***/ 15:
+/***/ (function(module, exports, __webpack_require__) {
+
+  __webpack_require__(18);
   module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
-/***/ },
 
-/***/ 19:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 16:
+/***/ (function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(31)
-    , anObject = __webpack_require__(23);
-  var check = function(O, proto){
+  var isObject = __webpack_require__(21);
+  var anObject = __webpack_require__(20);
+  var check = function (O, proto) {
     anObject(O);
-    if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
+    if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
   };
   module.exports = {
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-      function(test, buggy, set){
+      function (test, buggy, set) {
         try {
-          set = __webpack_require__(30)(Function.call, __webpack_require__(36).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(26)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
-        } catch(e){ buggy = true; }
-        return function setPrototypeOf(O, proto){
+        } catch (e) { buggy = true; }
+        return function setPrototypeOf(O, proto) {
           check(O, proto);
-          if(buggy)O.__proto__ = proto;
+          if (buggy) O.__proto__ = proto;
           else set(O, proto);
           return O;
         };
@@ -553,34 +555,37 @@ webpackJsonp([12],{
     check: check
   };
 
-/***/ },
 
-/***/ 20:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 17:
+/***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject        = __webpack_require__(32)
-    , $getPrototypeOf = __webpack_require__(37);
+  var toObject = __webpack_require__(27);
+  var $getPrototypeOf = __webpack_require__(32);
   
-  __webpack_require__(38)('getPrototypeOf', function(){
-    return function getPrototypeOf(it){
+  __webpack_require__(33)('getPrototypeOf', function () {
+    return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
   });
 
-/***/ },
 
-/***/ 21:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 18:
+/***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(24);
-  $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(19).set});
+  var $export = __webpack_require__(19);
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
 
-/***/ },
 
-/***/ 26:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+
+/***/ 22:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -588,11 +593,11 @@ webpackJsonp([12],{
     value: true
   });
   
-  var _assign = __webpack_require__(41);
+  var _assign = __webpack_require__(35);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(27);
+  var _extends2 = __webpack_require__(23);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -620,15 +625,15 @@ webpackJsonp([12],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Dog = __webpack_require__(15);
+  var _Dog = __webpack_require__(12);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
-  var _Colors = __webpack_require__(11);
+  var _Colors = __webpack_require__(8);
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(29);
+  var _Article = __webpack_require__(25);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -735,17 +740,17 @@ webpackJsonp([12],{
   };
   exports.default = ArticleLayout;
 
-/***/ },
+/***/ }),
 
-/***/ 28:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 24:
+/***/ (function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(12)();
+  exports = module.exports = __webpack_require__(9)();
   // imports
   
   
   // module
-  exports.push([module.id, ".Article_article_2_j a {\n  text-decoration: none;\n  font-weight: 500;\n}\n\n.Article_article_2_j a:link, .Article_article_2_j a:visited {\n  color: #0099e5;\n}\n\n.Article_article_2_j p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .Article_layout_1WS {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-flow: column;\n          flex-flow: column;\n }\n}", "", {"version":3,"sources":["/./components/Layout/Article.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB;;AAED;EACE,oBAAoB;CACrB;;AAED;CACC;EACC,6BAAkB;EAAlB,8BAAkB;MAAlB,sBAAkB;UAAlB,kBAAkB;EAClB;CACD","file":"Article.css","sourcesContent":[".article a {\n  text-decoration: none;\n  font-weight: 500;\n}\n\n.article a:link, .article a:visited {\n  color: #0099e5;\n}\n\n.article p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .layout {\n  flex-flow: column;\n }\n}"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, ".Article_article_2_j a {\n  text-decoration: none;\n  font-weight: 500;\n}\n\n.Article_article_2_j a:link, .Article_article_2_j a:visited {\n  color: #0099e5;\n}\n\n.Article_article_2_j p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .Article_layout_1WS {\n  -ms-flex-flow: column;\n      flex-flow: column;\n }\n}", "", {"version":3,"sources":["/./components/Layout/Article.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB;;AAED;EACE,oBAAoB;CACrB;;AAED;CACC;EACC,sBAAkB;MAAlB,kBAAkB;EAClB;CACD","file":"Article.css","sourcesContent":[".article a {\n  text-decoration: none;\n  font-weight: 500;\n}\n\n.article a:link, .article a:visited {\n  color: #0099e5;\n}\n\n.article p {\n  margin-bottom: 12px;\n}\n\n@media (max-width: 480px) {\n .layout {\n  flex-flow: column;\n }\n}"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
@@ -753,18 +758,18 @@ webpackJsonp([12],{
   	"layout": "Article_layout_1WS"
   };
 
-/***/ },
+/***/ }),
 
-/***/ 29:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 25:
+/***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(28);
+  var content = __webpack_require__(24);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(13)(content, {});
+  var update = __webpack_require__(10)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -780,10 +785,10 @@ webpackJsonp([12],{
   	module.hot.dispose(function() { update(); });
   }
 
-/***/ },
+/***/ }),
 
-/***/ 143:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 96:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -792,7 +797,7 @@ webpackJsonp([12],{
   });
   exports.default = undefined;
   
-  var _Booking = __webpack_require__(228);
+  var _Booking = __webpack_require__(153);
   
   var _Booking2 = _interopRequireDefault(_Booking);
   
@@ -800,10 +805,10 @@ webpackJsonp([12],{
   
   exports.default = _Booking2.default;
 
-/***/ },
+/***/ }),
 
-/***/ 228:
-/***/ function(module, exports, __webpack_require__) {
+/***/ 153:
+/***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
   
@@ -835,11 +840,11 @@ webpackJsonp([12],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(26);
+  var _ArticleLayout = __webpack_require__(22);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Booking = __webpack_require__(421);
+  var _Booking = __webpack_require__(265);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -871,14 +876,14 @@ webpackJsonp([12],{
   
   exports.default = BookingPage;
 
-/***/ },
+/***/ }),
 
-/***/ 421:
-/***/ function(module, exports) {
+/***/ 265:
+/***/ (function(module, exports) {
 
   module.exports = {"title":"Booking.com","subtitle":2015,"url":"http://suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"http://suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine.</p>\n<p><b>Challenges</b></p>\n<p>\nI was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams.\n</p>\n<p><b>Growing</b></p>\n<p>\nThis was one of my first gigs working as a contractor and I have to admit I made some mistakes on the business and coding side of things. I learned a ton about what the right/wrong way to approach problems both with code and with people. A  ton of lessons learned and I grew so much and matured as a person by the end of the journey!\n</p>\n<p>\nI really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim <3\n</p>"};
 
-/***/ }
+/***/ })
 
 });
-//# sourceMappingURL=12.js.map?81720be28f1a7aa752bb
+//# sourceMappingURL=12.js.map?43c8b767020ff9db999b

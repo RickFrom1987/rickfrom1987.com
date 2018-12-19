@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Menu from '../Menu';
 
 import * as Colors from '../Constants/Colors';
@@ -11,7 +12,7 @@ class MenuLayout extends React.Component {
   }
 
   static propTypes = {
-    centered: React.PropTypes.bool
+    centered: PropTypes.bool
   };
 
   render() {

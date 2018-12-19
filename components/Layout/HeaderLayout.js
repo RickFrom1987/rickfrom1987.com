@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Header from './Header';
 
 import * as Colors from '../Constants/Colors';
@@ -9,7 +10,7 @@ class HeaderLayout extends React.Component {
     this.state = {};
   }
   static propTypes = {
-    centered: React.PropTypes.bool
+    centered: PropTypes.bool
   };
 
   render() {

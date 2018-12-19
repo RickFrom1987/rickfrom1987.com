@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import View from 'react-flexbox';
 
 import ReactDOM from 'react-dom';
@@ -106,7 +107,7 @@ class ProjectGridLayout extends React.Component {
 }
 
 ProjectGridLayout.propTypes = {
-  projects: React.PropTypes.array.isRequired,
+  projects: PropTypes.array.isRequired,
 };
 
 export default ProjectGridLayout;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Dog from '../Dog';
 import * as Colors from '../Constants/Colors';
 import s from './Article.css';
@@ -11,10 +12,10 @@ class ArticleLayout extends React.Component {
   }
   
   static propTypes = {
-    style: React.PropTypes.object,
-    title: React.PropTypes.node,
-    subtitle: React.PropTypes.node,
-    url: React.PropTypes.node,
+    style: PropTypes.object,
+    title: PropTypes.node,
+    subtitle: PropTypes.node,
+    url: PropTypes.node,
   };
   
   render() {

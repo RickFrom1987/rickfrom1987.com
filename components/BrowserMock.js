@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import history from '../core/history';
 
 import s from './BrowserMock.css';
@@ -13,9 +14,9 @@ class BrowserMock extends React.Component {
     };
   }
   static propTypes = {
-    style: React.PropTypes.object,
-    pathname: React.PropTypes.string,
-    children: React.PropTypes.node
+    style: PropTypes.object,
+    pathname: PropTypes.string,
+    children: PropTypes.node
   };
   onMouseOver = () => {
     this.setState({
