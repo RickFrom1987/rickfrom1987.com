@@ -94,7 +94,7 @@
     "position": "RickFrom1987",
     "website": "http://brandly.com",
     "url": "/brandly",
-    "tags": ["angular", "jQuery", "django"],
+    "tags": ["vue.js", "angular", "jQuery", "django"],
     "highlights": [
       "Facelift an existing angularJS app",
       "Refactored older SCSS",
