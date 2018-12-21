@@ -42,8 +42,14 @@
       "Unit tests with Jasmine",
       "Lots of learning"
     ]
-  },
-  {
+  }, {
+    "company": "healthygen.org",
+    "position": "",
+    "website": "https://healthygen.org",
+    "url": "/healthygen",
+    "tags": ["wordpress", "javascript", "git"],
+    "highlights": []
+  }, {
     "company": "datablade.io",
     "name": "datablade",
     "thumbnail": "/datablade.jpg",
