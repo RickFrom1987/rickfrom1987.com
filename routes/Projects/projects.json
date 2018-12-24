@@ -1,40 +1,65 @@
 [
-  {
-    "company": "appuri.com",
-    "position": "RickFrom1987",
-    "website": "https://appuri.com",
-    "url": "/appuri",
-    "tags": ["javasscript", "salesforce", "knockout", "mocha"],
-    "highlights": []
+  {  
+    "company":"textnow.com",
+    "position":"RickFrom1987",
+    "website":"https://textnow.com",
+    "url":"/textnow",
+    "tags":[  
+      "Backbone",
+      "javascript"
+    ],
+    "highlights":[  
+
+    ]
   },
-  {
-    "company": "textnow.com",
-    "position": "RickFrom1987",
-    "website": "https://textnow.com",
-    "url": "/textnow",
-    "tags": ["backbone", "javascript"],
-    "highlights": []
-  },
-  {
-    "company": "momentlens.co",
-    "position": "RickFrom1987",
-    "website": "https://momentlens.co",
-    "url": "/moment",
-    "tags": ["javascript", "python", "wordpress"],
-    "highlights": [
+  {  
+    "company":"momentlens.co",
+    "position":"RickFrom1987",
+    "website":"https://momentlens.co",
+    "url":"/moment",
+    "tags":[  
+      "javascript",
+      "python",
+      "wordpress"
+    ],
+    "highlights":[  
       "Version control for web properties",
       "Monitoring and project management",
       "Python scripts for order processing",
       "Wordpress theme/plugin management and development",
       "Helped launch Moment Case"
     ]
-  }, {
-    "company": "haikudeck.com",
-    "position": "Front End Engineer",
-    "website": "https://haikudeck.com",
-    "url": "/haikudeck",
-    "tags": ["node.js", "knockout.js", "backbone"],
-    "highlights": [
+  },
+  {  
+    "company":"energysavvy.com",
+    "thumbnail":"/energysavvy.jpg",
+    "position":"RickFrom1987",
+    "website":"https://energysavvy.com",
+    "url":"/energysavvy",
+    "tags":[  
+      "react",
+      "aws",
+      "npm",
+      "node"
+    ],
+    "highlights":[  
+      "First react app",
+      "mocha + sinon",
+      "Financial calculations test coverage",
+      "Solar calculations test coverage"
+    ]
+  },
+  {  
+    "company":"haikudeck.com",
+    "position":"Front End Engineer",
+    "website":"https://haikudeck.com",
+    "url":"/haikudeck",
+    "tags":[  
+      "node.js",
+      "knockout.js",
+      "backbone"
+    ],
+    "highlights":[  
       "First startup job!",
       "Website and webapp development",
       "Knockout.js and Backbone frontend",
@@ -42,84 +67,140 @@
       "Unit tests with Jasmine",
       "Lots of learning"
     ]
-  }, {
-    "company": "healthygen.org",
-    "position": "",
-    "website": "https://healthygen.org",
-    "url": "/healthygen",
-    "tags": ["wordpress", "javascript", "git"],
-    "highlights": []
-  }, {
-    "company": "datablade.io",
-    "name": "datablade",
-    "thumbnail": "/datablade.jpg",
-    "position": "RickFrom1987",
-    "website": "http://datablade.io",
-    "url": "/datablade",
-    "tags": ["alt.js", "react", "coreOS", "aws", "npm", "node"],
-    "highlights": [
+  },
+  {  
+    "company":"appuri.com",
+    "position":"RickFrom1987",
+    "website":"https://appuri.com",
+    "url":"/appuri",
+    "tags":[  
+      "javascript",
+      "salesforce",
+      "knockout",
+      "mocha"
+    ],
+    "highlights":[]
+  },
+  {  
+    "company":"healthygen.org",
+    "position":"",
+    "website":"https://healthygen.org",
+    "url":"/healthygen",
+    "tags":[  
+      "analytics",
+      "wordpress",
+      "javascript",
+      "git"
+    ],
+    "highlights":[  
+
+    ]
+  },
+  {  
+    "company":"datablade.io",
+    "name":"datablade",
+    "thumbnail":"/datablade.jpg",
+    "position":"RickFrom1987",
+    "website":"http://datablade.io",
+    "url":"/datablade",
+    "tags":[  
+      "alt.js",
+      "react",
+      "coreOS",
+      "aws",
+      "npm",
+      "node"
+    ],
+    "highlights":[  
       "TechStars 2015",
       "Iterate very quickly in a fast paced environment",
       "Used alt.js and React to build components"
     ]
-  },  {
-    "company": "energysavvy.com",
-    "thumbnail": "/energysavvy.jpg",
-    "position": "RickFrom1987",
-    "website": "https://energysavvy.com",
-    "url": "/energysavvy",
-    "tags": ["react", "aws", "npm", "node"],
-    "highlights": [
-      "First react app",
-      "mocha + sinon",
-      "Financial calculations test coverage",
-      "Solar calculations test coverage"
-    ]
-  }, {
-    "company": "motion.social",
-    "name": "motion.social",
-    "thumbnail": "/placeholder.jpg",
-    "position": "RickFrom1987",
-    "website": "https://motion.social",
-    "url": "/motionsocial",
-    "tags": ["react", "go", "docker", "mocha", "sentry", "npm", "node"],
-    "highlights": [
-      "Built a suite of internal react UI components",
-      "Help grow user base and product 1000 users/groups",
-      "Worked with co-founder of PicMonkey"
-    ]
-  }, {
-    "company": "brandly.com",
-    "thumbnail": "/brandly.jpg",
-    "position": "RickFrom1987",
-    "website": "http://brandly.com",
-    "url": "/brandly",
-    "tags": ["vue.js", "angular", "jQuery", "django"],
-    "highlights": [
+  },
+  {  
+    "company":"brandly.com",
+    "thumbnail":"/brandly.jpg",
+    "position":"RickFrom1987",
+    "website":"http://brandly.com",
+    "url":"/brandly",
+    "tags":[  
+      "vue.js",
+      "angular",
+      "jQuery",
+      "django"
+    ],
+    "highlights":[  
       "Facelift an existing angularJS app",
       "Refactored older SCSS",
       "Unit tests in Jasmine",
       "django templates",
       "Small defensive changes to make progress"
     ]
-  }, {
-    "company": "booking.com",
-    "position": "RickFrom1987",
-    "website": "http://suite.booking.com",
-    "url": "/booking",
-    "tags": ["javascript", "Google App Engine", "gulp", "npm", "node"],
-    "highlights": [
+  },
+  {  
+    "company":"booking.com",
+    "position":"RickFrom1987",
+    "website":"http://suite.booking.com",
+    "url":"/booking",
+    "tags":[  
+      "javascript",
+      "Google App Engine",
+      "gulp",
+      "npm",
+      "node"
+    ],
+    "highlights":[  
       "Architected js management system",
       "Deployment system for js across thousands of sites",
       "Worked with legacy CMS"
     ]
-  }, {
-    "company": "Yahoo!",
-    "position": "Front End Engineer",
-    "website": "https://yahoo.com",
-    "url": "/yahoo",
-    "tags": ["javascript", "php", "YUI"],
-    "highlights": [
+  },
+  {  
+    "company":"membean.com",
+    "position":"RickFrom1987",
+    "website":"https://membean.com",
+    "url":"/membean",
+    "tags":[  
+      "javascript",
+      "React",
+      "Redux",
+      "Enzyme"
+    ],
+    "highlights":[]
+  },
+  {  
+    "company":"motion.social",
+    "name":"motion.social",
+    "thumbnail":"/placeholder.jpg",
+    "position":"RickFrom1987",
+    "website":"https://motion.social",
+    "url":"/motionsocial",
+    "tags":[  
+      "react",
+      "go",
+      "docker",
+      "mocha",
+      "sentry",
+      "npm",
+      "node"
+    ],
+    "highlights":[  
+      "Built a suite of internal react UI components",
+      "Help grow user base and product 1000 users/groups",
+      "Worked with co-founder of PicMonkey"
+    ]
+  },
+  {  
+    "company":"Yahoo!",
+    "position":"Front End Engineer",
+    "website":"https://yahoo.com",
+    "url":"/yahoo",
+    "tags":[  
+      "javascript",
+      "php",
+      "YUI"
+    ],
+    "highlights":[  
       "First engineering job!",
       "Yahoo! Local",
       "Fixed bugs",

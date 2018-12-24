@@ -16,6 +16,10 @@
     "component": "./routes/MotionSocial"
   },
   {
+    "path": "/membean",
+    "component": "./routes/Membean"
+  },
+  {
     "path": "/appuri",
     "component": "./routes/Appuri"
   },
