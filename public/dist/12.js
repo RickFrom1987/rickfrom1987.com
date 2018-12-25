@@ -3,7 +3,7 @@ webpackJsonp([12],{
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(15), __esModule: true };
+  module.exports = { "default": __webpack_require__(14), __esModule: true };
 
 /***/ }),
 
@@ -62,7 +62,7 @@ webpackJsonp([12],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(14);
+  var _setPrototypeOf = __webpack_require__(13);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
@@ -442,7 +442,7 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 13:
+/***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -501,10 +501,19 @@ webpackJsonp([12],{
 
 /***/ }),
 
+/***/ 13:
+/***/ (function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
+
+/***/ }),
+
 /***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(16), __esModule: true };
+  __webpack_require__(17);
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
+
 
 /***/ }),
 
@@ -512,7 +521,7 @@ webpackJsonp([12],{
 /***/ (function(module, exports, __webpack_require__) {
 
   __webpack_require__(18);
-  module.exports = __webpack_require__(7).Object.getPrototypeOf;
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
 
 /***/ }),
@@ -520,18 +529,9 @@ webpackJsonp([12],{
 /***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(19);
-  module.exports = __webpack_require__(7).Object.setPrototypeOf;
-
-
-/***/ }),
-
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
-
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(22);
+  var isObject = __webpack_require__(25);
   var anObject = __webpack_require__(21);
   var check = function (O, proto) {
     anObject(O);
@@ -541,7 +541,7 @@ webpackJsonp([12],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function (test, buggy, set) {
         try {
-          set = __webpack_require__(27)(Function.call, __webpack_require__(32).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch (e) { buggy = true; }
@@ -558,14 +558,14 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 18:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
   var toObject = __webpack_require__(28);
-  var $getPrototypeOf = __webpack_require__(33);
+  var $getPrototypeOf = __webpack_require__(32);
   
-  __webpack_require__(34)('getPrototypeOf', function () {
+  __webpack_require__(33)('getPrototypeOf', function () {
     return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
@@ -574,17 +574,17 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 19:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
   var $export = __webpack_require__(20);
-  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(17).set });
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
 
 
 /***/ }),
 
-/***/ 23:
+/***/ 22:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -593,11 +593,11 @@ webpackJsonp([12],{
     value: true
   });
   
-  var _assign = __webpack_require__(36);
+  var _assign = __webpack_require__(34);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(24);
+  var _extends2 = __webpack_require__(26);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -625,11 +625,11 @@ webpackJsonp([12],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _propTypes = __webpack_require__(12);
+  var _propTypes = __webpack_require__(19);
   
   var _propTypes2 = _interopRequireDefault(_propTypes);
   
-  var _Dog = __webpack_require__(13);
+  var _Dog = __webpack_require__(12);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
@@ -637,7 +637,7 @@ webpackJsonp([12],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(26);
+  var _Article = __webpack_require__(24);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -746,7 +746,7 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 25:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(9)();
@@ -764,13 +764,13 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 26:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(25);
+  var content = __webpack_require__(23);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(10)(content, {});
@@ -791,7 +791,7 @@ webpackJsonp([12],{
 
 /***/ }),
 
-/***/ 96:
+/***/ 99:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -801,17 +801,17 @@ webpackJsonp([12],{
   });
   exports.default = undefined;
   
-  var _Booking = __webpack_require__(154);
+  var _Datablade = __webpack_require__(159);
   
-  var _Booking2 = _interopRequireDefault(_Booking);
+  var _Datablade2 = _interopRequireDefault(_Datablade);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Booking2.default;
+  exports.default = _Datablade2.default;
 
 /***/ }),
 
-/***/ 154:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -844,50 +844,50 @@ webpackJsonp([12],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(23);
+  var _ArticleLayout = __webpack_require__(22);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Booking = __webpack_require__(266);
+  var _Datablade = __webpack_require__(273);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var BookingPage = function (_React$Component) {
-    (0, _inherits3.default)(BookingPage, _React$Component);
+  var DatabladePage = function (_React$Component) {
+    (0, _inherits3.default)(DatabladePage, _React$Component);
   
-    function BookingPage() {
-      (0, _classCallCheck3.default)(this, BookingPage);
-      return (0, _possibleConstructorReturn3.default)(this, (BookingPage.__proto__ || (0, _getPrototypeOf2.default)(BookingPage)).apply(this, arguments));
+    function DatabladePage() {
+      (0, _classCallCheck3.default)(this, DatabladePage);
+      return (0, _possibleConstructorReturn3.default)(this, (DatabladePage.__proto__ || (0, _getPrototypeOf2.default)(DatabladePage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(BookingPage, [{
+    (0, _createClass3.default)(DatabladePage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Booking.title;
+        document.title = _Datablade.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Booking.title, url: _Booking.url },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Booking.html } })
+          { title: _Datablade.title, url: _Datablade.url },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Datablade.html } })
         );
       }
     }]);
-    return BookingPage;
+    return DatabladePage;
   }(_react2.default.Component);
   
-  exports.default = BookingPage;
+  exports.default = DatabladePage;
 
 /***/ }),
 
-/***/ 266:
+/***/ 273:
 /***/ (function(module, exports) {
 
-  module.exports = {"title":"Booking.com","subtitle":2015,"url":"http://suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"http://suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine.</p>\n<p><b>Challenges</b></p>\n<p>\nI was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams.\n</p>\n<p><b>Growing</b></p>\n<p>\nThis was one of my first gigs working as a contractor and I have to admit I made some mistakes on the business and coding side of things. I learned a ton about what the right/wrong way to approach problems both with code and with people. A  ton of lessons learned and I grew so much and matured as a person by the end of the journey!\n</p>\n<p>\nI really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim <3\n</p>"};
+  module.exports = {"title":"Datablade.io","subtitle":2015,"url":"http://datablade.io","html":"<p><a href=\"http://datablade.io\">DataBlade</a> is a small startup trying to make data anlayst lives easier. The platform allows data scientists to access, analyze and automate thier data processing. I was brought onboard to help with the web app and design some of the look and feel of some of thier components. The team was technically very deep and lead by my very talented and good friend Allen, an excellent programmer who has been there for me and encouraged me throught out my painful learning process. I didn't want to let him down.</p>\n<p><b>Challenges</b></p>\n<p>\nI was dumped into a complex codebase and needed to produce some results quickly. When I started helping out I was just learning about redux and they had already adopted alt.js. I had to keep pushing on learning the react fluxxy/reduxxy way of doing things, while still making progress using alt.js. It was a challenge because it was like learning how alt.js worked while utilizing the lib in production, kind of crazy, mistakes were made. The experience has helped me going forward and I think about apps in a much cleaner and seperated manner now!\n</p>"};
 
 /***/ })
 
 });
-//# sourceMappingURL=12.js.map?f300d49d1bf497575fbf
+//# sourceMappingURL=12.js.map?cb58e8e0a327cdd04c6c

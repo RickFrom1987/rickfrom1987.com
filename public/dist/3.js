@@ -3,7 +3,7 @@ webpackJsonp([3],{
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(15), __esModule: true };
+  module.exports = { "default": __webpack_require__(14), __esModule: true };
 
 /***/ }),
 
@@ -62,7 +62,7 @@ webpackJsonp([3],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(14);
+  var _setPrototypeOf = __webpack_require__(13);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
@@ -442,7 +442,7 @@ webpackJsonp([3],{
 
 /***/ }),
 
-/***/ 13:
+/***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -501,10 +501,19 @@ webpackJsonp([3],{
 
 /***/ }),
 
+/***/ 13:
+/***/ (function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
+
+/***/ }),
+
 /***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(16), __esModule: true };
+  __webpack_require__(17);
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
+
 
 /***/ }),
 
@@ -512,7 +521,7 @@ webpackJsonp([3],{
 /***/ (function(module, exports, __webpack_require__) {
 
   __webpack_require__(18);
-  module.exports = __webpack_require__(7).Object.getPrototypeOf;
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
 
 /***/ }),
@@ -520,18 +529,9 @@ webpackJsonp([3],{
 /***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(19);
-  module.exports = __webpack_require__(7).Object.setPrototypeOf;
-
-
-/***/ }),
-
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
-
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(22);
+  var isObject = __webpack_require__(25);
   var anObject = __webpack_require__(21);
   var check = function (O, proto) {
     anObject(O);
@@ -541,7 +541,7 @@ webpackJsonp([3],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function (test, buggy, set) {
         try {
-          set = __webpack_require__(27)(Function.call, __webpack_require__(32).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch (e) { buggy = true; }
@@ -558,14 +558,14 @@ webpackJsonp([3],{
 
 /***/ }),
 
-/***/ 18:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
   var toObject = __webpack_require__(28);
-  var $getPrototypeOf = __webpack_require__(33);
+  var $getPrototypeOf = __webpack_require__(32);
   
-  __webpack_require__(34)('getPrototypeOf', function () {
+  __webpack_require__(33)('getPrototypeOf', function () {
     return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
@@ -574,12 +574,12 @@ webpackJsonp([3],{
 
 /***/ }),
 
-/***/ 19:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
   var $export = __webpack_require__(20);
-  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(17).set });
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
 
 
 /***/ }),
@@ -634,7 +634,7 @@ webpackJsonp([3],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(24);
+  var _extends2 = __webpack_require__(26);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -666,7 +666,7 @@ webpackJsonp([3],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _propTypes = __webpack_require__(12);
+  var _propTypes = __webpack_require__(19);
   
   var _propTypes2 = _interopRequireDefault(_propTypes);
   
@@ -774,7 +774,7 @@ webpackJsonp([3],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _propTypes = __webpack_require__(12);
+  var _propTypes = __webpack_require__(19);
   
   var _propTypes2 = _interopRequireDefault(_propTypes);
   
@@ -1128,7 +1128,7 @@ webpackJsonp([3],{
   });
   exports.default = undefined;
   
-  var _Contact = __webpack_require__(156);
+  var _Contact = __webpack_require__(158);
   
   var _Contact2 = _interopRequireDefault(_Contact);
   
@@ -1138,7 +1138,7 @@ webpackJsonp([3],{
 
 /***/ }),
 
-/***/ 156:
+/***/ 158:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1183,15 +1183,15 @@ webpackJsonp([3],{
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Dog = __webpack_require__(13);
+  var _Dog = __webpack_require__(12);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
-  var _Contact = __webpack_require__(259);
+  var _Contact = __webpack_require__(263);
   
   var _Contact2 = _interopRequireDefault(_Contact);
   
-  var _Contact3 = __webpack_require__(268);
+  var _Contact3 = __webpack_require__(272);
   
   var _Colors = __webpack_require__(8);
   
@@ -1269,7 +1269,7 @@ webpackJsonp([3],{
 
 /***/ }),
 
-/***/ 217:
+/***/ 221:
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(9)();
@@ -1286,13 +1286,13 @@ webpackJsonp([3],{
 
 /***/ }),
 
-/***/ 259:
+/***/ 263:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(217);
+  var content = __webpack_require__(221);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(10)(content, {});
@@ -1313,7 +1313,7 @@ webpackJsonp([3],{
 
 /***/ }),
 
-/***/ 268:
+/***/ 272:
 /***/ (function(module, exports) {
 
   module.exports = {"title":"Call me maybe","phone":"425.985.9755","email":"rick@rickfrom1987.com","html":""};
@@ -1321,4 +1321,4 @@ webpackJsonp([3],{
 /***/ })
 
 });
-//# sourceMappingURL=3.js.map?c9f03cabd45262084571
+//# sourceMappingURL=3.js.map?bfde17455f9064c87bee

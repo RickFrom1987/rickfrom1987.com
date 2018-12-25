@@ -3,7 +3,7 @@ webpackJsonp([13],{
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(15), __esModule: true };
+  module.exports = { "default": __webpack_require__(14), __esModule: true };
 
 /***/ }),
 
@@ -62,7 +62,7 @@ webpackJsonp([13],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(14);
+  var _setPrototypeOf = __webpack_require__(13);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
@@ -442,7 +442,7 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 13:
+/***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -501,10 +501,19 @@ webpackJsonp([13],{
 
 /***/ }),
 
+/***/ 13:
+/***/ (function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
+
+/***/ }),
+
 /***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(16), __esModule: true };
+  __webpack_require__(17);
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
+
 
 /***/ }),
 
@@ -512,7 +521,7 @@ webpackJsonp([13],{
 /***/ (function(module, exports, __webpack_require__) {
 
   __webpack_require__(18);
-  module.exports = __webpack_require__(7).Object.getPrototypeOf;
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
 
 /***/ }),
@@ -520,18 +529,9 @@ webpackJsonp([13],{
 /***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(19);
-  module.exports = __webpack_require__(7).Object.setPrototypeOf;
-
-
-/***/ }),
-
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
-
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(22);
+  var isObject = __webpack_require__(25);
   var anObject = __webpack_require__(21);
   var check = function (O, proto) {
     anObject(O);
@@ -541,7 +541,7 @@ webpackJsonp([13],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function (test, buggy, set) {
         try {
-          set = __webpack_require__(27)(Function.call, __webpack_require__(32).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch (e) { buggy = true; }
@@ -558,14 +558,14 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 18:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
   var toObject = __webpack_require__(28);
-  var $getPrototypeOf = __webpack_require__(33);
+  var $getPrototypeOf = __webpack_require__(32);
   
-  __webpack_require__(34)('getPrototypeOf', function () {
+  __webpack_require__(33)('getPrototypeOf', function () {
     return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
@@ -574,17 +574,17 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 19:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
   var $export = __webpack_require__(20);
-  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(17).set });
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
 
 
 /***/ }),
 
-/***/ 23:
+/***/ 22:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -593,11 +593,11 @@ webpackJsonp([13],{
     value: true
   });
   
-  var _assign = __webpack_require__(36);
+  var _assign = __webpack_require__(34);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(24);
+  var _extends2 = __webpack_require__(26);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -625,11 +625,11 @@ webpackJsonp([13],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _propTypes = __webpack_require__(12);
+  var _propTypes = __webpack_require__(19);
   
   var _propTypes2 = _interopRequireDefault(_propTypes);
   
-  var _Dog = __webpack_require__(13);
+  var _Dog = __webpack_require__(12);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
@@ -637,7 +637,7 @@ webpackJsonp([13],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(26);
+  var _Article = __webpack_require__(24);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -746,7 +746,7 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 25:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(9)();
@@ -764,13 +764,13 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 26:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(25);
+  var content = __webpack_require__(23);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(10)(content, {});
@@ -791,7 +791,7 @@ webpackJsonp([13],{
 
 /***/ }),
 
-/***/ 95:
+/***/ 97:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -801,17 +801,17 @@ webpackJsonp([13],{
   });
   exports.default = undefined;
   
-  var _Appuri = __webpack_require__(153);
+  var _Brandly = __webpack_require__(157);
   
-  var _Appuri2 = _interopRequireDefault(_Appuri);
+  var _Brandly2 = _interopRequireDefault(_Brandly);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Appuri2.default;
+  exports.default = _Brandly2.default;
 
 /***/ }),
 
-/***/ 153:
+/***/ 157:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -844,50 +844,50 @@ webpackJsonp([13],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(23);
+  var _ArticleLayout = __webpack_require__(22);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Appuri = __webpack_require__(265);
+  var _Brandly = __webpack_require__(271);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var AppuriPage = function (_React$Component) {
-    (0, _inherits3.default)(AppuriPage, _React$Component);
+  var BrandlyPage = function (_React$Component) {
+    (0, _inherits3.default)(BrandlyPage, _React$Component);
   
-    function AppuriPage() {
-      (0, _classCallCheck3.default)(this, AppuriPage);
-      return (0, _possibleConstructorReturn3.default)(this, (AppuriPage.__proto__ || (0, _getPrototypeOf2.default)(AppuriPage)).apply(this, arguments));
+    function BrandlyPage() {
+      (0, _classCallCheck3.default)(this, BrandlyPage);
+      return (0, _possibleConstructorReturn3.default)(this, (BrandlyPage.__proto__ || (0, _getPrototypeOf2.default)(BrandlyPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(AppuriPage, [{
+    (0, _createClass3.default)(BrandlyPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Appuri.title;
+        document.title = _Brandly.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Appuri.title, url: _Appuri.url },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Appuri.html } })
+          { title: _Brandly.title, url: _Brandly.url },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Brandly.html } })
         );
       }
     }]);
-    return AppuriPage;
+    return BrandlyPage;
   }(_react2.default.Component);
   
-  exports.default = AppuriPage;
+  exports.default = BrandlyPage;
 
 /***/ }),
 
-/***/ 265:
+/***/ 271:
 /***/ (function(module, exports) {
 
-  module.exports = {"title":"appuri.com","subtitle":2017,"url":"https://appuri.com","html":"<p>The team at <a href=\"//appuri.com\">Appuri</a> was awesome, so awesome that they are now part of <a href=\"//docusign.com\">DocuSign</a>!</p>\n<p>My time working with Appuri was rewarding and challenging. Feel absolutely humbled and honored to be a part of their story. I would describe my role with the company as a solutions engineer. I was tasked with working closely with different vendors/contractors to deliver solutions to our customers. Dealt with managing a lot of network calls and authentication issues, while connecting to different data sources.</p>\n<p><b>Salesforce Challenges</b></p>\n<p>\nI knew nothing about Salesforce going into this role and was presented with some tasks and features that needed to live within the Salesforce ecosystem. If you have ever even opened up the Salesforce dashboard, it is insanity. So many tabs and options. I had to quickly learn the interface, and the semantics of the Salesforce ecosystem (had to ask questiosn and get some help here) while also delivering Appuri features. The importance of isolating and creating a proper test harness was crucial here.\n</p>\n<p><b>Defensive Coding</b></p>\n<p>\nWorking with an older and slighlty \"under documented\" codebase written by engineers who had previously left the company is inherently very difficult. I needed to understand how to add features and make an impact without trashing everything in my wake. My experience with defensive coding came in very handy, starting with removing code and breaking up files in smaller more understandable components was one of the first things I did which allowed me to move forward! I was also able to do some work to clean up and improve our CI with CircleCI to make test run faster and more accurately.\n</p>\n<p>\nWorking at Appuri brought back fantastic memories from the very first startup I worked for. The hustle and drive everyday was great to see and be a part of.\n</p>\n"};
+  module.exports = {"title":"Brandly.com","subtitle":2015,"url":"//brandly.com","html":"<p><a href=\"//brandly.com\">Brandly</a> is a small startup in Seattle that wants to make ordering business cards easier. They needed some frontend love to bring an existing angular app up to date. I was brought in to help give the app a facelift and make the user experience better.</p>\n<p><b>Challenges</b></p>\n<p>\nIn this job the first challenge I faced was making small unbreaking changes to a complex frontend. The original author had since moved on and there was not much documentation or solid patterns to follow.\n<p>A big challenge we faced was the legacy frontend went through many iterations we were dealing with jQuery, angular , Django templates, pure js. After a long struggle we settled on rewritting in Vue.js. Which I believe was a good decision, we were able to learn quickly, iterate make changes and deploying the new app relatively quickly and painlessly. Props to Tony!</p>\n</p>\n<p><b>People</b></p>\n<p>\n I enjoyed working with Doug, Reed, Saaj, Tony and Tony! The team was passionate about what they were doing and it really makes a huge difference when you go in everyday.\n</p>"};
 
 /***/ })
 
 });
-//# sourceMappingURL=13.js.map?eaacd027d3e4deabd986
+//# sourceMappingURL=13.js.map?5ba2c8744b74aa6e939c

@@ -8,7 +8,9 @@ I love working with Oregon based tech-ed company [Membean](//membean.com). The t
 
 <b>React. React. React.</b>
 <p>
+
 Membean is in the process of moving from a old school Rails app to a hybrid Rails/React app. The goal is to build out the next generation/iteration of Membean app in React. We used enzyme for unit testing, which was a pleasure to work with. Redux for state mangement win!
+
 </p>
 
 <b>Technical Challenges</b>
@@ -24,5 +26,7 @@ Membean is in the process of moving from a old school Rails app to a hybrid Rail
 
 <b>People</b>
 <p>
-What can I say. In the tech industry often you find some amount of pretentiousness or "bottom line" guys and gals. Not here. I have never met founders as inpiring. Absolutely amazing team, so kind, friendly and genuine. I have learned so much. Technically and the powerglobal reach andf importance of learning. Work or help them out with anything for the rest of my life if possible. 
+
+What can I say. In the tech industry often you find some amount of pretentiousness or "bottom line" guys and gals. Not here. I have never met founders as inpiring. Absolutely amazing team, so kind, friendly and genuine. I have learned so much. Technically and the powerglobal reach andf importance of learning. Work or help them out with anything for the rest of my life if possible.
+
 </p>

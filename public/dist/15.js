@@ -1,4 +1,4 @@
-webpackJsonp([11],{
+webpackJsonp([15],{
 
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
@@ -791,7 +791,7 @@ webpackJsonp([11],{
 
 /***/ }),
 
-/***/ 100:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -801,17 +801,17 @@ webpackJsonp([11],{
   });
   exports.default = undefined;
   
-  var _Energysavvy = __webpack_require__(160);
+  var _Appuri = __webpack_require__(155);
   
-  var _Energysavvy2 = _interopRequireDefault(_Energysavvy);
+  var _Appuri2 = _interopRequireDefault(_Appuri);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Energysavvy2.default;
+  exports.default = _Appuri2.default;
 
 /***/ }),
 
-/***/ 160:
+/***/ 155:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -848,46 +848,46 @@ webpackJsonp([11],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Energysavvy = __webpack_require__(274);
+  var _Appuri = __webpack_require__(269);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var EnergysavvyPage = function (_React$Component) {
-    (0, _inherits3.default)(EnergysavvyPage, _React$Component);
+  var AppuriPage = function (_React$Component) {
+    (0, _inherits3.default)(AppuriPage, _React$Component);
   
-    function EnergysavvyPage() {
-      (0, _classCallCheck3.default)(this, EnergysavvyPage);
-      return (0, _possibleConstructorReturn3.default)(this, (EnergysavvyPage.__proto__ || (0, _getPrototypeOf2.default)(EnergysavvyPage)).apply(this, arguments));
+    function AppuriPage() {
+      (0, _classCallCheck3.default)(this, AppuriPage);
+      return (0, _possibleConstructorReturn3.default)(this, (AppuriPage.__proto__ || (0, _getPrototypeOf2.default)(AppuriPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(EnergysavvyPage, [{
+    (0, _createClass3.default)(AppuriPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Energysavvy.title;
+        document.title = _Appuri.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Energysavvy.title, url: _Energysavvy.url },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Energysavvy.html } })
+          { title: _Appuri.title, url: _Appuri.url },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Appuri.html } })
         );
       }
     }]);
-    return EnergysavvyPage;
+    return AppuriPage;
   }(_react2.default.Component);
   
-  exports.default = EnergysavvyPage;
+  exports.default = AppuriPage;
 
 /***/ }),
 
-/***/ 274:
+/***/ 269:
 /***/ (function(module, exports) {
 
-  module.exports = {"title":"EnergySavvy","subtitle":2015,"url":"//energysavvy.com","html":"<p>The engineers at <a href=\"//energysavvy.com\">EnergySavvy</a> are awesome and I enjoyed working with them.</p>\n<p>I spent some time working on the main <a href=\"//energysavvy.com\">marketing site</a>, <a href=\"//blog.energysavvy.com\">blog</a> and some prototypes in React. Here is a standalone version of the <a href=\"https://solar-calculator.rickfrom1987.com\">Solar Calculator</a> that I wrote. The goal of solar calculator was to help my clients users to calculate thier energy and financial savings when using electric.</p>\n<p><b>Challenges</b></p>\n<p>\nThe most difficult part of this project was working with thier math guy and wrapping some unit tests around complex financial and energy calculations. This was quite painful, but we got through it. This was my first real world React project so there was some not so polished code and wtf is this, but it was great learning experience. Working with Kalpana, Gabe and Graham was awesome, all around great company and smart guys and girls!\n</p>\n<p>Hopefully we will cross paths again in the future!</p>\n"};
+  module.exports = {"title":"appuri.com","subtitle":2017,"url":"https://appuri.com","html":"<p>The team at <a href=\"//appuri.com\">Appuri</a> was awesome, so awesome that they are now part of <a href=\"//docusign.com\">DocuSign</a>!</p>\n<p>My time working with Appuri was rewarding and challenging. Feel absolutely humbled and honored to be a part of their story. I would describe my role with the company as a solutions engineer. I was tasked with working closely with different vendors/contractors to deliver solutions to our customers. Dealt with managing a lot of network calls and authentication issues, while connecting to different data sources.</p>\n<p><b>Salesforce Challenges</b></p>\n<p>\nI knew nothing about Salesforce going into this role and was presented with some tasks and features that needed to live within the Salesforce ecosystem. If you have ever even opened up the Salesforce dashboard, it is insanity. So many tabs and options. I had to quickly learn the interface, and the semantics of the Salesforce ecosystem (had to ask questiosn and get some help here) while also delivering Appuri features. The importance of isolating and creating a proper test harness was crucial here.\n</p>\n<p><b>Defensive Coding</b></p>\n<p>\nWorking with an older and slighlty \"under documented\" codebase written by engineers who had previously left the company is inherently very difficult. I needed to understand how to add features and make an impact without trashing everything in my wake. My experience with defensive coding came in very handy, starting with removing code and breaking up files in smaller more understandable components was one of the first things I did which allowed me to move forward! I was also able to do some work to clean up and improve our CI with CircleCI to make test run faster and more accurately.\n</p>\n<p>\nWorking at Appuri brought back fantastic memories from the very first startup I worked for. The hustle and drive everyday was great to see and be a part of.\n</p>\n"};
 
 /***/ })
 
 });
-//# sourceMappingURL=11.js.map?c1abea5e89201c5977ca
+//# sourceMappingURL=15.js.map?a0d960395750ae9971d2

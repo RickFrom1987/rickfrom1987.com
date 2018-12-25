@@ -3,7 +3,7 @@ webpackJsonp([9],{
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(15), __esModule: true };
+  module.exports = { "default": __webpack_require__(14), __esModule: true };
 
 /***/ }),
 
@@ -62,7 +62,7 @@ webpackJsonp([9],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(14);
+  var _setPrototypeOf = __webpack_require__(13);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
@@ -442,7 +442,7 @@ webpackJsonp([9],{
 
 /***/ }),
 
-/***/ 13:
+/***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -501,10 +501,19 @@ webpackJsonp([9],{
 
 /***/ }),
 
+/***/ 13:
+/***/ (function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
+
+/***/ }),
+
 /***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(16), __esModule: true };
+  __webpack_require__(17);
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
+
 
 /***/ }),
 
@@ -512,7 +521,7 @@ webpackJsonp([9],{
 /***/ (function(module, exports, __webpack_require__) {
 
   __webpack_require__(18);
-  module.exports = __webpack_require__(7).Object.getPrototypeOf;
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
 
 /***/ }),
@@ -520,18 +529,9 @@ webpackJsonp([9],{
 /***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(19);
-  module.exports = __webpack_require__(7).Object.setPrototypeOf;
-
-
-/***/ }),
-
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
-
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(22);
+  var isObject = __webpack_require__(25);
   var anObject = __webpack_require__(21);
   var check = function (O, proto) {
     anObject(O);
@@ -541,7 +541,7 @@ webpackJsonp([9],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function (test, buggy, set) {
         try {
-          set = __webpack_require__(27)(Function.call, __webpack_require__(32).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch (e) { buggy = true; }
@@ -558,14 +558,14 @@ webpackJsonp([9],{
 
 /***/ }),
 
-/***/ 18:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
   var toObject = __webpack_require__(28);
-  var $getPrototypeOf = __webpack_require__(33);
+  var $getPrototypeOf = __webpack_require__(32);
   
-  __webpack_require__(34)('getPrototypeOf', function () {
+  __webpack_require__(33)('getPrototypeOf', function () {
     return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
@@ -574,17 +574,17 @@ webpackJsonp([9],{
 
 /***/ }),
 
-/***/ 19:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
   var $export = __webpack_require__(20);
-  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(17).set });
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
 
 
 /***/ }),
 
-/***/ 23:
+/***/ 22:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -593,11 +593,11 @@ webpackJsonp([9],{
     value: true
   });
   
-  var _assign = __webpack_require__(36);
+  var _assign = __webpack_require__(34);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(24);
+  var _extends2 = __webpack_require__(26);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -625,11 +625,11 @@ webpackJsonp([9],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _propTypes = __webpack_require__(12);
+  var _propTypes = __webpack_require__(19);
   
   var _propTypes2 = _interopRequireDefault(_propTypes);
   
-  var _Dog = __webpack_require__(13);
+  var _Dog = __webpack_require__(12);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
@@ -637,7 +637,7 @@ webpackJsonp([9],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(26);
+  var _Article = __webpack_require__(24);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -746,7 +746,7 @@ webpackJsonp([9],{
 
 /***/ }),
 
-/***/ 25:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(9)();
@@ -764,13 +764,13 @@ webpackJsonp([9],{
 
 /***/ }),
 
-/***/ 26:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(25);
+  var content = __webpack_require__(23);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(10)(content, {});
@@ -791,7 +791,7 @@ webpackJsonp([9],{
 
 /***/ }),
 
-/***/ 100:
+/***/ 102:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -801,17 +801,17 @@ webpackJsonp([9],{
   });
   exports.default = undefined;
   
-  var _Energysavvy = __webpack_require__(158);
+  var _HealthyGen = __webpack_require__(162);
   
-  var _Energysavvy2 = _interopRequireDefault(_Energysavvy);
+  var _HealthyGen2 = _interopRequireDefault(_HealthyGen);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Energysavvy2.default;
+  exports.default = _HealthyGen2.default;
 
 /***/ }),
 
-/***/ 158:
+/***/ 162:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -844,50 +844,50 @@ webpackJsonp([9],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(23);
+  var _ArticleLayout = __webpack_require__(22);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Energysavvy = __webpack_require__(270);
+  var _HealthyGen = __webpack_require__(276);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var EnergysavvyPage = function (_React$Component) {
-    (0, _inherits3.default)(EnergysavvyPage, _React$Component);
+  var HealthyGenPage = function (_React$Component) {
+    (0, _inherits3.default)(HealthyGenPage, _React$Component);
   
-    function EnergysavvyPage() {
-      (0, _classCallCheck3.default)(this, EnergysavvyPage);
-      return (0, _possibleConstructorReturn3.default)(this, (EnergysavvyPage.__proto__ || (0, _getPrototypeOf2.default)(EnergysavvyPage)).apply(this, arguments));
+    function HealthyGenPage() {
+      (0, _classCallCheck3.default)(this, HealthyGenPage);
+      return (0, _possibleConstructorReturn3.default)(this, (HealthyGenPage.__proto__ || (0, _getPrototypeOf2.default)(HealthyGenPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(EnergysavvyPage, [{
+    (0, _createClass3.default)(HealthyGenPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Energysavvy.title;
+        document.title = _HealthyGen.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Energysavvy.title, url: _Energysavvy.url },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Energysavvy.html } })
+          { title: _HealthyGen.title, url: _HealthyGen.url },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _HealthyGen.html } })
         );
       }
     }]);
-    return EnergysavvyPage;
+    return HealthyGenPage;
   }(_react2.default.Component);
   
-  exports.default = EnergysavvyPage;
+  exports.default = HealthyGenPage;
 
 /***/ }),
 
-/***/ 270:
+/***/ 276:
 /***/ (function(module, exports) {
 
-  module.exports = {"title":"EnergySavvy","subtitle":2015,"url":"//energysavvy.com","html":"<p>The engineers at <a href=\"//energysavvy.com\">EnergySavvy</a> are awesome and I enjoyed working with them.</p>\n<p>I spent some time working on the main <a href=\"//energysavvy.com\">marketing site</a>, <a href=\"//blog.energysavvy.com\">blog</a> and some prototypes in React. Here is a standalone version of the <a href=\"https://solar-calculator.rickfrom1987.com\">Solar Calculator</a> that I wrote. The goal of solar calculator was to help my clients users to calculate thier energy and financial savings when using electric.</p>\n<p><b>Challenges</b></p>\n<p>\nThe most difficult part of this project was working with thier math guy and wrapping some unit tests around complex financial and energy calculations. This was quite painful, but we got through it. This was my first real world React project so there was some not so polished code and wtf is this, but it was great learning experience. Working with Kalpana, Gabe and Graham was awesome, all around great company and smart guys and girls!\n</p>\n<p>Hopefully we will cross paths again in the future!</p>\n"};
+  module.exports = {"title":"healthygen.org","subtitle":2017,"url":"https://healthygen.org","html":"<p><a href=\"//healthygen.org\">HealthyGen</a> is a non-profit foundation in Seattle trying remove social and economic barriers for health and wellness in our communities.</p>\n<p><b>Technical Challenges</b></p>\n<p>\nWhen HealthyGen reached out to me thier technical infrastructure was in poor shape. Everything was alive and ticking, but technology was dated and it was almost impossible to move forward with projects without breaking everything or slowing to a halt. The goal was to modernize thier infrastructure, organize thier existing assets/code and push the organization forward all at the same time. Everything ranging from: domains, DNS, websites, web services, source control needed to be updated, documented and changed. There were a lot of unknowns. The approach I took here was to code defensively, remove pieces before adding, migrate services slowly and in small chunks so we could \"unit\" test different parts of the business as we moved.\n</p>\n<p><b>Analytics &amp; Marketing</b></p>\n<p>\nThe way I view analytics and marketing is that it is always a work in progress. There are no 100% correct answers. There are always new techniques, tools & things to learn. So the goal here was to setup the organization to be nimble and adaptive. This includes evaluating & setting up services. Writing generic tools that can make sense of analytics data, so that we can take the appropriate action to get the message out.\n</p>\n<p><b>People</b></p>\n<p>\nWorking with Norma, Bennie, Dan and everyone at HealthyGen was wonderful. Very motivated, kind and caring people.\n</p>"};
 
 /***/ })
 
 });
-//# sourceMappingURL=9.js.map?0f9c0fd6b4210e0539de
+//# sourceMappingURL=9.js.map?ce3031582a887c865513

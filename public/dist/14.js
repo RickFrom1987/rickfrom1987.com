@@ -1,4 +1,4 @@
-webpackJsonp([11],{
+webpackJsonp([14],{
 
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
@@ -791,7 +791,7 @@ webpackJsonp([11],{
 
 /***/ }),
 
-/***/ 100:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -801,17 +801,17 @@ webpackJsonp([11],{
   });
   exports.default = undefined;
   
-  var _Energysavvy = __webpack_require__(160);
+  var _Booking = __webpack_require__(156);
   
-  var _Energysavvy2 = _interopRequireDefault(_Energysavvy);
+  var _Booking2 = _interopRequireDefault(_Booking);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Energysavvy2.default;
+  exports.default = _Booking2.default;
 
 /***/ }),
 
-/***/ 160:
+/***/ 156:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -848,46 +848,46 @@ webpackJsonp([11],{
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Energysavvy = __webpack_require__(274);
+  var _Booking = __webpack_require__(270);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var EnergysavvyPage = function (_React$Component) {
-    (0, _inherits3.default)(EnergysavvyPage, _React$Component);
+  var BookingPage = function (_React$Component) {
+    (0, _inherits3.default)(BookingPage, _React$Component);
   
-    function EnergysavvyPage() {
-      (0, _classCallCheck3.default)(this, EnergysavvyPage);
-      return (0, _possibleConstructorReturn3.default)(this, (EnergysavvyPage.__proto__ || (0, _getPrototypeOf2.default)(EnergysavvyPage)).apply(this, arguments));
+    function BookingPage() {
+      (0, _classCallCheck3.default)(this, BookingPage);
+      return (0, _possibleConstructorReturn3.default)(this, (BookingPage.__proto__ || (0, _getPrototypeOf2.default)(BookingPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(EnergysavvyPage, [{
+    (0, _createClass3.default)(BookingPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Energysavvy.title;
+        document.title = _Booking.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Energysavvy.title, url: _Energysavvy.url },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Energysavvy.html } })
+          { title: _Booking.title, url: _Booking.url },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Booking.html } })
         );
       }
     }]);
-    return EnergysavvyPage;
+    return BookingPage;
   }(_react2.default.Component);
   
-  exports.default = EnergysavvyPage;
+  exports.default = BookingPage;
 
 /***/ }),
 
-/***/ 274:
+/***/ 270:
 /***/ (function(module, exports) {
 
-  module.exports = {"title":"EnergySavvy","subtitle":2015,"url":"//energysavvy.com","html":"<p>The engineers at <a href=\"//energysavvy.com\">EnergySavvy</a> are awesome and I enjoyed working with them.</p>\n<p>I spent some time working on the main <a href=\"//energysavvy.com\">marketing site</a>, <a href=\"//blog.energysavvy.com\">blog</a> and some prototypes in React. Here is a standalone version of the <a href=\"https://solar-calculator.rickfrom1987.com\">Solar Calculator</a> that I wrote. The goal of solar calculator was to help my clients users to calculate thier energy and financial savings when using electric.</p>\n<p><b>Challenges</b></p>\n<p>\nThe most difficult part of this project was working with thier math guy and wrapping some unit tests around complex financial and energy calculations. This was quite painful, but we got through it. This was my first real world React project so there was some not so polished code and wtf is this, but it was great learning experience. Working with Kalpana, Gabe and Graham was awesome, all around great company and smart guys and girls!\n</p>\n<p>Hopefully we will cross paths again in the future!</p>\n"};
+  module.exports = {"title":"Booking.com","subtitle":2015,"url":"http://suite.booking.com","html":"<p>Originally hired by Buuteeq, which became <a href=\"http://suite.booking.com\">Booking Suite</a>. Most of my work here was creating a small eco system of js + css files served up by google app engine.</p>\n<p><b>Challenges</b></p>\n<p>\nI was hired as part of a team, but eventually ended up managing my own project. My goal was to help create a simple and logical way to manage snippets of js and css for thousands of thier client sites. I had to project manage myself, setup my own repos and deploy my code, while working closely with Buuteeq/Booking marketing and product teams.\n</p>\n<p><b>Growing</b></p>\n<p>\nThis was one of my first gigs working as a contractor and I have to admit I made some mistakes on the business and coding side of things. I learned a ton about what the right/wrong way to approach problems both with code and with people. A  ton of lessons learned and I grew so much and matured as a person by the end of the journey!\n</p>\n<p>\nI really enjoyed working with and chatting with Mike, Ed, Nate, Joe, Carlin, Joe, Jacob and Karim <3\n</p>"};
 
 /***/ })
 
 });
-//# sourceMappingURL=11.js.map?c1abea5e89201c5977ca
+//# sourceMappingURL=14.js.map?455254d8eaaef954e317

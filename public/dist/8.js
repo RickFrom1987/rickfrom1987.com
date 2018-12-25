@@ -3,7 +3,7 @@ webpackJsonp([8],{
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(15), __esModule: true };
+  module.exports = { "default": __webpack_require__(14), __esModule: true };
 
 /***/ }),
 
@@ -62,7 +62,7 @@ webpackJsonp([8],{
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(14);
+  var _setPrototypeOf = __webpack_require__(13);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
@@ -442,7 +442,7 @@ webpackJsonp([8],{
 
 /***/ }),
 
-/***/ 13:
+/***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -501,10 +501,19 @@ webpackJsonp([8],{
 
 /***/ }),
 
+/***/ 13:
+/***/ (function(module, exports, __webpack_require__) {
+
+  module.exports = { "default": __webpack_require__(15), __esModule: true };
+
+/***/ }),
+
 /***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(16), __esModule: true };
+  __webpack_require__(17);
+  module.exports = __webpack_require__(7).Object.getPrototypeOf;
+
 
 /***/ }),
 
@@ -512,7 +521,7 @@ webpackJsonp([8],{
 /***/ (function(module, exports, __webpack_require__) {
 
   __webpack_require__(18);
-  module.exports = __webpack_require__(7).Object.getPrototypeOf;
+  module.exports = __webpack_require__(7).Object.setPrototypeOf;
 
 
 /***/ }),
@@ -520,18 +529,9 @@ webpackJsonp([8],{
 /***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(19);
-  module.exports = __webpack_require__(7).Object.setPrototypeOf;
-
-
-/***/ }),
-
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
-
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(22);
+  var isObject = __webpack_require__(25);
   var anObject = __webpack_require__(21);
   var check = function (O, proto) {
     anObject(O);
@@ -541,7 +541,7 @@ webpackJsonp([8],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function (test, buggy, set) {
         try {
-          set = __webpack_require__(27)(Function.call, __webpack_require__(32).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(27)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch (e) { buggy = true; }
@@ -558,14 +558,14 @@ webpackJsonp([8],{
 
 /***/ }),
 
-/***/ 18:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
   var toObject = __webpack_require__(28);
-  var $getPrototypeOf = __webpack_require__(33);
+  var $getPrototypeOf = __webpack_require__(32);
   
-  __webpack_require__(34)('getPrototypeOf', function () {
+  __webpack_require__(33)('getPrototypeOf', function () {
     return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
@@ -574,17 +574,17 @@ webpackJsonp([8],{
 
 /***/ }),
 
-/***/ 19:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
   var $export = __webpack_require__(20);
-  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(17).set });
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
 
 
 /***/ }),
 
-/***/ 23:
+/***/ 22:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -593,11 +593,11 @@ webpackJsonp([8],{
     value: true
   });
   
-  var _assign = __webpack_require__(36);
+  var _assign = __webpack_require__(34);
   
   var _assign2 = _interopRequireDefault(_assign);
   
-  var _extends2 = __webpack_require__(24);
+  var _extends2 = __webpack_require__(26);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
@@ -625,11 +625,11 @@ webpackJsonp([8],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _propTypes = __webpack_require__(12);
+  var _propTypes = __webpack_require__(19);
   
   var _propTypes2 = _interopRequireDefault(_propTypes);
   
-  var _Dog = __webpack_require__(13);
+  var _Dog = __webpack_require__(12);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
@@ -637,7 +637,7 @@ webpackJsonp([8],{
   
   var Colors = _interopRequireWildcard(_Colors);
   
-  var _Article = __webpack_require__(26);
+  var _Article = __webpack_require__(24);
   
   var _Article2 = _interopRequireDefault(_Article);
   
@@ -746,7 +746,7 @@ webpackJsonp([8],{
 
 /***/ }),
 
-/***/ 25:
+/***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(9)();
@@ -764,13 +764,13 @@ webpackJsonp([8],{
 
 /***/ }),
 
-/***/ 26:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(25);
+  var content = __webpack_require__(23);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(10)(content, {});
@@ -791,7 +791,7 @@ webpackJsonp([8],{
 
 /***/ }),
 
-/***/ 101:
+/***/ 103:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -801,17 +801,17 @@ webpackJsonp([8],{
   });
   exports.default = undefined;
   
-  var _Haikudeck = __webpack_require__(159);
+  var _Membean = __webpack_require__(164);
   
-  var _Haikudeck2 = _interopRequireDefault(_Haikudeck);
+  var _Membean2 = _interopRequireDefault(_Membean);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  exports.default = _Haikudeck2.default;
+  exports.default = _Membean2.default;
 
 /***/ }),
 
-/***/ 159:
+/***/ 164:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -844,50 +844,50 @@ webpackJsonp([8],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _ArticleLayout = __webpack_require__(23);
+  var _ArticleLayout = __webpack_require__(22);
   
   var _ArticleLayout2 = _interopRequireDefault(_ArticleLayout);
   
-  var _Haikudeck = __webpack_require__(271);
+  var _Membean = __webpack_require__(278);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var HaikudeckPage = function (_React$Component) {
-    (0, _inherits3.default)(HaikudeckPage, _React$Component);
+  var MembeanPage = function (_React$Component) {
+    (0, _inherits3.default)(MembeanPage, _React$Component);
   
-    function HaikudeckPage() {
-      (0, _classCallCheck3.default)(this, HaikudeckPage);
-      return (0, _possibleConstructorReturn3.default)(this, (HaikudeckPage.__proto__ || (0, _getPrototypeOf2.default)(HaikudeckPage)).apply(this, arguments));
+    function MembeanPage() {
+      (0, _classCallCheck3.default)(this, MembeanPage);
+      return (0, _possibleConstructorReturn3.default)(this, (MembeanPage.__proto__ || (0, _getPrototypeOf2.default)(MembeanPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(HaikudeckPage, [{
+    (0, _createClass3.default)(MembeanPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        document.title = _Haikudeck.title;
+        document.title = _Membean.title;
       }
     }, {
       key: 'render',
       value: function render() {
         return _react2.default.createElement(
           _ArticleLayout2.default,
-          { title: _Haikudeck.title, url: _Haikudeck.url },
-          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Haikudeck.html } })
+          { title: _Membean.title, url: _Membean.url },
+          _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _Membean.html } })
         );
       }
     }]);
-    return HaikudeckPage;
+    return MembeanPage;
   }(_react2.default.Component);
   
-  exports.default = HaikudeckPage;
+  exports.default = MembeanPage;
 
 /***/ }),
 
-/***/ 271:
+/***/ 278:
 /***/ (function(module, exports) {
 
-  module.exports = {"title":"HaikuDeck","subtitle":2014,"url":"//haikudeck.com","html":"<p><a href=\"//haikudeck.com\">Haiku Deck</a> has a very special place in my workplace heart. It was the first ever startup I have worked with and it was awesome. I met some insipiring and amazing people. Learned how much I sucked at programming. Learned how to push through it and get better. I had great programmers around me: Kevin, Adam and Collin. Great leaders: Adam, Marc and Catherine, later on working with the co founder of CoinStar Dan! Great support staff Erin and Lisa MaMa. I worked on the web app and website, mainly in jQuery and Backbone.</p>\n<p><b>Challenges</b></p>\n<p>\nMy main challenges here were adjusting to startup life, learning quickly and producing results. I always had help of more senior engineers to pick up the pieces, @ Haiku Deck I had to be more self reliant and try to figure stuff out on my own.\n</p>\n<p><b>Media</b></p>\n<p>\nWe were lucky enough to get some media coverage on my project and work:\n<ul>\n<li>\n<p><a href=\"http://www.pcmag.com/article2/0,2817,2428803,00.asp\">PCMag Top 100 Web Apps of 2013</a></p>\n</li>\n<li>\n<p><a href=\"https://techcrunch.com/2013/11/21/haiku-deck-web-app/\">TechCrunch Article</a></p>\n</li>\n<li>\n<p><a href=\"http://thenextweb.com/apps/2013/11/21/haiku-deck-launches-free-web-based-version-simple-yet-elegant-ipad-presentation-app/\">TheNextWeb Article</a></p>\n</li>\n<li>\n<p><a href=\"http://allthingsd.com/20131121/haiku-deck-expands-its-anti-powerpoint-presentation-app-to-the-web/\">AllThingsD Article</a></p>\n</li>\n</ul>\n</p>"};
+  module.exports = {"title":"Membean","subtitle":2018,"url":"https://membean.com","html":"<p>I love working with Oregon based tech-ed company <a href=\"//membean.com\">Membean</a>. The team at Membean want improve the education system, while improving student's memory and cognitive ability as a whole.</p>\n<p><b>React. React. React.</b></p>\n<p>\nMembean is in the process of moving from a old school Rails app to a hybrid Rails/React app. The goal is to build out the next generation/iteration of Membean app in React. We used enzyme for unit testing, which was a pleasure to work with. Redux for state mangement win!\n</p>\n<p><b>Technical Challenges</b></p>\n<p>\n<ul>\n<li>\n<p>The spikyness level of the traffic. We provide educational software used mostly during school hours, which means lots of students logging in/out and using our service at the same time. This creates an interesting problem of having heavy usage during certain hours depending on where the school is the world.</p>\n</li>\n<li>\n<p>Deploys need to be carefully planned, as there is no need to deploy during heavy usage, or during a busy time of the school year. Very tight time windows and little room for error.</p>\n</li>\n<li>\n<p>Optimizing assets and filesize so that students are able to download assets and our js package once. Networks at school at the time of this writing are all over the map. Some with fantastic network speeds, some that are simply unusable.</p>\n</li>\n</ul>\n</p>\n<p><b>People</b></p>\n<p>\nWhat can I say. In the tech industry often you find some amount of pretentiousness or \"bottom line\" guys and gals. Not here. I have never met founders as inpiring. Absolutely amazing team, so kind, friendly and genuine. I have learned so much. Technically and the powerglobal reach andf importance of learning. Work or help them out with anything for the rest of my life if possible. \n</p>"};
 
 /***/ })
 
 });
-//# sourceMappingURL=8.js.map?99602e50373d259e1098
+//# sourceMappingURL=8.js.map?750d1cfca459110a1a11
