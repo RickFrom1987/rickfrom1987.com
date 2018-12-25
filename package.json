@@ -13,6 +13,7 @@
     "react-flexbox": "3.1.4",
     "react-grid-layout": "0.16.6",
     "react-redux": "6.0.0",
+    "react-tooltip": "^3.9.0",
     "redux": "4.0.1",
     "s3": "4.4.0",
     "whatwg-fetch": "3.0.0"

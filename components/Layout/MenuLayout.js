@@ -29,10 +29,10 @@ class MenuLayout extends React.Component {
     }
     return (
       <div>
+        <Menu/>
         <div style={centerStyle}>
           {children}
         </div>
-        <Menu/>
       </div>
     );
   }

@@ -19,7 +19,12 @@ export class Menu extends Component {
             </Link>
           </li>
           <li className={s.item}>
-            <a href="https://payments.rickfrom1987.com">
+            <Link to="/contact">
+              <i className="fa fa-phone"></i>
+            </Link>
+          </li>
+          <li className={s.item}>
+            <a target="_blank" href="//payments.rickfrom1987.com">
               <i className="fa fa-credit-card"></i>
             </a>
           </li>

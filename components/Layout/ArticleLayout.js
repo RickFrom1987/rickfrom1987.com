@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactTooltip from 'react-tooltip';
 import Dog from '../Dog';
 import * as Colors from '../Constants/Colors';
 import s from './Article.css';
@@ -24,7 +25,8 @@ class ArticleLayout extends React.Component {
       height: '100%',
       width: '100%',
       backgroundColor: Colors.WHITE,
-      overflow: 'scroll',
+      overflowY: 'scroll',
+      WebkitOverflowScrolling: 'touch'
     };
     const linkStyle = {
       fontSize: 24
@@ -43,17 +45,19 @@ class ArticleLayout extends React.Component {
       padding: '0 24px',
     };
     const iconStyle = {
-      width: 100,
+      display: 'block',
+      width: 75,
+      height: 'auto',
+      margin: '12px 0'
     };
     const articleLayoutStyle = Object.assign({}, baseStyle, style);
     return (
       <div style={articleLayoutStyle}>
+        <ReactTooltip />
         <div style={headerStyle}>
-          <div style={iconStyle}>
-            <a href="/projects">
-              <Dog/>
-            </a>
-          </div>
+          <a href="/projects" style={iconStyle} data-tip="Back to projects">
+            <Dog/>
+          </a>
         </div>
         <div style={bodyStyle}>
           <div>

@@ -14,7 +14,10 @@ function Navigation() {
       <Link className={linkClass('/projects')} to="/projects">
         <i className="fa fa-desktop"></i>
       </Link>
-      <a className={linkClass('/payment')} href="https://payments.rickfrom1987.com">
+      <Link className={linkClass('/contact')} to="/contact">
+        <i className="fa fa-phone"></i>
+      </Link>
+      <a className={linkClass('/payment')} target="_blank" href="//payments.rickfrom1987.com">
         <i className="fa fa-credit-card"></i>
       </a>
     </nav>

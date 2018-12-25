@@ -1,24 +1,25 @@
 {
   "main": {
-    "js": "/dist/main.js?c873e306b1afec4b50c7"
+    "js": "/dist/main.js?91aeae224810db0f329d"
   },
   "": {
     "js": [
-      "/dist/0.js?3d8a22630e40a2662452",
-      "/dist/2.js?65ca4411f9961c0a5dfd",
-      "/dist/3.js?bfde17455f9064c87bee",
-      "/dist/4.js?271488bd745e8d15130f",
-      "/dist/5.js?01345bb30fa7c37d66ae",
-      "/dist/6.js?c83ff722d3eb0c0bba92",
-      "/dist/7.js?f38ca209b836d82717a5",
-      "/dist/8.js?e1c8e3e0665ee8671f92",
-      "/dist/9.js?ce3031582a887c865513",
-      "/dist/10.js?755cd732315eff79882c",
-      "/dist/11.js?c1abea5e89201c5977ca",
-      "/dist/12.js?cb58e8e0a327cdd04c6c",
-      "/dist/13.js?5ba2c8744b74aa6e939c",
-      "/dist/14.js?455254d8eaaef954e317",
-      "/dist/15.js?a0d960395750ae9971d2"
-    ]
+      "/dist/0.js?f143a9cd6b08d01bdf08",
+      "/dist/2.js?2bddd0666c641d425d99",
+      "/dist/3.js?7f7a8f6d737d57359f8e",
+      "/dist/4.js?b92f4dce1b98db9e53f8",
+      "/dist/5.js?355d42dad6c19b1b6234",
+      "/dist/6.js?902124a947563e9a08fd",
+      "/dist/7.js?e576f361bfe5bd6f4280",
+      "/dist/8.js?29ed0e2bf51766d2d168",
+      "/dist/9.js?008bbb661125e3ea2cff",
+      "/dist/10.js?11658b8102518151f47a",
+      "/dist/11.js?337192ba7e1473a363bb",
+      "/dist/12.js?d31a60853100dbe0aaff",
+      "/dist/13.js?c35d7fa347f5457d7445",
+      "/dist/14.js?0bba82d9bb0fa4110f30",
+      "/dist/15.js?5bc8b01044e969de5536"
+    ],
+    "json": "/dist/6539a90a7329848de25c.hot-update.json"
   }
 }
