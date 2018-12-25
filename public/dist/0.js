@@ -1,13 +1,13 @@
 webpackJsonp([0],{
 
-/***/ 2:
+/***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(14), __esModule: true };
+  module.exports = { "default": __webpack_require__(28), __esModule: true };
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /***/ (function(module, exports) {
 
   "use strict";
@@ -22,14 +22,14 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 4:
+/***/ 7:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _defineProperty = __webpack_require__(30);
+  var _defineProperty = __webpack_require__(85);
   
   var _defineProperty2 = _interopRequireDefault(_defineProperty);
   
@@ -55,22 +55,22 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 5:
+/***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _setPrototypeOf = __webpack_require__(13);
+  var _setPrototypeOf = __webpack_require__(27);
   
   var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
   
-  var _create = __webpack_require__(29);
+  var _create = __webpack_require__(84);
   
   var _create2 = _interopRequireDefault(_create);
   
-  var _typeof2 = __webpack_require__(11);
+  var _typeof2 = __webpack_require__(25);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -94,14 +94,14 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 6:
+/***/ 9:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
   
   exports.__esModule = true;
   
-  var _typeof2 = __webpack_require__(11);
+  var _typeof2 = __webpack_require__(25);
   
   var _typeof3 = _interopRequireDefault(_typeof2);
   
@@ -117,7 +117,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 8:
+/***/ 22:
 /***/ (function(module, exports) {
 
   'use strict';
@@ -132,7 +132,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 9:
+/***/ 23:
 /***/ (function(module, exports) {
 
   /*
@@ -189,7 +189,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 10:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
   /*
@@ -442,7 +442,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 12:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -460,7 +460,7 @@ webpackJsonp([0],{
   function Dog() {
     return _react2.default.createElement(
       "svg",
-      { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 324 252.73" },
+      { xmlns: "http://www.w3.org/2000/svg", width: "275px", height: "275px", viewBox: "0 0 324 252.73" },
       _react2.default.createElement("path", { d: "M207.73,235.86", transform: "translate(-18.1 -53.2)", style: { fill: '#502211' } }),
       _react2.default.createElement("path", { d: "M147.12,305.93l-.65-.62A2,2,0,0,0,147.12,305.93Z", transform: "translate(-18.1 -53.2)", style: { fill: 'none' } }),
       _react2.default.createElement("path", { d: "M235,301.87l-.61.62A2,2,0,0,0,235,301.87Z", transform: "translate(-18.1 -53.2)", style: { fill: 'none' } }),
@@ -501,38 +501,38 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 13:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
-  module.exports = { "default": __webpack_require__(15), __esModule: true };
+  module.exports = { "default": __webpack_require__(29), __esModule: true };
 
 /***/ }),
 
-/***/ 14:
+/***/ 28:
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(17);
-  module.exports = __webpack_require__(7).Object.getPrototypeOf;
-
-
-/***/ }),
-
-/***/ 15:
-/***/ (function(module, exports, __webpack_require__) {
-
-  __webpack_require__(18);
-  module.exports = __webpack_require__(7).Object.setPrototypeOf;
+  __webpack_require__(31);
+  module.exports = __webpack_require__(12).Object.getPrototypeOf;
 
 
 /***/ }),
 
-/***/ 16:
+/***/ 29:
+/***/ (function(module, exports, __webpack_require__) {
+
+  __webpack_require__(32);
+  module.exports = __webpack_require__(12).Object.setPrototypeOf;
+
+
+/***/ }),
+
+/***/ 30:
 /***/ (function(module, exports, __webpack_require__) {
 
   // Works with __proto__ only. Old v8 can't work with null proto objects.
   /* eslint-disable no-proto */
-  var isObject = __webpack_require__(25);
-  var anObject = __webpack_require__(21);
+  var isObject = __webpack_require__(80);
+  var anObject = __webpack_require__(35);
   var check = function (O, proto) {
     anObject(O);
     if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
@@ -541,7 +541,7 @@ webpackJsonp([0],{
     set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
       function (test, buggy, set) {
         try {
-          set = __webpack_require__(27)(Function.call, __webpack_require__(31).f(Object.prototype, '__proto__').set, 2);
+          set = __webpack_require__(82)(Function.call, __webpack_require__(86).f(Object.prototype, '__proto__').set, 2);
           set(test, []);
           buggy = !(test instanceof Array);
         } catch (e) { buggy = true; }
@@ -558,14 +558,14 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 17:
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.2.9 Object.getPrototypeOf(O)
-  var toObject = __webpack_require__(28);
-  var $getPrototypeOf = __webpack_require__(32);
+  var toObject = __webpack_require__(83);
+  var $getPrototypeOf = __webpack_require__(87);
   
-  __webpack_require__(33)('getPrototypeOf', function () {
+  __webpack_require__(88)('getPrototypeOf', function () {
     return function getPrototypeOf(it) {
       return $getPrototypeOf(toObject(it));
     };
@@ -574,17 +574,17 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 18:
+/***/ 32:
 /***/ (function(module, exports, __webpack_require__) {
 
   // 19.1.3.19 Object.setPrototypeOf(O, proto)
-  var $export = __webpack_require__(20);
-  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(16).set });
+  var $export = __webpack_require__(34);
+  $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(30).set });
 
 
 /***/ }),
 
-/***/ 38:
+/***/ 94:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -594,7 +594,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Link = __webpack_require__(47);
+  var _Link = __webpack_require__(103);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -604,7 +604,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 40:
+/***/ 96:
 /***/ (function(module, exports) {
 
   "use strict";
@@ -625,7 +625,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 47:
+/***/ 103:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -634,31 +634,31 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _extends2 = __webpack_require__(26);
+  var _extends2 = __webpack_require__(81);
   
   var _extends3 = _interopRequireDefault(_extends2);
   
-  var _objectWithoutProperties2 = __webpack_require__(40);
+  var _objectWithoutProperties2 = __webpack_require__(96);
   
   var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
   
-  var _getPrototypeOf = __webpack_require__(2);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(3);
+  var _classCallCheck2 = __webpack_require__(6);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(7);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(9);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(8);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -666,11 +666,11 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _propTypes = __webpack_require__(19);
+  var _propTypes = __webpack_require__(13);
   
   var _propTypes2 = _interopRequireDefault(_propTypes);
   
-  var _history = __webpack_require__(44);
+  var _history = __webpack_require__(100);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -741,7 +741,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 55:
+/***/ 111:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -751,7 +751,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Home = __webpack_require__(163);
+  var _Home = __webpack_require__(217);
   
   var _Home2 = _interopRequireDefault(_Home);
   
@@ -768,7 +768,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 66:
+/***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -777,23 +777,23 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _getPrototypeOf = __webpack_require__(2);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(3);
+  var _classCallCheck2 = __webpack_require__(6);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(7);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(9);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(8);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -801,15 +801,15 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _propTypes = __webpack_require__(19);
+  var _propTypes = __webpack_require__(13);
   
   var _propTypes2 = _interopRequireDefault(_propTypes);
   
-  var _Menu = __webpack_require__(68);
+  var _Menu = __webpack_require__(123);
   
   var _Menu2 = _interopRequireDefault(_Menu);
   
-  var _Colors = __webpack_require__(8);
+  var _Colors = __webpack_require__(22);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -850,12 +850,12 @@ webpackJsonp([0],{
         return _react2.default.createElement(
           'div',
           null,
+          _react2.default.createElement(_Menu2.default, null),
           _react2.default.createElement(
             'div',
             { style: centerStyle },
             children
-          ),
-          _react2.default.createElement(_Menu2.default, null)
+          )
         );
       }
     }]);
@@ -869,7 +869,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 67:
+/***/ 122:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -879,23 +879,23 @@ webpackJsonp([0],{
   });
   exports.Menu = undefined;
   
-  var _getPrototypeOf = __webpack_require__(2);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(3);
+  var _classCallCheck2 = __webpack_require__(6);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(7);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(9);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(8);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -903,11 +903,11 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Link = __webpack_require__(38);
+  var _Link = __webpack_require__(94);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Menu = __webpack_require__(90);
+  var _Menu = __webpack_require__(145);
   
   var _Menu2 = _interopRequireDefault(_Menu);
   
@@ -952,8 +952,17 @@ webpackJsonp([0],{
               'li',
               { className: _Menu2.default.item },
               _react2.default.createElement(
+                _Link2.default,
+                { to: '/contact' },
+                _react2.default.createElement('i', { className: 'fa fa-phone' })
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              { className: _Menu2.default.item },
+              _react2.default.createElement(
                 'a',
-                { href: 'https://payments.rickfrom1987.com' },
+                { target: '_blank', href: '//payments.rickfrom1987.com' },
                 _react2.default.createElement('i', { className: 'fa fa-credit-card' })
               )
             )
@@ -968,7 +977,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 68:
+/***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -978,7 +987,7 @@ webpackJsonp([0],{
   });
   exports.default = undefined;
   
-  var _Menu = __webpack_require__(67);
+  var _Menu = __webpack_require__(122);
   
   var _Menu2 = _interopRequireDefault(_Menu);
   
@@ -988,10 +997,10 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 84:
+/***/ 139:
 /***/ (function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(9)();
+  exports = module.exports = __webpack_require__(23)();
   // imports
   
   
@@ -1008,16 +1017,16 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 90:
+/***/ 145:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(84);
+  var content = __webpack_require__(139);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
+  var update = __webpack_require__(24)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -1035,7 +1044,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 163:
+/***/ 217:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1044,23 +1053,23 @@ webpackJsonp([0],{
     value: true
   });
   
-  var _getPrototypeOf = __webpack_require__(2);
+  var _getPrototypeOf = __webpack_require__(5);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
   
-  var _classCallCheck2 = __webpack_require__(3);
+  var _classCallCheck2 = __webpack_require__(6);
   
   var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
   
-  var _createClass2 = __webpack_require__(4);
+  var _createClass2 = __webpack_require__(7);
   
   var _createClass3 = _interopRequireDefault(_createClass2);
   
-  var _possibleConstructorReturn2 = __webpack_require__(6);
+  var _possibleConstructorReturn2 = __webpack_require__(9);
   
   var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
   
-  var _inherits2 = __webpack_require__(5);
+  var _inherits2 = __webpack_require__(8);
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
@@ -1068,25 +1077,21 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _MenuLayout = __webpack_require__(66);
+  var _MenuLayout = __webpack_require__(121);
   
   var _MenuLayout2 = _interopRequireDefault(_MenuLayout);
   
-  var _Link = __webpack_require__(38);
+  var _Link = __webpack_require__(94);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _Dog = __webpack_require__(12);
+  var _Dog = __webpack_require__(26);
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
-  var _Home = __webpack_require__(264);
+  var _Home = __webpack_require__(329);
   
-  var _Home2 = _interopRequireDefault(_Home);
-  
-  var _Home3 = __webpack_require__(277);
-  
-  var _Colors = __webpack_require__(8);
+  var _Colors = __webpack_require__(22);
   
   var Colors = _interopRequireWildcard(_Colors);
   
@@ -1117,7 +1122,7 @@ webpackJsonp([0],{
           color: Colors.WHITE
         };
         var itemStyle = {
-          fontSize: 16
+          fontSize: 12
         };
         return _react2.default.createElement(
           _MenuLayout2.default,
@@ -1125,31 +1130,7 @@ webpackJsonp([0],{
           _react2.default.createElement(
             'div',
             { style: homeStyle },
-            _react2.default.createElement(
-              'div',
-              { className: _Home2.default.dog },
-              _react2.default.createElement(_Dog2.default, null)
-            ),
-            _react2.default.createElement(
-              'p',
-              { style: itemStyle },
-              _react2.default.createElement('i', { className: 'fa fa-envelope-o' }),
-              _react2.default.createElement(
-                'span',
-                { style: { marginLeft: 12 } },
-                'rick@rickfrom1987.com'
-              )
-            ),
-            _react2.default.createElement(
-              'p',
-              { style: itemStyle },
-              _react2.default.createElement('i', { className: 'fa fa-phone' }),
-              _react2.default.createElement(
-                'span',
-                { style: { marginLeft: 12 } },
-                '425.985.9755'
-              )
-            )
+            _react2.default.createElement(_Dog2.default, null)
           )
         );
       }
@@ -1161,53 +1142,7 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 222:
-/***/ (function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(9)();
-  // imports
-  
-  
-  // module
-  exports.push([module.id, ".Home_dog_3l_ {\n  animation: Home_shake_2qM 7s cubic-bezier(.36,.07,.19,.97) both;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  animation-iteration-count: infinite;\n}\n\n@keyframes Home_shake_2qM {\n  10% {\n    transform: rotate(3deg);\n  }\n  \n  20% {\n    transform: rotate(-2deg);\n  }\n\n  30%, 50% {\n    transform: rotate(1deg);\n  }\n\n  40% {\n    transform: rotate(-2deg);\n  }\n\n  50% {\n  \ttransform: rotate(0deg);\n  }\n}\n\n@media screen and (max-width: 1024px) {\n\n  .Home_content_3u8 {\n    padding: 0 16px;\n  }\n\n}\n", "", {"version":3,"sources":["/./routes/Home/Home.css"],"names":[],"mappings":"AAAA;EACE,gEAAuD;EACvD,oCAA4B;UAA5B,4BAA4B;EAC5B,oCAAoC;CACrC;;AAED;EACE;IACE,wBAAwB;GACzB;;EAED;IACE,yBAAyB;GAC1B;;EAED;IACE,wBAAwB;GACzB;;EAED;IACE,yBAAyB;GAC1B;;EAED;GACC,wBAAwB;GACxB;CACF;;AAED;;EAEE;IACE,gBAAgB;GACjB;;CAEF","file":"Home.css","sourcesContent":[".dog {\n  animation: shake 7s cubic-bezier(.36,.07,.19,.97) both;\n  backface-visibility: hidden;\n  animation-iteration-count: infinite;\n}\n\n@keyframes shake {\n  10% {\n    transform: rotate(3deg);\n  }\n  \n  20% {\n    transform: rotate(-2deg);\n  }\n\n  30%, 50% {\n    transform: rotate(1deg);\n  }\n\n  40% {\n    transform: rotate(-2deg);\n  }\n\n  50% {\n  \ttransform: rotate(0deg);\n  }\n}\n\n@media screen and (max-width: 1024px) {\n\n  .content {\n    padding: 0 16px;\n  }\n\n}\n"],"sourceRoot":"webpack://"}]);
-  
-  // exports
-  exports.locals = {
-  	"dog": "Home_dog_3l_",
-  	"shake": "Home_shake_2qM",
-  	"content": "Home_content_3u8"
-  };
-
-/***/ }),
-
-/***/ 264:
-/***/ (function(module, exports, __webpack_require__) {
-
-  // style-loader: Adds some css to the DOM by adding a <style> tag
-  
-  // load the styles
-  var content = __webpack_require__(222);
-  if(typeof content === 'string') content = [[module.id, content, '']];
-  // add the styles to the DOM
-  var update = __webpack_require__(10)(content, {});
-  if(content.locals) module.exports = content.locals;
-  // Hot Module Replacement
-  if(false) {
-  	// When the styles change, update the <style> tags
-  	if(!content.locals) {
-  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Home.css", function() {
-  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Home.css");
-  			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-  			update(newContent);
-  		});
-  	}
-  	// When the module is disposed, remove the <style> tags
-  	module.hot.dispose(function() { update(); });
-  }
-
-/***/ }),
-
-/***/ 277:
+/***/ 329:
 /***/ (function(module, exports) {
 
   module.exports = {"title":"Hello","desc":"I make wonderful things online.","html":""};
@@ -1215,4 +1150,4 @@ webpackJsonp([0],{
 /***/ })
 
 });
-//# sourceMappingURL=0.js.map?3d8a22630e40a2662452
+//# sourceMappingURL=0.js.map?b8ed62f59cbf9d0dcd86

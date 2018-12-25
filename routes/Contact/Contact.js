@@ -29,12 +29,11 @@ class ContactPage extends React.Component {
       <MenuLayout>
         <div style={contactStyle}>
           <Dog/>
-          <h1 style={{ fontSize: 32 }}>{ title }</h1>
           <p style={itemStyle}>
-            <i className="fa fa-envelope-o"></i><span style={{ marginLeft: 12 }}>{ email }</span>
+            <i className="fa fa-envelope"></i><span style={{ marginLeft: 8 }}>{ email }</span>
           </p>
           <p style={itemStyle}>
-            <i className="fa fa-phone"></i><span style={{ marginLeft: 12 }}>{ phone }</span>
+            <i className="fa fa-phone"></i><span style={{ marginLeft: 8 }}>{ phone }</span>
           </p>
         </div>
       </MenuLayout>

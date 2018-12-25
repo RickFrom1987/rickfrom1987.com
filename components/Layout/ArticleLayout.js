@@ -56,7 +56,7 @@ class ArticleLayout extends React.Component {
         <ReactTooltip />
         <div style={headerStyle}>
           <a href="/projects" style={iconStyle} data-tip="Back to projects">
-            <Dog/>
+            <Dog width={100} height={100}/>
           </a>
         </div>
         <div style={bodyStyle}>
