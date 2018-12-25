@@ -5,7 +5,7 @@
     "website":"https://textnow.com",
     "url":"/textnow",
     "tags":[  
-      "Backbone",
+      "backbone.js",
       "javascript"
     ],
     "highlights":[  
@@ -144,7 +144,7 @@
     "url":"/booking",
     "tags":[  
       "javascript",
-      "Google App Engine",
+      "google app engine",
       "gulp",
       "npm",
       "node"
@@ -162,9 +162,9 @@
     "url":"/membean",
     "tags":[  
       "javascript",
-      "React",
-      "Redux",
-      "Enzyme"
+      "react",
+      "redux",
+      "enzyme"
     ],
     "highlights":[]
   },
