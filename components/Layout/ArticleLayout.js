@@ -38,24 +38,26 @@ class ArticleLayout extends React.Component {
     };
     const headerStyle = {
       ...sectionStyle,
-      padding: 12,
+      padding: 24,
     };
     const bodyStyle = {
       ...sectionStyle,
       padding: '0 24px',
     };
     const iconStyle = {
-      display: 'block',
-      width: 75,
-      height: 'auto',
-      margin: '12px 0'
+      display: 'inline-block'
     };
     const articleLayoutStyle = Object.assign({}, baseStyle, style);
     return (
       <div style={articleLayoutStyle}>
         <ReactTooltip />
         <div style={headerStyle}>
-          <a href="/projects" style={iconStyle} data-tip="Back to projects">
+          <a
+            href="/projects"
+            style={iconStyle}
+            data-tip="Bark to projects!"
+            data-place="right"
+            data-effect="solid">
             <Dog width={100} height={100}/>
           </a>
         </div>
