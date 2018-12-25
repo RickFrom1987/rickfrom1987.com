@@ -2,9 +2,8 @@ import React, { PropTypes } from 'react';
 import MenuLayout from '../../components/Layout/MenuLayout';
 import Link from '../../components/Link';
 import Dog from '../../components/Dog';
-
+import s from './Home.css';
 import { title, desc } from './Home.md';
-
 import * as Colors from '../../components/Constants/Colors';
 
 const documentTitle = 'RickFrom1987';
@@ -26,7 +25,9 @@ class HomePage extends React.Component {
     return (
       <MenuLayout>
         <div style={homeStyle}>
-          <Dog/>
+          <div className={s.dog}>
+            <Dog/>
+          </div>
         </div>
       </MenuLayout>
     );

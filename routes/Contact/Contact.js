@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import View from 'react-flexbox';
 import MenuLayout from '../../components/Layout/MenuLayout';
 import Link from '../../components/Link';
-
 import Dog from '../../components/Dog';
 import s from './Contact.css';
 import { title, phone, email } from './Contact.md';
