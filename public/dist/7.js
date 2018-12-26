@@ -4151,16 +4151,13 @@ webpackJsonp([7],{
           width: '95%'
         };
         var headerStyle = (0, _extends3.default)({}, sectionStyle, {
-          padding: 12
+          padding: 24
         });
         var bodyStyle = (0, _extends3.default)({}, sectionStyle, {
           padding: '0 24px'
         });
         var iconStyle = {
-          display: 'block',
-          width: 75,
-          height: 'auto',
-          margin: '12px 0'
+          display: 'inline-block'
         };
         var articleLayoutStyle = (0, _assign2.default)({}, baseStyle, style);
         return _react2.default.createElement(
@@ -4172,7 +4169,12 @@ webpackJsonp([7],{
             { style: headerStyle },
             _react2.default.createElement(
               'a',
-              { href: '/projects', style: iconStyle, 'data-tip': 'Back to projects' },
+              {
+                href: '/projects',
+                style: iconStyle,
+                'data-tip': 'Bark to projects!',
+                'data-place': 'right',
+                'data-effect': 'solid' },
               _react2.default.createElement(_Dog2.default, { width: 100, height: 100 })
             )
           ),
@@ -8564,4 +8566,4 @@ webpackJsonp([7],{
 /***/ })
 
 });
-//# sourceMappingURL=7.js.map?9cae98dfd609a057b9f4
+//# sourceMappingURL=7.js.map?786e31b71bb85a499b69

@@ -60,6 +60,10 @@
     "component": "./routes/Yahoo"
   },
   {
+    "path": "/generalassembly",
+    "component": "./routes/GeneralAssembly"
+  },
+  {
     "path": "/tasks/:status(pending|completed)?",
     "component": "./routes/Home"
   }

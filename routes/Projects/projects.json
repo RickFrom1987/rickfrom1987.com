@@ -69,6 +69,18 @@
     ]
   },
   {  
+    "company":"generalassembly.com",
+    "position":"Front End Engineer",
+    "website":"https://generalassembly.com",
+    "url":"/generalassembly",
+    "tags":[  
+      "node.js",
+      "knockout.js",
+      "backbone"
+    ],
+    "highlights":[]
+  },
+  {  
     "company":"appuri.com",
     "position":"RickFrom1987",
     "website":"https://appuri.com",
