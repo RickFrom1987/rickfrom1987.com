@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import s from './Dog.css';
 
 export class Dog extends Component {
 
@@ -10,7 +11,7 @@ export class Dog extends Component {
   render() {
     const { width, height } = this.props;
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 324 252.73">
+      <svg className={s.dog} width={width} height={height} viewBox="0 0 324 252.73">
         <path d="M207.73,235.86" transform="translate(-18.1 -53.2)" style={{fill: '#502211'}} />
         <path d="M147.12,305.93l-.65-.62A2,2,0,0,0,147.12,305.93Z" transform="translate(-18.1 -53.2)" style={{fill: 'none'}} />
         <path d="M235,301.87l-.61.62A2,2,0,0,0,235,301.87Z" transform="translate(-18.1 -53.2)" style={{fill: 'none'}} />
