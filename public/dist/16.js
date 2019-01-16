@@ -1,4 +1,4 @@
-webpackJsonp([0],{
+webpackJsonp([16],{
 
 /***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
@@ -831,33 +831,6 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 113:
-/***/ (function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = undefined;
-  
-  var _Home = __webpack_require__(221);
-  
-  var _Home2 = _interopRequireDefault(_Home);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = _Home2.default; /**
-                                     * React App SDK (https://github.com/kriasoft/react-app)
-                                     *
-                                     * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
-                                     *
-                                     * This source code is licensed under the MIT license found in the
-                                     * LICENSE.txt file in the root directory of this source tree.
-                                     */
-
-/***/ }),
-
 /***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1107,6 +1080,116 @@ webpackJsonp([0],{
 
 /***/ }),
 
+/***/ 145:
+/***/ (function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+  
+  var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+  
+  var _react = __webpack_require__(1);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+  
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+  
+  function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+  
+  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+  
+  var flexStyle = {
+    boxSizing: 'border-box',
+    display: 'flex',
+    flexWrap: 'nowrap',
+    flex: '1 0 auto',
+    justifyContent: 'space-between',
+    alignContent: 'space-between',
+    alignItems: 'stretch'
+  };
+  
+  var mixProps = function mixProps(style, props) {
+    var divStyle = {};
+  
+    if (props.row) {
+      divStyle.flexDirection = 'row';
+    } else if (props.column) {
+      divStyle.flexDirection = 'column';
+    }
+  
+    if (typeof props.width === 'number') {
+      divStyle.flexGrow = props.width;
+    } else if (props.width) {
+      divStyle.flexBasis = 'auto';
+      divStyle.flexGrow = 0;
+      divStyle.flexShrink = 0;
+      divStyle.width = props.width;
+    }
+  
+    if (props.height) {
+      divStyle.flexBasis = 'auto';
+      divStyle.flexGrow = 0;
+      divStyle.flexShrink = 0;
+      divStyle.height = props.height;
+    }
+  
+    if (props.style) {
+      return _extends({}, flexStyle, style, divStyle, props.style);
+    } else {
+      return _extends({}, flexStyle, style, divStyle);
+    }
+  };
+  
+  var View = function (_Component) {
+    _inherits(View, _Component);
+  
+    function View() {
+      _classCallCheck(this, View);
+  
+      return _possibleConstructorReturn(this, (View.__proto__ || Object.getPrototypeOf(View)).apply(this, arguments));
+    }
+  
+    _createClass(View, [{
+      key: 'render',
+      value: function render() {
+        var style = mixProps({}, this.props);
+        if (this.props.auto) {
+          style.flex = '0 0 auto';
+        }
+  
+        // strip props that are invalid to set on a div.
+        // (prevents https://fb.me/react-unknown-prop)
+  
+        var _props = this.props,
+            row = _props.row,
+            column = _props.column,
+            auto = _props.auto,
+            divProps = _objectWithoutProperties(_props, ['row', 'column', 'auto']);
+  
+        return _react2.default.createElement(
+          'div',
+          _extends({}, divProps, { style: style }),
+          this.props.children
+        );
+      }
+    }]);
+  
+    return View;
+  }(_react.Component);
+  
+  exports.default = View;
+
+/***/ }),
+
 /***/ 147:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1134,7 +1217,27 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 221:
+/***/ 155:
+/***/ (function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = undefined;
+  
+  var _Contact = __webpack_require__(215);
+  
+  var _Contact2 = _interopRequireDefault(_Contact);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = _Contact2.default;
+
+/***/ }),
+
+/***/ 215:
 /***/ (function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1167,6 +1270,10 @@ webpackJsonp([0],{
   
   var _react2 = _interopRequireDefault(_react);
   
+  var _reactFlexbox = __webpack_require__(145);
+  
+  var _reactFlexbox2 = _interopRequireDefault(_reactFlexbox);
+  
   var _MenuLayout = __webpack_require__(123);
   
   var _MenuLayout2 = _interopRequireDefault(_MenuLayout);
@@ -1179,11 +1286,11 @@ webpackJsonp([0],{
   
   var _Dog2 = _interopRequireDefault(_Dog);
   
-  var _Home = __webpack_require__(322);
+  var _Contact = __webpack_require__(321);
   
-  var _Home2 = _interopRequireDefault(_Home);
+  var _Contact2 = _interopRequireDefault(_Contact);
   
-  var _Home3 = __webpack_require__(336);
+  var _Contact3 = __webpack_require__(330);
   
   var _Colors = __webpack_require__(24);
   
@@ -1193,17 +1300,17 @@ webpackJsonp([0],{
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var documentTitle = 'RickFrom1987';
+  var documentTitle = 'RickFrom1987 - Contact';
   
-  var HomePage = function (_React$Component) {
-    (0, _inherits3.default)(HomePage, _React$Component);
+  var ContactPage = function (_React$Component) {
+    (0, _inherits3.default)(ContactPage, _React$Component);
   
-    function HomePage() {
-      (0, _classCallCheck3.default)(this, HomePage);
-      return (0, _possibleConstructorReturn3.default)(this, (HomePage.__proto__ || (0, _getPrototypeOf2.default)(HomePage)).apply(this, arguments));
+    function ContactPage() {
+      (0, _classCallCheck3.default)(this, ContactPage);
+      return (0, _possibleConstructorReturn3.default)(this, (ContactPage.__proto__ || (0, _getPrototypeOf2.default)(ContactPage)).apply(this, arguments));
     }
   
-    (0, _createClass3.default)(HomePage, [{
+    (0, _createClass3.default)(ContactPage, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
         document.title = documentTitle;
@@ -1211,36 +1318,52 @@ webpackJsonp([0],{
     }, {
       key: 'render',
       value: function render() {
-        var homeStyle = {
+        var contactStyle = {
           textAlign: 'center',
           color: Colors.WHITE
         };
         var itemStyle = {
-          fontSize: 12
+          fontSize: 16
         };
         return _react2.default.createElement(
           _MenuLayout2.default,
           null,
           _react2.default.createElement(
             'div',
-            { style: homeStyle },
+            { style: contactStyle },
+            _react2.default.createElement(_Dog2.default, null),
             _react2.default.createElement(
-              'div',
-              { className: _Home2.default.dog },
-              _react2.default.createElement(_Dog2.default, null)
+              'p',
+              { style: itemStyle },
+              _react2.default.createElement('i', { className: 'fa fa-envelope' }),
+              _react2.default.createElement(
+                'span',
+                { style: { marginLeft: 8 } },
+                _Contact3.email
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              { style: itemStyle },
+              _react2.default.createElement('i', { className: 'fa fa-phone' }),
+              _react2.default.createElement(
+                'span',
+                { style: { marginLeft: 8 } },
+                _Contact3.phone
+              )
             )
           )
         );
       }
     }]);
-    return HomePage;
+    return ContactPage;
   }(_react2.default.Component);
   
-  exports.default = HomePage;
+  exports.default = ContactPage;
 
 /***/ }),
 
-/***/ 280:
+/***/ 279:
 /***/ (function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(10)();
@@ -1248,24 +1371,22 @@ webpackJsonp([0],{
   
   
   // module
-  exports.push([module.id, ".Home_dog_3l_ {\n  animation: Home_shake_2qM 7s cubic-bezier(.36,.07,.19,.97) both;\n  -webkit-backface-visibility: hidden;\n          backface-visibility: hidden;\n  animation-iteration-count: infinite;\n}\n\n@keyframes Home_shake_2qM {\n  10% {\n    transform: rotate(3deg);\n  }\n  \n  20% {\n    transform: rotate(-2deg);\n  }\n\n  30%, 50% {\n    transform: rotate(1deg);\n  }\n\n  40% {\n    transform: rotate(-2deg);\n  }\n\n  50% {\n  \ttransform: rotate(0deg);\n  }\n}\n\n@media screen and (max-width: 1024px) {\n\n  .Home_content_3u8 {\n    padding: 0 16px;\n  }\n\n}\n", "", {"version":3,"sources":["/./routes/Home/Home.css"],"names":[],"mappings":"AAAA;EACE,gEAAuD;EACvD,oCAA4B;UAA5B,4BAA4B;EAC5B,oCAAoC;CACrC;;AAED;EACE;IACE,wBAAwB;GACzB;;EAED;IACE,yBAAyB;GAC1B;;EAED;IACE,wBAAwB;GACzB;;EAED;IACE,yBAAyB;GAC1B;;EAED;GACC,wBAAwB;GACxB;CACF;;AAED;;EAEE;IACE,gBAAgB;GACjB;;CAEF","file":"Home.css","sourcesContent":[".dog {\n  animation: shake 7s cubic-bezier(.36,.07,.19,.97) both;\n  backface-visibility: hidden;\n  animation-iteration-count: infinite;\n}\n\n@keyframes shake {\n  10% {\n    transform: rotate(3deg);\n  }\n  \n  20% {\n    transform: rotate(-2deg);\n  }\n\n  30%, 50% {\n    transform: rotate(1deg);\n  }\n\n  40% {\n    transform: rotate(-2deg);\n  }\n\n  50% {\n  \ttransform: rotate(0deg);\n  }\n}\n\n@media screen and (max-width: 1024px) {\n\n  .content {\n    padding: 0 16px;\n  }\n\n}\n"],"sourceRoot":"webpack://"}]);
+  exports.push([module.id, "/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@media screen and (max-width: 1024px) {\n\n  .Contact_content_22- {\n    padding: 0 16px;\n  }\n\n}\n", "", {"version":3,"sources":["/./routes/Contact/Contact.css"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;AAEH;;EAEE;IACE,gBAAgB;GACjB;;CAEF","file":"Contact.css","sourcesContent":["/**\n * React App SDK (https://github.com/kriasoft/react-app)\n *\n * Copyright © 2015-present Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@media screen and (max-width: 1024px) {\n\n  .content {\n    padding: 0 16px;\n  }\n\n}\n"],"sourceRoot":"webpack://"}]);
   
   // exports
   exports.locals = {
-  	"dog": "Home_dog_3l_",
-  	"shake": "Home_shake_2qM",
-  	"content": "Home_content_3u8"
+  	"content": "Contact_content_22-"
   };
 
 /***/ }),
 
-/***/ 322:
+/***/ 321:
 /***/ (function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(280);
+  var content = __webpack_require__(279);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
   var update = __webpack_require__(13)(content, {});
@@ -1274,8 +1395,8 @@ webpackJsonp([0],{
   if(false) {
   	// When the styles change, update the <style> tags
   	if(!content.locals) {
-  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Home.css", function() {
-  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Home.css");
+  		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Contact.css", function() {
+  			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!../../node_modules/postcss-loader/index.js!./Contact.css");
   			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
   			update(newContent);
   		});
@@ -1286,12 +1407,12 @@ webpackJsonp([0],{
 
 /***/ }),
 
-/***/ 336:
+/***/ 330:
 /***/ (function(module, exports) {
 
-  module.exports = {"title":"Hello","desc":"I make wonderful things online.","html":""};
+  module.exports = {"title":"Call me maybe","phone":"425.985.9755","email":"rick@rickfrom1987.com","html":""};
 
 /***/ })
 
 });
-//# sourceMappingURL=0.js.map?ff3da6c61f77aa36305f
+//# sourceMappingURL=16.js.map?f51dc167b4648140c4c2
