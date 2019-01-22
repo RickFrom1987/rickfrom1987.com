@@ -8609,9 +8609,9 @@ webpackJsonp([9],{
 /***/ 333:
 /***/ (function(module, exports) {
 
-  module.exports = {"title":"General Assembly","subtitle":2016,"url":"https://generalassemb.ly/instructors/rick-chen/7699","html":"<p>I spent a year as an <a href=\"//generalassemb.ly/instructors/rick-chen/7699\">instructor @ General Assembly</a>.</p>\n<p><b>Challenges</b></p>\n<p>\n<p>It as my first time teaching adults. This is much different than teaching younger students. Life gets in the way, these adults have kids, other problems goin on in thier life and theya re trying to learn a skill that will</p>\n</p>"};
+  module.exports = {"title":"General Assembly","subtitle":2016,"url":"https://generalassemb.ly/instructors/rick-chen/7699","html":"<p>I spent a year as an instructor @ <a href=\"//generalassemb.ly/instructors/rick-chen/7699\">General Assembly</a>.</p>\n<p><b>Coming Soon!</b></p>\n"};
 
 /***/ })
 
 });
-//# sourceMappingURL=9.js.map?9bd1bf6fd09806c48c83
+//# sourceMappingURL=9.js.map?1864364ed14b1ccdea48
